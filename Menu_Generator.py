@@ -10,9 +10,11 @@ from pygame.locals import *
 WINDOWHEIGHT = 629
 WINDOWWIDTH = 1000
 
-def createMenu(surf):
+def createMenu(surf,choice):
     pg.init()
-    mensurf = pg.image.load('images/menu_screen_2.jpg')
+    _files = os.listdir('images')
+    screens = [k for k in _files if 'menu' in k]
+    mensurf = pg.image.load('images/'+str(screens[choice]))
     mensurf = pg.transform.scale(mensurf, (WINDOWWIDTH,WINDOWHEIGHT))
     qsurf = pg.image.load('images/quest_start.png')
     qheight = qsurf.get_height()
@@ -20,10 +22,10 @@ def createMenu(surf):
     qsurf = pg.transform.scale(qsurf, (int(qwidth/3), int(qheight/3)))
     qheight = qsurf.get_height()
     qwidth = qsurf.get_width()    
-    qRect = qsurf.get_rect()
+    qRect = qsurf.get_rect(topleft = (WINDOWWIDTH/2 - int(qwidth/2), WINDOWHEIGHT - 100 ))
     tSurf = pg.image.load('images/title.png')
     surf.blit(mensurf, (0,0))
     surf.blit(qsurf, (WINDOWWIDTH/2 - int(qwidth/2), WINDOWHEIGHT - 100 ) )
     surf.blit(tSurf, (WINDOWWIDTH/2 - int(tSurf.get_width()/2), tSurf.get_height()+10))
-    return(surf,qsurf,qRect)
+    return(surf,qsurf,qRect,len(screens))
 

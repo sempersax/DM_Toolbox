@@ -9,9 +9,11 @@ import numpy as np
 import Menu_Generator as menu
 import Music_Generator as musgen
 import Music_Controls as muscon
-
+import Tool_Navigator as tn
 import pygame.surfarray as surfarray
 from pygame.locals import *
+
+import time
 
 WINDOWWIDTH = 1000
 WINDOWHEIGHT = 629
@@ -25,15 +27,23 @@ def main():
     choiceold = -10
     musicChoice = 1
     musicChoiceold = -10
+    menuScreen = 1
     playing = True
     FPSCLOCK = pg.time.Clock()
     DISPLAYSURF = pg.display.set_mode((WINDOWWIDTH,WINDOWHEIGHT),HWSURFACE | DOUBLEBUF|RESIZABLE)
-    
+    runTime = 0.
+    startTime = time.time()
     while True:
-
+        runTime = runTime + time.time() - startTime
+        print(runTime)
+        if runTime >= 600. :
+            menuScreen = np.random.randint(menuScreens)
+            startTime = time.time()
+            runTime = 0.
+            
         checkForQuit()
         if choice == 0:
-            DISPLAYSURF, questSurf, questRect = menu.createMenu(DISPLAYSURF)
+            DISPLAYSURF, questSurf, questRect,menuScreens = menu.createMenu(DISPLAYSURF,menuScreen)
             if choice != choiceold:
                 musgen.menuMusic()
         DISPLAYSURF, soundSurf, soundRect, playing = muscon.soundControl(DISPLAYSURF, musicChoice, pg.mixer.music.get_busy())
@@ -47,6 +57,10 @@ def main():
                         pg.mixer.music.pause()
                     elif playing == True:
                         pg.mixer.music.unpause()
+                if questRect.collidepoint(event.pos):
+                    DISPLAYSURF, musicSurf,musicRect = tn.createTools(DISPLAYSURF)
+                    choice = 1
+        checkForQuit()
         
 
         choiceold = choice
