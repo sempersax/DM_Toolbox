@@ -10,6 +10,7 @@ import Menu_Generator as menu
 import Music_Generator as musgen
 import Music_Controls as muscon
 import Tool_Navigator as tn
+import Music_Navigator as musnav
 import pygame.surfarray as surfarray
 from pygame.locals import *
 
@@ -57,8 +58,18 @@ def main():
                     elif playing == True:
                         pg.mixer.music.unpause()
                 if questRect.collidepoint(event.pos):
-                    DISPLAYSURF, musicSurf,musicRect = tn.createTools(DISPLAYSURF)
+                    DISPLAYSURF, npcSurf,npcRect,musicSurf,musicRect,spellSurf,spellRect,monstSurf,monstRect = tn.createTools(DISPLAYSURF)
                     choice = 1
+                if choice == 1:
+                    if musicRect.collidepoint(event.pos):
+                        DISPLAYSURF,tavrnSurf, tavrnRect, bttleSurf, bttleRect, rgionSurf, rgionRect = musnav.createMusic(DISPLAYSURF)
+                        choice = 3
+                        break
+                if choice == 3:
+                    if bttleRect.collidepoint(event.pos):
+                        musgen.battleMusic()
+                    if tavrnRect.collidepoint(event.pos):
+                        musgen.tavernMusic()
         checkForQuit()
         
 
