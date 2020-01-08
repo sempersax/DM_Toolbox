@@ -35,8 +35,7 @@ def main():
     startTime = time.time()
     while True:
         runTime = runTime + time.time() - startTime
-        print(runTime)
-        if runTime >= 600. :
+        if runTime >= 600. and choice == 0 :
             menuScreen = np.random.randint(menuScreens)
             startTime = time.time()
             runTime = 0.
