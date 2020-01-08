@@ -49,6 +49,8 @@ def main():
         DISPLAYSURF, soundSurf, soundRect, playing = muscon.soundControl(DISPLAYSURF, musicChoice, pg.mixer.music.get_busy())
         if choice != 0:
             DISPLAYSURF, menButton, menRect = menu.reachMenu(DISPLAYSURF)
+        if choice >1:
+            DISPLAYSURF, backButton, backRect = tn.createBack(DISPLAYSURF)
         
         for event in pg.event.get():
             if event.type == MOUSEBUTTONUP:

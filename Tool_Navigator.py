@@ -42,3 +42,14 @@ def createTools(surf):
     surf.blit(spellSurf, (int(spellSurf.get_width()*1/5), int(WINDOWHEIGHT*3/4) + int(spellSurf.get_height()/2)))
     surf.blit(monstSurf, (WINDOWWIDTH - int(monstSurf.get_width()*6/5), int(WINDOWHEIGHT*3/4) + int(monstSurf.get_height()/2)))
     return(surf,npcSurf,npcRect,musicSurf,musicRect,spellSurf,spellRect,monstSurf,monstRect)
+
+def createBack(surf):
+    pg.init()
+    backButton = pg.image.load('images/circle_button.PNG')
+    backButton = pg.transform.scale(backButton, (int(backButton.get_width()/2),int(backButton.get_height()/2)))
+    backRect = backButton.get_rect(topleft =  (int(WINDOWWIDTH-backButton.get_width()*2.5),int(backButton.get_height()/4)))
+    surf.blit(backButton, (int(WINDOWWIDTH-backButton.get_width()*2.5),int(backButton.get_height()/4)))
+    return(surf,backButton,backRect)
+                                   
+    
+    
