@@ -70,6 +70,9 @@ def main():
                         musgen.battleMusic()
                     if tavrnRect.collidepoint(event.pos):
                         musgen.tavernMusic()
+            elif event.type == KEYDOWN:
+                if event.key == K_ESCAPE:
+                    terminate()
         checkForQuit()
         
 
