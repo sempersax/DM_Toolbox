@@ -13,7 +13,7 @@ WINDOWWIDTH = 1000
 def createMenu(surf,choice):
     pg.init()
     _files = os.listdir('images')
-    screens = [k for k in _files if 'menu' in k]
+    screens = [k for k in _files if 'menu_screen' in k]
     mensurf = pg.image.load('images/'+str(screens[choice]))
     mensurf = pg.transform.scale(mensurf, (WINDOWWIDTH,WINDOWHEIGHT))
     qsurf = pg.image.load('images/quest_start.png')
@@ -29,3 +29,10 @@ def createMenu(surf,choice):
     surf.blit(tSurf, (WINDOWWIDTH/2 - int(tSurf.get_width()/2), tSurf.get_height()+10))
     return(surf,qsurf,qRect,len(screens))
 
+def reachMenu(surf):
+    pg.init()
+    menButton = pg.image.load('images/menu_button.png')
+    menButton = pg.transform.scale(menButton, (int(menButton.get_width()/2),int(menButton.get_height()/2)))
+    menRect = menButton.get_rect(topleft = (int(WINDOWWIDTH-menButton.get_width()*1.5),int(menButton.get_height()/4)))
+    surf.blit(menButton, (int(WINDOWWIDTH-menButton.get_width()*1.5),int(menButton.get_height()/4)))
+    return(surf, menButton, menRect)

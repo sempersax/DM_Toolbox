@@ -47,7 +47,9 @@ def main():
             if choice != choiceold:
                 musgen.menuMusic()
         DISPLAYSURF, soundSurf, soundRect, playing = muscon.soundControl(DISPLAYSURF, musicChoice, pg.mixer.music.get_busy())
-
+        if choice != 0:
+            DISPLAYSURF, menButton, menRect = menu.reachMenu(DISPLAYSURF)
+        
         for event in pg.event.get():
             if event.type == MOUSEBUTTONUP:
                 if soundRect.collidepoint(event.pos):
@@ -60,6 +62,12 @@ def main():
                 if questRect.collidepoint(event.pos):
                     DISPLAYSURF, npcSurf,npcRect,musicSurf,musicRect,spellSurf,spellRect,monstSurf,monstRect = tn.createTools(DISPLAYSURF)
                     choice = 1
+                if choice != 0:
+                    DISPLAYSURF, menButton, menRect = menu.reachMenu(DISPLAYSURF)           
+                    if menRect.collidepoint(event.pos):
+                        DISPLAYSURF, questSurf, questRect,menuScreens = menu.createMenu(DISPLAYSURF,menuScreen)
+                        musgen.menuMusic()
+                        choice = 0
                 if choice == 1:
                     if musicRect.collidepoint(event.pos):
                         DISPLAYSURF,tavrnSurf, tavrnRect, bttleSurf, bttleRect, rgionSurf, rgionRect = musnav.createMusic(DISPLAYSURF)
