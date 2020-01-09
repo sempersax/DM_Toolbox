@@ -53,6 +53,7 @@ def main():
         if choice >1:
             DISPLAYSURF, backButton, backRect = tn.createBack(DISPLAYSURF)
             DISPLAYSURF, miniButtons, miniRects = tn.createMiniTools(DISPLAYSURF,choice)
+
         
         for event in pg.event.get():
             if event.type == MOUSEBUTTONUP:
@@ -74,7 +75,7 @@ def main():
                         musgen.menuMusic()
                         choice = 0
                         break
-                if choice == 1:
+                if choice == 1: #on main hub
                     if musicRect.collidepoint(event.pos):
                         DISPLAYSURF,tavrnSurf, tavrnRect, bttleSurf, bttleRect, rgionSurf, rgionRect = musnav.createMusic(DISPLAYSURF)
                         choice = 3
@@ -82,11 +83,25 @@ def main():
                     if npcRect.collidepoint(event.pos):
                         DISPLAYSURF,racesurf, raceRect = npcNav.createNPC(DISPLAYSURF)
                         choice = 2
-                if choice == 3:
+                        break
+
+                if choice == 2: #on npc hub
+                    if miniRects[0].collidepoint(event.pos):
+                        DISPLAYSURF,tavrnSurf, tavrnRect, bttleSurf, bttleRect, rgionSurf, rgionRect = musnav.createMusic(DISPLAYSURF)
+                        choice = 3
+                        break                       
+                
+                if choice == 3: # on music hub
                     if bttleRect.collidepoint(event.pos):
                         musgen.battleMusic()
                     if tavrnRect.collidepoint(event.pos):
                         musgen.tavernMusic()
+                    if miniRects[0].collidepoint(event.pos):
+                        DISPLAYSURF,racesurf, raceRect = npcNav.createNPC(DISPLAYSURF)
+                        choice = 2
+                        break
+                
+                        
             elif event.type == KEYDOWN:
                 if event.key == K_ESCAPE:
                     terminate()
