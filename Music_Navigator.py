@@ -28,7 +28,7 @@ def createMusic(surf):
     rgionSurf = pg.transform.scale(rgionSurf, (int(rgionSurf.get_width()/8),int(rgionSurf.get_height()/8)))
     rgionRect = rgionSurf.get_rect(topleft = (int(rgionSurf.get_width()*1/5), int(WINDOWHEIGHT*3/4) + int(rgionSurf.get_height()/2)))
 
-    toolSurf = pg.image.load('images/navigation_screen.png')
+    toolSurf = pg.image.load('images/DMTB_MUSIC_screen.jpg')
     toolSurf = pg.transform.scale(toolSurf, (WINDOWWIDTH,WINDOWHEIGHT))
     surf.fill((0,0,0))
     surf.blit(toolSurf,(0,0))
