@@ -16,7 +16,7 @@ def createNPC(surf):
     pg.init()
 
 # Tavern Button
-    raceSurf = pg.image.load('images/music_Button.png')
+    raceSurf = pg.image.load('images/DMTB_RACE_Button.png')
     raceSurf = pg.transform.scale(raceSurf, (int(raceSurf.get_width()/8),int(raceSurf.get_height()/8)))
     raceRect = raceSurf.get_rect(topleft = (int(raceSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(raceSurf.get_height()/2)))
 ### Battle Button

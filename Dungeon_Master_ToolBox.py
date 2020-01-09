@@ -14,6 +14,7 @@ import Tool_Navigator as toolNav
 import Music_Navigator as musNav
 import pygame.surfarray as surfarray
 import NPC_Navigator as npcNav
+import NPC_Generator as npcGen
 import Spell_Navigator as spNav
 import Monster_Navigator as monNav
 from pygame.locals import *
@@ -24,6 +25,14 @@ WINDOWWIDTH = 1000
 WINDOWHEIGHT = 629
 FPS = 30
 
+## Legend:
+## choice = 0 -> Main Menu
+## choice = 1 -> Tool Screen
+## choice = 2 -> NPC Screen
+## choice = 3 -> Music Screen
+## choice = 4 -> Spell Screen
+## choice = 5 -> Monster Screen
+## choice = 6 -> Race Screen (FROM NPC SCREEN)
 def main():
     global WINDOWHEIGHT, WINDOWWIDTH,FPSCLOCK
     pg.init()
@@ -55,6 +64,7 @@ def main():
             DISPLAYSURF, menButton, menRect = menGen.reachMenu(DISPLAYSURF)
         if choice >1:
             DISPLAYSURF, backButton, backRect = toolNav.createBack(DISPLAYSURF)
+        
             DISPLAYSURF, miniButtons, miniRects = toolNav.createMiniTools(DISPLAYSURF,choice)
 
         
@@ -109,7 +119,11 @@ def main():
                     if miniRects[2].collidepoint(event.pos):
                         DISPLAYSURF, surf1, rect1 = monNav.createMonster(DISPLAYSURF)
                         choice = 5
-                        break                          
+                        break
+                    if raceRect.collidepoint(event.pos):
+                        DISPLAYSURF, races = npcGen.race(DISPLAYSURF)
+                        subchoice = 6
+                        break
                     
                 if choice == 3: # on music hub
                     if bttleRect.collidepoint(event.pos):

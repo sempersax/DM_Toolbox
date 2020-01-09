@@ -24,7 +24,7 @@ def createMusic(surf):
     bttleSurf = pg.transform.scale(bttleSurf, (int(bttleSurf.get_width()/8),int(bttleSurf.get_height()/8)))
     bttleRect = bttleSurf.get_rect(topleft = (WINDOWWIDTH - int(bttleSurf.get_width()*6/5), int(WINDOWHEIGHT/4) - int(bttleSurf.get_height()/2)))
 # Region Button
-    rgionSurf = pg.image.load('images/DMTB_REGION_Button.png')
+    rgionSurf = pg.image.load('images/regions/DMTB_REGION_Button.png')
     rgionSurf = pg.transform.scale(rgionSurf, (int(rgionSurf.get_width()/8),int(rgionSurf.get_height()/8)))
     rgionRect = rgionSurf.get_rect(topleft = (int(rgionSurf.get_width()*1/5), int(WINDOWHEIGHT*3/4) + int(rgionSurf.get_height()/2)))
 
