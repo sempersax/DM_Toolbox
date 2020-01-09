@@ -12,6 +12,7 @@ import Music_Controls as muscon
 import Tool_Navigator as tn
 import Music_Navigator as musnav
 import pygame.surfarray as surfarray
+import NPC_Navigator as npcNav
 from pygame.locals import *
 
 import time
@@ -51,6 +52,7 @@ def main():
             DISPLAYSURF, menButton, menRect = menu.reachMenu(DISPLAYSURF)
         if choice >1:
             DISPLAYSURF, backButton, backRect = tn.createBack(DISPLAYSURF)
+            DISPLAYSURF, miniButtons, miniRects = tn.createMiniTools(DISPLAYSURF,choice)
         
         for event in pg.event.get():
             if event.type == MOUSEBUTTONUP:
@@ -64,17 +66,22 @@ def main():
                 if questRect.collidepoint(event.pos):
                     DISPLAYSURF, npcSurf,npcRect,musicSurf,musicRect,spellSurf,spellRect,monstSurf,monstRect = tn.createTools(DISPLAYSURF)
                     choice = 1
+                    break
                 if choice != 0:
                     DISPLAYSURF, menButton, menRect = menu.reachMenu(DISPLAYSURF)           
                     if menRect.collidepoint(event.pos):
                         DISPLAYSURF, questSurf, questRect,menuScreens = menu.createMenu(DISPLAYSURF,menuScreen)
                         musgen.menuMusic()
                         choice = 0
+                        break
                 if choice == 1:
                     if musicRect.collidepoint(event.pos):
                         DISPLAYSURF,tavrnSurf, tavrnRect, bttleSurf, bttleRect, rgionSurf, rgionRect = musnav.createMusic(DISPLAYSURF)
                         choice = 3
                         break
+                    if npcRect.collidepoint(event.pos):
+                        DISPLAYSURF,racesurf, raceRect = npcNav.createNPC(DISPLAYSURF)
+                        choice = 2
                 if choice == 3:
                     if bttleRect.collidepoint(event.pos):
                         musgen.battleMusic()
