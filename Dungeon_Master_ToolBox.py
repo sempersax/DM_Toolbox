@@ -17,6 +17,7 @@ import NPC_Navigator as npcNav
 import NPC_Generator as npcGen
 import Spell_Navigator as spNav
 import Monster_Navigator as monNav
+import Image_Loader as imgLoad
 from pygame.locals import *
 
 import time
@@ -46,6 +47,8 @@ def main():
     FPSCLOCK = pg.time.Clock()
     DISPLAYSURF = pg.display.set_mode((WINDOWWIDTH,WINDOWHEIGHT),HWSURFACE | DOUBLEBUF|RESIZABLE)
     runTime = 0.
+    raceButt, toolButt, circButt = imgLoad.imageLoader(WINDOWWIDTH,WINDOWHEIGHT)
+    
     startTime = time.time()
     while True:
         runTime = runTime + time.time() - startTime
@@ -65,7 +68,7 @@ def main():
         if choice >1:
             DISPLAYSURF, backButton, backRect = toolNav.createBack(DISPLAYSURF)
         
-            DISPLAYSURF, miniButtons, miniRects = toolNav.createMiniTools(DISPLAYSURF,choice)
+            DISPLAYSURF, miniButtons, miniRects = toolNav.createMiniTools(DISPLAYSURF,choice,circButt)
 
         
         for event in pg.event.get():
@@ -79,7 +82,7 @@ def main():
                         pg.mixer.music.unpause()
                 if choice == 0:
                     if questRect.collidepoint(event.pos):
-                        DISPLAYSURF, npcSurf,npcRect,musicSurf,musicRect,spellSurf,spellRect,monstSurf,monstRect = toolNav.createTools(DISPLAYSURF)
+                        DISPLAYSURF, npcSurf,npcRect,musicSurf,musicRect,spellSurf,spellRect,monstSurf,monstRect = toolNav.createTools(DISPLAYSURF,WINDOWWIDTH,WINDOWHEIGHT,toolButt)
                         choice = 1
                         break
                 if choice != 0:
@@ -121,7 +124,7 @@ def main():
                         choice = 5
                         break
                     if raceRect.collidepoint(event.pos):
-                        DISPLAYSURF, races = npcGen.race(DISPLAYSURF)
+                        DISPLAYSURF, races = npcGen.race(DISPLAYSURF,raceButt)
                         subchoice = 6
                         break
                     

@@ -9,27 +9,20 @@ import numpy as np
 import pygame.surfarray as surfarray
 from pygame.locals import *
 
-WINDOWHEIGHT = 629
-WINDOWWIDTH = 1000
-
-def createTools(surf):
+def createTools(surf,WINNDOWWIDTH,WINDOWHEIGHT,buttons):
     pg.init()
 
 # NPC Button
-    npcSurf = pg.image.load('images/DMTB_NPC_Button.png')
-    npcSurf = pg.transform.scale(npcSurf, (int(npcSurf.get_width()/8),int(npcSurf.get_height()/8)))
+    npcSurf = buttons[2]
     npcRect = npcSurf.get_rect(topleft = (int(npcSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(npcSurf.get_height()/2)))
 # Music Button
-    musicSurf = pg.image.load('images/DMTB_Music_Button.png')
-    musicSurf = pg.transform.scale(musicSurf, (int(musicSurf.get_width()/8),int(musicSurf.get_height()/8)))
-    musicRect = musicSurf.get_rect(topleft = (WINDOWWIDTH - int(musicSurf.get_width()*6/5), int(WINDOWHEIGHT/4) - int(musicSurf.get_height()/2)))
+    musicSurf = buttons[1]
+   musicRect = musicSurf.get_rect(topleft = (WINDOWWIDTH - int(musicSurf.get_width()*6/5), int(WINDOWHEIGHT/4) - int(musicSurf.get_height()/2)))
 # Spell Button
-    spellSurf = pg.image.load('images/DMTB_SPELLS_Button.png')
-    spellSurf = pg.transform.scale(spellSurf, (int(spellSurf.get_width()/8),int(spellSurf.get_height()/8)))
-    spellRect = spellSurf.get_rect(topleft = (int(spellSurf.get_width()*1/5), int(WINDOWHEIGHT*3/4) + int(spellSurf.get_height()/2)))
+    spellSurf = buttons[3]
+   spellRect = spellSurf.get_rect(topleft = (int(spellSurf.get_width()*1/5), int(WINDOWHEIGHT*3/4) + int(spellSurf.get_height()/2)))
 # Monster Button
-    monstSurf = pg.image.load('images/DMTB_MONSTERS_Button.png')
-    monstSurf = pg.transform.scale(monstSurf, (int(monstSurf.get_width()/8),int(monstSurf.get_height()/8)))
+    monstSurf = buttons[0]
     monstRect = monstSurf.get_rect(topleft = (WINDOWWIDTH - int(monstSurf.get_width()*6/5), int(WINDOWHEIGHT*3/4) + int(monstSurf.get_height()/2)))
 
     toolSurf = pg.image.load('images/navigation_screen.png')
@@ -53,17 +46,12 @@ def createBack(surf):
 
 # This is to create the other 3 buttons so one can switch categories quickly
 # All 4 are create, but based on choice, one is not blit to the screen
-def createMiniTools(surf,choice):
+def createMiniTools(surf,choice,buttons):
     pg.init()
-    
-    npcButton = pg.image.load('images/DMTB_NPC_CIRCLE_button.PNG')
-    npcButton = pg.transform.scale(npcButton, (int(npcButton.get_width()/2),int(npcButton.get_height()/2)))
-    musicButton = pg.image.load('images/DMTB_MUSIC_CIRCLE_button.PNG')
-    musicButton = pg.transform.scale(musicButton, (int(musicButton.get_width()/2),int(musicButton.get_height()/2)))
-    spellButton = pg.image.load('images/DMTB_SPELLS_CIRCLE_button.PNG')
-    spellButton = pg.transform.scale(spellButton, (int(spellButton.get_width()/2),int(spellButton.get_height()/2)))
-    monstButton = pg.image.load('images/DMTB_MONSTER_CIRCLE_button.PNG')
-    monstButton = pg.transform.scale(monstButton, (int(monstButton.get_width()/2),int(monstButton.get_height()/2)))
+    npcButton = buttons[2]
+    musicButton = buttons[1]
+    spellButton = buttons[3]
+    monstButton = buttons[0]
     buttons = [npcButton,musicButton,spellButton,monstButton]
     buttons.remove(buttons[choice-2])
     rects = []
