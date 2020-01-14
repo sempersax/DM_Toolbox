@@ -9,6 +9,7 @@ def soundControl(surf, change, busy):
         soundSurf = pg.image.load('images/sound_on.png')
         soundSurf = pg.transform.scale(soundSurf, (int(soundSurf.get_width()/8),int(soundSurf.get_height()/8)))
         soundRect = soundSurf.get_rect()
+        #surf.blit(screen,(0,0))
         surf.blit(soundSurf, (0,0))
         if busy == 0:
             playing = True
@@ -18,6 +19,7 @@ def soundControl(surf, change, busy):
         soundSurf = pg.image.load('images/sound_off.png')
         soundSurf = pg.transform.scale(soundSurf, (int(soundSurf.get_width()/8),int(soundSurf.get_height()/8)))
         soundRect = soundSurf.get_rect()
+        #surf.blit(surf,(0,0))
         surf.blit(soundSurf, (0,0))
         if busy == 1:
             playing = False

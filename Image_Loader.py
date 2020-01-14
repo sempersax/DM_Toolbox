@@ -10,7 +10,7 @@ import time
 
 pg.init()
 
-def imageLoader():
+def imageLoader(surf,WINDOWWIDTH,WINDOWHEIGHT):
     raceFiles = os.listdir('images/races')
     start = time.time()
     races=[None]*len(raceFiles)
@@ -35,5 +35,22 @@ def imageLoader():
         circTools[i] = prefix[i]+circTools[i]
         circs[i] = pg.image.load(circTools[i])
         circs[i] = pg.transform.scale(circs[i], (int(circs[i].get_width()/2),int(circs[i].get_height()/2)))
+
+    menuFiles = os.listdir('images/screens')
+    prefix = ['images/screens/']*len(menuFiles)
+    screens = [None]*len(menuFiles)
+    for i in range(len(menuFiles)): #this loads all of the main menu images at once.
+        menuFiles [i] = prefix[i] + menuFiles[i]
+        screens[i] = pg.image.load(menuFiles[i])
+        screens[i]= pg.transform.scale(screens[i], (WINDOWWIDTH,WINDOWHEIGHT))
+
+    genFiles = os.listdir('images/genders')
+    prefix = ['images/genders/']*len(genFiles)
+    gens = [None]*len(genFiles)
+    for i in range(len(genFiles)): # this loads all of the gender images at once.
+        genFiles[i] = prefix[i] + genFiles[i]
+        gens[i] = pg.image.load(genFiles[i])
+        gens[i] = pg.transform.scale(gens[i], (int(gens[i].get_width()/8),int(gens[i].get_height()/8)))
+    
     print(time.time()-start)
-    return(races,tools, circs)
+    return(races,tools, circs,screens,gens)

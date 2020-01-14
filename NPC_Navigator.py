@@ -35,4 +35,4 @@ def createNPC(surf):
     surf.blit(raceSurf, (int(raceSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(raceSurf.get_height()/2)))
 ##    surf.blit(bttleSurf, (WINDOWWIDTH - int(bttleSurf.get_width()*6/5), int(WINDOWHEIGHT/4) - int(bttleSurf.get_height()/2)))
 ##    surf.blit(rgionSurf, (int(rgionSurf.get_width()*1/5), int(WINDOWHEIGHT*3/4) + int(rgionSurf.get_height()/2)))
-    return(surf,raceSurf, raceRect)
+    return(surf,raceSurf, raceRect,toolSurf)

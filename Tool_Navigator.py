@@ -9,7 +9,7 @@ import numpy as np
 import pygame.surfarray as surfarray
 from pygame.locals import *
 
-def createTools(surf,WINNDOWWIDTH,WINDOWHEIGHT,buttons):
+def createTools(surf,WINDOWWIDTH,WINDOWHEIGHT,buttons):
     pg.init()
 
 # NPC Button
@@ -17,10 +17,10 @@ def createTools(surf,WINNDOWWIDTH,WINDOWHEIGHT,buttons):
     npcRect = npcSurf.get_rect(topleft = (int(npcSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(npcSurf.get_height()/2)))
 # Music Button
     musicSurf = buttons[1]
-   musicRect = musicSurf.get_rect(topleft = (WINDOWWIDTH - int(musicSurf.get_width()*6/5), int(WINDOWHEIGHT/4) - int(musicSurf.get_height()/2)))
+    musicRect = musicSurf.get_rect(topleft = (WINDOWWIDTH - int(musicSurf.get_width()*6/5), int(WINDOWHEIGHT/4) - int(musicSurf.get_height()/2)))
 # Spell Button
     spellSurf = buttons[3]
-   spellRect = spellSurf.get_rect(topleft = (int(spellSurf.get_width()*1/5), int(WINDOWHEIGHT*3/4) + int(spellSurf.get_height()/2)))
+    spellRect = spellSurf.get_rect(topleft = (int(spellSurf.get_width()*1/5), int(WINDOWHEIGHT*3/4) + int(spellSurf.get_height()/2)))
 # Monster Button
     monstSurf = buttons[0]
     monstRect = monstSurf.get_rect(topleft = (WINDOWWIDTH - int(monstSurf.get_width()*6/5), int(WINDOWHEIGHT*3/4) + int(monstSurf.get_height()/2)))
@@ -33,10 +33,10 @@ def createTools(surf,WINNDOWWIDTH,WINDOWHEIGHT,buttons):
     surf.blit(musicSurf, (WINDOWWIDTH - int(musicSurf.get_width()*6/5), int(WINDOWHEIGHT/4) - int(musicSurf.get_height()/2)))
     surf.blit(spellSurf, (int(spellSurf.get_width()*1/5), int(WINDOWHEIGHT*3/4) + int(spellSurf.get_height()/2)))
     surf.blit(monstSurf, (WINDOWWIDTH - int(monstSurf.get_width()*6/5), int(WINDOWHEIGHT*3/4) + int(monstSurf.get_height()/2)))
-    return(surf,npcSurf,npcRect,musicSurf,musicRect,spellSurf,spellRect,monstSurf,monstRect)
+    return(surf,npcSurf,npcRect,musicSurf,musicRect,spellSurf,spellRect,monstSurf,monstRect,toolSurf)
 
 #This is to create a back button, to go back a single screen
-def createBack(surf):
+def createBack(surf,WINDOWWIDTH,WINDOWHEIGHT):
     pg.init()
     backButton = pg.image.load('images/circle_button.PNG')
     backButton = pg.transform.scale(backButton, (int(backButton.get_width()/2),int(backButton.get_height()/2)))

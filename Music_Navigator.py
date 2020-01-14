@@ -35,4 +35,4 @@ def createMusic(surf):
     surf.blit(tavrnSurf, (int(tavrnSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(tavrnSurf.get_height()/2)))
     surf.blit(bttleSurf, (WINDOWWIDTH - int(bttleSurf.get_width()*6/5), int(WINDOWHEIGHT/4) - int(bttleSurf.get_height()/2)))
     surf.blit(rgionSurf, (int(rgionSurf.get_width()*1/5), int(WINDOWHEIGHT*3/4) + int(rgionSurf.get_height()/2)))
-    return(surf,tavrnSurf, tavrnRect, bttleSurf, bttleRect, rgionSurf, rgionRect)
+    return(surf,tavrnSurf, tavrnRect, bttleSurf, bttleRect, rgionSurf, rgionRect, toolSurf)
