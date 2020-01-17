@@ -28,7 +28,7 @@ def race(surf,races):
 
 def gender(surf,WINDOWWIDTH,WINDOWHEIGHT,rects,pos,genders):
     pg.init()
-    races = ['DRAGONBORN','DWARF','ELF','GNOME','GOBLIN','HALF-ELF','HALFLING','HALF-ORC','HUMAN','ORC']
+    races = ['DRAGONBORN','DWARF','ELF','GNOME','GOBLIN','HALF-ELF','HALF-ORC','HALFLING','HUMAN','ORC']
     raceSel = 'None'
     for i in range(len(rects)):
         if rects[i].collidepoint(pos):
