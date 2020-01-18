@@ -19,7 +19,20 @@ def statRoller():
     stats = np.sort(stats, axis = 0)
     return(stats)
 
-def statAssignment(vocation,race,stats):
+def statAssignment(vocation,race,stats,**kwargs):
+    #initializing kwarg
+    focus = None
+    choice1 = None
+    choice2 = None
+    for key, value in kwargs.items():
+        if key == 'focus' or key == 'FOCUS' or key == 'Focus':
+            focus = value
+        if key == 'choices':
+            # These are for the Half-Elf getting to pick two traits
+            # to add one to.
+            choice1 = value[0]
+            choice2 = value[1]
+    print(choice1,choice2)
     if vocation == 'BARBARIAN':
         const = stats[-1]
         stren = stats[-2]
@@ -37,21 +50,21 @@ def statAssignment(vocation,race,stats):
         intel = stats[-6]
 
     if vocation == 'CLERIC':
-        #if focus == 'MELEE':
-        const = stats[-3]
-        stren = stats[-2]
-        dex = stats[-5]
-        char = stats[-4]
-        wis = stats[-1]
-        intel = stats[-6]
+        if focus == 'MELEE' or focus == None:
+            const = stats[-3]
+            stren = stats[-2]
+            dex = stats[-5]
+            char = stats[-4]
+            wis = stats[-1]
+            intel = stats[-6]
         # A cleric can be close or ranged, stats need to reflect choice.
-##        if focus == 'RANGED':
-##        const = stats[-3]
-##        stren = stats[-5]
-##        dex = stats[-2]
-##        char = stats[-4]
-##        wis = stats[-1]
-##        intel = stats[-6]            
+        if focus == 'RANGED':
+            const = stats[-3]
+            stren = stats[-5]
+            dex = stats[-2]
+            char = stats[-4]
+            wis = stats[-1]
+            intel = stats[-6]            
         
 
     if vocation == 'DRUID':
@@ -63,37 +76,37 @@ def statAssignment(vocation,race,stats):
         intel = stats[-5]
 
     if vocation == 'FIGHTER':
-        #if focus == 'MELEE':
-        const = stats[-2]
-        stren = stats[-1]
-        dex = stats[-3]
-        char = stats[-4]
-        wis = stats[-5]
-        intel = stats[-6]
+        if focus == 'MELEE' or focus == None:
+            const = stats[-2]
+            stren = stats[-1]
+            dex = stats[-3]
+            char = stats[-4]
+            wis = stats[-5]
+            intel = stats[-6]
         # A fighter can be close or ranged, stats need to reflect choice.
-##        if focus == 'RANGED':
-##        const = stats[-2]
-##        stren = stats[-3]
-##        dex = stats[-1]
-##        char = stats[-4]
-##        wis = stats[-5]
-##        intel = stats[-6]  
-        # A fighter can be close or ranged, stats need to reflect choice.
-##        if focus == 'MELEE ELDRITCH':
-##        const = stats[-3]
-##        stren = stats[-1]
-##        dex = stats[-5]
-##        char = stats[-4]
-##        wis = stats[-6]
-##        intel = stats[-2]  
-        # A fighter can be close or ranged, stats need to reflect choice.
-##        if focus == 'RANGED ELDRITCH':
-##        const = stats[-3]
-##        stren = stats[-5]
-##        dex = stats[-1]
-##        char = stats[-4]
-##        wis = stats[-6]
-##        intel = stats[-2]
+        if focus == 'RANGED':
+            const = stats[-2]
+            stren = stats[-3]
+            dex = stats[-1]
+            char = stats[-4]
+            wis = stats[-5]
+            intel = stats[-6]  
+        # An Eldritch Knight can be close or ranged, stats need to reflect choice.
+        if focus == 'MELEE ELDRITCH' or focus == 'ELDRITCH':
+            const = stats[-3]
+            stren = stats[-1]
+            dex = stats[-5]
+            char = stats[-4]
+            wis = stats[-6]
+            intel = stats[-2]  
+        # A Eldritch Knight can be close or ranged, stats need to reflect choice.
+        if focus == 'RANGED ELDRITCH':
+            const = stats[-3]
+            stren = stats[-5]
+            dex = stats[-1]
+            char = stats[-4]
+            wis = stats[-6]
+            intel = stats[-2]
     if vocation == 'MONK':
         const = stats[-3]
         stren = stats[-6]
@@ -119,27 +132,27 @@ def statAssignment(vocation,race,stats):
         intel = stats[-5]
 
     if vocation == 'ROGUE':
-        #if focus == 'THIEF'
-        const = stats[-4]
-        stren = stats[-3]
-        dex = stats[-1]
-        char = stats[-2]
-        wis = stats[-5]
-        intel = stats[-6]
-##        #if focus == 'ASSASSIN'
-##        const = stats[-4]
-##        stren = stats[-5]
-##        dex = stats[-1]
-##        char = stats[-2]
-##        wis = stats[-3]
-##        intel = stats[-6]
-##        #if focus == 'ARCANE TRICKSTER'
-##        const = stats[-3]
-##        stren = stats[-6]
-##        dex = stats[-1]
-##        char = stats[-4]
-##        wis = stats[-5]
-##        intel = stats[-2]
+        if focus == 'THIEF' or focus == None:
+            const = stats[-4]
+            stren = stats[-3]
+            dex = stats[-1]
+            char = stats[-2]
+            wis = stats[-5]
+            intel = stats[-6]
+        if focus == 'ASSASSIN':
+            const = stats[-4]
+            stren = stats[-5]
+            dex = stats[-1]
+            char = stats[-2]
+            wis = stats[-3]
+            intel = stats[-6]
+        if focus == 'ARCANE TRICKSTER':
+            const = stats[-3]
+            stren = stats[-6]
+            dex = stats[-1]
+            char = stats[-4]
+            wis = stats[-5]
+            intel = stats[-2]
 
     if vocation == 'SORCERER':
         const = stats[-3]
@@ -161,14 +174,14 @@ def statAssignment(vocation,race,stats):
         # Only stats that matter are Int being highest and Str being lowest.
         # Unless player cares, randomize
         rand = [2,3,4,5]
-        cRand = rand[np.randomint(len(rand))]
-        rand = rand[rand != cRand]
-        dRand = rand[np.randomint(len(rand))]
-        rand = rand[rand != dRand]
-        chRand = rand[np.randomint(len(rand))]
-        rand = rand[rand != chRand]
-        wRand = rand[np.randomint(len(rand))]
-        rand = rand[rand != wRand]
+        cRand = rand[np.random.randint(len(rand))]
+        rand.remove(cRand)
+        dRand = rand[np.random.randint(len(rand))]
+        rand.remove(dRand)
+        chRand = rand[np.random.randint(len(rand))]
+        rand.remove(chRand)
+        wRand = rand[np.random.randint(len(rand))]
+        rand.remove(wRand)
         const = stats[-cRand]
         dex = stats[-dRand]
         char = stats[-chRand]
@@ -193,7 +206,23 @@ def statAssignment(vocation,race,stats):
     
     if race == 'HALF-ELF':
         char = char + 2
-    
+        if choice1 == 'CONSTITUTION' or choice2 == 'CONSTITUTION' or choice1 == None:
+            const = const+1
+        if choice1 == 'STRENGTH' or choice2 == 'STRENGTH':
+            stren = stren+1    
+        if choice1 == 'DEXTERITY' or choice2 == 'DEXTERITY':
+            dex = dex+1
+        if choice1 == 'CHARISMA' or choice2 == 'CHARISMA' or choice2 == None:
+            char = char+1
+        if choice1 == 'WISDOM' or choice2 == 'WISDOM':
+            wis = wis+1
+        if choice1 == 'INTELLIGENCE' or choice2 == 'INTELLIGENCE':
+            intel = intel+1
+
+
+
+
+
     if race == 'HALFLING':
         dex = dex + 2
     
