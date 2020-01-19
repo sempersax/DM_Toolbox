@@ -12,9 +12,9 @@ from pygame.locals import *
 def createTools(surf,WINDOWWIDTH,WINDOWHEIGHT,buttons):
     pg.init()
 
-# NPC Button
-    npcSurf = buttons[2]
-    npcRect = npcSurf.get_rect(topleft = (int(npcSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(npcSurf.get_height()/2)))
+# Character Button
+    charSurf = buttons[2]
+    charRect = charSurf.get_rect(topleft = (int(charSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(charSurf.get_height()/2)))
 # Music Button
     musicSurf = buttons[1]
     musicRect = musicSurf.get_rect(topleft = (WINDOWWIDTH - int(musicSurf.get_width()*6/5), int(WINDOWHEIGHT/4) - int(musicSurf.get_height()/2)))
@@ -29,11 +29,11 @@ def createTools(surf,WINDOWWIDTH,WINDOWHEIGHT,buttons):
     toolSurf = pg.transform.scale(toolSurf, (WINDOWWIDTH,WINDOWHEIGHT))
     surf.fill((0,0,0))
     surf.blit(toolSurf,(0,0))
-    surf.blit(npcSurf, (int(npcSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(npcSurf.get_height()/2)))
+    surf.blit(charSurf, (int(charSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(charSurf.get_height()/2)))
     surf.blit(musicSurf, (WINDOWWIDTH - int(musicSurf.get_width()*6/5), int(WINDOWHEIGHT/4) - int(musicSurf.get_height()/2)))
     surf.blit(spellSurf, (int(spellSurf.get_width()*1/5), int(WINDOWHEIGHT*3/4) + int(spellSurf.get_height()/2)))
     surf.blit(monstSurf, (WINDOWWIDTH - int(monstSurf.get_width()*6/5), int(WINDOWHEIGHT*3/4) + int(monstSurf.get_height()/2)))
-    return(surf,npcSurf,npcRect,musicSurf,musicRect,spellSurf,spellRect,monstSurf,monstRect,toolSurf)
+    return(surf,charSurf,charRect,musicSurf,musicRect,spellSurf,spellRect,monstSurf,monstRect,toolSurf)
 
 #This is to create a back button, to go back a single screen
 def createBack(surf,WINDOWWIDTH,WINDOWHEIGHT):

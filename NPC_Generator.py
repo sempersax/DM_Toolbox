@@ -3,16 +3,11 @@ import os
 import pygame as pg
 import time
 import NPC_Roster as roster
-import NPC_Navigator as npcNav
+#import NPC_Navigator as npcNav
 def race(surf,races):
     pg.init()
     start = time.time()
     raceRects = []
-##    start1 = time.time()
-##    for i in range(len(files)): #this loads all of the race images at once.
-##        races.append(pg.image.load('images/races/'+files[i]))
-##        races[i] = pg.transform.scale(races[i], (int(races[i].get_width()/8),int(races[i].get_height()/8)))
-##    print('image load time = ',time.time()-start1)
     surf.fill((0,0,0))
     surf.blit(pg.image.load('images/navigation_screen.png'),(0,0))
     start2=time.time()
