@@ -3,6 +3,79 @@
 # now there is a need for stats.
 import numpy as np
 import time
+import pygame as pg
+import json
+import char_sheet_fill as cf
+
+def name():
+    pg.init()
+    screen = pg.display.set_mode((480, 360))
+    pcName = "Name?"
+    font = pg.font.Font(None, 50)
+    change = False
+    while True:
+        for event in pg.event.get():
+            if event.type == pg.KEYDOWN and change == True:
+                if event.unicode.isalpha():
+                    pcName += event.unicode
+                elif event.key == pg.K_BACKSPACE:
+                    pcName = pcName[:-1]
+                elif event.key == pg.K_RETURN:
+                    pg.display.quit()
+                    return(pcName)
+
+            if event.type == pg.KEYDOWN and change == False:
+                if event.unicode.isalpha():
+                    pcName = ""
+                    pcName += event.unicode
+                    change = True
+                elif event.key == pg.K_BACKSPACE:
+                    pcName = ""
+
+
+        screen.fill((0, 0, 0))
+        block = font.render(pcName, True, (255, 255, 255))
+        rect = block.get_rect()
+        rect.center = screen.get_rect().center
+        screen.blit(block, rect)
+        pg.display.flip()
+
+def level_prompt():
+    pg.init()
+    screen = pg.display.set_mode((480, 360))
+    level = "Level?"
+    font = pg.font.Font(None, 50)
+    change = False
+    while True:
+        for event in pg.event.get():
+            if event.type == pg.KEYDOWN and change == True:
+                if event.unicode.isnumeric():
+                    level += event.unicode
+                elif event.key == pg.K_BACKSPACE:
+                    level = level[:-1]
+                elif event.key == pg.K_RETURN:
+                    if int(level) > 20:
+                        level = "Nice try"
+                        change = False
+                    else:
+                        pg.display.quit()
+                        return(int(level))
+
+            if event.type == pg.KEYDOWN and change == False:
+                if event.unicode.isnumeric():
+                    level = ""
+                    level += event.unicode
+                    change = True
+                elif event.key == pg.K_BACKSPACE:
+                    level = ""
+
+
+        screen.fill((0, 0, 0))
+        block = font.render(level, True, (255, 255, 255))
+        rect = block.get_rect()
+        rect.center = screen.get_rect().center
+        screen.blit(block, rect)
+        pg.display.flip()
 
 def statRoller():
    # Create 6 spots for stats
@@ -17,10 +90,20 @@ def statRoller():
     stats = np.sum(stats, axis = 1)
     # Sort from low to high
     stats = np.sort(stats, axis = 0)
+    for i in range(0,len(stats)):
+        stats[i] = int(stats[i])
     return(stats)
 
 def statAssignment(vocation,race,stats,**kwargs):
     #initializing kwarg
+    mypath="../Dungeon_Master_Tools/characters/"
+    pcName = None
+    pcName = name()
+
+    level = None
+    level = level_prompt()
+
+    
     focus = None
     choice1 = None
     choice2 = None
@@ -33,7 +116,7 @@ def statAssignment(vocation,race,stats,**kwargs):
             choice1 = value[0]
             choice2 = value[1]
     print(choice1,choice2)
-    if vocation == 'BARBARIAN':
+    if vocation == 'Barbarian':
         const = stats[-1]
         stren = stats[-2]
         dex = stats[-3]
@@ -41,7 +124,7 @@ def statAssignment(vocation,race,stats,**kwargs):
         wis = stats[-5]
         intel = stats[-6]
 
-    if vocation == 'BARD':
+    if vocation == 'Bard':
         const = stats[-3]
         stren = stats[-5]
         dex = stats[-2]
@@ -49,7 +132,7 @@ def statAssignment(vocation,race,stats,**kwargs):
         wis = stats[-4]
         intel = stats[-6]
 
-    if vocation == 'CLERIC':
+    if vocation == 'Cleric':
         if focus == 'MELEE' or focus == None:
             const = stats[-3]
             stren = stats[-2]
@@ -67,7 +150,7 @@ def statAssignment(vocation,race,stats,**kwargs):
             intel = stats[-6]            
         
 
-    if vocation == 'DRUID':
+    if vocation == 'Druid':
         const = stats[-3]
         stren = stats[-6]
         dex = stats[-2]
@@ -75,7 +158,7 @@ def statAssignment(vocation,race,stats,**kwargs):
         wis = stats[-1]
         intel = stats[-5]
 
-    if vocation == 'FIGHTER':
+    if vocation == 'Fighter':
         if focus == 'MELEE' or focus == None:
             const = stats[-2]
             stren = stats[-1]
@@ -107,7 +190,7 @@ def statAssignment(vocation,race,stats,**kwargs):
             char = stats[-4]
             wis = stats[-6]
             intel = stats[-2]
-    if vocation == 'MONK':
+    if vocation == 'Monk':
         const = stats[-3]
         stren = stats[-6]
         dex = stats[-1]
@@ -115,7 +198,7 @@ def statAssignment(vocation,race,stats,**kwargs):
         wis = stats[-2]
         intel = stats[-5]
 
-    if vocation == 'PALADIN':
+    if vocation == 'Paladin':
         const = stats[-2]
         stren = stats[-1]
         dex = stats[-4]
@@ -123,7 +206,7 @@ def statAssignment(vocation,race,stats,**kwargs):
         wis = stats[-5]
         intel = stats[-6]
 
-    if vocation == 'RANGER':
+    if vocation == 'Ranger':
         const = stats[-3]
         stren = stats[-6]
         dex = stats[-1]
@@ -131,7 +214,7 @@ def statAssignment(vocation,race,stats,**kwargs):
         wis = stats[-2]
         intel = stats[-5]
 
-    if vocation == 'ROGUE':
+    if vocation == 'Rogue':
         if focus == 'THIEF' or focus == None:
             const = stats[-4]
             stren = stats[-3]
@@ -154,7 +237,7 @@ def statAssignment(vocation,race,stats,**kwargs):
             wis = stats[-5]
             intel = stats[-2]
 
-    if vocation == 'SORCERER':
+    if vocation == 'Sorcerer':
         const = stats[-3]
         stren = stats[-6]
         dex = stats[-2]
@@ -162,7 +245,7 @@ def statAssignment(vocation,race,stats,**kwargs):
         wis = stats[-4]
         intel = stats[-5]
 
-    if vocation == 'WARLOCK':
+    if vocation == 'Warlock':
         const = stats[-2]
         stren = stats[-5]
         dex = stats[-3]
@@ -170,7 +253,7 @@ def statAssignment(vocation,race,stats,**kwargs):
         wis = stats[-4]
         intel = stats[-6]
 
-    if vocation == 'WIZARD':
+    if vocation == 'Wizard':
         # Only stats that matter are Int being highest and Str being lowest.
         # Unless player cares, randomize
         rand = [2,3,4,5]
@@ -191,20 +274,20 @@ def statAssignment(vocation,race,stats,**kwargs):
 
     # Ability Modifiers for a given race.  Half-Elf needs worked out.  Subraces
     # need to be implemented as a kwarg.
-    if race == 'DRAGONBORN':
+    if race == 'Dragonborn':
         stren = stren + 2
         char = char + 1
     
-    if race == 'DWARF':
+    if race == 'Dwarf':
         const = const + 2
     
-    if race == 'ELF':
+    if race == 'Elf':
         dex = dex + 2
     
-    if race == 'GNOME':
+    if race == 'Gnome':
         intel = intel + 2
     
-    if race == 'HALF-ELF':
+    if race == 'Half-Elf':
         char = char + 2
         if choice1 == 'CONSTITUTION' or choice2 == 'CONSTITUTION' or choice1 == None:
             const = const+1
@@ -223,14 +306,14 @@ def statAssignment(vocation,race,stats,**kwargs):
 
 
 
-    if race == 'HALFLING':
+    if race == 'Halfling':
         dex = dex + 2
     
-    if race == 'HALF-ORC':
+    if race == 'Half-Orc':
         const = const + 1
         stren = stren + 2
     
-    if race == 'HUMAN':
+    if race == 'Human':
         const = const + 1
         stren = stren + 1
         dex = dex + 1
@@ -238,12 +321,29 @@ def statAssignment(vocation,race,stats,**kwargs):
         wis = wis + 1
         intel = intel + 1
     
-    if race == 'TIEFLING':
+    if race == 'Tiefling':
         char = char + 2
         intel = intel + 1
     
         
 
-    print('Race: ',race,'\nClass: ',vocation,'\nStrength: ',stren, '\nDexterity: ',dex,'\nConstitution: ',const,
+    print('Name:',pcName, '\nRace: ',race,'\nClass: ',vocation,'\nStrength: ',stren, '\nDexterity: ',dex,'\nConstitution: ',const,
           '\nIntelligence: ',intel, '\nWisdom: ',wis, '\nCharisma: ',char)
+    with open(mypath+"blank_character_dict.json") as json_file:
+        data = json.load(json_file)
+    data['STR']=int(stren)
+    data['DEX']=int(dex)
+    data['CON']=int(const)
+    data['INT']=int(intel)
+    data['WIS']=int(wis)
+    data['CHA']=int(char)
+    data['characterName1']=pcName
+    data['characterName2']=pcName
+    data['class1'] = vocation
+    data['level1'] = level
+
+    with open("{}\{}.json".format(mypath,pcName),"w") as json_file:
+        json_file.write(json.dumps(data, indent=4))
+
+    cf.write_fillable_pdf('DnD_5e_Blank.pdf',pcName)
     return
