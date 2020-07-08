@@ -9,18 +9,22 @@ import numpy as np
 import pygame.surfarray as surfarray
 from pygame.locals import *
 import time
+import json
 
 WINDOWHEIGHT = 629
 WINDOWWIDTH = 1000
 
 def createMonster(surf):
     pg.init()
+
     start = time.time()
-    mypath="../Dungeon_Master_Tools/MonsterScrape/MonsterJsons/"
-    onlyfiles = [f for f in os.listdir(mypath) if os.path.isfile(os.path.join(mypath, f))]
-    for i in range(0,len(onlyfiles)):
-        onlyfiles[i] = onlyfiles[i].replace('_', ' ').replace('.json','')
-    print('cause ',time.time()-start,' second delay')
+    rosterPath = "{}/MonsterScrape/monsterRoster.txt".format(os.getcwd())
+
+    alphaCR = []
+    with open(rosterPath, 'r') as roster:
+        for line in roster:
+            currentPlace = line[:-1]
+            alphaCR.append(currentPlace)
 
 # Tavern Button
     searchSurf = pg.image.load('images/music_Button.png')
