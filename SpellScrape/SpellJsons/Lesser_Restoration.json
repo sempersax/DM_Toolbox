@@ -1,0 +1,22 @@
+{
+    "spellName": "Lesser Restoration",
+    "spellSchool": "abjuration",
+    "spellClasses": [
+        "Artificer",
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Paladin",
+        "Ranger"
+    ],
+    "spellLevel": 2,
+    "castingTime": "1 action",
+    "spellDuration": "Instantaneous",
+    "spellRange": "Touch",
+    "spellEffect": "You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.",
+    "verbalBool": "True",
+    "somaticBool": "True",
+    "materialBool": "False",
+    "materials": "N/A",
+    "spellSave": "--"
+}

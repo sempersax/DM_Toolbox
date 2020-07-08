@@ -1,0 +1,20 @@
+{
+    "spellName": "Eyebite",
+    "spellSchool": "necromancy",
+    "spellClasses": [
+        "Bard",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+    ],
+    "spellLevel": 6,
+    "castingTime": "1 action",
+    "spellDuration": "Concentration, up to 1 minute",
+    "spellRange": "Self",
+    "spellEffect": "For the spell\u2019s duration, your eyes become an inky void imbued with dread power. One creature of your choice within 60 feet of you that you can see must succeed on a Wisdom saving throw or be affected by one of the following effects of your choice for the duration. On each of your turns until the spell ends, you can use your action to target another creature but can\u2019t target a creature again if it has succeeded on a saving throw against this casting of eyebite.",
+    "verbalBool": "True",
+    "somaticBool": "True",
+    "materialBool": "False",
+    "materials": "N/A",
+    "spellSave": "WIS"
+}

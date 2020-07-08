@@ -1,0 +1,18 @@
+{
+    "spellName": "Abi-Dalzim's Horrid Wilting",
+    "spellSchool": "necromancy",
+    "spellClasses": [
+        "Sorcerer",
+        "Wizard"
+    ],
+    "spellLevel": 8,
+    "castingTime": "1 action",
+    "spellDuration": "Instantaneous",
+    "spellRange": "150 feet",
+    "spellEffect": "You draw the moisture from every creature in a 30-foot cube centered on a point you choose within range. Each creature in that area must make a Constitution saving throw. Constructs and undead aren\u2019t affected, and plants and water elementals make this saving throw with disadvantage. A creature takes 10d8 necrotic damage on a failed save, or half as much damage on a successful one.",
+    "verbalBool": "True",
+    "somaticBool": "True",
+    "materialBool": "True",
+    "materials": "(a bit of sponge)",
+    "spellSave": "CON"
+}

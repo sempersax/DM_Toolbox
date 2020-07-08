@@ -1,0 +1,20 @@
+{
+    "spellName": "See Invisibility",
+    "spellSchool": "divination",
+    "spellClasses": [
+        "Artificer",
+        "Bard",
+        "Sorcerer",
+        "Wizard"
+    ],
+    "spellLevel": 2,
+    "castingTime": "1 action",
+    "spellDuration": "1 hour",
+    "spellRange": "Self",
+    "spellEffect": "For the duration, you see invisible creatures and objects as if they were visible, and you can see into the Ethereal Plane. Ethereal creatures and objects appear ghostly and translucent.",
+    "verbalBool": "True",
+    "somaticBool": "True",
+    "materialBool": "True",
+    "materials": "(a pinch of talc and a small sprinkling of powdered silver)",
+    "spellSave": "--"
+}

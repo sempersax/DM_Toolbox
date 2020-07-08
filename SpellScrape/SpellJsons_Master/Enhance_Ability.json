@@ -1,0 +1,21 @@
+{
+    "spellName": "Enhance Ability",
+    "spellSchool": "transmutation",
+    "spellClasses": [
+        "Artificer",
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Sorcerer"
+    ],
+    "spellLevel": 2,
+    "castingTime": "1 action",
+    "spellDuration": "Concentration, up to 1 hour",
+    "spellRange": "Touch",
+    "spellEffect": "You touch a creature and bestow upon it a magical enhancement. Choose one of the following effects; the target gains the effect until the spell ends.  The target has advantage on Constitution checks. It also gains 2d6 temporary hit points, which are lost when the spell ends.  The target has advantage on Strength checks, and their carrying capacity doubles.  The target has advantage on Dexterity checks. It also doesn\u2019t take damage from falling 20 feet or less if it isn\u2019t incapacitated.  The target has advantage on Charisma checks.  The target has advantage on Intelligence checks.  The target has advantage on Wisdom checks.  When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.",
+    "verbalBool": "True",
+    "somaticBool": "True",
+    "materialBool": "True",
+    "materials": "(fur or a feather from a beast)",
+    "spellSave": "--"
+}

@@ -1,0 +1,22 @@
+{
+    "spellName": "Locate Creature",
+    "spellSchool": "divination",
+    "spellClasses": [
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Paladin",
+        "Ranger",
+        "Wizard"
+    ],
+    "spellLevel": 4,
+    "castingTime": "1 action",
+    "spellDuration": "Concentration, up to 1 hour",
+    "spellRange": "Self",
+    "spellEffect": "Describe or name a creature that is familiar to you. You sense the direction to the creature\u2019s location, as long as that creature is within 1,000 feet of you. If the creature is moving, you know the direction of its movement. The spell can locate a specific creature known to you, or the nearest creature of a specific kind (such as a human or a unicorn), so long as you have seen such a creature up close \u2013 within 30 feet \u2013 at least once. If the creature you described or named is in a different form, such as being unfer the effects of a polymorph spell, this spell doesn\u2019t locate the creature. This spell can\u2019t locate a creature if running water at least 10 feet wide blocks a direct path between you and the creature.",
+    "verbalBool": "True",
+    "somaticBool": "True",
+    "materialBool": "True",
+    "materials": "(a bit of fur from a bloodhound)",
+    "spellSave": "--"
+}

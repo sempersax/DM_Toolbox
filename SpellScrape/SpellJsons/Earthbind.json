@@ -1,0 +1,20 @@
+{
+    "spellName": "Earthbind",
+    "spellSchool": "transmutation",
+    "spellClasses": [
+        "Druid",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+    ],
+    "spellLevel": 2,
+    "castingTime": "1 action",
+    "spellDuration": "Concentration, up to 1 minute",
+    "spellRange": "300 feet",
+    "spellEffect": "Choose one creature you can see within range. Yellow strips of magical energy loop around the creature. The target must succeed on a Strength saving throw or its flying speed (if any) is reduced to 0 feet for the spell\u2019s duration. An airborne creature affected by this spell descends at 60 feet per round until it reaches the ground or the spell ends.",
+    "verbalBool": "True",
+    "somaticBool": "False",
+    "materialBool": "False",
+    "materials": "N/A",
+    "spellSave": "STR"
+}

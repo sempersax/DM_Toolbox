@@ -1,0 +1,21 @@
+{
+    "spellName": "Protection from Poison",
+    "spellSchool": "abjuration",
+    "spellClasses": [
+        "Artificer",
+        "Cleric",
+        "Druid",
+        "Paladin",
+        "Ranger"
+    ],
+    "spellLevel": 2,
+    "castingTime": "1 action",
+    "spellDuration": "1 hour",
+    "spellRange": "Touch",
+    "spellEffect": "You touch a creature. If it is poisoned, you neutralize the poison. If more than one poison afflicts the target, you neutralize one poison that you know is present, or you neutralize one at random. For the duration, the target has advantage on saving throws against being poisoned, and it has resistance to poison damage.",
+    "verbalBool": "True",
+    "somaticBool": "True",
+    "materialBool": "False",
+    "materials": "N/A",
+    "spellSave": "--"
+}

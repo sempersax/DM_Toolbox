@@ -1,0 +1,19 @@
+{
+    "spellName": "Revivify",
+    "spellSchool": "necromancy",
+    "spellClasses": [
+        "Artificer",
+        "Cleric",
+        "Paladin"
+    ],
+    "spellLevel": 3,
+    "castingTime": "1 action",
+    "spellDuration": "Instantaneous",
+    "spellRange": "Touch",
+    "spellEffect": "You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell can\u2019t return to life a creature that has died of old age, nor can it restore any missing body parts.",
+    "verbalBool": "True",
+    "somaticBool": "True",
+    "materialBool": "True",
+    "materials": "(diamonds worth 300 gp which the spell consumes)",
+    "spellSave": "--"
+}

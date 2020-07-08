@@ -1,0 +1,18 @@
+{
+    "spellName": "Healing Elixir",
+    "spellSchool": "conjuration",
+    "spellClasses": [
+        "Warlock",
+        "Wizard"
+    ],
+    "spellLevel": 1,
+    "castingTime": "1 minute",
+    "spellDuration": "24 hours",
+    "spellRange": "Self",
+    "spellEffect": "You create a healing elixir in a simple vial that appears in your hand. The elixir retains its potency for the duration or until it\u2019s consumed, at which point the vial vanishes. As an action, a creature can drink the elixir or administer it to another creature. The drinker regains 2d4 + 2 hit points.",
+    "verbalBool": "True",
+    "somaticBool": "True",
+    "materialBool": "True",
+    "materials": "(alchemist\u2019s supplies)",
+    "spellSave": "--"
+}
