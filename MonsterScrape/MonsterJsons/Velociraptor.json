@@ -1,0 +1,31 @@
+{
+    "monsterName": "Velociraptor",
+    "monsterType": "Tiny beast, unaligned",
+    "monsterArmor": "Armor Class 13 (natural armor)",
+    "monsterHP": "Hit Points 10 (3d4+3)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "6 (-2)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "13 (+1)",
+    "monsterINT": "4 (-3)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "6 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +3",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/4 (50 XP)",
+    "monsterSpecials": [
+        "Pack Tactics. The velociraptor has advantage on an attack roll against a creature if at least one of the velociraptor's allies is within 5 feet of the creature and the ally isn't incapacitated."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The velociraptor makes two attacks: one with its bite and one with its claws.",
+        "Bite. Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6+2) piercing damage.",
+        "Claws. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4+2) slashing damage."
+    ]
+}

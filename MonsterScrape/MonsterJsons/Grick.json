@@ -1,0 +1,31 @@
+{
+    "monsterName": "Grick",
+    "monsterType": "Medium monstrosity, neutral",
+    "monsterArmor": "Armor Class 14 (natural armor)",
+    "monsterHP": "Hit Points 27 (6d8)",
+    "monsterSpeed": "Speed 30 ft., climb 30 ft.",
+    "monsterSTR": "14 (+2)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "11 (0)",
+    "monsterINT": "3 (-4)",
+    "monsterWIS": "14 (+2)",
+    "monsterCHA": "5 (-3)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances bludgeoning, piercing, and slashing damage from nonmagical weapons",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  2 (450 XP)",
+    "monsterSpecials": [
+        "Stone Camouflage. The grick has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The grick makes one attack with its tentacles. If that attack hits, the grick can make one beak attack against the same target.",
+        "Tentacles. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage.",
+        "Beak. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+    ]
+}

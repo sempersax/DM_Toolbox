@@ -1,0 +1,30 @@
+{
+    "monsterName": "Naxene Drathkala",
+    "monsterType": "Medium humanoid (turami human), neutral good",
+    "monsterArmor": "Armor Class 10 (13 with mage armor)",
+    "monsterHP": "Hit Points 27 (6d8)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "8 (-1)",
+    "monsterDEX": "11 (0)",
+    "monsterCON": "11 (0)",
+    "monsterINT": "17 (+3)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "11 (0)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Arcana +5, History +5",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Common, Draconic, Dwarvish, Elvish",
+    "monsterChallenge": "Challenge  0 (10 XP)",
+    "monsterSpecials": [
+        "Spellcasting. Naxene is a 6th level spellcaster. Her spellcasting ability is Intelligence (spell save DC 13; +5 to hit with spell attacks). She has the following wizard spells prepared:\n\nCantrips (at will): fire bolt, light, mage hand, prestidigitation\n\n1st level (4 slots): mage armor, magic missile, shield\n\n2nd level (3 slots): misty step, suggestion\n\n3rd level (3 slots): fly, lightning bolt\n\n",
+        "Roleplaying Information. Goldenfields' crops are vital Waterdeep's survival, which is why the Watchful Order of Magists and Protectors sent Naxene to make sure the temple-farm is adeuately defended. At first she regarded the task as a punishment, but now she appreciates the peace and quiet."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Staff. Melee Weapon Attack: +1 to hit, reach 5 ft., one creature. Hit: 2 (1d6-1) bludgeoning damage, or 3 (1d8-1) bludgeoning damage if used with two hands."
+    ]
+}

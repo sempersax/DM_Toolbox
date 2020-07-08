@@ -1,0 +1,35 @@
+{
+    "monsterName": "White Maw",
+    "monsterType": "Gargantuan ooze, chaotic neutral",
+    "monsterArmor": "Armor Class 5",
+    "monsterHP": "Hit Points 217 (14d20+70)",
+    "monsterSpeed": "Speed 10 ft.",
+    "monsterSTR": "18 (+4)",
+    "monsterDEX": "1 (-5)",
+    "monsterCON": "20 (+5)",
+    "monsterINT": "12 (+1)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "3 (-4)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances acid, cold, fire",
+    "monsterImmunities": "Damage Immunities poison",
+    "monsterCImmunities": "Condition Immunities blinded, charmed, deafened, exhaustion, frightened, poisoned, prone",
+    "monsterSenses": "Senses blindsight 60 ft. (blind beyond this radius)",
+    "monsterLanguages": "Languages telepathy 50 ft.",
+    "monsterChallenge": "Challenge  10 (5,900 XP)",
+    "monsterSpecials": [
+        "Source. tales from the yawning portal,  page 248",
+        "Ooze Nature. White Maw doesn't require sleep.",
+        "Amorphous Form. White Maw can occupy another creature's space and vice versa.",
+        "Corrode Metal. Any nonmagical weapon made of metal that hits White Maw corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Nonmagical ammunition made of metal that hits White Maw is destroyed after dealing damage.",
+        "White Maw can eat through 2-inch-thick, nonmagical metal in 1 round.",
+        "False Appearance. While White Maw remains motionless, it is indistinguishable from white stone.",
+        "Killer Response. Any creature that starts its turn in White Maw's space is targeted by a pseudopod attack if White Maw isn't incapacitated."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Pseudopod. Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 22 (4d8 + 4) bludgeoning damage plus 9 (2d8) acid damage. If the target is wearing nonmagical metal armor, its armor is partly corroded and takes a permanent and cumulative -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10."
+    ]
+}

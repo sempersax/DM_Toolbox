@@ -1,0 +1,32 @@
+{
+    "monsterName": "Kobold Scale Sorcerer",
+    "monsterType": "Small humanoid (kobold), lawful evil",
+    "monsterArmor": "Armor Class 15 (natural armor)",
+    "monsterHP": "Hit Points 27 (5d6+10)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "7 (-2)",
+    "monsterDEX": "15 (+2)",
+    "monsterCON": "14 (+2)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "9 (-1)",
+    "monsterCHA": "14 (+2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Arcana +2, Medicine +1",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Common, Draconic",
+    "monsterChallenge": "Challenge  1 (200 XP)",
+    "monsterSpecials": [
+        "Spellcasting. The kobold is a 3rd-level spellcaster. Its spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). It has the following sorcerer spells prepared:\n\nCantrips (at will): fire bolt, mage hand, mending, poison spray\n\n1st level (4 slots): charm person, chromatic orb, expeditious retreat\n\n2nd level (2 slots): scorching ray\n\n",
+        "Sorcery Points. Sorcery Points. The kobold has 3 sorcery points. It can spend 1 or more sorcery points as a bonus action to gain one of the following benefits:",
+        "Pack Tactics. The kobold has advantage on an attack roll against a creature it at least one of the kobold's allies is within 5 feet of the creature and the ally isn't incapacitated.",
+        "Sunlight Sensitivity. While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Dagger. Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 it, one target. Hit: 4 (1d4+2) piercing damage."
+    ]
+}

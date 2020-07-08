@@ -1,0 +1,27 @@
+{
+    "monsterName": "Axe Beak",
+    "monsterType": "Large beast, unaligned",
+    "monsterArmor": "Armor Class 11",
+    "monsterHP": "Hit Points 19 (3d10+3)",
+    "monsterSpeed": "Speed 50 ft.",
+    "monsterSTR": "14 (+2)",
+    "monsterDEX": "12 (+1)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "5 (-3)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/4 (50 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Beak. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage."
+    ]
+}

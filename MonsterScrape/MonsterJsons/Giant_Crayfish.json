@@ -1,0 +1,31 @@
+{
+    "monsterName": "Giant Crayfish",
+    "monsterType": "Large beast, unaligned",
+    "monsterArmor": "Armor Class 15 (natural armor)",
+    "monsterHP": "Hit Points 45 (7d10+7)",
+    "monsterSpeed": "Speed 30 ft., swim 30 ft.",
+    "monsterSTR": "15 (+2)",
+    "monsterDEX": "13 (+1)",
+    "monsterCON": "13 (+1)",
+    "monsterINT": "1 (-5)",
+    "monsterWIS": "9 (-1)",
+    "monsterCHA": "3 (-4)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Stealth +3",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses blindsight 30 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  2 (450 XP)",
+    "monsterSpecials": [
+        "Source. tales from the yawning portal,  page 235",
+        "Amphibious. The giant crayfish can breathe air and water."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The giant crayfish makes two claw attacks.",
+        "Claw. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) bludgeoning damage, and the target is grappled (escape DC 12). The crayfish has two claws, each of which can grapple only one target."
+    ]
+}

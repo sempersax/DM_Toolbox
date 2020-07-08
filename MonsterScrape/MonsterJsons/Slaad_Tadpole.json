@@ -1,0 +1,29 @@
+{
+    "monsterName": "Slaad Tadpole",
+    "monsterType": "Tiny aberration, chaotic neutral",
+    "monsterArmor": "Armor Class 12",
+    "monsterHP": "Hit Points 10 (4d4)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "7 (-2)",
+    "monsterDEX": "15 (+2)",
+    "monsterCON": "10 (0)",
+    "monsterINT": "3 (-4)",
+    "monsterWIS": "5 (-3)",
+    "monsterCHA": "3 (-4)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Stealth +4",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances acid, cold, fire, lightning, thunder",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages understands Slaad but can't speak",
+    "monsterChallenge": "Challenge  1/8 (25 XP)",
+    "monsterSpecials": [
+        "Magic Resistance. The slaad has advantage on saving throws against spells and other magical effects"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    ]
+}

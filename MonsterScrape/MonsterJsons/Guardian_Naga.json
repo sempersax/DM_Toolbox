@@ -1,0 +1,31 @@
+{
+    "monsterName": "Guardian Naga",
+    "monsterType": "Large monstrosity, lawful good",
+    "monsterArmor": "Armor Class 18 (natural armor)",
+    "monsterHP": "Hit Points 127 (15d10+45)",
+    "monsterSpeed": "Speed 40 ft.",
+    "monsterSTR": "19 (+4)",
+    "monsterDEX": "18 (+4)",
+    "monsterCON": "16 (+3)",
+    "monsterINT": "16 (+3)",
+    "monsterWIS": "19 (+4)",
+    "monsterCHA": "18 (+4)",
+    "monsterSavings": "Saving Throws Dex +8, Con +7, Int +7, Wis +8, Cha +8",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "Damage Immunities poison",
+    "monsterCImmunities": "Condition Immunities charmed, poisoned",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Celestial, Common",
+    "monsterChallenge": "Challenge  10 (5,900 XP)",
+    "monsterSpecials": [
+        "Rejuvenation. If it dies, the naga returns to life in 1d6 days and regains all its hit points. Only a wish spell can prevent this trait from functioning.",
+        "Spellcasting. The naga is an 11th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 16, +8 to hit with spell attacks), and it needs only verbal components to cast its spells. It has the following cleric spells prepared: \n\nCantrips (at will): mending, sacred flame, thaumaturgy\n\n1st level (4 slots): command, cure wounds, shield of faith\n\n2nd level (3 slots): calm emotions, hold person\n\n3rd level (3 slots): bestow curse, clairvoyance\n\n4th level (3 slots): banishment, freedom of movement\n\n5th level (2 slots): flame strike, geas\n\n6th level (1 slot): true seeing\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +8 to hit, reach 10 ft., one creature. Hit: 8 (1d8 + 4) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one.",
+        "Spit Poison. Ranged Weapon Attack: +8 to hit, range 15/30 ft., one creature. Hit: The target must make a DC 15 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one."
+    ]
+}

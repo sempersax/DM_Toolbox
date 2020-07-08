@@ -1,0 +1,29 @@
+{
+    "monsterName": "Kobold Inventor",
+    "monsterType": "Small humanoid (kobold), lawful evil",
+    "monsterArmor": "Armor Class 12",
+    "monsterHP": "Hit Points 13 (3d6+3)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "7 (-2)",
+    "monsterDEX": "15 (+2)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "8 (-1)",
+    "monsterWIS": "7 (-2)",
+    "monsterCHA": "8 (-1)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +0",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Common, Draconic",
+    "monsterChallenge": "Challenge  1/4 (50 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Dagger. Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4+2) piercing damage.",
+        "Sling. Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4+2) bludgeoning damage.",
+        "Weapon Invention. The kobold uses one of the following options (roll a d8 or choose one); the kobold can use each one no more than once per day:"
+    ]
+}

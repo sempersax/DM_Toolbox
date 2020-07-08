@@ -1,0 +1,30 @@
+{
+    "monsterName": "Flamewrath",
+    "monsterType": "Medium humanoid (human), chaotic evil",
+    "monsterArmor": "Armor Class 12 (15 with mage armor)",
+    "monsterHP": "Hit Points 105 (14d8+42)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "10 (0)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "16 (+3)",
+    "monsterINT": "11 (0)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "16 (+3)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Arcana +3, Religion +3",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "Damage Immunities fire",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Common, Ignan",
+    "monsterChallenge": "Challenge  6 (2,300 XP)",
+    "monsterSpecials": [
+        "Spellcasting. The flamewrath is a 7th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). It knows the following sorcerer spells: \n\nCantrips (at will): control flames, fire bolt, friends, light, minor illusion\n\n1st level (4 slots): burning hands, color spray, mage armor\n\n2nd level (3 slots): scorching ray, suggestion\n\n3rd level (3 slots): fireball, hypnotic pattern\n\n4th level (1 slot): fire shield (see Wreathed in Flame)\n\n",
+        "Wreathed in Flame. For the flamewrath, the warm version of the fire shield spell has a duration of \"until dispelled.\" The fire shield burns for 10 minutes after the flamewrath dies, consuming its body."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Dagger. Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "monsterName": "Deer",
+    "monsterType": "Medium beast, unaligned",
+    "monsterArmor": "Armor Class 13",
+    "monsterHP": "Hit Points 4 (1d8)",
+    "monsterSpeed": "Speed 50 ft.",
+    "monsterSTR": "11 (0)",
+    "monsterDEX": "16 (+3)",
+    "monsterCON": "11 (0)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "14 (+2)",
+    "monsterCHA": "5 (-3)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  0 (10 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage."
+    ]
+}

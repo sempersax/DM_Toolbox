@@ -1,0 +1,31 @@
+{
+    "monsterName": "Thug",
+    "monsterType": "Medium humanoid (any race), any non-good alignment",
+    "monsterArmor": "Armor Class 11 (leather armor)",
+    "monsterHP": "Hit Points 32 (5d8+10)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "15 (+2)",
+    "monsterDEX": "11 (0)",
+    "monsterCON": "14 (+2)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "11 (0)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Intimidation +2",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages any one language (usually Common)",
+    "monsterChallenge": "Challenge  1/2 (100 XP)",
+    "monsterSpecials": [
+        "Pack Tactics. The thug has advantage on an attack roll against a creature if at least one of the thug's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The thug makes two melee attacks.",
+        "Mace. Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) bludgeoning damage.",
+        "Heavy Crossbow. Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target. Hit: 5 (1d10) piercing damage."
+    ]
+}

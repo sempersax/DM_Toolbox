@@ -1,0 +1,37 @@
+{
+    "monsterName": "Empyrean",
+    "monsterType": "Huge celestial (titan), chaotic good (75%) or neutral evil (25%)",
+    "monsterArmor": "Armor Class 22 (natural armor)",
+    "monsterHP": "Hit Points 313 (19d12+190)",
+    "monsterSpeed": "Speed 50 ft., fly 50 ft., swim 50 ft.",
+    "monsterSTR": "30 (+10)",
+    "monsterDEX": "21 (+5)",
+    "monsterCON": "30 (+10)",
+    "monsterINT": "21 (+5)",
+    "monsterWIS": "22 (+6)",
+    "monsterCHA": "27 (+8)",
+    "monsterSavings": "Saving Throws Str +17, Int +12, Wis +13, Cha +15",
+    "monsterSkills": "Skills Insight +13, Persuasion +15",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "Damage Immunities bludgeoning, piercing, and slashing from nonmagical weapons",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses truesight 120 ft.",
+    "monsterLanguages": "Languages all",
+    "monsterChallenge": "Challenge  23 (50,000 XP)",
+    "monsterSpecials": [
+        "Innate Spellcasting. The empyrean's innate spellcasting ability is Charisma (spell save DC 23, +15 to hit with spell attacks). It can innately cast the following spells, requiring no material components: \n\nAt will: greater restoration, pass without trace, water breathing, water walk\n\n1/day each: commune, dispel evil and good, earthquake, fire storm, plane shift (self only)\n\n",
+        "Legendary Resistance (3/Day). If the empyrean fails a saving throw, it can choose to succeed instead.",
+        "Magic Resistance. The empyrean has advantage on saving throws against spells and other magical effects.",
+        "Magic Weapons. The empyrean's weapon attacks are magical."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Maul. Melee Weapon Attack: +17 to hit, reach 10 ft., one target. Hit: 31 (6d6 + 10) bludgeoning damage. If the target is a creature, it must succeed on a DC 15 Constitution saving throw or be stunned until the end of the empyrean's next turn.",
+        "Bolt. Ranged Spell Attack: +15 to hit, range 600 ft., one target. Hit: 24 (7d6) damage of one of the following types (empyrean's choice): acid, cold, fire, force, lightning, radiant, or thunder.",
+        "Legendary Actions\n\nThe empyrean can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time, and only at the end of another creature's turn. The empyrean regains spent legendary actions at the start of its turn.\n\n",
+        "Attack. The empyrean makes one attack.",
+        "Bolster. The empyrean bolsters all nonhostile creatures within 120 feet of it until the end of its next turn. Bolstered creatures can't be charmed or frightened, and they gain advantage on ability checks and saving throws until the end of the empyrean's next turn.",
+        "Trembling Strike (Costs 2 Actions). The empyrean strikes the ground with its maul, triggering an earth tremor. All other creatures on the ground within 60 feet of the empyrean must succeed on a DC 25 Strength saving throw or be knocked prone."
+    ]
+}

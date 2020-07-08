@@ -1,0 +1,30 @@
+{
+    "monsterName": "Githyanki Warrior",
+    "monsterType": "Medium humanoid (gith), lawful evil",
+    "monsterArmor": "Armor Class 17 (half plate)",
+    "monsterHP": "Hit Points 49 (9d8+9)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "15 (+2)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "13 (+1)",
+    "monsterWIS": "13 (+1)",
+    "monsterCHA": "10 (0)",
+    "monsterSavings": "Saving Throws Con +3, Int +3, Wis +3",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Gith",
+    "monsterChallenge": "Challenge  3 (700 XP)",
+    "monsterSpecials": [
+        "Innate Spellcasting (Psionics). The githyanki's innate spellcasting ability is Intelligence. It can innately cast the following spells, requiring no components: \n\nAt will: mage hand (the hand is invisible)\n\n3/day each: jump, misty step, nondetection (self only)\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The githyanki makes two greatsword attacks.",
+        "Greatsword. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage plus 7 (2d6) psychic damage."
+    ]
+}

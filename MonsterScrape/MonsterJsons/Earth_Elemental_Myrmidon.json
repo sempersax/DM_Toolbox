@@ -1,0 +1,31 @@
+{
+    "monsterName": "Earth Elemental Myrmidon",
+    "monsterType": "Medium elemental, neutral",
+    "monsterArmor": "Armor Class 18 (plate)",
+    "monsterHP": "Hit Points 127 (17d8+51)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "18 (+4)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "17 (+3)",
+    "monsterINT": "8 (-1)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "10 (0)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances bludgeoning, piercing, and slashing from nonmagical weapons",
+    "monsterImmunities": "Damage Immunities poison",
+    "monsterCImmunities": "Condition Immunities paralyzed, petrified, poisoned, prone",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Terran, one language of its creator's choice",
+    "monsterChallenge": "Challenge  7 (2,900 XP)",
+    "monsterSpecials": [
+        "Magic Weapons. The myrmidon's weapon attacks are magical."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The myrmidon makes two maul attacks.",
+        "Maul. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage.",
+        "Thunderous Strike (Recharge 6). The myrmidon makes one maul attack. If the attack hits, it deals an extra 16 (3d10) thunder damage, and the target must succeed on a DC 14 Strength saving throw or be knocked prone."
+    ]
+}

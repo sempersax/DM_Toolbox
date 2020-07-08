@@ -1,0 +1,30 @@
+{
+    "monsterName": "Giant Shark",
+    "monsterType": "Huge beast, unaligned",
+    "monsterArmor": "Armor Class 13 (natural armor)",
+    "monsterHP": "Hit Points 126 (11d12+55)",
+    "monsterSpeed": "Speed swim 50 ft.",
+    "monsterSTR": "23 (+6)",
+    "monsterDEX": "11 (0)",
+    "monsterCON": "21 (+5)",
+    "monsterINT": "1 (-5)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "5 (-3)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +3",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses blindsight 60 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  5 (1,800 XP)",
+    "monsterSpecials": [
+        "Blood Frenzy. The shark has advantage on melee attack rolls against any creature that doesn't have all its hit points.",
+        "Water Breathing. The shark can breathe only underwater."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 22 (3d10 + 6) piercing damage."
+    ]
+}

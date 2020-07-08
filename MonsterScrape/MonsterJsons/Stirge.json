@@ -1,0 +1,27 @@
+{
+    "monsterName": "Stirge",
+    "monsterType": "Tiny beast, unaligned",
+    "monsterArmor": "Armor Class 14 (natural armor)",
+    "monsterHP": "Hit Points 2 (1d4)",
+    "monsterSpeed": "Speed 10 ft., fly 40 ft.",
+    "monsterSTR": "4 (-3)",
+    "monsterDEX": "16 (+3)",
+    "monsterCON": "11 (0)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "8 (-1)",
+    "monsterCHA": "6 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/8 (25 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Blood Drain. Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4 + 3) piercing damage, and the stirge attaches to the target. While attached, the stirge doesn't attack. Instead, at the start of each of the stirge's turns, the target loses 5 (1d4 + 3) hit points due to blood loss."
+    ]
+}

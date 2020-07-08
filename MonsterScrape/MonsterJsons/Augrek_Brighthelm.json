@@ -1,0 +1,31 @@
+{
+    "monsterName": "Augrek Brighthelm",
+    "monsterType": "Medium humanoid (shield dwarf), lawful good",
+    "monsterArmor": "Armor Class 15 (chain shirt, shield)",
+    "monsterHP": "Hit Points 13 (2d8+4)",
+    "monsterSpeed": "Speed 25 ft.",
+    "monsterSTR": "14 (+2)",
+    "monsterDEX": "11 (0)",
+    "monsterCON": "15 (+2)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "11 (0)",
+    "monsterCHA": "11 (0)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Athletics +4, Perception +2",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances poison",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Common, Dwarvish",
+    "monsterChallenge": "Challenge  0 (10 XP)",
+    "monsterSpecials": [
+        "Dwarven Resilience. Augrek has advantage on saving throws against poison.",
+        "Roleplaying Information. Sheriff's Ddeputy Augrek guards the southwest gate of BRyn Shander and welcomes visitors to town. She has a good heart."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Warhammer. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8+2) bludgeoning damage, or 7 (1d10+2) bludgeoning damage if used with two hands.",
+        "Heavy Crossbow. Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target. Hit: 5 (1d10) piercing damage. Augrek carries ten crossbow bolts."
+    ]
+}

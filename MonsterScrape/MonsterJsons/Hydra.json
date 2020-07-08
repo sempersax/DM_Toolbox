@@ -1,0 +1,33 @@
+{
+    "monsterName": "Hydra",
+    "monsterType": "Huge monstrosity, unaligned",
+    "monsterArmor": "Armor Class 15 (natural armor)",
+    "monsterHP": "Hit Points 172 (15d12+75)",
+    "monsterSpeed": "Speed 30 ft., swim 30 ft.",
+    "monsterSTR": "20 (+5)",
+    "monsterDEX": "12 (+1)",
+    "monsterCON": "20 (+5)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "7 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +6",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  8 (3,900 XP)",
+    "monsterSpecials": [
+        "Hold Breath. The hydra can hold its breath for 1 hour.",
+        "Multiple Heads. The hydra has five heads. While it has more than one head, the hydra has advantage on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious.",
+        "Reactive Heads. For each head the hydra has beyond one, it gets an extra reaction that can be used only for opportunity attacks.",
+        "Wakeful. While the hydra sleeps, at least one of its heads is awake."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The hydra makes as many bite attacks as it has heads.",
+        "Bite. Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 10 (1d10 + 5) piercing damage."
+    ]
+}

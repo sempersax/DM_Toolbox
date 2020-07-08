@@ -1,0 +1,29 @@
+{
+    "monsterName": "Druid",
+    "monsterType": "Medium humanoid (any race), any alignment",
+    "monsterArmor": "Armor Class 11 (16 with barkskin)",
+    "monsterHP": "Hit Points 27 (5d8+5)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "10 (0)",
+    "monsterDEX": "12 (+1)",
+    "monsterCON": "13 (+1)",
+    "monsterINT": "12 (+1)",
+    "monsterWIS": "15 (+2)",
+    "monsterCHA": "11 (0)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Medicine +4, Nature +3, Perception +4",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Druidic plus any two languages",
+    "monsterChallenge": "Challenge  2 (450 XP)",
+    "monsterSpecials": [
+        "Spellcasting. The druid is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It has the following druid spells prepared: \n\nCantrips (at will): druidcraft, produce flame, shillelagh\n\n1st level (4 slots): entangle, longstrider, speak with animals, thunderwave\n\n2nd level (3 slots): animal messenger, barkskin\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Quarterstaff. Melee Weapon Attack: +2 to hit (+4 to hit with shillelagh), reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 6 (1d8 + 2) bludgeoning damage with shillelagh or if wielded with two hands."
+    ]
+}

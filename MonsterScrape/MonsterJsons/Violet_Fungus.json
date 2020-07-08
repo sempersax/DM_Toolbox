@@ -1,0 +1,30 @@
+{
+    "monsterName": "Violet Fungus",
+    "monsterType": "Medium plant, unaligned",
+    "monsterArmor": "Armor Class 5",
+    "monsterHP": "Hit Points 18 (4d8)",
+    "monsterSpeed": "Speed 5 ft.",
+    "monsterSTR": "3 (-4)",
+    "monsterDEX": "1 (-5)",
+    "monsterCON": "10 (0)",
+    "monsterINT": "1 (-5)",
+    "monsterWIS": "3 (-4)",
+    "monsterCHA": "1 (-5)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "Condition Immunities blinded, deafened, frightened",
+    "monsterSenses": "Senses blindsight 30 ft. (blind beyond this radius)",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/4 (50 XP)",
+    "monsterSpecials": [
+        "False Appearance. While the violet fungus remains motionless, it is indistinguishable from an ordinary fungus."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The fungus makes 1d4 Rotting Touch attacks.",
+        "Rotting Touch. Melee Weapon Attack: +2 to hit, reach 10 ft., one creature. Hit: 4 (1d8) necrotic damage."
+    ]
+}

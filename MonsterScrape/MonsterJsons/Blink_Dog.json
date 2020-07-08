@@ -1,0 +1,30 @@
+{
+    "monsterName": "Blink Dog",
+    "monsterType": "Medium fey, lawful good",
+    "monsterArmor": "Armor Class 13",
+    "monsterHP": "Hit Points 22 (4d8+4)",
+    "monsterSpeed": "Speed 40 ft.",
+    "monsterSTR": "12 (+1)",
+    "monsterDEX": "17 (+3)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "13 (+1)",
+    "monsterCHA": "11 (0)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +3, Stealth +5",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Blink Dog, understands Sylvan but can't speak it",
+    "monsterChallenge": "Challenge  1/4 (50 XP)",
+    "monsterSpecials": [
+        "Keen Hearing and Smell. The dog has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage.",
+        "Teleport (Recharge 4-6). The dog magically teleports, along with any equipment it is wearing or carrying, up to 40 ft. to an unoccupied space it can see. Before or after teleporting, the dog can make one bite attack."
+    ]
+}

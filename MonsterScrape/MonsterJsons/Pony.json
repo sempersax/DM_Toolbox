@@ -1,0 +1,27 @@
+{
+    "monsterName": "Pony",
+    "monsterType": "Medium beast, unaligned",
+    "monsterArmor": "Armor Class 10",
+    "monsterHP": "Hit Points 11 (2d8+2)",
+    "monsterSpeed": "Speed 40 ft.",
+    "monsterSTR": "15 (+2)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "13 (+1)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "11 (0)",
+    "monsterCHA": "7 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/8 (25 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Hooves. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) bludgeoning damage."
+    ]
+}

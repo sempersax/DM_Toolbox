@@ -1,0 +1,34 @@
+{
+    "monsterName": "Deva",
+    "monsterType": "Medium celestial, lawful good",
+    "monsterArmor": "Armor Class 17 (natural armor)",
+    "monsterHP": "Hit Points 136 (16d8+64)",
+    "monsterSpeed": "Speed 30 ft., fly 90 ft.",
+    "monsterSTR": "18 (+4)",
+    "monsterDEX": "18 (+4)",
+    "monsterCON": "18 (+4)",
+    "monsterINT": "17 (+3)",
+    "monsterWIS": "20 (+5)",
+    "monsterCHA": "20 (+5)",
+    "monsterSavings": "Saving Throws Wis +9, Cha +9",
+    "monsterSkills": "Skills Insight +9, Perception +9",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances radiant, bludgeoning, piercing, and slashing from nonmagical weapons",
+    "monsterImmunities": "",
+    "monsterCImmunities": "Condition Immunities charmed, exhaustion, frightened",
+    "monsterSenses": "Senses darkvision 120 ft.",
+    "monsterLanguages": "Languages all, telepathy 120 ft.",
+    "monsterChallenge": "Challenge  10 (5,900 XP)",
+    "monsterSpecials": [
+        "Angelic Weapons. The deva's weapon attacks are magical. When the deva hits with any weapon, the weapon deals an extra 4d8 radiant damage (included in the attack).",
+        "Innate Spellcasting. The deva's spellcasting ability is Charisma (spell save DC 17). The deva can innately cast the following spells, requiring only verbal components: \n\nAt will: detect evil and good\n\n1/day each: commune, raise dead\n\n",
+        "Magic Resistance. The deva has advantage on saving throws against spells and other magical effects."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The deva makes two melee attacks.",
+        "Mace. Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage plus 18 (4d8) radiant damage.",
+        "Healing Touch (3/Day). The deva touches another creature. The target magically regains 20 (4d8 + 2) hit points and is freed from any curse, disease, poison, blindness, or deafness.",
+        "Change Shape. The deva magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the deva's choice)."
+    ]
+}

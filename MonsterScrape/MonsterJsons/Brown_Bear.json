@@ -1,0 +1,31 @@
+{
+    "monsterName": "Brown Bear",
+    "monsterType": "Large beast, unaligned",
+    "monsterArmor": "Armor Class 11 (natural armor)",
+    "monsterHP": "Hit Points 34 (4d10+12)",
+    "monsterSpeed": "Speed 40 ft., climb 30 ft.",
+    "monsterSTR": "19 (+4)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "16 (+3)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "13 (+1)",
+    "monsterCHA": "7 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +3",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1 (200 XP)",
+    "monsterSpecials": [
+        "Keen Smell. The bear has advantage on Wisdom (Perception) checks that rely on smell."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The bear makes two attacks: one with its bite and one with its claws.",
+        "Bite. Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage.",
+        "Claws. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage."
+    ]
+}

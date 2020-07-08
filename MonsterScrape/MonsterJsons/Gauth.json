@@ -1,0 +1,31 @@
+{
+    "monsterName": "Gauth",
+    "monsterType": "Medium aberration, lawful evil",
+    "monsterArmor": "Armor Class 15 (natural armor)",
+    "monsterHP": "Hit Points 67 (9d8+27)",
+    "monsterSpeed": "Speed 0 ft., fly 20 ft. (hover)",
+    "monsterSTR": "10 (0)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "16 (+3)",
+    "monsterINT": "15 (+2)",
+    "monsterWIS": "15 (+2)",
+    "monsterCHA": "13 (+1)",
+    "monsterSavings": "Saving Throws Int +5, Wis +5, Cha +4",
+    "monsterSkills": "Skills Perception +5",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "Condition Immunities prone",
+    "monsterSenses": "Senses darkvision 120 ft.",
+    "monsterLanguages": "Languages Deep Speech, Undercommon",
+    "monsterChallenge": "Challenge  6 (2,300 XP)",
+    "monsterSpecials": [
+        "Stunning Gaze. When a creature that can see the gauth's central eye starts its turn within 30 feet of the gauth, the gauth can force it to make a DC 14 Wisdom saving throw if the gauth isn't incapacitated and can see the creature. A creature that fails the save is stunned until the start of its next turn, when it can avert its eyes again. If the creature looks at the gauth in the meantime, it must immediately make the save.",
+        "Death Throes. When the gauth dies, the magical energy within it explodes, and each creature within 10 feet of it must make a DC 14 Dexterity saving throw, taking 13 (3d8) force damage on a failed save, or half as much damage on a successful one."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 9 (2d8) piercing damage.",
+        "Eye Rays. The gauth shoots three of the following magical eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 feet of it: "
+    ]
+}

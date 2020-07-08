@@ -1,0 +1,29 @@
+{
+    "monsterName": "Flying Snake",
+    "monsterType": "Tiny beast, unaligned",
+    "monsterArmor": "Armor Class 14",
+    "monsterHP": "Hit Points 5 (2d4)",
+    "monsterSpeed": "Speed 30 ft., fly 60 ft., swim 30 ft.",
+    "monsterSTR": "4 (-3)",
+    "monsterDEX": "18 (+4)",
+    "monsterCON": "11 (0)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "5 (-3)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses blindsight 10 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/8 (25 XP)",
+    "monsterSpecials": [
+        "Flyby. The snake doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 1 piercing damage plus 7 (3d4) poison damage."
+    ]
+}

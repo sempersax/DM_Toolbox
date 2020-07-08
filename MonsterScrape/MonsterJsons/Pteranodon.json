@@ -1,0 +1,29 @@
+{
+    "monsterName": "Pteranodon",
+    "monsterType": "Medium beast, unaligned",
+    "monsterArmor": "Armor Class 13 (natural armor)",
+    "monsterHP": "Hit Points 13 (3d8)",
+    "monsterSpeed": "Speed 10 ft., fly 60 ft.",
+    "monsterSTR": "12 (+1)",
+    "monsterDEX": "15 (+2)",
+    "monsterCON": "10 (0)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "9 (-1)",
+    "monsterCHA": "5 (-3)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +1",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/4 (50 XP)",
+    "monsterSpecials": [
+        "Flyby. The pteranodon doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) piercing damage"
+    ]
+}

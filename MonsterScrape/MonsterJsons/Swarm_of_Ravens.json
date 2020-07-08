@@ -1,0 +1,29 @@
+{
+    "monsterName": "Swarm of Ravens",
+    "monsterType": "Swarm. The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny raven. The swarm can't regain hit points or gain temporary hit points.",
+    "monsterArmor": "Armor Class 12",
+    "monsterHP": "Hit Points 24 (7d8-7)",
+    "monsterSpeed": "Speed 10 ft., fly 50 ft.",
+    "monsterSTR": "6 (-2)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "8 (-1)",
+    "monsterINT": "3 (-4)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "6 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances bludgeoning, piercing, slashing",
+    "monsterImmunities": "",
+    "monsterCImmunities": "Condition Immunities charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/4 (50 XP)",
+    "monsterSpecials": [
+        "Swarm. The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny raven. The swarm can't regain hit points or gain temporary hit points."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Beaks. Melee Weapon Attack: +4 to hit, reach 5 ft., one target in the swarm's space. Hit: 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer."
+    ]
+}

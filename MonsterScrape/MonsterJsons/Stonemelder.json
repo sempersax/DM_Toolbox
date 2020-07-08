@@ -1,0 +1,30 @@
+{
+    "monsterName": "Stonemelder",
+    "monsterType": "Medium humanoid (human), neutral evil",
+    "monsterArmor": "Armor Class 17 (splint)",
+    "monsterHP": "Hit Points 75 (10d8+30)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "15 (+2)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "16 (+3)",
+    "monsterINT": "12 (+1)",
+    "monsterWIS": "11 (0)",
+    "monsterCHA": "17 (+3)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Intimidation +5, Perception +2",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses tremorsense 30 ft.",
+    "monsterLanguages": "Languages Common, Terran",
+    "monsterChallenge": "Challenge  4 (1,100 XP)",
+    "monsterSpecials": [
+        "Death Burst. When the Stonemelder dies, it turns to stone and explodes in a burst of rock shards, becoming a smoking pile of rubble. Each creature within 10 feet of the exploding Stonemelder must make a DC 14 Dexterity saving throw, taking 11 (2d10) bludgeoning damage on a failed save, or half as much damage on a successful one.",
+        "Spellcasting. The Stonemelder is a 7th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). It knows the following sorcerer spells: \n\nCantrips (at will): acid splash, blade ward, light, mending, mold earth\n\n1st level (4 slots): expeditious retreat, false life, shield\n\n2nd level (3 slots): Maximilian's earthen grasp, shatter\n\n3rd level (3 slots): erupting earth, meld into stone\n\n4th level (1 slot): stoneskin\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Black Earth Rod. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage. The Stonemelder can also expend a spell slot to deal extra damage, dealing 2d8 bludgeoning damage for a 1st level slot, plus an additional 1d8 for each level of the slot above 1st."
+    ]
+}

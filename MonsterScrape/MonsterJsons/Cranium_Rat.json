@@ -1,0 +1,30 @@
+{
+    "monsterName": "Cranium Rat",
+    "monsterType": "Tiny beast, lawful evil",
+    "monsterArmor": "Armor Class 12",
+    "monsterHP": "Hit Points 2 (1d4)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "2 (-4)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "10 (0)",
+    "monsterINT": "4 (-3)",
+    "monsterWIS": "11 (0)",
+    "monsterCHA": "8 (-1)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 30 ft.",
+    "monsterLanguages": "Languages telepathy 30 ft.",
+    "monsterChallenge": "Challenge  0 (10 XP)",
+    "monsterSpecials": [
+        "Illumination. As a bonus action, the cranium rat can shed dim light from its brain in a 5-foot radius or extinguish the light.",
+        "Telepathic Shroud. The cranium rat is immune to any effect that would sense its emotions or read its thoughts, as well as i to all divination spells."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage."
+    ]
+}

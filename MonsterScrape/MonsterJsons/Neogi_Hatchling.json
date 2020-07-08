@@ -1,0 +1,30 @@
+{
+    "monsterName": "Neogi Hatchling",
+    "monsterType": "Tiny aberration, lawful evil",
+    "monsterArmor": "Armor Class 11",
+    "monsterHP": "Hit Points 7 (3d4)",
+    "monsterSpeed": "Speed 20 ft., climb 20 ft.",
+    "monsterSTR": "3 (-4)",
+    "monsterDEX": "13 (+1)",
+    "monsterCON": "10 (0)",
+    "monsterINT": "6 (-2)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "9 (-1)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/8 (25 XP)",
+    "monsterSpecials": [
+        "Mental Fortitude. The hatchling has advantage on saving throws against being charmed or frightened, and magic can't put the hatchling to sleep.",
+        "Spider Climb. The hatchling can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4+1) piercing damage plus 7 (2d6) poison damage, and the target must succeed on a DC 10 Constitution saving throw or become poisoned for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "monsterName": "Xvart Warlock of Raxivort",
+    "monsterType": "Small humanoid (xvart), chaotic evil",
+    "monsterArmor": "Armor Class 12 (15 with mage armor)",
+    "monsterHP": "Hit Points 22 (5d6+5)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "8 (-1)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "8 (-1)",
+    "monsterWIS": "11 (0)",
+    "monsterCHA": "12 (+1)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Stealth +3",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 30 ft.",
+    "monsterLanguages": "Languages Abyssal",
+    "monsterChallenge": "Challenge  1 (200 XP)",
+    "monsterSpecials": [
+        "Innate Spellcasting. The xvart's innate spellcasting ability is Charisma. it can innately cast the following spells, requiring no material components:\n\nAt will: detect magic, mage armor (self only)\n\n",
+        "Spellcasting. The xvart is a 3rd-level spellcaster. Its spellcasting ability is Charisma (spell save DC ll, +3 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells:\n\nCantrips (at will): eldritch blast, mage hand, minor illusion, poison spray, prestidigitation\n\n1st-2nd level (2 2nd-level slots): burning hands, expeditious retreat, invisibility, scorching ray\n\n",
+        "Low Cunning. The xvart can take the Disengage action as a bonus action on each of its turns.",
+        "Overbearing Pack. The xvart has advantage on Strength (Athletics) checks to shove a creature if at least one of the xvart's allies is within 5 feet of the target and the ally isn't incapacitated.",
+        "Raxivort's Tongue. The xvart can communicate with ordinary bats and rats, as well as giant bats and giant rats."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Scimitar. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) slashing damage."
+    ]
+}

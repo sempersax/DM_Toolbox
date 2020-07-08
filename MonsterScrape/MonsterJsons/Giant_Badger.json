@@ -1,0 +1,31 @@
+{
+    "monsterName": "Giant Badger",
+    "monsterType": "Medium beast, unaligned",
+    "monsterArmor": "Armor Class 10",
+    "monsterHP": "Hit Points 13 (2d8+4)",
+    "monsterSpeed": "Speed 30 ft., burrow 10 ft.",
+    "monsterSTR": "13 (+1)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "15 (+2)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "5 (-3)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 30 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/4 (50 XP)",
+    "monsterSpecials": [
+        "Keen Smell. The badger has advantage on Wisdom (Perception) checks that rely on smell."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The badger makes two attacks: one with its bite and one with its claws.",
+        "Bite. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage.",
+        "Claws. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) slashing damage."
+    ]
+}

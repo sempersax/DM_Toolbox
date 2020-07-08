@@ -1,0 +1,33 @@
+{
+    "monsterName": "Mongrelfolk",
+    "monsterType": "Medium humanoid (mongrelfolk), any alignment",
+    "monsterArmor": "Armor Class 11 (natural armor)",
+    "monsterHP": "Hit Points 26 (4d8+8)",
+    "monsterSpeed": "Speed 20 ft.",
+    "monsterSTR": "12 (+1)",
+    "monsterDEX": "9 (-1)",
+    "monsterCON": "15 (+2)",
+    "monsterINT": "9 (-1)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "6 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Deception +2, Perception +2, Stealth +3",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Common",
+    "monsterChallenge": "Challenge  1/4 (50 XP)",
+    "monsterSpecials": [
+        "Extraordinary Feature. The mongrelfolk has one of the following extraordinary features, determined randomly by rolling a d20 or chosen by the DM:",
+        "Mimicry. The mongrelfolk can mimic any sounds it has beard, including voices. A creature that hears the sounds can tell they are imitations with a successful DC 12 Wisdom (Insight) check."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The mongrelfolk makes two attacks: one with its bite and one with its claw or dagger.",
+        "Bite. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4+1) piercing damage.",
+        "Claw. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4+1) slashing damage.",
+        "Dagger. Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 3 (1d4+1) piercing damage."
+    ]
+}

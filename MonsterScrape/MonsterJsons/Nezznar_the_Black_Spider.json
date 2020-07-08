@@ -1,0 +1,33 @@
+{
+    "monsterName": "Nezznar the Black Spider",
+    "monsterType": "Medium humanoid (elf), neutral evil",
+    "monsterArmor": "Armor Class 11 (14 with mage armor)",
+    "monsterHP": "Hit Points 27 (6d8)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "9 (-1)",
+    "monsterDEX": "13 (+1)",
+    "monsterCON": "10 (0)",
+    "monsterINT": "16 (+3)",
+    "monsterWIS": "14 (+2)",
+    "monsterCHA": "13 (+1)",
+    "monsterSavings": "Saving Throws Int +5, Wis +4",
+    "monsterSkills": "Skills Arcana +5, Perception +4, Stealth +3",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 120 ft.",
+    "monsterLanguages": "Languages Elvish, Undercommon",
+    "monsterChallenge": "Challenge  2 (450 XP)",
+    "monsterSpecials": [
+        "Special Equipment. Nezznar has a spider staff.",
+        "Fey Ancestry. Nezznar has advantage on saving throws against being charmed, and magic can't put him to sleep.",
+        "Sunlight Sensitivity. Nezznar has disadvantage on attack rolls when he or his target is in sunlight.",
+        "Innate Spellcasting. Nezznar can innately cast the following spells, requiring no material components: \n\nAt will: dancing lights\n\n1/day each: darkness, faerie fire (save DC 12)\n\n",
+        "Spellcasting. Nezznar is a 4th-level spellcaster that uses Intelligence as his spellcasting ability (spell save DC 13; +5 to hit with spell attacks). Nezznar has the following spells prepared from the wizard's spell list: \n\nCantrips (at will): mage hand, ray of frost, shocking grasp\n\n1st Level (4 slots): mage armor, magic missile, shield\n\n2nd Level (3 slots): invisibility, suggestion\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Spider Staff. Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 2 (1d6-1) bludgeoning damage plus 3 (1d6) poison damage."
+    ]
+}

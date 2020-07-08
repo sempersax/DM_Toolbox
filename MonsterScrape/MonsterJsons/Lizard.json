@@ -1,0 +1,27 @@
+{
+    "monsterName": "Lizard",
+    "monsterType": "Tiny beast, unaligned",
+    "monsterArmor": "Armor Class 10",
+    "monsterHP": "Hit Points 2 (1d4)",
+    "monsterSpeed": "Speed 20 ft., climb 20 ft.",
+    "monsterSTR": "2 (-4)",
+    "monsterDEX": "11 (0)",
+    "monsterCON": "10 (0)",
+    "monsterINT": "1 (-5)",
+    "monsterWIS": "8 (-1)",
+    "monsterCHA": "3 (-4)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 30 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  0 (10 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 piercing damage."
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "monsterName": "Blood Hawk",
+    "monsterType": "Small beast, unaligned",
+    "monsterArmor": "Armor Class 12",
+    "monsterHP": "Hit Points 7 (2d6)",
+    "monsterSpeed": "Speed 10 ft., fly 60 ft.",
+    "monsterSTR": "6 (-2)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "10 (0)",
+    "monsterINT": "3 (-4)",
+    "monsterWIS": "14 (+2)",
+    "monsterCHA": "5 (-3)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +4",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/8 (25 XP)",
+    "monsterSpecials": [
+        "Keen Sight. The hawk has advantage on Wisdom (Perception) checks that rely on sight.",
+        "Pack Tactics. The hawk has advantage on an attack roll against a creature if at least one of the hawk's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Beak. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    ]
+}

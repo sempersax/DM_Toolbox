@@ -1,0 +1,35 @@
+{
+    "monsterName": "Grung Wildling",
+    "monsterType": "Small humanoid (grung), lawful evil",
+    "monsterArmor": "Armor Class 13 (16 with barkskin)",
+    "monsterHP": "Hit Points 27 (5d6+10)",
+    "monsterSpeed": "Speed 25 ft., climb 25 ft.",
+    "monsterSTR": "7 (-2)",
+    "monsterDEX": "16 (+3)",
+    "monsterCON": "15 (+2)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "15 (+2)",
+    "monsterCHA": "11 (0)",
+    "monsterSavings": "Saving Throws Dex +5",
+    "monsterSkills": "Skills Athletics +2, Perception +4, Stealth +5, Survival +4",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "Damage Immunities poison",
+    "monsterCImmunities": "Condition Immunities poisoned",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Grung",
+    "monsterChallenge": "Challenge  1 (200 XP)",
+    "monsterSpecials": [
+        "Amphibious. The grung can breathe air and water.",
+        "Poisonous Skin. Any creature that grapples the grung or otherwise comes into direct contact with the grung's skin must succeed on a DC 12 Constitution saving throw or become poisoned for 1 minute. A poisoned creature no longer in direct contact with the grung can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+        "Spellcasting. The grung is a 9th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It knows the following ranger spells: \n\n1st level (4 slots): cure wounds, jump\n\n2nd level (3 slots): barkskin, spike growth\n\n3rd level (2 slots): plant growth\n\n",
+        "Standing Leap. The grung's long jump is up to 25 feet and its high jump is up to 15 feet, with or without a running start.",
+        "Variant: Grung Poison. Grung poison loses its potency 1 minute after being removed from a grung. A similar breakdown occurs if the grung dies.",
+        "A creature poisoned by a grung can suffer an additional effect that varies depending on the grung's skin color. This effect lasts until the creature is no longer poisoned by the grung."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Dagger. Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4+3) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or take 5 (2d4) poison damage.",
+        "Shortbow. Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 6 (1d6+3) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or take 5 (2d4) poison damage."
+    ]
+}

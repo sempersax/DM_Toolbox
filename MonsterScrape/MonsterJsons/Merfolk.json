@@ -1,0 +1,29 @@
+{
+    "monsterName": "Merfolk",
+    "monsterType": "Medium humanoid (merfolk), neutral",
+    "monsterArmor": "Armor Class 11",
+    "monsterHP": "Hit Points 11 (2d8+2)",
+    "monsterSpeed": "Speed 10 ft., swim 40 ft.",
+    "monsterSTR": "10 (0)",
+    "monsterDEX": "13 (+1)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "11 (0)",
+    "monsterWIS": "11 (0)",
+    "monsterCHA": "12 (+1)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +2",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Aquan, Common",
+    "monsterChallenge": "Challenge  1/8 (25 XP)",
+    "monsterSpecials": [
+        "Amphibious. The merfolk can breathe air and water."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Spear. Melee or Ranged Weapon Attack: +2 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 3 (1d6) piercing damage, or 4 (1d8) piercing damage if used with two hands to make a melee attack."
+    ]
+}

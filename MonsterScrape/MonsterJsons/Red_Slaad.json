@@ -1,0 +1,33 @@
+{
+    "monsterName": "Red Slaad",
+    "monsterType": "Large aberration, chaotic neutral",
+    "monsterArmor": "Armor Class 14 (natural armor)",
+    "monsterHP": "Hit Points 93 (11d10+33)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "16 (+3)",
+    "monsterDEX": "12 (+1)",
+    "monsterCON": "16 (+3)",
+    "monsterINT": "6 (-2)",
+    "monsterWIS": "6 (-2)",
+    "monsterCHA": "7 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +1",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances acid, cold, fire, lightning, thunder",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Slaad, telepathy 60 ft.",
+    "monsterChallenge": "Challenge  5 (1,800 XP)",
+    "monsterSpecials": [
+        "Magic Resistance. The slaad has advantage on saving throws against spells and other magical effects",
+        "Regeneration. The slaad regains 10 hit points at the start of its turn if it has at least 1 hit point.",
+        "Variant: Control Gem. Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being charmed while so controlled."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The slaad makes three attacks: one with its bite and two with its claws.",
+        "Bite. Melee Weapon Attack: +6 to hit, reach 5 ft., one target.",
+        "Claw. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage. If the target is a humanoid, it must succeed on a DC 14 Constitution saving throw or be infected with a disease - a minuscule slaad egg."
+    ]
+}

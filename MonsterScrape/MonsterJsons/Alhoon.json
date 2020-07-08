@@ -1,0 +1,33 @@
+{
+    "monsterName": "Alhoon",
+    "monsterType": "Medium undead, any evil alignment",
+    "monsterArmor": "Armor Class 15 (natural armor)",
+    "monsterHP": "Hit Points 120 (16d8+48)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "11 (0)",
+    "monsterDEX": "12 (+1)",
+    "monsterCON": "16 (+3)",
+    "monsterINT": "19 (+4)",
+    "monsterWIS": "17 (+3)",
+    "monsterCHA": "17 (+3)",
+    "monsterSavings": "Saving Throws Con +7, Int +8, Wis +7, Cha +7",
+    "monsterSkills": "Skills Arcana +8, Deception +7, History +8, Insight +7, Perception +7, Stealth +5",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances cold, lightning, necrotic",
+    "monsterImmunities": "Damage Immunities poison; bludgeoning, piercing, and slashing from nonmagical attacks",
+    "monsterCImmunities": "Condition Immunities charmed, exhaustion, frightened, paralyzed, poisoned",
+    "monsterSenses": "Senses truesight 120 ft.",
+    "monsterLanguages": "Languages Deep Speech, Undercommon, telepathy 120 ft.",
+    "monsterChallenge": "Challenge  10 (5,900 XP)",
+    "monsterSpecials": [
+        "Magic Resistance. The alhoon has advantage on saving throws against spells and other magical effects.",
+        "Innate Spellcasting (Psionics). The alhoon's innate spellcasting ability is Intelligence (spell save DC 16). It can innately cast the following spells, requiring no components:\n\nAt will: detect thoughts, levitate\n\n1/day each: dominate monster, plane shift (self only)\n\n",
+        "Spellcasting. The alhoon is a 12th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 16, +8 to hit with spell attacks). The alhoon has the following wizard spells prepared:\n\nCantrips (at will): chill touch, dancing lights, mage hand, prestidigitation, shocking grasp\n\n1st level (4 slots): detect magic, disguise self, magic missile, shield\n\n2nd level (3 slots): invisibility, mirror image, scorching ray\n\n3rd level (3 slots): counterspell, fly, lightning bolt\n\n4th level (3 slots): confusion, Evard's black tentacles, phantasmal killer\n\n5th level (2 slots): modify memory, wall of force\n\n6th level (1 slot): disintegrate, globe of invulnerability\n\n",
+        "Turn Resistance. The alhoon has advantage on saving throws against any effect that turns undead."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Chilling Grasp. Melee Spell Attack: +8 to hit, reach 5 ft., one target. Hit: 10 (3d6) cold damage.",
+        "Mind Blast (Recharge 5-6). The alhoon magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 16 Intelligence saving throw or take 22 (4d8+4) psychic damage and be stunned for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    ]
+}

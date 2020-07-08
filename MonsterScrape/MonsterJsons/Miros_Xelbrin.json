@@ -1,0 +1,31 @@
+{
+    "monsterName": "Miros Xelbrin",
+    "monsterType": "Medium humanoid (damaran human), neutral good",
+    "monsterArmor": "Armor Class 10",
+    "monsterHP": "Hit Points 22 (4d8+4)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "16 (+3)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "15 (+2)",
+    "monsterINT": "11 (0)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "14 (+2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Intimidation +4, Perception +3",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Common",
+    "monsterChallenge": "Challenge  0 (10 XP)",
+    "monsterSpecials": [
+        "Roleplaying Information. Innkeeper Miros is a retired carnival attraction, dubbed \"the Yeti\" because of his barrel-shaped body and the thick, white hair covering his arms, chest, back, and head. When Goldenfields suffers, so does his business, so he takes strides to protect the compound."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bear Hug. Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4+3) bludgeoning damage, and the target grappled (escape DC 13) and takes 5 (1d4 + 3) bludgeoning damage at the start of each of Miros's turns until the grapple ends. Miros cannot make attacks while grappling a creature.",
+        "Club. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4+1) bludgeoning damage",
+        "Heavy Crossbow. Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target. Hit: 5 (1d10) piercing damage. Miros carries ten crossbow bolts."
+    ]
+}

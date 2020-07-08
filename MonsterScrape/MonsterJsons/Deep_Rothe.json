@@ -1,0 +1,30 @@
+{
+    "monsterName": "Deep Rothe",
+    "monsterType": "Medium beast, unaligned",
+    "monsterArmor": "Armor Class 10",
+    "monsterHP": "Hit Points 13 (2d8+4)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "18 (+4)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "14 (+2)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "4 (-3)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/4 (50 XP)",
+    "monsterSpecials": [
+        "Charge. If the rothe moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 7 (2d6) piercing damage.",
+        "Innate Spellcasting. The deep rothe's spellcasting ability is Charisma. It can innately cast dancing lights at will, requiring no components.\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Gore. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6+4) piercing damage."
+    ]
+}

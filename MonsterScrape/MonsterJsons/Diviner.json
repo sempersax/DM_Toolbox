@@ -1,0 +1,30 @@
+{
+    "monsterName": "Diviner",
+    "monsterType": "Medium humanoid (any race), any alignment",
+    "monsterArmor": "Armor Class 12 (15 with mage armor)",
+    "monsterHP": "Hit Points 67 (15d8)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "9 (-1)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "11 (0)",
+    "monsterINT": "18 (+4)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "11 (0)",
+    "monsterSavings": "Saving Throws Int +7, Wis +4",
+    "monsterSkills": "Skills Arcana +7, History +7",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages any four languages",
+    "monsterChallenge": "Challenge  8 (3,900 XP)",
+    "monsterSpecials": [
+        "Spellcasting. The diviner is a 15th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). The diviner has the following wizard spells prepared:\n\nCantrips (at will): fire bolt, light, mage hand, message, true strike\n\n1st level (4 slots): detect magic*, feather fall, mage armor\n\n2nd level (3 slots): detect thoughts*, locate object*, scorching ray\n\n3rd level (3 slots): clairvoyance*, fly, fireball\n\n4th level (3 slots): arcane eye*, ice storm, stoneskin\n\n5th level (2 slots): Rary's telepathic bond*, seeming*\n\n6th level (1 slot): mass suggestion, true seeing*\n\n7th level (1 slot): delayed blast fireball, teleport\n\n8th level (1 slot): maze\n\nDivination spell of 1st level or higher\n\n",
+        "Portent (Recharges after the Diviner Casts a Divination Spell of 1st Level or Higher). When the diviner or a creature it can see makes an attack roll, a saving throw, or an ability check, the diviner can roll a d20 and choose to use this roll in place of the attack roll, saving throw, or ability check."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Quarterstaff. Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d6-1) bludgeoning damage, or 3 (1d8-1) bludgeoning damage if used with two hands."
+    ]
+}

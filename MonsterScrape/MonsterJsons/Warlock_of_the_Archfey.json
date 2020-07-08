@@ -1,0 +1,32 @@
+{
+    "monsterName": "Warlock of the Archfey",
+    "monsterType": "Medium humanoid (any race), any alignment",
+    "monsterArmor": "Armor Class 11 (14 with mage armor)",
+    "monsterHP": "Hit Points 49 (11d8)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "9 (-1)",
+    "monsterDEX": "13 (+1)",
+    "monsterCON": "11 (0)",
+    "monsterINT": "11 (0)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "18 (+4)",
+    "monsterSavings": "Saving Throws Wis +3, Cha +6",
+    "monsterSkills": "Skills Arcana +2, Deception +6, Nature +2, Persuasion +6",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "Condition Immunities charmed",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages any two languages (usually Sylvan)",
+    "monsterChallenge": "Challenge  4 (1,100 XP)",
+    "monsterSpecials": [
+        "Innate Spellcasting. The warlock's innate spellcasting ability is Charisma. It can innately cast the following spells (spell save DC 15), requiring no material components:\n\nAt will: disguise self, mage armor (self only), silent image, speak with animals\n\n1/day: conjure fey\n\n",
+        "Spellcasting. The warlock is a 11th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells:\n\nCantrips (at will): dancing lights, eldritch blast, friends, mage hand, minor illusion, prestidigitation, vicious mockery\n\n1st-5th level (3 5th-level slots): blink, charm person, dimension door, dominate beast, faerie fire, fear, hold monster, misty step, phantasmal force, seeming, sleep\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Dagger. Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4+2) piercing damage.",
+        "Reactions",
+        "Misty Escape (Recharges after a Short or Long Rest). In response to taking damage, the warlock turns invisible and teleports up to 60 feet to an unoccupied space it can see. It remains invisible until the start of its next turn or until it attacks, makes a damage roll, or casts a spell."
+    ]
+}

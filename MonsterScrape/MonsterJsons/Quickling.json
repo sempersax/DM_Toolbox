@@ -1,0 +1,31 @@
+{
+    "monsterName": "Quickling",
+    "monsterType": "Tiny fey, chaotic evil",
+    "monsterArmor": "Armor Class 16",
+    "monsterHP": "Hit Points 10 (3d4+3)",
+    "monsterSpeed": "Speed 120 ft.",
+    "monsterSTR": "4 (-3)",
+    "monsterDEX": "23 (+6)",
+    "monsterCON": "13 (+1)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "7 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Acrobatics +8, Perception +5, Sleight of Hand +8, Stealth +8",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Common, Sylvan",
+    "monsterChallenge": "Challenge  1 (200 XP)",
+    "monsterSpecials": [
+        "Blurred Movement. Attack rolls against the quickling have disadvantage unless the quickling is incapacitated or restrained.",
+        "Evasion. If the quickling is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The quickling makes three dagger attacks.",
+        "Dagger. Melee or Ranged Weapon Attack: +8 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 8 (1d4+6) piercing damage."
+    ]
+}

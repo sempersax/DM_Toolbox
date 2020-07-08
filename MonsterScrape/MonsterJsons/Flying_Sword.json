@@ -1,0 +1,30 @@
+{
+    "monsterName": "Flying Sword",
+    "monsterType": "Small construct, unaligned",
+    "monsterArmor": "Armor Class 17 (natural armor)",
+    "monsterHP": "Hit Points 17 (5d6)",
+    "monsterSpeed": "Speed 0 ft., fly 50 ft. It can hover.",
+    "monsterSTR": "12 (+1)",
+    "monsterDEX": "15 (+2)",
+    "monsterCON": "11 (0)",
+    "monsterINT": "1 (-5)",
+    "monsterWIS": "5 (-3)",
+    "monsterCHA": "1 (-5)",
+    "monsterSavings": "Saving Throws Dex +4",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "Damage Immunities poison, psychic",
+    "monsterCImmunities": "Condition Immunities blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned",
+    "monsterSenses": "Senses blindsight 60 ft. (blind beyond this radius)",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/4 (50 XP)",
+    "monsterSpecials": [
+        "Antimagic Susceptibility. The sword is incapacitated while in the area of an antimagic field. If targeted by dispel magic, the sword must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.",
+        "False Appearance. While the sword remains motionless and isn't flying, it is indistinguishable from a normal sword."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Longsword. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) slashing damage."
+    ]
+}

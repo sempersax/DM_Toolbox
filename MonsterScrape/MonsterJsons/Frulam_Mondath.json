@@ -1,0 +1,30 @@
+{
+    "monsterName": "Frulam Mondath",
+    "monsterType": "Medium humanoid (human), lawful evil",
+    "monsterArmor": "Armor Class 16 (chain mail)",
+    "monsterHP": "Hit Points 44 (8d8+8)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "14 (+2)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "13 (+1)",
+    "monsterINT": "11 (0)",
+    "monsterWIS": "18 (+4)",
+    "monsterCHA": "15 (+2)",
+    "monsterSavings": "Saving Throws Wis +6, Cha +4",
+    "monsterSkills": "Skills Deception +4, History +2, Religion +2",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Common, Draconic, Infernal",
+    "monsterChallenge": "Challenge  2 (450 XP)",
+    "monsterSpecials": [
+        "Spellcasting. Frulam is a 5th-level spellcaster that uses Wisdom as her spellcasting ability (spell save DC 14, +6 to hit with spell attacks). Frulam has the following spells prepared from the cleric spell list: \n\nCantrips (at will): light, sacred flame, thaumaturgy\n\n1st level (4 slots): command, cure wounds, healing word, sanctuary\n\n2nd level (3 slots): calm emotions, hold person, spiritual weapon\n\n3rd level (2 slots): mass healing word, spirit guardians\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. Frulam attacks twice with her halberd.",
+        "Halberd. Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 7 (1d10 + 2) bludgeoning damage."
+    ]
+}

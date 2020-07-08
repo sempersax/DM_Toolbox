@@ -1,0 +1,34 @@
+{
+    "monsterName": "Dralmorrer Borngray",
+    "monsterType": "Medium humanoid (high elf), neutral evil",
+    "monsterArmor": "Armor Class 16 (studded leather, shield)",
+    "monsterHP": "Hit Points 52 (7d10+14)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "18 (+4)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "14 (+2)",
+    "monsterINT": "16 (+3)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "8 (-1)",
+    "monsterSavings": "Saving Throws Str +6, Con +4",
+    "monsterSkills": "Skills Arcana +5, Deception +1, Insight +2, Perception +2, Religion +5",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Common, Bullywug, Draconic, Elvish, Goblin, Sylvan",
+    "monsterChallenge": "Challenge  3 (700 XP)",
+    "monsterSpecials": [
+        "Fey Ancestry. Dralmorrer has advantage on saving throws against being charmed, and magic can't put him to sleep.",
+        "Spellcasting. Dralmorrer is a 7th-level spellcaster that uses Intelligence as his spellcasting ability (spell save DC 13, +5 to hit with spell attacks). Dralmorrer has the following spells prepared from the wizard spell list: \n\nCantrips (at will): fire bolt, prestidigitation, shocking grasp\n\n1st level (4 slots): longstrider, magic missile, shield, thunderwave\n\n2nd level (2 slots): magic weapon, misty step\n\n",
+        "War Magic. When Dralmorrer uses his action to cast a cantrip, he can also take a bonus action to make one weapon attack.",
+        "Weapon Bond. Provided his longsword is on the same plane Dralmorrer can take a bonus action to teleport it to his hand."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. Dralmorrer attacks twice, either with his longsword or dagger.",
+        "Longsword. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage.",
+        "Dagger. Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or ranged 20 ft./60 ft., one target. Hit: 6 (1d4 + 4) piercing damage."
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "monsterName": "Hippogriff",
+    "monsterType": "Large monstrosity, unaligned",
+    "monsterArmor": "Armor Class 11",
+    "monsterHP": "Hit Points 19 (3d10+3)",
+    "monsterSpeed": "Speed 40 ft, fly 60 ft.",
+    "monsterSTR": "17 (+3)",
+    "monsterDEX": "13 (+1)",
+    "monsterCON": "13 (+1)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "8 (-1)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +5",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1 (200 XP)",
+    "monsterSpecials": [
+        "Keen Sight. The hippogriff has advantage on Wisdom (Perception) checks that rely on sight."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The hippogriff makes two attacks: one with its beak and one with its claws.",
+        "Beak. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage.",
+        "Claws. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage."
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "monsterName": "Tressym",
+    "monsterType": "Tiny beast, chaotic neutral",
+    "monsterArmor": "Armor Class 12",
+    "monsterHP": "Hit Points 5 (2d4)",
+    "monsterSpeed": "Speed 40 ft., climb 30 ft., fly 40' ft.",
+    "monsterSTR": "3 (-4)",
+    "monsterDEX": "15 (+2)",
+    "monsterCON": "10 (0)",
+    "monsterINT": "11 (0)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "12 (+1)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +5, Stealth +4",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "Damage Immunities poison",
+    "monsterCImmunities": "Condition Immunities poisoned",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  0 (10 XP)",
+    "monsterSpecials": [
+        "Detect Invisibility. Within 50 feet of the tressym, magical invisibility fails to conceal anything from the tressym's sight",
+        "Keen Smell. The tressym has advantage on Wisdom (Perception) checks that rely on smell.",
+        "Poison Sense. The tressym can detect whether a substance is poisonous by taste, touch, or smell."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Claws. Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 slashing damage."
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "monsterName": "Harpy",
+    "monsterType": "Medium monstrosity, chaotic evil",
+    "monsterArmor": "Armor Class 11",
+    "monsterHP": "Hit Points 38 (7d8+7)",
+    "monsterSpeed": "Speed 20 ft., fly 40 ft.",
+    "monsterSTR": "12 (+1)",
+    "monsterDEX": "13 (+1)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "7 (-2)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "13 (+1)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Common",
+    "monsterChallenge": "Challenge  1 (200 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The harpy makes two attacks: one with its claws and one with its club.",
+        "Claws. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) slashing damage.",
+        "Club. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage.",
+        "Luring Song. The harpy sings a magical melody. Every humanoid and giant within 300 ft. of the harpy that can hear the song must succeed on a DC 11 Wisdom saving throw or be charmed until the song ends. The harpy must take a bonus action on its subsequent turns to continue singing. It can stop singing at any time. The song ends if the harpy is incapacitated."
+    ]
+}

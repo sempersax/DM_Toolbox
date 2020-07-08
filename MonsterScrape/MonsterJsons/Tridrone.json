@@ -1,0 +1,32 @@
+{
+    "monsterName": "Tridrone",
+    "monsterType": "Medium construct, construct",
+    "monsterArmor": "Armor Class 15 (natural armor)",
+    "monsterHP": "Hit Points 16 (3d8+3)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "12 (+1)",
+    "monsterDEX": "13 (+1)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "9 (-1)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "9 (-1)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses truesight 120 ft.",
+    "monsterLanguages": "Languages Modron",
+    "monsterChallenge": "Challenge  1/2 (100 XP)",
+    "monsterSpecials": [
+        "Axiomatic Mind. The tridrone can't be compelled to act in a manner contrary to its nature or its instructions.",
+        "Disintegration. If the tridrone dies, its body disintegrates into dust, leaving behind its weapons and anything else it was carrying."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The tridrone makes three fist attacks or three javelin attacks.",
+        "Fist. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage.",
+        "Javelin. Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 4 (1d6 + 1) piercing damage."
+    ]
+}

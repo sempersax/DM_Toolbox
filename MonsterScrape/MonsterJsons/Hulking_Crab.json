@@ -1,0 +1,31 @@
+{
+    "monsterName": "Hulking Crab",
+    "monsterType": "Huge beast, unaligned",
+    "monsterArmor": "Armor Class 17 (natural armor)",
+    "monsterHP": "Hit Points 76 (8d12+24)",
+    "monsterSpeed": "Speed 20 ft., swim 30 ft.",
+    "monsterSTR": "19 (+4)",
+    "monsterDEX": "8 (-1)",
+    "monsterCON": "16 (+3)",
+    "monsterINT": "3 (-4)",
+    "monsterWIS": "11 (0)",
+    "monsterCHA": "3 (-4)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Stealth +2",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses blindsight 30 ft.",
+    "monsterLanguages": "Languages --",
+    "monsterChallenge": "Challenge  5 (1,800 XP)",
+    "monsterSpecials": [
+        "Amphibious. The crab can breathe air and water.",
+        "Shell Camouflage. While the crab remains motionless with it's eyestalks and pincers tucked close to it's body, it resembles a natural formation or a pile of detritus. A creature within 30 feet of it can discren its true nature with a successful DC 15 intelligence (Nature) check."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The aboleth makes three tentacle attacks.",
+        "Claw. Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 20 (3d10+4) bludgeoning damage, and the target is grappled (escape DC 15). The crab has two claws, each of which can grapple only one target"
+    ]
+}

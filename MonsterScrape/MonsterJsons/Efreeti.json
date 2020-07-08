@@ -1,0 +1,33 @@
+{
+    "monsterName": "Efreeti",
+    "monsterType": "Large elemental, lawful evil",
+    "monsterArmor": "Armor Class 17 (natural armor)",
+    "monsterHP": "Hit Points 200 (16d10+112)",
+    "monsterSpeed": "Speed 40 ft., fly 60 ft.",
+    "monsterSTR": "22 (+6)",
+    "monsterDEX": "12 (+1)",
+    "monsterCON": "24 (+7)",
+    "monsterINT": "16 (+3)",
+    "monsterWIS": "15 (+2)",
+    "monsterCHA": "16 (+3)",
+    "monsterSavings": "Saving Throws Int +7, Wis +6, Cha +7",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "Damage Immunities fire",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 120 ft.",
+    "monsterLanguages": "Languages Ignan",
+    "monsterChallenge": "Challenge  11 (7,200 XP)",
+    "monsterSpecials": [
+        "Elemental Demise. If the efreeti dies, its body disintegrates in a flash of fire and puff of smoke, leaving behind only equipment the djinni was wearing or carrying.",
+        "Innate Spellcasting. The efreeti's innate spell casting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). It can innately cast the following spells, requiring no material components: \n\nAt will: detect magic\n\n3/day: enlarge/reduce, tongues\n\n1/day each: conjure elemental (fire elemental only), gaseous form, invisibility, major image, plane shift, wall of fire\n\n",
+        "Variant: Genie Powers. Genies have a variety of magical capabilities, including spells. A few have even greater powers that allow them to alter their appearance or the nature of reality."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The efreeti makes two scimitar attacks or uses its Hurl Flame twice.",
+        "Scimitar. Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage plus 7 (2d6) fire damage.",
+        "Hurl Flame. Ranged Spell Attack: +7 to hit, range 120 ft., one target. Hit: 17 (5d6) fire damage."
+    ]
+}

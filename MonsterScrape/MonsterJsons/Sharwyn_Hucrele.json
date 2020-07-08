@@ -1,0 +1,33 @@
+{
+    "monsterName": "Sharwyn Hucrele",
+    "monsterType": "Medium humanoid (human), neutral evil",
+    "monsterArmor": "Armor Class 16 (Barkskin trait)",
+    "monsterHP": "Hit Points 13 (2d8+4)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "11 (0)",
+    "monsterDEX": "13 (+1)",
+    "monsterCON": "14 (+2)",
+    "monsterINT": "16 (+3)",
+    "monsterWIS": "14 (+2)",
+    "monsterCHA": "9 (-1)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Arcana +5, Insight +4, Persuasion + 1",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Common, Draconic, Goblin",
+    "monsterChallenge": "Challenge  1/2 (100 XP)",
+    "monsterSpecials": [
+        "Source. tales from the yawning portal,  page 242",
+        "Barkskin. Sharwyn's AC can't be lower than 16.",
+        "Spellcasting. Sharwyn is a 1st-level spellcaster. Her spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). She has the following wizard spells prepared:\n\nCantrips (at will): light, prestidigitation, ray of frost \n\n1st level (2 slots): color spray, magic missile, shield, sleep.\n\n",
+        "Spellcasting. Sharwyn is a 1st-level spellcaster. Her spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). She has the following wizard spells prepared:\n\nCantrips (at will): light, prestidigitation, ray of frost \n\n1st level (2 slots): color spray, magic missile, shield, sleep.\n\n",
+        "Tree Thrall. If the Gulthias Tree dies, Sharwyn dies 24 hours later."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Dagger. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "monsterName": "Weasel",
+    "monsterType": "Tiny beast, unaligned",
+    "monsterArmor": "Armor Class 13",
+    "monsterHP": "Hit Points 1 (1d4-1)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "3 (-4)",
+    "monsterDEX": "16 (+3)",
+    "monsterCON": "8 (-1)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "3 (-4)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +3, Stealth +5",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  0 (10 XP)",
+    "monsterSpecials": [
+        "Keen Hearing and Smell. The weasel has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 1 piercing damage."
+    ]
+}

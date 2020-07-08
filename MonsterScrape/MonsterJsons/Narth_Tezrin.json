@@ -1,0 +1,31 @@
+{
+    "monsterName": "Narth Tezrin",
+    "monsterType": "Medium humanoid (tethyrian human), chaotic good",
+    "monsterArmor": "Armor Class 12",
+    "monsterHP": "Hit Points 18 (4d8)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "10 (0)",
+    "monsterDEX": "15 (+2)",
+    "monsterCON": "10 (0)",
+    "monsterINT": "12 (+1)",
+    "monsterWIS": "14 (+2)",
+    "monsterCHA": "16 (+3)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Insight +4, Investigation +3, Perception +6, Persuasion +5",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Common, Dwarvish",
+    "monsterChallenge": "Challenge  0 (10 XP)",
+    "monsterSpecials": [
+        "Cunning Action. On each of his turns, Narth can use a bonus action to take the Dash, Disengage, or Hide action.",
+        "Roleplaying Information. Narth sells gear to adventurers, and he also has an adventurous spirit. The Lionshield Coster pays him well, but he longs to make a name for himself. At the same time, he runsa a business with his partner Alaestra and knows she wouldn't forgive him if he ran off and never returned."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Shortsword. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) piercing damage.",
+        "Hand Crossbow. Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 5 (1d6+2) piercing damage. Narth carries twenty crossbow bolts."
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "monsterName": "Howling Hatred Initiate",
+    "monsterType": "Medium humanoid (human), neutral evil",
+    "monsterArmor": "Armor Class 13 (leather)",
+    "monsterHP": "Hit Points 9 (2d8)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "10 (0)",
+    "monsterDEX": "15 (+2)",
+    "monsterCON": "10 (0)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "9 (-1)",
+    "monsterCHA": "11 (0)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Deception +2, Religion +2, Stealth +4",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Common",
+    "monsterChallenge": "Challenge  1/8 (25 XP)",
+    "monsterSpecials": [
+        "Guiding Wind (Recharges after a Short or Long Rest). As a bonus action, the initiate gains advantage on the next ranged attack roll it makes before the end of its next turn.",
+        "Hold Breath. The initiate can hold its breath for 30 minutes."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Dagger. Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    ]
+}

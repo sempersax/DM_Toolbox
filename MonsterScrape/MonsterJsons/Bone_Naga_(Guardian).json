@@ -1,0 +1,29 @@
+{
+    "monsterName": "Bone Naga (Guardian)",
+    "monsterType": "Large undead, lawful evil",
+    "monsterArmor": "Armor Class 15 (natural armor)",
+    "monsterHP": "Hit Points 58 (9d10+9)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "15 (+2)",
+    "monsterDEX": "16 (+3)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "15 (+2)",
+    "monsterWIS": "15 (+2)",
+    "monsterCHA": "16 (+3)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "Damage Immunities poison",
+    "monsterCImmunities": "Condition Immunities charmed, exhaustion, paralyzed, poisoned",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Common plus one other language",
+    "monsterChallenge": "Challenge  4 (1,100 XP)",
+    "monsterSpecials": [
+        "Spellcasting. The naga is a 5th-level spellcaster (spell save DC 12, +4 to hit with spell attacks) that needs only verbal components to cast its spells. Its spellcasting ability is Wisdom, and it has the following cleric spells prepared: \n\nCantrips (at will): mending, sacred flame, thaumaturgy\n\n1st level (4 slots): command, shield of faith\n\n2nd level (3 slots): calm emotions, hold person\n\n3rd level (2 slots): bestow curse\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +5 to hit, reach 10 ft., one creature. Hit: 10 (2d6 + 3) piercing damage plus 10 (3d6) poison damage."
+    ]
+}

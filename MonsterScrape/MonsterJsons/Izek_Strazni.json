@@ -1,0 +1,31 @@
+{
+    "monsterName": "Izek Strazni",
+    "monsterType": "Medium humanoid (human), neutral evil",
+    "monsterArmor": "Armor Class 14 (studded leather armor)",
+    "monsterHP": "Hit Points 112 (15d8+45)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "18 (+4)",
+    "monsterDEX": "15 (+2)",
+    "monsterCON": "16 (+3)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "9 (-1)",
+    "monsterCHA": "15 (+2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Intimidation +8, Perception +2",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Common",
+    "monsterChallenge": "Challenge  5 (1,800 XP)",
+    "monsterSpecials": [
+        "Brute. A melee weapon deals one extra die of its damage when Izek hits with it (included in the attack)."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. Izek makes two attacks with his battleaxe.",
+        "Battleaxe. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8+4) slashing damage, or 15 (2d10+4) when used with two hands.",
+        "Hurl Flame. Ranged Spell Attack: +5 to hit, range 60 ft., one target. Hit: 10 (3d6) fire damage. If the target is a flammable object that isn't being worn or carried, it catches fire."
+    ]
+}

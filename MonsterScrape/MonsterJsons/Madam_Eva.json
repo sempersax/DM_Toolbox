@@ -1,0 +1,31 @@
+{
+    "monsterName": "Madam Eva",
+    "monsterType": "Medium humanoid (human), chaotic neutral",
+    "monsterArmor": "Armor Class 10",
+    "monsterHP": "Hit Points 88 (16d8+16)",
+    "monsterSpeed": "Speed 20 ft.",
+    "monsterSTR": "8 (-1)",
+    "monsterDEX": "11 (0)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "17 (+3)",
+    "monsterWIS": "20 (+5)",
+    "monsterCHA": "18 (+4)",
+    "monsterSavings": "Saving Throws Con +5",
+    "monsterSkills": "Skills Arcana +7, Deception +8, Insight +13, Intimidation +8, Perception +9, Religion +7",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Abyssal, Common, Elvish, Infernal",
+    "monsterChallenge": "Challenge  10 (5,900 XP)",
+    "monsterSpecials": [
+        "Spellcasting. Madam Eva is a 16th-level spellcaster. Her spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). Madam Eva has the following cleric spells prepared:\n\nCantrips (at will): light, mending, sacred flame, thaumaturgy\n\n1st level (4 slots): bane, command, detect evil and good, protection from evil and good\n\n2nd level (3 slots): lesser restoration, protection from poison, spiritual weapon\n\n3rd level (3 slots): create food and water, speak with dead, spirit guardians\n\n4th level (3 slots): divination, freedom of movement, guardians of faith\n\n5th level (2 slots): greater restoration, raise dead\n\n6th level (1 slot): find the path, harm, true seeing\n\n7th level (1 slot): fire storm, regenerate\n\n8th level (1 slot): earthquake\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Dagger. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage.",
+        "Curse (Recharges after a Long Rest). Madam Eva targets one creature that she can see within 30 feet of her. The target must succeed on a DC 17 Wisdom saving throw or be cursed. While cursed, the target is blinded and deafened. The curse lasts until ended with a greater restoration spell, a remove curse spell, or similar magic. When the curse ends, Madam Eva takes 5d6 psychic damage.",
+        "Evil Eye (Recharges after a Short or Long Rest). Madam Eva targets one creature that she can see within 10 feet of her and casts one of the following spells on the target (save DC 17), requiring neither somatic nor material components to do so: animal friendship, charm person, or hold person. If the target succeeds on the initial saving throw, Madam Eva is blinded until the end of her next turn. Once a target succeeds on a saving throw against this effect, it is immune to the Evil Eye power of all Vistani for 24 hours."
+    ]
+}

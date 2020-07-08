@@ -1,0 +1,31 @@
+{
+    "monsterName": "Gnoll",
+    "monsterType": "Medium humanoid (gnoll), chaotic evil",
+    "monsterArmor": "Armor Class 15 (hide armor, shield)",
+    "monsterHP": "Hit Points 22 (5d8)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "14 (+2)",
+    "monsterDEX": "12 (+1)",
+    "monsterCON": "11 (0)",
+    "monsterINT": "6 (-2)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "7 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Gnoll",
+    "monsterChallenge": "Challenge  1/2 (100 XP)",
+    "monsterSpecials": [
+        "Rampage. When the gnoll reduces a creature to 0 hit points with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage.",
+        "Spear. Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d6 + 2) piercing damage, or 6 (1d8 + 2) piercing damage if used with two hands to make a melee attack.",
+        "Longbow. Ranged Weapon Attack: +3 to hit, range 150/600 ft., one target. Hit: 5 (1d8 + 1) piercing damage."
+    ]
+}

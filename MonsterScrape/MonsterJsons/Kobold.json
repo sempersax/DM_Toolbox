@@ -1,0 +1,31 @@
+{
+    "monsterName": "Kobold",
+    "monsterType": "Small humanoid (kobold), lawful evil",
+    "monsterArmor": "Armor Class 12",
+    "monsterHP": "Hit Points 5 (2d6-2)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "7 (-2)",
+    "monsterDEX": "15 (+2)",
+    "monsterCON": "9 (-1)",
+    "monsterINT": "8 (-1)",
+    "monsterWIS": "7 (-2)",
+    "monsterCHA": "8 (-1)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Common, Draconic",
+    "monsterChallenge": "Challenge  1/8 (25 XP)",
+    "monsterSpecials": [
+        "Sunlight Sensitivity. While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.",
+        "Pack Tactics. The kobold has advantage on an attack roll against a creature if at least one of the kobold's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Dagger. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
+        "Sling. Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage."
+    ]
+}

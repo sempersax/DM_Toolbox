@@ -1,0 +1,32 @@
+{
+    "monsterName": "Captain Othelstan",
+    "monsterType": "Medium humanoid (human), lawful evil",
+    "monsterArmor": "Armor Class 19 (splint, shield)",
+    "monsterHP": "Hit Points 93 (11d10+33)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "19 (+4)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "16 (+3)",
+    "monsterINT": "13 (+1)",
+    "monsterWIS": "14 (+2)",
+    "monsterCHA": "12 (+1)",
+    "monsterSavings": "Saving Throws Str +7, Con +6",
+    "monsterSkills": "Skills Athletics +7, Intimidation +7, Perception +5, Religion +4",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Common, Draconic, Giant",
+    "monsterChallenge": "Challenge  5 (1,800 XP)",
+    "monsterSpecials": [
+        "Action Surge (Recharges on a Short or Long Rest). On his turn, Othelstan can take one additional action.",
+        "Tiamat's Blessing of Retribution. When Othelstan takes damage that reduces him to 0 hit points, he immediately regains 20 hit points. If he has 20 hit points or fewer at the end of his next turn, he dies."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. Othelstan attacks twice with his flail or spear, or makes two ranged attacks with his spears.",
+        "Flail. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage.",
+        "Spear. Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or ranged 20 ft./60 ft., one target. Hit: 7 (1d6 + 4) piercing damage."
+    ]
+}

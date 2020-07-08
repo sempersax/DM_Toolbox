@@ -1,0 +1,31 @@
+{
+    "monsterName": "Rakshasa",
+    "monsterType": "Medium fiend, lawful evil",
+    "monsterArmor": "Armor Class 16 (natural armor)",
+    "monsterHP": "Hit Points 110 (13d8+52)",
+    "monsterSpeed": "Speed 40 ft.",
+    "monsterSTR": "14 (+2)",
+    "monsterDEX": "17 (+3)",
+    "monsterCON": "18 (+4)",
+    "monsterINT": "13 (+1)",
+    "monsterWIS": "16 (+3)",
+    "monsterCHA": "20 (+5)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Deception +10, Insight +8",
+    "monsterVulnerabilities": "Damage Vulnerabilities piercing from magic weapons wielded by good creatures",
+    "mosnterResistances": "",
+    "monsterImmunities": "Damage Immunities bludgeoning, piercing, and slashing from nonmagical weapons",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Common, Infernal",
+    "monsterChallenge": "Challenge  13 (10,000 XP)",
+    "monsterSpecials": [
+        "Limited Magic Immunity. The rakshasa can't be affected or detected by spells of 6th level or lower unless it wishes to be. It has advantage on saving throws against all other spells and magical effects.",
+        "Innate Spellcasting. The rakshasa's innate spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). The rakshasa can innately cast the following spells, requiring no material components: \n\nAt will: detect thoughts, disguise self, mage hand, minor illusion\n\n3/day each: charm person, detect magic, invisibility, major image, suggestion\n\n1/day each: dominate person, fly, plane shift, true seeing\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The rakshasa makes two claw attacks",
+        "Claw. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage, and the target is cursed if it is a creature. The magical curse takes effect whenever the target takes a short or long rest, filling the target's thoughts with horrible images and dreams. The cursed target gains no benefit from finishing a short or long rest. The curse lasts until it is lifted by a remove curse spell or similar magic."
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "monsterName": "Mormesk the Wraith",
+    "monsterType": "Medium undead, neutral evil",
+    "monsterArmor": "Armor Class 13",
+    "monsterHP": "Hit Points 45 (6d8+18)",
+    "monsterSpeed": "Speed 0 ft., fly 60 ft.",
+    "monsterSTR": "6 (-2)",
+    "monsterDEX": "16 (+3)",
+    "monsterCON": "16 (+3)",
+    "monsterINT": "12 (+1)",
+    "monsterWIS": "14 (+2)",
+    "monsterCHA": "15 (+2)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances acid, cold, fire, lightning, thunder, bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered",
+    "monsterImmunities": "Damage Immunities necrotic, poison",
+    "monsterCImmunities": "Condition Immunities charmed, grappled, paralyzed, petrified, poisoned, prone, restrained",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Common, Infernal",
+    "monsterChallenge": "Challenge  3 (700 XP)",
+    "monsterSpecials": [
+        "Incorporeal Movement. The wraith can move through an object or another creature, but can't stop there.",
+        "Sunlight Sensitivity. While in sunlight, the wraith has disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Life Drain. Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 16 (3d8 + 3) necrotic damage, and the target must succeed on a DC 13 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. If this attack reduces the target's hit point maximum to 0, the target dies. This reduction to the target's hit point maximum lasts until the target finishes a long rest."
+    ]
+}

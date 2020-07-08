@@ -1,0 +1,29 @@
+{
+    "monsterName": "Hawk",
+    "monsterType": "Tiny beast, unaligned",
+    "monsterArmor": "Armor Class 13",
+    "monsterHP": "Hit Points 1 (1d4-1)",
+    "monsterSpeed": "Speed 10 ft., fly 60 ft.",
+    "monsterSTR": "5 (-3)",
+    "monsterDEX": "16 (+3)",
+    "monsterCON": "8 (-1)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "14 (+2)",
+    "monsterCHA": "6 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +4",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  0 (10 XP)",
+    "monsterSpecials": [
+        "Keen Sight. The hawk has advantage on Wisdom (Perception) checks that rely on sight."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Talons. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 slashing damage."
+    ]
+}

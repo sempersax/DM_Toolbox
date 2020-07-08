@@ -1,0 +1,30 @@
+{
+    "monsterName": "Archmage",
+    "monsterType": "Medium humanoid (any race), any alignment",
+    "monsterArmor": "Armor Class 12 (15 with mage armor)",
+    "monsterHP": "Hit Points 99 (18d8+18)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "10 (0)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "20 (+5)",
+    "monsterWIS": "15 (+2)",
+    "monsterCHA": "16 (+3)",
+    "monsterSavings": "Saving Throws Int +9, Wis +6",
+    "monsterSkills": "Skills Arcana +13, History +13",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances damage from spells; non magical bludgeoning, piercing, and slashing (from stoneskin)",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages any six languages",
+    "monsterChallenge": "Challenge  12 (8,400 XP)",
+    "monsterSpecials": [
+        "Magic Resistance. The archmage has advantage on saving throws against spells and other magical effects.",
+        "Spellcasting. The archmage is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). The archmage can cast disguise self and invisibility at will and has the following wizard spells prepared: \n\nCantrips (at will): fire bolt, light, mage hand, prestidigitation, shocking grasp\n\n1st level (4 slots): detect magic, identify, mage armor*, magic missile\n\n2nd level (3 slots): detect thoughts, mirror image, misty step\n\n3rd level (3 slots): counterspell,fly, lightning bolt\n\n4th level (3 slots): banishment, fire shield, stoneskin*\n\n5th level (3 slots): cone of cold, scrying, wall of force\n\n6th level (1 slot): globe of invulnerability\n\n7th level (1 slot): teleport\n\n8th level (1 slot): mind blank*\n\n9th level (1 slot): time stop\n\nThe archmage casts these spells on itself before combat.\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Dagger. Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    ]
+}

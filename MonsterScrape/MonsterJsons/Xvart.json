@@ -1,0 +1,32 @@
+{
+    "monsterName": "Xvart",
+    "monsterType": "Small humanoid (xvart), chaotic evil",
+    "monsterArmor": "Armor Class 13 (leather armor)",
+    "monsterHP": "Hit Points 7 (2d6)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "8 (-1)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "10 (0)",
+    "monsterINT": "8 (-1)",
+    "monsterWIS": "7 (-2)",
+    "monsterCHA": "7 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Stealth +4",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 30 ft.",
+    "monsterLanguages": "Languages Abyssal",
+    "monsterChallenge": "Challenge  1/8 (25 XP)",
+    "monsterSpecials": [
+        "Low Cunning. The xvart can take the Disengage action as a bonus action on each of its turns.",
+        "Overbearing Pack. The xvart has advantage on Strength (Athletics) checks to shove a creature if at least one of the xvart's allies is within 5 feet of the target and the ally isn't incapacitated.",
+        "Raxivort's Tongue. The xvart can communicate with ordinary bats and rats, as well as giant bats and giant rats."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Shortsword. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) piercing damage.",
+        "Sling. Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4+2) bludgeoning damage."
+    ]
+}

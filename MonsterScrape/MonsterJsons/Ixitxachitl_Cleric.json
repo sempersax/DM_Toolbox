@@ -1,0 +1,31 @@
+{
+    "monsterName": "Ixitxachitl Cleric",
+    "monsterType": "Small aberration, chaotic evil",
+    "monsterArmor": "Armor Class 15 (natural armor)",
+    "monsterHP": "Hit Points 18 (4d6+4)",
+    "monsterSpeed": "Speed 0 ft., swim 30 ft.",
+    "monsterSTR": "12 (+1)",
+    "monsterDEX": "16 (+3)",
+    "monsterCON": "13 (+1)",
+    "monsterINT": "12 (+1)",
+    "monsterWIS": "13 (+1)",
+    "monsterCHA": "7 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Abyssal, Ixitxachitl",
+    "monsterChallenge": "Challenge  1/4 (50 XP)",
+    "monsterSpecials": [
+        "Spellcasting. The ixtachitl is a 5th-level spellcaster that uses Wisdom as its spellcasting ability (Spell save DC 11, +3 to hit with spell attacks). The ixitxachil has the following cleric spells prepared:\n\nCantrips (at will): guidance, thaumaturgy\n\n1st level (4 slots): charm person, create or destroy water\n\n2nd level (3 slots): hold person, silence\n\n3rd level (2 slots): dispel magic, tongues\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage.",
+        "Reactions",
+        "Barbed Tail. When a creature provokes an opportunity attack from the ixitxachitl, the ixitxachitl can make the following attack instead of using its bite."
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "monsterName": "Barlgura",
+    "monsterType": "Large fiend (demon), chaotic evil",
+    "monsterArmor": "Armor Class 15 (natural armor)",
+    "monsterHP": "Hit Points 68 (8d10+24)",
+    "monsterSpeed": "Speed 40 ft., climb 40 ft.",
+    "monsterSTR": "18 (+4)",
+    "monsterDEX": "15 (+2)",
+    "monsterCON": "16 (+3)",
+    "monsterINT": "7 (-2)",
+    "monsterWIS": "14 (+2)",
+    "monsterCHA": "9 (-1)",
+    "monsterSavings": "Saving Throws Dex +5, Con +6",
+    "monsterSkills": "Skills Perception +5, Stealth +5",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances cold, fire, lightning",
+    "monsterImmunities": "Damage Immunities poison",
+    "monsterCImmunities": "Condition Immunities poisoned",
+    "monsterSenses": "Senses blindsight 30 ft., darkvision 120 ft.",
+    "monsterLanguages": "Languages Abyssal, telepathy 120 ft.",
+    "monsterChallenge": "Challenge  5 (1,800 XP)",
+    "monsterSpecials": [
+        "Innate Spellcasting. The barlgura's spellcasting ability is Wisdom (spell save DC 13). The barlgura can innately cast the following spells, requiring no material components: \n\n1/day each: entangle, phantasmal force\n\n2/day each: disguise self, invisibility (self only)\n\n",
+        "Reckless. At the start of its turn, the barlgura can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn.",
+        "Running Leap. The barlgura's long jump is up to 40 feet and its high jump is up to 20 feet when it has a running start."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The barlgura makes three attacks: one with its bite and two with its fists.",
+        "Bite. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage.",
+        "Fist. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) bludgeoning damage.",
+        "Variant: Summon Demon (1/Day). The demon chooses what to summon and attempts a magical summoning."
+    ]
+}
