@@ -8,31 +8,28 @@ import os
 import numpy as np
 import pygame.surfarray as surfarray
 from pygame.locals import *
+import time
 
 WINDOWHEIGHT = 629
 WINDOWWIDTH = 1000
 
 def createMonster(surf):
     pg.init()
+    start = time.time()
+    mypath="../Dungeon_Master_Tools/MonsterScrape/MonsterJsons/"
+    onlyfiles = [f for f in os.listdir(mypath) if os.path.isfile(os.path.join(mypath, f))]
+    for i in range(0,len(onlyfiles)):
+        onlyfiles[i] = onlyfiles[i].replace('_', ' ').replace('.json','')
+    print('cause ',time.time()-start,' second delay')
 
 # Tavern Button
-    raceSurf = pg.image.load('images/music_Button.png')
-    raceSurf = pg.transform.scale(raceSurf, (int(raceSurf.get_width()/8),int(raceSurf.get_height()/8)))
-    raceRect = raceSurf.get_rect(topleft = (int(raceSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(raceSurf.get_height()/2)))
-### Battle Button
-##    bttleSurf = pg.image.load('images/music_Button.png')
-##    bttleSurf = pg.transform.scale(bttleSurf, (int(bttleSurf.get_width()/8),int(bttleSurf.get_height()/8)))
-##    bttleRect = bttleSurf.get_rect(topleft = (WINDOWWIDTH - int(bttleSurf.get_width()*6/5), int(WINDOWHEIGHT/4) - int(bttleSurf.get_height()/2)))
-### Region Button
-##    rgionSurf = pg.image.load('images/music_Button.png')
-##    rgionSurf = pg.transform.scale(rgionSurf, (int(rgionSurf.get_width()/8),int(rgionSurf.get_height()/8)))
-##    rgionRect = rgionSurf.get_rect(topleft = (int(rgionSurf.get_width()*1/5), int(WINDOWHEIGHT*3/4) + int(rgionSurf.get_height()/2)))
+    searchSurf = pg.image.load('images/music_Button.png')
+    searchSurf = pg.transform.scale(searchSurf, (int(searchSurf.get_width()/8),int(searchSurf.get_height()/8)))
+    searchRect = searchSurf.get_rect(topleft = (int(searchSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(searchSurf.get_height()/2)))
 
     monstSurf = pg.image.load('images/DMTB_MONSTERS_screen.jpg')
     monstSurf = pg.transform.scale(monstSurf, (WINDOWWIDTH,WINDOWHEIGHT))
     surf.fill((0,0,0))
     surf.blit(monstSurf,(0,0))
-    surf.blit(raceSurf, (int(raceSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(raceSurf.get_height()/2)))
-##    surf.blit(bttleSurf, (WINDOWWIDTH - int(bttleSurf.get_width()*6/5), int(WINDOWHEIGHT/4) - int(bttleSurf.get_height()/2)))
-##    surf.blit(rgionSurf, (int(rgionSurf.get_width()*1/5), int(WINDOWHEIGHT*3/4) + int(rgionSurf.get_height()/2)))
-    return(surf,raceSurf, raceRect,monstSurf)
+    surf.blit(searchSurf, (int(searchSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(searchSurf.get_height()/2)))
+    return(surf,searchSurf, searchRect,monstSurf)
