@@ -1,0 +1,30 @@
+{
+    "monsterName": "Bat",
+    "monsterType": "Tiny beast, unaligned",
+    "monsterArmor": "Armor Class 12",
+    "monsterHP": "Hit Points 1 (1d4-1)",
+    "monsterSpeed": "Speed 5 ft., fly 30 ft.",
+    "monsterSTR": "2 (-4)",
+    "monsterDEX": "15 (+2)",
+    "monsterCON": "8 (-1)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "4 (-3)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses blindsight 60 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  0 (10 XP)",
+    "monsterSpecials": [
+        "Echolocation. The bat can't use its blindsight while deafened.",
+        "Keen Hearing. The bat has advantage on Wisdom (Perception) checks that rely on hearing."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +0 to hit, reach 5 ft., one creature. Hit: 1 piercing damage."
+    ]
+}

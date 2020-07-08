@@ -1,0 +1,32 @@
+{
+    "monsterName": "Champion",
+    "monsterType": "Medium humanoid (any race), any alignment",
+    "monsterArmor": "Armor Class 18 (plate)",
+    "monsterHP": "Hit Points 143 (22d8+44)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "20 (+5)",
+    "monsterDEX": "15 (+2)",
+    "monsterCON": "14 (+2)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "14 (+2)",
+    "monsterCHA": "12 (+1)",
+    "monsterSavings": "Saving Throws Str +9, Con +6",
+    "monsterSkills": "Skills Athletics +9, Intimidation +5, Perception +6",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages any one language (usually Common)",
+    "monsterChallenge": "Challenge  9 (5,000 XP)",
+    "monsterSpecials": [
+        "Indomitable (2/Day). The champion rerolls a failed saving throw.",
+        "Second Wind (Recharges after a Short or Long Rest). As a bonus action, the champion can regain 20 hit points."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The champion makes three attacks with its greatsword or its light crossbow.",
+        "Greatsword. Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6+5) slashing damage, plus 7 (2d6) slashing damage if the champion has more than half of its total hit points remaining.",
+        "Light Crossbow. Ranged Weapon Attack: +6 to hit, range 80/320 ft., one target. Hit: 6 (1d8+2) piercing damage, plus 7 (2d6) piercing damage if the champion has more than half of its total hit points remaining."
+    ]
+}

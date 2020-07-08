@@ -1,0 +1,37 @@
+{
+    "monsterName": "Marilith",
+    "monsterType": "Large fiend (demon), chaotic evil",
+    "monsterArmor": "Armor Class 18 (natural armor)",
+    "monsterHP": "Hit Points 189 (18d10+90)",
+    "monsterSpeed": "Speed 40 ft.",
+    "monsterSTR": "18 (+4)",
+    "monsterDEX": "20 (+5)",
+    "monsterCON": "20 (+5)",
+    "monsterINT": "18 (+4)",
+    "monsterWIS": "16 (+3)",
+    "monsterCHA": "20 (+5)",
+    "monsterSavings": "Saving Throws Str +9, Con +10, Wis +8, Cha +10",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances cold, fire, lightning, bludgeoning, piercing, and slashing from nonmagical weapons",
+    "monsterImmunities": "Damage Immunities poison",
+    "monsterCImmunities": "Condition Immunities poisoned",
+    "monsterSenses": "Senses truesight 120 ft.",
+    "monsterLanguages": "Languages Abyssal, telepathy 120 ft.",
+    "monsterChallenge": "Challenge  16 (15,000 XP)",
+    "monsterSpecials": [
+        "Magic Resistance. The marilith has advantage on saving throws against spells and other magical effects.",
+        "Magic Weapons. The marilith's weapon attacks are magical.",
+        "Reactive. The marilith can take one reaction on every turn in combat."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The marilith can make seven attacks: six with its longswords and one with its tail.",
+        "Longsword. Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.",
+        "Tail. Melee Weapon Attack: +9 to hit, reach 10 ft., one creature. Hit: 15 (2d10 + 4) bludgeoning damage. If the target is Medium or smaller, it is grappled (escape DC 19). Until this grapple ends, the target is restrained, the marilith can automatically hit the target with its tail, and the marilith can't make tail attacks against other targets.",
+        "Teleport. The marilith magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.",
+        "Variant: Summon Demon (1/Day). The demon chooses what to summon and attempts a magical summoning.",
+        "Reactions",
+        "Parry. The marilith adds 5 to its AC against one melee attack that would hit it. To do so, the marilith must see the attacker and be wielding a melee weapon."
+    ]
+}

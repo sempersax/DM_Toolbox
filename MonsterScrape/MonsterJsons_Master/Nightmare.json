@@ -1,0 +1,31 @@
+{
+    "monsterName": "Nightmare",
+    "monsterType": "Large fiend, neutral evil",
+    "monsterArmor": "Armor Class 13 (natural armor)",
+    "monsterHP": "Hit Points 68 (8d10+24)",
+    "monsterSpeed": "Speed 60 ft., fly 90 ft.",
+    "monsterSTR": "18 (+4)",
+    "monsterDEX": "15 (+2)",
+    "monsterCON": "16 (+3)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "13 (+1)",
+    "monsterCHA": "15 (+2)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "Damage Immunities fire",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages understands Abyssal, Common, and Infernal but can't speak",
+    "monsterChallenge": "Challenge  3 (700 XP)",
+    "monsterSpecials": [
+        "Confer Fire Resistance. The nightmare can grant resistance to fire damage to anyone riding it.",
+        "Illumination. The nightmare sheds bright light in a 10-foot radius and dim light for an additional 10 feet."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Hooves. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage plus 7 (2d6) fire damage.",
+        "Ethereal Stride. The nightmare and up to three willing creatures within 5 feet of it magically enter the Ethereal Plane from the Material Plane, or vice versa."
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "monsterName": "Water Weird",
+    "monsterType": "Large elemental, neutral",
+    "monsterArmor": "Armor Class 13",
+    "monsterHP": "Hit Points 58 (9d10+9)",
+    "monsterSpeed": "Speed 0 ft., swim 60 ft.",
+    "monsterSTR": "17 (+3)",
+    "monsterDEX": "16 (+3)",
+    "monsterCON": "13 (+1)",
+    "monsterINT": "11 (0)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "10 (0)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances fire; bludgeoning, piercing, and slashing from nonmagical weapons",
+    "monsterImmunities": "Damage Immunities poison",
+    "monsterCImmunities": "Condition Immunities exhaustion, grappled, paralyzed, poisoned, restrained, prone, unconscious",
+    "monsterSenses": "Senses blindsight 30 ft.",
+    "monsterLanguages": "Languages understands Aquan but doesn't speak",
+    "monsterChallenge": "Challenge  3 (700 XP)",
+    "monsterSpecials": [
+        "Invisible in Water. The water weird is invisible while fully immersed in water.",
+        "Water Bound. The water weird dies if it leaves the water to which it is bound or if that water is destroyed."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Constrict. Melee Weapon Attack: +5 to hit, reach 10 ft., one creature. Hit: 13 (3d6 + 3) bludgeoning damage. If the target is Medium or smaller, it is grappled (escape DC 13) and pulled 5 ft. toward the water weird. Until this grapple ends, the target is restrained, the water weird tries to drown it, and the water weird can't constrict another target."
+    ]
+}

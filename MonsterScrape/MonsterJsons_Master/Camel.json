@@ -1,0 +1,27 @@
+{
+    "monsterName": "Camel",
+    "monsterType": "Large beast, unaligned",
+    "monsterArmor": "Armor Class 9",
+    "monsterHP": "Hit Points 15 (2d10+4)",
+    "monsterSpeed": "Speed 50 ft.",
+    "monsterSTR": "16 (+3)",
+    "monsterDEX": "8 (-1)",
+    "monsterCON": "14 (+2)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "8 (-1)",
+    "monsterCHA": "5 (-3)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/8 (25 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage."
+    ]
+}

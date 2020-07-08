@@ -1,0 +1,30 @@
+{
+    "monsterName": "Priest",
+    "monsterType": "Medium humanoid (any race), any alignment",
+    "monsterArmor": "Armor Class 13 (chain shirt)",
+    "monsterHP": "Hit Points 27 (5d8+5)",
+    "monsterSpeed": "Speed 25 ft.",
+    "monsterSTR": "10 (0)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "13 (+1)",
+    "monsterWIS": "16 (+3)",
+    "monsterCHA": "13 (+1)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Medicine +7, Persuasion +3, Religion +4",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages any two languages",
+    "monsterChallenge": "Challenge  2 (450 XP)",
+    "monsterSpecials": [
+        "Divine Eminence. As a bonus action, the priest can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 (3d6) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If the priest expends a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each level above 1st.",
+        "Spellcasting. The priest is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). The priest has the following cleric spells prepared: \n\nCantrips (at will): light, sacred flame, thaumaturgy\n\n1st level (4 slots): cure wounds, guiding bolt, sanctuary\n\n2nd level (3 slots): lesser restoration, spiritual weapon\n\n3rd level (2 slots): dispel magic, spirit guardians\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Mace. Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage."
+    ]
+}

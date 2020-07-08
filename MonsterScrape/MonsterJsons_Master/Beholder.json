@@ -1,0 +1,32 @@
+{
+    "monsterName": "Beholder",
+    "monsterType": "Large aberration, lawful evil",
+    "monsterArmor": "Armor Class 18 (natural armor)",
+    "monsterHP": "Hit Points 189 (19d10+76)",
+    "monsterSpeed": "Speed 0 ft., fly 20 ft. (hover)",
+    "monsterSTR": "10 (0)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "18 (+4)",
+    "monsterINT": "17 (+3)",
+    "monsterWIS": "15 (+2)",
+    "monsterCHA": "17 (+3)",
+    "monsterSavings": "Saving Throws Int +8, Wis +7, Cha +8",
+    "monsterSkills": "Skills Perception +12",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "Condition Immunities prone",
+    "monsterSenses": "Senses darkvision 120 ft.",
+    "monsterLanguages": "Languages Deep Speech, Undercommon",
+    "monsterChallenge": "Challenge  13 (10,000 XP)",
+    "monsterSpecials": [
+        "Antimagic Cone. The beholder's central eye creates an area of antimagic, as in the antimagic field spell, in a 150-foot cone. At the start of each of its turns, the beholder decides which way the cone faces and whether the cone is active. The area works against the beholder's own eye rays."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 14 (4d6) piercing damage.",
+        "Eye Rays. The beholder shoots three of the following magical eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 ft. of it:",
+        "Legendary Actions\n\nThe beholder can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time, and only at the end of another creature's turn. The beholder regains spent legendary actions at the start of its turn.\n\n",
+        "Eye Ray. The beholder uses one random eye ray."
+    ]
+}

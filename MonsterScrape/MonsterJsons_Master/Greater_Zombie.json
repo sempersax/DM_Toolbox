@@ -1,0 +1,33 @@
+{
+    "monsterName": "Greater Zombie",
+    "monsterType": "Medium undead, neutral evil",
+    "monsterArmor": "Armor Class 15 (natural armor)",
+    "monsterHP": "Hit Points 97 (13d8+39)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "18 (+4)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "17 (+3)",
+    "monsterINT": "4 (-3)",
+    "monsterWIS": "6 (-2)",
+    "monsterCHA": "6 (-2)",
+    "monsterSavings": "Saving Throws Wis + 1",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances cold, necrotic",
+    "monsterImmunities": "Damage Immunities poison",
+    "monsterCImmunities": "Condition Immunities charmed, exhaustion, frightened, paralyzed, poisoned",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages understands the languages it knew in life but can't speak",
+    "monsterChallenge": "Challenge  5 (1,800 XP)",
+    "monsterSpecials": [
+        "Source. tales from the yawning portal,  page 237",
+        "Undead Nature. A zombie doesn't require air, food, drink, or sleep.",
+        "Turn Resistance. The zombie has advantage on saving throws against any effect that turns undead.",
+        "Undead Fortitude. If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The zombie makes two melee attacks.",
+        "Empowered Slam. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage and 7 (2d6) necrotic damage."
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "monsterName": "Allosaurus",
+    "monsterType": "Large beast, unaligned",
+    "monsterArmor": "Armor Class 15 (natural armor)",
+    "monsterHP": "Hit Points 60 (6d10+18)",
+    "monsterSpeed": "Speed 60 ft.",
+    "monsterSTR": "19 (+4)",
+    "monsterDEX": "13 (+1)",
+    "monsterCON": "17 (+3)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "5 (-3)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +5",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  2 (450 XP)",
+    "monsterSpecials": [
+        "Pounce. If the allosaurus moves at least 30 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the allosaurus can make one bite attack against it as a bonus action."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) piercing damage.",
+        "Claw. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage."
+    ]
+}

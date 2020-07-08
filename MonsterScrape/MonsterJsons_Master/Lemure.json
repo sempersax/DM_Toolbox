@@ -1,0 +1,30 @@
+{
+    "monsterName": "Lemure",
+    "monsterType": "Medium fiend (devil), lawful evil",
+    "monsterArmor": "Armor Class 7",
+    "monsterHP": "Hit Points 13 (3d8)",
+    "monsterSpeed": "Speed 15 ft.",
+    "monsterSTR": "10 (0)",
+    "monsterDEX": "5 (-3)",
+    "monsterCON": "11 (0)",
+    "monsterINT": "1 (-5)",
+    "monsterWIS": "11 (0)",
+    "monsterCHA": "3 (-4)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances cold",
+    "monsterImmunities": "Damage Immunities fire, poison",
+    "monsterCImmunities": "Condition Immunities charmed, frightened, poisoned",
+    "monsterSenses": "Senses darkvision 120 ft.",
+    "monsterLanguages": "Languages understands infernal but can't speak",
+    "monsterChallenge": "Challenge  0 (10 XP)",
+    "monsterSpecials": [
+        "Devil's Sight. Magical darkness doesn't impede the lemure's darkvision.",
+        "Hellish Rejuvenation. A lemure that dies in the Nine Hells comes back to life with all its hit points in 1d10 days unless it is killed by a good-aligned creature with a bless spell cast on that creature or its remains are sprinkled with holy water."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Fist. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage"
+    ]
+}

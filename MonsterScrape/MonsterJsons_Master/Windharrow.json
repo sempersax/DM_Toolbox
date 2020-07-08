@@ -1,0 +1,31 @@
+{
+    "monsterName": "Windharrow",
+    "monsterType": "Medium humanoid (half-elf), neutral evil",
+    "monsterArmor": "Armor Class 15 (studded leather)",
+    "monsterHP": "Hit Points 55 (10d8+10)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "10 (0)",
+    "monsterDEX": "16 (+3)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "14 (+2)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "17 (+3)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Acrobatics +5, Deception +7, Persuasion +5, Performance +7, Stealth +5",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Auran, Common, Elvish",
+    "monsterChallenge": "Challenge  3 (700 XP)",
+    "monsterSpecials": [
+        "Fey Ancestry. Windharrow has advantage on saving throws against being charmed, and magic can't put him to sleep.",
+        "Spellcasting. Windharrow is an 8th-level spellcaster. His spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). Windharrow knows the following bard spells: \n\nCantrips (at will): friends, prestidigitation, vicious mockery\n\n1st level (4 slots): disguise self, dissonant whispers, thunderwave\n\n2nd level (3 slots): invisibility, shatter, silence\n\n3rd level (3 slots): nondetection, sending, tongues\n\n4th level (2 slots): confusion, dimension door\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. Windharrow makes two melee attacks.",
+        "Rapier. Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 7 (1d8 + 3) piercing damage."
+    ]
+}

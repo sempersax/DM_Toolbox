@@ -1,0 +1,27 @@
+{
+    "monsterName": "Duergar Spore Servant",
+    "monsterType": "Medium plant, unaligned",
+    "monsterArmor": "Armor Class 16 (scale armor, shield)",
+    "monsterHP": "Hit Points 26 (4d8+8)",
+    "monsterSpeed": "Speed 15 ft.",
+    "monsterSTR": "14 (+2)",
+    "monsterDEX": "11 (0)",
+    "monsterCON": "14 (+2)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "6 (-2)",
+    "monsterCHA": "1 (-5)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances poison",
+    "monsterImmunities": "",
+    "monsterCImmunities": "Condition Immunities blinded, charmed, frightened, paralyzed",
+    "monsterSenses": "Senses blindsight 30 ft. (blind beyond this radius)",
+    "monsterLanguages": "Languages -",
+    "monsterChallenge": "Challenge  1/2 (100 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "War Pick. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
+    ]
+}

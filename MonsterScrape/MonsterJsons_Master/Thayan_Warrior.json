@@ -1,0 +1,33 @@
+{
+    "monsterName": "Thayan Warrior",
+    "monsterType": "Medium humanoid (human), any non-good alignment",
+    "monsterArmor": "Armor Class 16 (chain shirt, shield)",
+    "monsterHP": "Hit Points 52 (8d8+16)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "16 (+3)",
+    "monsterDEX": "13 (+1)",
+    "monsterCON": "14 (+2)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "11 (0)",
+    "monsterCHA": "11 (0)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +2",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Common, Thayan",
+    "monsterChallenge": "Challenge  2 (450 XP)",
+    "monsterSpecials": [
+        "Source. tales from the yawning portal,  page 246",
+        "Doomvault Devotion. Within the Doomvault, the warrior has advantage on saving throws against being charmed or frightened .",
+        "Pack Tactics. The warrior has advantage on an attack roll against a creature if at least one of the warrior's allies is within 5 feet of the creature and the ally isn't incapacitated."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The warrior makes two melee attacks.",
+        "Longsword. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage, or 8 (1dlO + 3) slashing damage if used with two hands.",
+        "Javelin. Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+    ]
+}

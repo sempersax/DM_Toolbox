@@ -1,0 +1,29 @@
+{
+    "monsterName": "Swarm of Wasps",
+    "monsterType": "Swarm. The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit points.",
+    "monsterArmor": "Armor Class 12 (natural armor)",
+    "monsterHP": "Hit Points 22 (5d8)",
+    "monsterSpeed": "Speed 5 ft., fly 30 ft.",
+    "monsterSTR": "3 (-4)",
+    "monsterDEX": "13 (+1)",
+    "monsterCON": "10 (0)",
+    "monsterINT": "1 (-5)",
+    "monsterWIS": "7 (-2)",
+    "monsterCHA": "1 (-5)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances bludgeoning, piercing, slashing",
+    "monsterImmunities": "",
+    "monsterCImmunities": "Condition Immunities charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned",
+    "monsterSenses": "Senses blindsight 10 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/2 (100 XP)",
+    "monsterSpecials": [
+        "Swarm. The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit points."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bites. Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm's space. Hit: 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer."
+    ]
+}

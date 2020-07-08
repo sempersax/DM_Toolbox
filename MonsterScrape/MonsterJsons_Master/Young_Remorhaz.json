@@ -1,0 +1,29 @@
+{
+    "monsterName": "Young Remorhaz",
+    "monsterType": "Large monstrosity, unaligned",
+    "monsterArmor": "Armor Class 14 (natural armor)",
+    "monsterHP": "Hit Points 93 (11d10+33)",
+    "monsterSpeed": "Speed 30 ft., burrow 20 ft.",
+    "monsterSTR": "18 (+4)",
+    "monsterDEX": "13 (+1)",
+    "monsterCON": "17 (+3)",
+    "monsterINT": "3 (-4)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "4 (-3)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "Damage Immunities cold, fire",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft., tremorsense 60 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  5 (1,800 XP)",
+    "monsterSpecials": [
+        "Heated Body. A creature that touches the remorhaz or hits it with a melee attack while within 5 feet of it takes 7 (2d6) fire damage."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 20 (3d10 + 4) piercing damage plus 7 (2d6) fire damage."
+    ]
+}

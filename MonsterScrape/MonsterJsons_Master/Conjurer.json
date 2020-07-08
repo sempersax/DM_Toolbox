@@ -1,0 +1,30 @@
+{
+    "monsterName": "Conjurer",
+    "monsterType": "Benign Transportation (Recharges after the Conjurer Casts a Conjuration Spell of 1st Level or Higher). As a bonus action, the conjurer teleports up to 30 feet to an unoccupied space that it can see. If it instead chooses a space within range that is occupied by a willing Small or Medium creature, they both teleport, swapping places.",
+    "monsterArmor": "Armor Class 12 (15 with mage armor)",
+    "monsterHP": "Hit Points 40 (9d8)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "9 (-1)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "11 (0)",
+    "monsterINT": "17 (+3)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "11 (0)",
+    "monsterSavings": "Saving Throws Int +6, Wis +4",
+    "monsterSkills": "Skills Arcana +6, History +6",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages any four languages",
+    "monsterChallenge": "Challenge  6 (2,300 XP)",
+    "monsterSpecials": [
+        "Spellcasting. The conjurer is a 9th-level spellcaster. Its spellcasting ability is intelligence (spell save DC 14, +6 to hit with spell attacks). The conjurer has the following wizard spells prepared:\n\nCantrips (at will): acid splash, mage hand, poison spray, prestidigitation\n\n1st level (4 slots): mage armor, magic missile, unseen servant*\n\n2nd level (3 slots): cloud of daggers*, misty step*, web*\n\n3rd level (3 slots): fireball, stinking cloud*\n\n4th level (3 slots): Evard's black tentacles*, stoneskin\n\n5th level (2 slots): cloudkill*, conjure elemental*\n\n*Conjuration spell of 1st level or higher\n\n",
+        "Benign Transportation (Recharges after the Conjurer Casts a Conjuration Spell of 1st Level or Higher). As a bonus action, the conjurer teleports up to 30 feet to an unoccupied space that it can see. If it instead chooses a space within range that is occupied by a willing Small or Medium creature, they both teleport, swapping places."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Dagger. Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4+2) piercing damage."
+    ]
+}

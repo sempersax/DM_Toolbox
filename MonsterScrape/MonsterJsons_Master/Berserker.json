@@ -1,0 +1,29 @@
+{
+    "monsterName": "Berserker",
+    "monsterType": "Medium humanoid (any race), any chaotic alignment",
+    "monsterArmor": "Armor Class 13 (hide armor)",
+    "monsterHP": "Hit Points 67 (9d8+27)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "16 (+3)",
+    "monsterDEX": "12 (+1)",
+    "monsterCON": "17 (+3)",
+    "monsterINT": "9 (-1)",
+    "monsterWIS": "11 (0)",
+    "monsterCHA": "9 (-1)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages any one language (usually Common)",
+    "monsterChallenge": "Challenge  2 (450 XP)",
+    "monsterSpecials": [
+        "Reckless. At the start of its turn, the berserker can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Greataxe. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (1d12 + 3) slashing damage."
+    ]
+}

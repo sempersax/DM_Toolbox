@@ -1,0 +1,28 @@
+{
+    "monsterName": "Redbrand Ruffian",
+    "monsterType": "Medium humanoid (human), neutral evil",
+    "monsterArmor": "Armor Class 14 (studded leather armor)",
+    "monsterHP": "Hit Points 16 (3d8+3)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "11 (0)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "9 (-1)",
+    "monsterWIS": "9 (-1)",
+    "monsterCHA": "11 (0)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Intimidation +2",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Common",
+    "monsterChallenge": "Challenge  1/2 (100 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The ruffian makes two melee attacks.",
+        "Shortsword. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+    ]
+}

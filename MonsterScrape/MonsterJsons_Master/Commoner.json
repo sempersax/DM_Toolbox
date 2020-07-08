@@ -1,0 +1,27 @@
+{
+    "monsterName": "Commoner",
+    "monsterType": "Medium humanoid (any race), any alignment",
+    "monsterArmor": "Armor Class 10",
+    "monsterHP": "Hit Points 4 (1d8)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "10 (0)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "10 (0)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "10 (0)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages any one language (usually Common)",
+    "monsterChallenge": "Challenge  0 (10 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Club. Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage."
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "monsterName": "Plesiosaurus",
+    "monsterType": "Large beast, unaligned",
+    "monsterArmor": "Armor Class 13 (natural armor)",
+    "monsterHP": "Hit Points 68 (8d10+24)",
+    "monsterSpeed": "Speed 20 ft., swim 40 ft.",
+    "monsterSTR": "18 (+4)",
+    "monsterDEX": "15 (+2)",
+    "monsterCON": "16 (+3)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "5 (-3)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +3, Stealth +4",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  2 (450 XP)",
+    "monsterSpecials": [
+        "Hold Breath. The plesiosaurus can hold its breath for 1 hour."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (3d6 + 4) piercing damage."
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "monsterName": "Blagothkus",
+    "monsterType": "Huge giant (cloud giant), neutral evil",
+    "monsterArmor": "Armor Class 17 (splint)",
+    "monsterHP": "Hit Points 138 (12d12+60)",
+    "monsterSpeed": "Speed 40 ft.",
+    "monsterSTR": "26 (+8)",
+    "monsterDEX": "13 (+1)",
+    "monsterCON": "20 (+5)",
+    "monsterINT": "16 (+3)",
+    "monsterWIS": "15 (+2)",
+    "monsterCHA": "15 (+2)",
+    "monsterSavings": "Saving Throws Con +9, Wis +6, Cha +6",
+    "monsterSkills": "Skills Arcana +7, Insight +6, Intimidation +6, Perception +6",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Common, Draconic, Giant",
+    "monsterChallenge": "Challenge  9 (5,000 XP)",
+    "monsterSpecials": [
+        "Keen Smell. Blagothkus has advantage on Wisdom (Perception) checks that rely on smell.",
+        "Innate Spellcasting. Blagothkus can innately cast the following spells (spell save DC 15), requiring no material components: \n\n3/day each: fog cloud, levitate\n\n",
+        "Spellcasting. Blagothkus is a 5th-level spellcaster that uses Intelligence as his spellcasting ability (spell save DC 15, +7 to hit with spell attacks). Blagothkus has the following spells prepared from the wizard spell list: \n\nCantrips (at will): light, mage hand, prestidigitation\n\n1st level (4 slots): detect magic, identify, magic missile, shield\n\n2nd level (3 slots): gust of wind, misty step, shatter\n\n3rd level (2 slots): fly, lightning bolt\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. Blagothkus attacks twice with his morningstar.",
+        "Morningstar. Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 21 (3d8 + 8) piercing damage."
+    ]
+}

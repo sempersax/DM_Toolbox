@@ -1,0 +1,31 @@
+{
+    "monsterName": "Air Elemental Myrmidon",
+    "monsterType": "Medium elemental, neutral",
+    "monsterArmor": "Armor Class 18 (plate)",
+    "monsterHP": "Hit Points 117 (18d8+36)",
+    "monsterSpeed": "Speed 30 ft., fly 30 ft.",
+    "monsterSTR": "18 (+4)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "14 (+2)",
+    "monsterINT": "9 (-1)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "10 (0)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances lightning, thunder; bludgeoning, piercing, and slashing from nonmagical weapons",
+    "monsterImmunities": "Damage Immunities poison",
+    "monsterCImmunities": "Condition Immunities paralyzed, petrified, poisoned, prone",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Auran, one language of its creator's choice",
+    "monsterChallenge": "Challenge  7 (2,900 XP)",
+    "monsterSpecials": [
+        "Magic Weapons. The myrmidon's weapon attacks are magical."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The myrmidon makes three flail attacks.",
+        "Flail. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage.",
+        "Lightning Strike (Recharge 6). The myrmidon makes one flail attack. If the attack hits, it deals an extra 18 (4d8) lightning damage, and the target must succeed on a DC 14 Constitution saving throw or be stunned until the end of the myrmidon's next turn."
+    ]
+}

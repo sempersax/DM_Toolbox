@@ -1,0 +1,31 @@
+{
+    "monsterName": "Orog",
+    "monsterType": "Medium humanoid (orc), chaotic evil",
+    "monsterArmor": "Armor Class 18 (plate)",
+    "monsterHP": "Hit Points 42 (5d8+20)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "18 (+4)",
+    "monsterDEX": "12 (+1)",
+    "monsterCON": "18 (+4)",
+    "monsterINT": "12 (+1)",
+    "monsterWIS": "11 (0)",
+    "monsterCHA": "12 (+1)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Intimidation +5, Survival +2",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Common, Orc",
+    "monsterChallenge": "Challenge  2 (450 XP)",
+    "monsterSpecials": [
+        "Aggressive. As a bonus action, the orog can move up to its speed toward a hostile creature that it can see."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The orog makes two greataxe attacks.",
+        "Greataxe. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d12 + 4) slashing damage.",
+        "Javelin. Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 7 (1d6 + 4) piercing damage."
+    ]
+}

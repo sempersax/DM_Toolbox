@@ -1,0 +1,27 @@
+{
+    "monsterName": "Drow Spore Servant",
+    "monsterType": "Medium plant, unaligned",
+    "monsterArmor": "Armor Class 15 (chain shirt)",
+    "monsterHP": "Hit Points 13 (3d8)",
+    "monsterSpeed": "Speed 20 ft.",
+    "monsterSTR": "10 (0)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "10 (0)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "6 (-2)",
+    "monsterCHA": "1 (-5)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "Condition Immunities blinded, charmed, frightened, paralyzed",
+    "monsterSenses": "Senses blindsight 30 ft. (blind beyond this radius)",
+    "monsterLanguages": "Languages -",
+    "monsterChallenge": "Challenge  1/8 (25 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Shortsword. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+    ]
+}

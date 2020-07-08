@@ -1,0 +1,30 @@
+{
+    "monsterName": "Orc",
+    "monsterType": "Medium humanoid (orc), chaotic evil",
+    "monsterArmor": "Armor Class 13 (hide armor)",
+    "monsterHP": "Hit Points 15 (2d8+6)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "16 (+3)",
+    "monsterDEX": "12 (+1)",
+    "monsterCON": "16 (+3)",
+    "monsterINT": "7 (-2)",
+    "monsterWIS": "11 (0)",
+    "monsterCHA": "10 (0)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Intimidation +2",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Common, Orc",
+    "monsterChallenge": "Challenge  1/2 (100 XP)",
+    "monsterSpecials": [
+        "Aggressive. As a bonus action, the orc can move up to its speed toward a hostile creature that it can see."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Greataxe. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (1d12 + 3) slashing damage.",
+        "Javelin. Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+    ]
+}

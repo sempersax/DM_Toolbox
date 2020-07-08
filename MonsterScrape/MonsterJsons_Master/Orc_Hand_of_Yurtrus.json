@@ -1,0 +1,31 @@
+{
+    "monsterName": "Orc Hand of Yurtrus",
+    "monsterType": "Medium humanoid (orc), chaotic evil",
+    "monsterArmor": "Armor Class 12 (hide armor)",
+    "monsterHP": "Hit Points 30 (4d8+12)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "12 (+1)",
+    "monsterDEX": "11 (0)",
+    "monsterCON": "16 (+3)",
+    "monsterINT": "11 (0)",
+    "monsterWIS": "14 (+2)",
+    "monsterCHA": "9 (-1)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Arcana +2, Intimidation +1, Medicine +4, Religion +2",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages understands Common and Orc but can't speak",
+    "monsterChallenge": "Challenge  2 (450 XP)",
+    "monsterSpecials": [
+        "Source. Volo's Guide to Monsters, p. 184",
+        "Aggressive. As a bonus action, the orc can move up to its speed toward a hostile creature that it can see.",
+        "Spellcasting. The orc is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It requires no verbal components to cast its spells. The orc has the following cleric spells prepared:\n\nCantrips (at-will): guidance, mending, resistance, thaumaturgy\n\n1st level (4 slots): bane, detect magic, inflict wounds, protection from evil and good\n\n2nd level (3 slots): blindness/deafness, silence\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Touch of the White Hand. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 9 (2d8) necrotic damage."
+    ]
+}

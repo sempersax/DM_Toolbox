@@ -1,0 +1,29 @@
+{
+    "monsterName": "Grell",
+    "monsterType": "Medium aberration, neutral evil",
+    "monsterArmor": "Armor Class 12",
+    "monsterHP": "Hit Points 55 (10d8+10)",
+    "monsterSpeed": "Speed 10 ft., fly 30 ft. (hover)",
+    "monsterSTR": "15 (+2)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "13 (+1)",
+    "monsterINT": "12 (+1)",
+    "monsterWIS": "11 (0)",
+    "monsterCHA": "9 (-1)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +4, Stealth +6",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "Damage Immunities lightning",
+    "monsterCImmunities": "Condition Immunities blinded, prone",
+    "monsterSenses": "Senses blindsight 60 ft. (blind beyond this radius)",
+    "monsterLanguages": "Languages Grell",
+    "monsterChallenge": "Challenge  3 (700 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The grell makes two attacks: one with its tentacles and one with its beak.",
+        "Tentacles. Melee Weapon Attack: +4 to hit, reach 10 ft., one creature. Hit: 7 (1d10 + 2) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or be poisoned for 1 minute. The poisoned target is paralyzed, and it can repeat the saving throw at the end of each of its turns, ending the effect on a success.",
+        "Beak. Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 7 (2d4 + 2) piercing damage."
+    ]
+}

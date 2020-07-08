@@ -1,0 +1,33 @@
+{
+    "monsterName": "Djinni",
+    "monsterType": "Large elemental, chaotic good",
+    "monsterArmor": "Armor Class 17 (natural armor)",
+    "monsterHP": "Hit Points 161 (14d10+84)",
+    "monsterSpeed": "Speed 30 ft., fly 90 ft.",
+    "monsterSTR": "21 (+5)",
+    "monsterDEX": "15 (+2)",
+    "monsterCON": "22 (+6)",
+    "monsterINT": "15 (+2)",
+    "monsterWIS": "16 (+3)",
+    "monsterCHA": "20 (+5)",
+    "monsterSavings": "Saving Throws Dex +6, Wis +7, Cha +9",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "Damage Immunities lightning, thunder",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 120 ft.",
+    "monsterLanguages": "Languages Auran",
+    "monsterChallenge": "Challenge  11 (7,200 XP)",
+    "monsterSpecials": [
+        "Elemental Demise. If the djinni dies, its body disintegrates into a warm breeze, leaving behind only equipment the djinni was wearing or carrying.",
+        "Innate Spellcasting. The djinni's innate spellcasting ability is Charisma (spell save DC 17, +9 to hit with spell attacks). It can innately cast the following spells, requiring no material components: \n\nAt will: detect evil and good, detect magic, thunderwave 3/day each: create food and water (can create wine instead of water), tongues, wind walk\n\n1/day each: conjure elemental (air elemental only), creation, gaseous form, invisibility, major image, plane shift\n\n",
+        "Variant: Genie Powers. Genies have a variety of magical capabilities, including spells. A few have even greater powers that allow them to alter their appearance or the nature of reality."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The djinni makes three scimitar attacks.",
+        "Scimitar. Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage plus 3 (1d6) lightning or thunder damage (djinni's choice).",
+        "Create Whirlwind. A 5-foot-radius, 30-foot-tall cylinder of swirling air magically forms on a point the djinni can see within 120 feet of it. The whirlwind lasts as long as the djinni maintains concentration (as if concentrating on a spell). Any creature but the djinni that enters the whirlwind must succeed on a DC 18 Strength saving throw or be restrained by it. The djinni can move the whirlwind up to 60 feet as an action, and creatures restrained by the whirlwind move with it. The whirlwind ends if the djinni loses sight of it."
+    ]
+}

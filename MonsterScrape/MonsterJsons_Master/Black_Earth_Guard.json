@@ -1,0 +1,30 @@
+{
+    "monsterName": "Black Earth Guard",
+    "monsterType": "Medium humanoid (human), neutral evil",
+    "monsterArmor": "Armor Class 18 (plate)",
+    "monsterHP": "Hit Points 39 (6d8+12)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "17 (+3)",
+    "monsterDEX": "11 (0)",
+    "monsterCON": "14 (+2)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "9 (-1)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Intimidation +1, Perception +2",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Common",
+    "monsterChallenge": "Challenge  2 (450 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The guard makes two melee attacks.",
+        "Morningstar. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage.",
+        "Reactions",
+        "Unyielding. When the guard is subjected to an effect that would move it, knock it prone, or both, it can use its reaction to be neither moved nor knocked prone."
+    ]
+}

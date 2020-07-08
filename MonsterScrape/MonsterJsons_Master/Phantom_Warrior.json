@@ -1,0 +1,33 @@
+{
+    "monsterName": "Phantom Warrior",
+    "monsterType": "Medium undead, any alignment",
+    "monsterArmor": "Armor Class 16",
+    "monsterHP": "Hit Points 45 (6d8+18)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "16 (+3)",
+    "monsterDEX": "11 (0)",
+    "monsterCON": "16 (+3)",
+    "monsterINT": "8 (-1)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "15 (+2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +2, Stealth +4",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances bludgeoning, piercing, and slashing from nonmagical attacks",
+    "monsterImmunities": "Damage Immunities cold, necrotic, poison",
+    "monsterCImmunities": "Condition Immunities charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages any languages it knew in life",
+    "monsterChallenge": "Challenge  1 (200 XP)",
+    "monsterSpecials": [
+        "Ethereal Sight. The phantom warrior can see 60 feet into the Ethereal Plane when it is on the Material Plane, and vice versa.",
+        "Incorporeal Movement. The phantom warrior can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.",
+        "Spectral Armor and Shield. The phantom warrior's AC accounts for its spectral armor and shield."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The phantom warrior makes two attacks with its spectral longsword.",
+        "Spectral Longsword. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8+3) force damage.",
+        "Etherealness. The phantom warrior enters the Ethereal Plane from the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane."
+    ]
+}

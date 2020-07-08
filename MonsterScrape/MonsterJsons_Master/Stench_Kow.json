@@ -1,0 +1,30 @@
+{
+    "monsterName": "Stench Kow",
+    "monsterType": "Large beast, unaligned",
+    "monsterArmor": "Armor Class 10",
+    "monsterHP": "Hit Points 15 (2d10+4)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "18 (+4)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "14 (+2)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "4 (-3)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances cold, fire, poison",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/4 (50 XP)",
+    "monsterSpecials": [
+        "Charge. If the kow moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 7 (2d6) piercing damage.",
+        "Stench. Any creature other than a stench kow that starts its turn within 5 feet of the stench kow must succeed on a DC 26 Constitution saving throw or be poisoned until the start of the creature's next turn. On a successful saving throw, the creature is immune to the stench of all stench kows for 1 hour."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Gore. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6+4) piercing damage."
+    ]
+}

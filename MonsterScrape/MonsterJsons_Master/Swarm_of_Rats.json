@@ -1,0 +1,30 @@
+{
+    "monsterName": "Swarm of Rats",
+    "monsterType": "Swarm. The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny rat. The swarm can't regain hit points or gain temporary hit points.",
+    "monsterArmor": "Armor Class 10",
+    "monsterHP": "Hit Points 24 (7d8-7)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "9 (-1)",
+    "monsterDEX": "11 (0)",
+    "monsterCON": "9 (-1)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "3 (-4)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances bludgeoning, piercing, slashing",
+    "monsterImmunities": "",
+    "monsterCImmunities": "Condition Immunities charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned",
+    "monsterSenses": "Senses darkvision 30 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/4 (50 XP)",
+    "monsterSpecials": [
+        "Keen Smell. The swarm has advantage on Wisdom (Perception) checks that rely on smell.",
+        "Swarm. The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny rat. The swarm can't regain hit points or gain temporary hit points."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bites. Melee Weapon Attack: +2 to hit, reach 0 ft., one target in the swarm's space. Hit: 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer."
+    ]
+}

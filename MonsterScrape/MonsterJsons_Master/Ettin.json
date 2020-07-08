@@ -1,0 +1,32 @@
+{
+    "monsterName": "Ettin",
+    "monsterType": "Large giant, chaotic evil",
+    "monsterArmor": "Armor Class 12 (natural armor)",
+    "monsterHP": "Hit Points 85 (10d10+30)",
+    "monsterSpeed": "Speed 40 ft.",
+    "monsterSTR": "21 (+5)",
+    "monsterDEX": "8 (-1)",
+    "monsterCON": "17 (+3)",
+    "monsterINT": "6 (-2)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "8 (-1)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +4",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Giant, Orc",
+    "monsterChallenge": "Challenge  4 (1,100 XP)",
+    "monsterSpecials": [
+        "Two Heads. The ettin has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious.",
+        "Wakeful. When one of the ettin's heads is asleep, its other head is awake."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The ettin makes two attacks: one with its battleaxe and one with its morningstar.",
+        "Battleaxe. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) slashing damage.",
+        "Morningstar. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) piercing damage."
+    ]
+}

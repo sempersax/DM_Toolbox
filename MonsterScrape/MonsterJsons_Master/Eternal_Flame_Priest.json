@@ -1,0 +1,29 @@
+{
+    "monsterName": "Eternal Flame Priest",
+    "monsterType": "Medium humanoid (human), neutral evil",
+    "monsterArmor": "Armor Class 12 (15 with mage armor)",
+    "monsterHP": "Hit Points 52 (8d8+16)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "12 (+1)",
+    "monsterDEX": "15 (+2)",
+    "monsterCON": "14 (+2)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "11 (0)",
+    "monsterCHA": "16 (+3)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Deception +5, Intimidation +5, Religion +2",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances fire",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Common, Ignan",
+    "monsterChallenge": "Challenge  3 (700 XP)",
+    "monsterSpecials": [
+        "Spellcasting. The priest is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). It knows the following sorcerer spells: \n\nCantrips (at will): control flames, create bonfire, fire bolt, light, minor illusion\n\n1st level (4 slots): burning hands, expeditious retreat, mage armor\n\n2nd level (3 slots): blur, scorching ray\n\n3rd level (2 slots): fireball\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Dagger. Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    ]
+}

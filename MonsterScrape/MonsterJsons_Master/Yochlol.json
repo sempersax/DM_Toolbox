@@ -1,0 +1,36 @@
+{
+    "monsterName": "Yochlol",
+    "monsterType": "Medium fiend (demon), chaotic evil",
+    "monsterArmor": "Armor Class 15 (natural armor)",
+    "monsterHP": "Hit Points 136 (16d8+64)",
+    "monsterSpeed": "Speed 30 ft., climb 30 ft.",
+    "monsterSTR": "15 (+2)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "18 (+4)",
+    "monsterINT": "13 (+1)",
+    "monsterWIS": "15 (+2)",
+    "monsterCHA": "15 (+2)",
+    "monsterSavings": "Saving Throws Dex +6, Int +5, Wis +6, Cha +6",
+    "monsterSkills": "Skills Deception +10, Insight +6",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances cold, fire, lightning, bludgeoning, piercing, and slashing from nonmagical weapons",
+    "monsterImmunities": "Damage Immunities poison",
+    "monsterCImmunities": "Condition Immunities poisoned",
+    "monsterSenses": "Senses darkvision 120 ft.",
+    "monsterLanguages": "Languages Abyssal, Elvish, Undercommon",
+    "monsterChallenge": "Challenge  10 (5,900 XP)",
+    "monsterSpecials": [
+        "Shapechanger. The yochlol can use its action to polymorph into a form that resembles a female drow or giant spider, or back into its true form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
+        "Magic Resistance. The yochlol has advantage on saving throws against spells and other magical effects.",
+        "Spider Climb. The yochlol can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+        "Innate Spellcasting. The yochlol's spellcasting ability is Charisma (spell save DC 14). The yochlol can innately cast the following spells, requiring no material components: \n\nAt will: detect thoughts, web\n\n1/day: dominate person\n\n",
+        "Web Walker. The yochlol ignores movement restrictions caused by webbing."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The yochlol makes two melee attacks.",
+        "Slam (Bite in Spider Form). Melee Weapon Attack: +6 to hit, reach 5 ft. (10 ft. in demon form), one target. Hit: 5 (1d6 + 2) bludgeoning (piercing in spider form) damage plus 21 (6d6) poison damage.",
+        "Mist Form. The yochlol transforms into toxic mist or reverts to its true form. Any equipment it is wearing or carrying is also transformed. It reverts to its true form if it dies.",
+        "Variant: Summon Demon (1/Day). The demon chooses what to summon and attempts a magical summoning."
+    ]
+}

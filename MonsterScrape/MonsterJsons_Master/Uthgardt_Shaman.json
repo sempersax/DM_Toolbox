@@ -1,0 +1,30 @@
+{
+    "monsterName": "Uthgardt Shaman",
+    "monsterType": "Medium humanoid (human), neutral evil",
+    "monsterArmor": "Armor Class 13",
+    "monsterHP": "Hit Points 38 (7d8+7)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "14 (+2)",
+    "monsterDEX": "12 (+1)",
+    "monsterCON": "13 (+1)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "15 (+2)",
+    "monsterCHA": "12 (+1)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Medicine +4, Nature +4, Perception +4, Survival +6",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Bothii, Common",
+    "monsterChallenge": "Challenge  2 (450 XP)",
+    "monsterSpecials": [
+        "Innate Spellcasting. The shaman can innately cast the following spells. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). \n\nAt Will: dancing lights, message, mage hand, thaumaturgy\n\n1/day: augury, bestow curse, cordon of arrows, detect magic, hex, prayer of healing, speak with dead, spirit guardians\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Spear. Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d6+2) piercing damage, or 6 (1d8 + 2) piercing damage if wielded with two hands.",
+        "Shortbow. Ranged Weapon Attack: +3 to hit, range 80/320 ft., one target. Hit: 4 (1d6 + 1) piercing damage."
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "monsterName": "Dryad",
+    "monsterType": "Medium fey, neutral",
+    "monsterArmor": "Armor Class 11 (16 with barkskin)",
+    "monsterHP": "Hit Points 22 (5d8)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "10 (0)",
+    "monsterDEX": "12 (+1)",
+    "monsterCON": "11 (0)",
+    "monsterINT": "14 (+2)",
+    "monsterWIS": "15 (+2)",
+    "monsterCHA": "18 (+4)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +4, Stealth +5",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Elvish, Sylvan",
+    "monsterChallenge": "Challenge  1 (200 XP)",
+    "monsterSpecials": [
+        "Innate Spellcasting. The dryad's innate spellcasting ability is Charisma (spell save DC 14). The dryad can innately cast the following spells, requiring no material components: \n\nAt will: druidcraft\n\n3/day each: entangle, goodberry\n\n1/day each: barkskin, pass without trace, shillelagh\n\n",
+        "Magic Resistance. The dryad has advantage on saving throws against spells and other magical effects.",
+        "Speak with Beasts and Plants. The dryad can communicate with beasts and plants as if they shared a language.",
+        "Tree Stride. Once on her turn, the dryad can use 10 ft. of her movement to step magically into one living tree within her reach and emerge from a second living tree within 60 ft. of the first tree, appearing in an unoccupied space within 5 ft. of the second tree. Both trees must be large or bigger."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Club. Melee Weapon Attack: +2 to hit (+6 to hit with shillelagh), reach 5 ft., one target. Hit: 2 (1 d4) bludgeoning damage, or 8 (1d8 + 4) bludgeoning damage with shillelagh.",
+        "Fey Charm. The dryad targets one humanoid or beast that she can see within 30 feet of her. If the target can see the dryad, it must succeed on a DC 14 Wisdom saving throw or be magically charmed. The charmed creature regards the dryad as a trusted friend to be heeded and protected. Although the target isn't under the dryad's control, it takes the dryad's requests or actions in the most favorable way it can."
+    ]
+}

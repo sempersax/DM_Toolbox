@@ -1,0 +1,30 @@
+{
+    "monsterName": "Vulture",
+    "monsterType": "Medium beast, unaligned",
+    "monsterArmor": "Armor Class 10",
+    "monsterHP": "Hit Points 5 (1d8+1)",
+    "monsterSpeed": "Speed 10 ft., fly 50 ft.",
+    "monsterSTR": "7 (-2)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "13 (+1)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "4 (-3)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +3",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  0 (10 XP)",
+    "monsterSpecials": [
+        "Keen Sight and Smell. The vulture has advantage on Wisdom (Perception) checks that rely on sight or smell.",
+        "Pack Tactics. The vulture has advantage on an attack roll against a creature if at least one of the vulture's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Beak. Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage."
+    ]
+}

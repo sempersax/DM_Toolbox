@@ -1,0 +1,31 @@
+{
+    "monsterName": "Water Elemental Myrmidon",
+    "monsterType": "Medium elemental, neutral",
+    "monsterArmor": "Armor Class 18 (plate)",
+    "monsterHP": "Hit Points 127 (17d8+51)",
+    "monsterSpeed": "Speed 40 ft., swim 40 ft.",
+    "monsterSTR": "18 (+4)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "15 (+2)",
+    "monsterINT": "8 (-1)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "10 (0)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances acid; bludgeoning, piercing, and slashing from nonmagical weapons",
+    "monsterImmunities": "Damage Immunities poison",
+    "monsterCImmunities": "Condition Immunities paralyzed, petrified, poisoned, prone",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Aquan, one language of its creator's choice",
+    "monsterChallenge": "Challenge  7 (2,900 XP)",
+    "monsterSpecials": [
+        "Magic Weapons. The myrmidon's weapon attacks are magical."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The myrmidon makes three trident attacks.",
+        "Trident. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage.",
+        "Freezing Strikes (Recharge 6). The myrmidon uses Multiattack. Each attack that hits deals an extra 5 (1d10) cold damage, and the target's speed is reduced by 10 feet until the end of the myrmidon's next turn."
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "monsterName": "Awakened Shrub",
+    "monsterType": "Small plant, unaligned",
+    "monsterArmor": "Armor Class 9",
+    "monsterHP": "Hit Points 10 (3d6)",
+    "monsterSpeed": "Speed 20 ft.",
+    "monsterSTR": "3 (-4)",
+    "monsterDEX": "8 (-1)",
+    "monsterCON": "11 (0)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "6 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "Damage Vulnerabilities fire",
+    "mosnterResistances": "Damage Resistances piercing",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages one language known by its creator",
+    "monsterChallenge": "Challenge  0 (10 XP)",
+    "monsterSpecials": [
+        "False Appearance. While the shrub remains motionless, it is indistinguishable from a normal shrub."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Rake. Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 - 1) slashing damage."
+    ]
+}

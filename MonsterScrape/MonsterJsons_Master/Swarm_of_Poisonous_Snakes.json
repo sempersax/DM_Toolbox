@@ -1,0 +1,29 @@
+{
+    "monsterName": "Swarm of Poisonous Snakes",
+    "monsterType": "Swarm. The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny snake. The swarm can't regain hit points or gain temporary hit points.",
+    "monsterArmor": "Armor Class 14",
+    "monsterHP": "Hit Points 36 (8d8)",
+    "monsterSpeed": "Speed 30 ft., swim 30 ft.",
+    "monsterSTR": "8 (-1)",
+    "monsterDEX": "18 (+4)",
+    "monsterCON": "11 (0)",
+    "monsterINT": "1 (-5)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "3 (-4)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances bludgeoning, piercing, slashing",
+    "monsterImmunities": "",
+    "monsterCImmunities": "Condition Immunities charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned",
+    "monsterSenses": "Senses blindsight 10 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  2 (450 XP)",
+    "monsterSpecials": [
+        "Swarm. The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny snake. The swarm can't regain hit points or gain temporary hit points."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bites. Melee Weapon Attack: +6 to hit, reach 0 ft., one creature in the swarm's space. Hit: 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer. The target must make a DC 10 Constitution saving throw, taking 14 (4d6) poison damage on a failed save, or half as much damage on a successful one."
+    ]
+}

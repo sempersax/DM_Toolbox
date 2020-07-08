@@ -1,0 +1,31 @@
+{
+    "monsterName": "Ice Toad",
+    "monsterType": "Medium monstrosity, neutral",
+    "monsterArmor": "Armor Class 12 (natural armor)",
+    "monsterHP": "Hit Points 32 (5d8+10)",
+    "monsterSpeed": "Speed 30 ft., swim 30 ft.",
+    "monsterSTR": "13 (+1)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "14 (+2)",
+    "monsterINT": "8 (-1)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "6 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +2",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "Damage Immunities cold",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Ice Toad",
+    "monsterChallenge": "Challenge  1 (200 XP)",
+    "monsterSpecials": [
+        "Amphibious. The toad can breathe air or water.",
+        "Cold Aura. Any creature that starts its turn within 5 feet of the toad takes 3 (1d6) cold damage.",
+        "Standing Leap. The toad's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d8) cold damage. If the target is a Medium or smaller creature it is grappled (escape DC 11). Until this grapple ends, the toad can't bite another target."
+    ]
+}

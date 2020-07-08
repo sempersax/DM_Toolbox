@@ -1,0 +1,31 @@
+{
+    "monsterName": "Swarm of Quippers",
+    "monsterType": "Swarm. The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny quipper. The swarm can't regain hit points or gain temporary hit points.",
+    "monsterArmor": "Armor Class 13",
+    "monsterHP": "Hit Points 28 (8d8-8)",
+    "monsterSpeed": "Speed 0 ft., swim 40 ft.",
+    "monsterSTR": "13 (+1)",
+    "monsterDEX": "16 (+3)",
+    "monsterCON": "9 (-1)",
+    "monsterINT": "1 (-5)",
+    "monsterWIS": "7 (-2)",
+    "monsterCHA": "2 (-4)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances bludgeoning, piercing, slashing",
+    "monsterImmunities": "",
+    "monsterCImmunities": "Condition Immunities charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1 (200 XP)",
+    "monsterSpecials": [
+        "Blood Frenzy. The swarm has advantage on melee attack rolls against any creature that doesn't have all its hit points.",
+        "Swarm. The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny quipper. The swarm can't regain hit points or gain temporary hit points.",
+        "Water Breathing. The swarm can breathe only underwater."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bites. Melee Weapon Attack: +5 to hit, reach 0 ft., one creature in the swarm's space. Hit: 14 (4d6) piercing damage, or 7 (2d6) piercing damage if the swarm has half of its hit points or fewer."
+    ]
+}

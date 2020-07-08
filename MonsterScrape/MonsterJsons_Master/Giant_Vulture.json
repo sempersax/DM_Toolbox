@@ -1,0 +1,32 @@
+{
+    "monsterName": "Giant Vulture",
+    "monsterType": "Large beast, neutral evil",
+    "monsterArmor": "Armor Class 10",
+    "monsterHP": "Hit Points 22 (3d10+6)",
+    "monsterSpeed": "Speed 10 ft., fly 60 ft.",
+    "monsterSTR": "15 (+2)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "15 (+2)",
+    "monsterINT": "6 (-2)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "7 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +3",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages understands Common but can't speak",
+    "monsterChallenge": "Challenge  1 (200 XP)",
+    "monsterSpecials": [
+        "Keen Sight and Smell. The vulture has advantage on Wisdom (Perception) checks that rely on sight or smell.",
+        "Pack Tactics. The vulture has advantage on an attack roll against a creature if at least one of the vulture's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The vulture makes two attacks: one with its beak and one with its talons.",
+        "Beak. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) piercing damage.",
+        "Talons. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage."
+    ]
+}

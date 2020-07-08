@@ -1,0 +1,32 @@
+{
+    "monsterName": "Girallon",
+    "monsterType": "Large monstrosity, unaligned",
+    "monsterArmor": "Armor Class 13",
+    "monsterHP": "Hit Points 59 (7d10+21)",
+    "monsterSpeed": "Speed 40 ft., climb 40 ft.",
+    "monsterSTR": "18 (+4)",
+    "monsterDEX": "16 (+3)",
+    "monsterCON": "16 (+3)",
+    "monsterINT": "5 (-3)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "7 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +3, Stealth +5",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  4 (1,100 XP)",
+    "monsterSpecials": [
+        "Source. Volo's Guide to Monsters, p. 152",
+        "Aggressive. As a bonus action, the girallon can move up to its speed toward a hostile creature that it can see."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The girallon makes five attacks: one with its bite and four with its claws.",
+        "Bite. Melee Weapon Attack: +6 to hit, reach 5 ft, one creature. Hit: 7 (1d6+4) piercing damage.",
+        "Claw. Melee Weapon Attack: +6 to hit. reach 10 ft., one target. Hit: 7 (1d6+4) slashing damage."
+    ]
+}

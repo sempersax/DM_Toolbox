@@ -1,0 +1,30 @@
+{
+    "monsterName": "Jackal",
+    "monsterType": "Small beast, unaligned",
+    "monsterArmor": "Armor Class 12",
+    "monsterHP": "Hit Points 3 (1d6)",
+    "monsterSpeed": "Speed 40 ft.",
+    "monsterSTR": "8 (-1)",
+    "monsterDEX": "15 (+2)",
+    "monsterCON": "11 (0)",
+    "monsterINT": "3 (-4)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "6 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +3",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  0 (10 XP)",
+    "monsterSpecials": [
+        "Keen Hearing and Smell. The jackal has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
+        "Pack Tactics. The jackal has advantage on an attack roll against a creature if at least one of the jackal's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 - 1) piercing damage."
+    ]
+}

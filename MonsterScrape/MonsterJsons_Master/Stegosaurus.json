@@ -1,0 +1,27 @@
+{
+    "monsterName": "Stegosaurus",
+    "monsterType": "Huge beast, unaligned",
+    "monsterArmor": "Armor Class 13 (natural armor)",
+    "monsterHP": "Hit Points 76 (8d12+24)",
+    "monsterSpeed": "Speed 40 ft.",
+    "monsterSTR": "20 (+5)",
+    "monsterDEX": "9 (-1)",
+    "monsterCON": "17 (+3)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "11 (0)",
+    "monsterCHA": "5 (-3)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  4 (1,100 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Tail. Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 26 (6d6+5) piercing damage."
+    ]
+}

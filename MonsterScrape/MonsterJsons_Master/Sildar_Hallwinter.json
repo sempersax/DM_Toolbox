@@ -1,0 +1,31 @@
+{
+    "monsterName": "Sildar Hallwinter",
+    "monsterType": "Medium humanoid (human), neutral good",
+    "monsterArmor": "Armor Class 16 (chain mail)",
+    "monsterHP": "Hit Points 27 (5d8+5)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "13 (+1)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "11 (0)",
+    "monsterCHA": "10 (0)",
+    "monsterSavings": "Saving Throws Str +3, Con +3",
+    "monsterSkills": "Skills Perception +2",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Common",
+    "monsterChallenge": "Challenge  1 (200 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. Sildar makes two melee attacks.",
+        "Longsword. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) slashing damage.",
+        "Heavy Crossbow. Ranged Weapon Attack: +2 to hit, range 100 ft./400 ft., one target. Hit: 5 (1d10) piercing damage.",
+        "Reactions",
+        "Parry. When an attacker hits Sildar with a melee attack and Sildar can see the attacker, he can roll 1d6 and add the number rolled to his AC against the triggering attack, provided that he's wielding a melee weapon."
+    ]
+}

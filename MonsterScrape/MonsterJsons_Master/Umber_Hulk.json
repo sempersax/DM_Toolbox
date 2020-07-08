@@ -1,0 +1,32 @@
+{
+    "monsterName": "Umber Hulk",
+    "monsterType": "Large monstrosity, chaotic evil",
+    "monsterArmor": "Armor Class 18 (natural armor)",
+    "monsterHP": "Hit Points 93 (11d10+33)",
+    "monsterSpeed": "Speed 30 ft., burrow 20 ft.",
+    "monsterSTR": "20 (+5)",
+    "monsterDEX": "13 (+1)",
+    "monsterCON": "16 (+3)",
+    "monsterINT": "9 (-1)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "10 (0)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 120 ft., tremorsense 60 ft.",
+    "monsterLanguages": "Languages Umber Hulk",
+    "monsterChallenge": "Challenge  5 (1,800 XP)",
+    "monsterSpecials": [
+        "Confusing Gaze. When a creature starts its turn within 30 feet of the umber hulk and is able to see the umber hulk's eyes, the umber hulk can magically force it to make a DC 15 Charisma saving throw, unless the umber hulk is incapacitated.",
+        "Tunneler. The umber hulk can burrow through solid rock at half its burrowing speed and leaves a 5 foot-wide, 8-foot-high tunnel in its wake."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The umber hulk makes three attacks: two with its claws and one with its mandibles.",
+        "Claw. Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) slashing damage.",
+        "Mandibles. Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) slashing damage."
+    ]
+}

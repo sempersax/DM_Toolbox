@@ -1,0 +1,29 @@
+{
+    "monsterName": "Giant Fire Beetle",
+    "monsterType": "Small beast, unaligned",
+    "monsterArmor": "Armor Class 13 (natural armor)",
+    "monsterHP": "Hit Points 4 (1d6+1)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "8 (-1)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "1 (-5)",
+    "monsterWIS": "7 (-2)",
+    "monsterCHA": "3 (-4)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses blindsight 30 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  0 (10 XP)",
+    "monsterSpecials": [
+        "Illumination. The beetle sheds bright light in a 10-foot radius and dim light for an additional 10 ft.."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) slashing damage."
+    ]
+}

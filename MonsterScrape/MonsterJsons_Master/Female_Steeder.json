@@ -1,0 +1,31 @@
+{
+    "monsterName": "Female Steeder",
+    "monsterType": "Large beast, unaligned",
+    "monsterArmor": "Armor Class 14 (natural armor)",
+    "monsterHP": "Hit Points 30 (4d10+8)",
+    "monsterSpeed": "Speed 30 ft., climb 30 ft.",
+    "monsterSTR": "15 (+2)",
+    "monsterDEX": "16 (+3)",
+    "monsterCON": "14 (+2)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "3 (-4)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Stealth +7",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 120 ft.",
+    "monsterLanguages": "Languages -",
+    "monsterChallenge": "Challenge  1 (200 XP)",
+    "monsterSpecials": [
+        "Spider Climb. The steeder can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+        "Leap. The steeder can expend all its movement on its turn to jump up to 90 feet vertically or horizontally, provided that is speed is at least 30 feet."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 7 (1d8 + 3) piercing damage, and the target must make a DC 12 Constitution saving throw, taking 9 (2d8) acid damage on a failed save, or half as much damage on a successful one.",
+        "Sticky Leg (Recharges when the Steeder Has No Creatures Grappled. Melee Weapon Attack: +5 to hit, reach 5 ft., one Medium or smaller creature. Hit: The target is stuck ot the steeder's leg and grappled until it escapes (escape DC 12)"
+    ]
+}

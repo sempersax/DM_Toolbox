@@ -1,0 +1,29 @@
+{
+    "monsterName": "Giant Ape",
+    "monsterType": "Huge beast, unaligned",
+    "monsterArmor": "Armor Class 12",
+    "monsterHP": "Hit Points 157 (15d12+60)",
+    "monsterSpeed": "Speed 40 ft., climb 40 ft.",
+    "monsterSTR": "23 (+6)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "18 (+4)",
+    "monsterINT": "7 (-2)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "7 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Athletics +9, Perception +4",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  7 (2,900 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The ape makes two fist attacks.",
+        "Fist. Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 22 (3d10 + 6) bludgeoning damage.",
+        "Rock. Ranged Weapon Attack: +9 to hit, range 50/100 ft., one target. Hit: 30 (7d6 + 6) bludgeoning damage."
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "monsterName": "Awakened Zurkhwood",
+    "monsterType": "Huge plant, unaligned",
+    "monsterArmor": "Armor Class 13 (natural armor)",
+    "monsterHP": "Hit Points 59 (7d12+14)",
+    "monsterSpeed": "Speed 20 ft.",
+    "monsterSTR": "19 (+4)",
+    "monsterDEX": "6 (-2)",
+    "monsterCON": "15 (+2)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "7 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "Damage Vulnerabilities fire",
+    "mosnterResistances": "Damage Resistances bludgeoning, piercing",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 120 ft.",
+    "monsterLanguages": "Languages one language known by its creator",
+    "monsterChallenge": "Challenge  2 (450 XP)",
+    "monsterSpecials": [
+        "False Appearance. While the tree remains motionless, it is indistinguishable from a normal zurkhwood mushroom.",
+        "Mute. If the awakened zurkhwood was created by a myconid sovereign, it can't speak."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Slam. Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (3d6 + 4) bludgeoning damage."
+    ]
+}

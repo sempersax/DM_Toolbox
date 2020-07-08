@@ -1,0 +1,31 @@
+{
+    "monsterName": "Githzerai Zerth",
+    "monsterType": "Medium humanoid (gith), lawful neutral",
+    "monsterArmor": "Armor Class 17",
+    "monsterHP": "Hit Points 84 (13d8+26)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "13 (+1)",
+    "monsterDEX": "18 (+4)",
+    "monsterCON": "15 (+2)",
+    "monsterINT": "16 (+3)",
+    "monsterWIS": "17 (+3)",
+    "monsterCHA": "12 (+1)",
+    "monsterSavings": "Saving Throws Str +4, Dex +7, Int +6, Wis +6",
+    "monsterSkills": "Skills Arcana +6, Insight +6, Perception +6",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Gith",
+    "monsterChallenge": "Challenge  6 (2,300 XP)",
+    "monsterSpecials": [
+        "Innate Spellcasting (Psionics). The githzerai's innate spellcasting ability is Wisdom. It can innately cast the following spells, requiring no components: \n\nAt will: mage hand (the hand is invisible)\n\n3/day each: feather fall, jump, see invisibility, shield\n\n",
+        "Psychic Defense. While the githzerai is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The githzerai makes two unarmed strikes.",
+        "Unarmed Strike. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage plus 13 (3d8) psychic damage. This is a magic weapon attack."
+    ]
+}

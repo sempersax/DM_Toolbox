@@ -1,0 +1,31 @@
+{
+    "monsterName": "Orc Eye of Gruumsh",
+    "monsterType": "Medium humanoid (orc), chaotic evil",
+    "monsterArmor": "Armor Class 16 (ring mail, shield)",
+    "monsterHP": "Hit Points 45 (6d8+18)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "16 (+3)",
+    "monsterDEX": "12 (+1)",
+    "monsterCON": "17 (+3)",
+    "monsterINT": "9 (-1)",
+    "monsterWIS": "13 (+1)",
+    "monsterCHA": "12 (+1)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Intimidation +3, Religion +1",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Common, Orc",
+    "monsterChallenge": "Challenge  2 (450 XP)",
+    "monsterSpecials": [
+        "Aggressive. As a bonus action, the orc can move up to its speed toward a hostile creature that it can see.",
+        "Gruumsh's Fury. The orc deals an extra 4 (1d8) damage when it hits with a weapon attack (included in the attacks).",
+        "Spellcasting. The orc is a 3rd-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 11, +3 to hit with spell attacks). The orc has the following cleric spells prepared: \n\nCantrips (at will): guidance, resistance, thaumaturgy\n\n1st level (4 slots): bless, command\n\n2nd level (2 slots): augury, spiritual weapon (spear)\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Spear. Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 11 (1d6 + 3 plus 1d8) piercing damage, or 12 (2d8 + 3) piercing damage if used with two hands to make a melee attack."
+    ]
+}

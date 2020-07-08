@@ -1,0 +1,27 @@
+{
+    "monsterName": "Guard",
+    "monsterType": "Medium humanoid (any race), any alignment",
+    "monsterArmor": "Armor Class 16 (chain shirt, shield)",
+    "monsterHP": "Hit Points 11 (2d8+2)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "13 (+1)",
+    "monsterDEX": "12 (+1)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "11 (0)",
+    "monsterCHA": "10 (0)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +2",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages any one language (usually Common)",
+    "monsterChallenge": "Challenge  1/8 (25 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Spear. Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack."
+    ]
+}

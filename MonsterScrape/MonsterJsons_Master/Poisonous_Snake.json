@@ -1,0 +1,27 @@
+{
+    "monsterName": "Poisonous Snake",
+    "monsterType": "Tiny beast, unaligned",
+    "monsterArmor": "Armor Class 13",
+    "monsterHP": "Hit Points 2 (1d4)",
+    "monsterSpeed": "Speed 30 ft., swim 30 ft.",
+    "monsterSTR": "2 (-4)",
+    "monsterDEX": "16 (+3)",
+    "monsterCON": "11 (0)",
+    "monsterINT": "1 (-5)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "3 (-4)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses blindsight 10 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/8 (25 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage, and the target must make a DC 10 Constitution saving throw, taking 5 (2d4) poison damage on a failed save, or half as much damage on a successful one."
+    ]
+}

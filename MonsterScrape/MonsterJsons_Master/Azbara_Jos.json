@@ -1,0 +1,32 @@
+{
+    "monsterName": "Azbara Jos",
+    "monsterType": "Medium humanoid (human), lawful evil",
+    "monsterArmor": "Armor Class 13 (16 with mage armor)",
+    "monsterHP": "Hit Points 39 (6d8+12)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "9 (-1)",
+    "monsterDEX": "16 (+3)",
+    "monsterCON": "14 (+2)",
+    "monsterINT": "16 (+3)",
+    "monsterWIS": "13 (+1)",
+    "monsterCHA": "11 (0)",
+    "monsterSavings": "Saving Throws Int +5, Wis +3",
+    "monsterSkills": "Skills Arcana +5, Deception +2, Insight +3, Stealth +5",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Common, Draconic, Infernal, Primordial, Thayan",
+    "monsterChallenge": "Challenge  4 (1,100 XP)",
+    "monsterSpecials": [
+        "Special Equipment. Azbara has two scrolls of mage armor.",
+        "Potent Cantrips. When Azbara casts an evocation Cantrips and misses, or the target succeeds on its saving throw, the target still takes half the cantrip's damage but suffers no other effect.",
+        "Sculpt Spells. When Azbara casts an evocation spell that affects other creatures that he can see, he can choose a number of them equal to 1+the spell's level to succeed on their saving throws against the spell. Those creatures take no damage if they would normally take half damage from the spell.",
+        "Spellcasting. Azbara is a 6th-level spellcaster that uses Intelligence as his spellcasting ability (spell save DC 13, +5 to hit with spell attacks). Azbara has the following spells prepared from the wizard spell list: \n\nCantrips (at will): mage hand, prestidigitation, ray of frost, shocking grasp\n\n1st level (4 slots): fog cloud, magic missile, shield, thunderwave\n\n2nd level (3 slots): invisibility, misty step, scorching ray\n\n3rd level (3 slots): counterspell, dispel magic, fireball\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Dagger. Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or ranged 20 ft./60 ft., one target. Hit: 5 (1d4 + 3) piercing damage."
+    ]
+}

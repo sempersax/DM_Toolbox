@@ -1,0 +1,29 @@
+{
+    "monsterName": "Dimetrodon",
+    "monsterType": "Medium beast, unaligned",
+    "monsterArmor": "Armor Class 12 (natural armor)",
+    "monsterHP": "Hit Points 19 (3d8+6)",
+    "monsterSpeed": "Speed 30 ft., swim 20 ft.",
+    "monsterSTR": "14 (+2)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "15 (+2)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "5 (-3)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +2",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/4 (50 XP)",
+    "monsterSpecials": [
+        "Source. Volo's Guide to Monsters, p. 139"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6+2) piercing damage."
+    ]
+}

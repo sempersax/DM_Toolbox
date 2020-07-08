@@ -1,0 +1,28 @@
+{
+    "monsterName": "Constrictor Snake",
+    "monsterType": "Large beast, unaligned",
+    "monsterArmor": "Armor Class 12",
+    "monsterHP": "Hit Points 13 (2d10+2)",
+    "monsterSpeed": "Speed 30 ft., swim 30 ft.",
+    "monsterSTR": "15 (+2)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "1 (-5)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "3 (-4)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses blindsight 10 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/4 (50 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) piercing damage.",
+        "Constrict. Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 6 (1d8 + 2) bludgeoning damage, and the target is grappled (escape DC 14). Until this grapple ends, the creature is restrained, and the snake can't constrict another target."
+    ]
+}

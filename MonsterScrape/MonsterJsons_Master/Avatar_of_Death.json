@@ -1,0 +1,31 @@
+{
+    "monsterName": "Avatar of Death",
+    "monsterType": "Medium undead, neutral evil",
+    "monsterArmor": "Armor Class 20",
+    "monsterHP": "Hit Points. The Avatar of Death appears with hit points equal to half its summoner's maximum hit points.",
+    "monsterSpeed": "Speed 60 ft., fly 60 ft. (hover)",
+    "monsterSTR": "16 (+3)",
+    "monsterDEX": "16 (+3)",
+    "monsterCON": "16 (+3)",
+    "monsterINT": "16 (+3)",
+    "monsterWIS": "16 (+3)",
+    "monsterCHA": "16 (+3)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "Damage Immunities necrotic, poison",
+    "monsterCImmunities": "Condition Immunities charmed, frightened, paralyzed, petrified, poisoned , unconscious",
+    "monsterSenses": "Senses darkvision 60 ft., truesight 60 ft.",
+    "monsterLanguages": "Languages all languages known to its summoner",
+    "monsterChallenge": "Challenge  00",
+    "monsterSpecials": [
+        "Incorporeal Movement. The avatar can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.",
+        "Turning Immunity. The avatar is immune to features that turn undead.",
+        "Hit Points. The Avatar of Death appears with hit points equal to half its summoner's maximum hit points."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Reaping Scythe. The avatar sweeps its spectral scythe through a creature within 5 feet of it, dealing 7 (1d8 + 3) slashing damage plus 4 (1d8) necrotic damage."
+    ]
+}

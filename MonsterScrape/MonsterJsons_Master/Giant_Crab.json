@@ -1,0 +1,29 @@
+{
+    "monsterName": "Giant Crab",
+    "monsterType": "Medium beast, unaligned",
+    "monsterArmor": "Armor Class 15 (natural armor)",
+    "monsterHP": "Hit Points 13 (3d8)",
+    "monsterSpeed": "Speed 30 ft., swim 30 ft.",
+    "monsterSTR": "13 (+1)",
+    "monsterDEX": "15 (+2)",
+    "monsterCON": "11 (0)",
+    "monsterINT": "1 (-5)",
+    "monsterWIS": "9 (-1)",
+    "monsterCHA": "3 (-4)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Stealth +4",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses blindsight 30 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/8 (25 XP)",
+    "monsterSpecials": [
+        "Amphibious. The crab can breathe air and water."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Claw. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage, and the target is grappled (escape DC 11). The crab has two claws, each of which can grapple only one target."
+    ]
+}

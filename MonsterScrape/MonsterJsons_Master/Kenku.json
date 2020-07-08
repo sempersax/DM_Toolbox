@@ -1,0 +1,31 @@
+{
+    "monsterName": "Kenku",
+    "monsterType": "Medium humanoid (kenku), chaotic neutral",
+    "monsterArmor": "Armor Class 13",
+    "monsterHP": "Hit Points 13 (3d8)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "10 (0)",
+    "monsterDEX": "16 (+3)",
+    "monsterCON": "10 (0)",
+    "monsterINT": "11 (0)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "10 (0)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Deception +4, Perception +2, Stealth +5",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages understands Auran and Common but speaks only through the use of its Mimicry trait",
+    "monsterChallenge": "Challenge  1/4 (50 XP)",
+    "monsterSpecials": [
+        "Ambusher. In the first round of a combat, the kenku has advantage on attack rolls against any creature it surprised",
+        "Mimicry. The kenku can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful DC 14 Wisdom (Insight) check."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Shortsword. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.",
+        "Shortbow. Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+    ]
+}

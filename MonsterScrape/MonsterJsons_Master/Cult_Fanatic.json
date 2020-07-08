@@ -1,0 +1,31 @@
+{
+    "monsterName": "Cult Fanatic",
+    "monsterType": "Medium humanoid (any race), any non-good alignment",
+    "monsterArmor": "Armor Class 13 (leather armor)",
+    "monsterHP": "Hit Points 22 (6d8+6)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "11 (0)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "13 (+1)",
+    "monsterCHA": "14 (+2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Deception +4, Persuasion +4, Religion +2",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages any one language (usually Common)",
+    "monsterChallenge": "Challenge  2 (450 XP)",
+    "monsterSpecials": [
+        "Dark Devotion. The fanatic has advantage on saving throws against being charmed or frightened.",
+        "Spellcasting. The fanatic is a 4th-level spellcaster. Its spell casting ability is Wisdom (spell save DC 11, +3 to hit with spell attacks). The fanatic has the following cleric spells prepared: \n\nCantrips (at will): light, sacred flame, thaumaturgy\n\n1st level (4 slots): command, inflict wounds, shield of faith\n\n2nd level (3 slots): hold person, spiritual weapon\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The fanatic makes two melee attacks.",
+        "Dagger. Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one creature. Hit: 4 (1d4 + 2) piercing damage."
+    ]
+}

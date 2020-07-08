@@ -1,0 +1,29 @@
+{
+    "monsterName": "Worg",
+    "monsterType": "Large monstrosity, neutral evil",
+    "monsterArmor": "Armor Class 13 (natural armor)",
+    "monsterHP": "Hit Points 26 (4d10+4)",
+    "monsterSpeed": "Speed 50 ft.",
+    "monsterSTR": "16 (+3)",
+    "monsterDEX": "13 (+1)",
+    "monsterCON": "13 (+1)",
+    "monsterINT": "7 (-2)",
+    "monsterWIS": "11 (0)",
+    "monsterCHA": "8 (-1)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +4",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Goblin, Worg",
+    "monsterChallenge": "Challenge  1/2 (100 XP)",
+    "monsterSpecials": [
+        "Keen Hearing and Smell. The worg has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
+    ]
+}

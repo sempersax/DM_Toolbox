@@ -1,0 +1,29 @@
+{
+    "monsterName": "Cat",
+    "monsterType": "Tiny beast, unaligned",
+    "monsterArmor": "Armor Class 12",
+    "monsterHP": "Hit Points 2 (1d4)",
+    "monsterSpeed": "Speed 40 ft., climb 30 ft.",
+    "monsterSTR": "3 (-4)",
+    "monsterDEX": "15 (+2)",
+    "monsterCON": "10 (0)",
+    "monsterINT": "3 (-4)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "7 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +3, Stealth +4",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  0 (10 XP)",
+    "monsterSpecials": [
+        "Keen Smell. The cat has advantage on Wisdom (Perception) checks that rely on smell."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Claws. Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 slashing damage."
+    ]
+}

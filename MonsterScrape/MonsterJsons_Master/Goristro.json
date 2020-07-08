@@ -1,0 +1,35 @@
+{
+    "monsterName": "Goristro",
+    "monsterType": "Huge fiend (demon), chaotic evil",
+    "monsterArmor": "Armor Class 19 (natural armor)",
+    "monsterHP": "Hit Points 310 (23d12+161)",
+    "monsterSpeed": "Speed 40 ft.",
+    "monsterSTR": "25 (+7)",
+    "monsterDEX": "11 (0)",
+    "monsterCON": "15 (+2)",
+    "monsterINT": "6 (-2)",
+    "monsterWIS": "13 (+1)",
+    "monsterCHA": "14 (+2)",
+    "monsterSavings": "Saving Throws Str +13, Dex +6, Con +13, Wis +7",
+    "monsterSkills": "Skills Perception +7",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances cold, fire, lightning, bludgeoning, piercing, and slashing from nonmagical weapons",
+    "monsterImmunities": "Damage Immunities poison",
+    "monsterCImmunities": "Condition Immunities poisoned",
+    "monsterSenses": "Senses darkvision 120 ft.",
+    "monsterLanguages": "Languages Abyssal",
+    "monsterChallenge": "Challenge  17 (18,000 XP)",
+    "monsterSpecials": [
+        "Charge. If the goristro moves at least 15 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 38 (7d10) piercing damage. If the target is a creature, it must succeed on a DC 21 Strength saving throw or be pushed up to 20 feet away and knocked prone.",
+        "Labyrinthine Recall. The goristro can perfectly recall any path it has traveled.",
+        "Magic Resistance. The goristro has advantage on saving throws against spells and other magical effects.",
+        "Siege Monster. The goristro deals double damage to objects and structures."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The goristro makes three attacks: two with its fists and one with its hoof.",
+        "Fist. Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 20 (3d8 + 7) bludgeoning damage.",
+        "Hoof. Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 23 (3d10 + 7) bludgeoning damage. If the target is a creature, it must succeed on a DC 21 Strength saving throw or be knocked prone.",
+        "Gore. Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 45 (7d10 + 7) piercing damage."
+    ]
+}

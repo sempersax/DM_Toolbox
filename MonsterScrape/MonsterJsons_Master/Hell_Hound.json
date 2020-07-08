@@ -1,0 +1,31 @@
+{
+    "monsterName": "Hell Hound",
+    "monsterType": "Medium fiend, lawful evil",
+    "monsterArmor": "Armor Class 15 (natural armor)",
+    "monsterHP": "Hit Points 45 (7d8+14)",
+    "monsterSpeed": "Speed 50 ft.",
+    "monsterSTR": "17 (+3)",
+    "monsterDEX": "12 (+1)",
+    "monsterCON": "14 (+2)",
+    "monsterINT": "6 (-2)",
+    "monsterWIS": "13 (+1)",
+    "monsterCHA": "6 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +5",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "Damage Immunities fire",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages understands Infernal but can't speak it",
+    "monsterChallenge": "Challenge  3 (700 XP)",
+    "monsterSpecials": [
+        "Keen Hearing and Smell. The hound has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
+        "Pack Tactics. The hound has advantage on an attack roll against a creature if at least one of the hound's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 7 (2d6) fire damage.",
+        "Fire Breath (Recharge 5-6). The hound exhales fire in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 21 (6d6) fire damage on a failed save, or half as much damage on a successful one."
+    ]
+}

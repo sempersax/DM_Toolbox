@@ -1,0 +1,34 @@
+{
+    "monsterName": "Arcanaloth",
+    "monsterType": "Medium fiend (yugoloth), neutral evil",
+    "monsterArmor": "Armor Class 17 (natural armor)",
+    "monsterHP": "Hit Points 104 (16d8+32)",
+    "monsterSpeed": "Speed 30 ft., fly 30 ft.",
+    "monsterSTR": "17 (+3)",
+    "monsterDEX": "12 (+1)",
+    "monsterCON": "14 (+2)",
+    "monsterINT": "20 (+5)",
+    "monsterWIS": "16 (+3)",
+    "monsterCHA": "17 (+3)",
+    "monsterSavings": "Saving Throws Dex +5, Int +9, Wis +7, Cha +7",
+    "monsterSkills": "Skills Arcana +13, Deception +9, Insight +9, Perception +7",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances cold, fire, lightning, bludgeoning, piercing, and slashing from nonmagical weapons",
+    "monsterImmunities": "Damage Immunities acid, poison",
+    "monsterCImmunities": "Condition Immunities charmed, poisoned",
+    "monsterSenses": "Senses truesight 120 ft.",
+    "monsterLanguages": "Languages all, telepathy 120 ft.",
+    "monsterChallenge": "Challenge  12 (8,400 XP)",
+    "monsterSpecials": [
+        "Innate Spellcasting. The arcanaloth's innate spellcasting ability is Charisma (spell save DC 15). The arcanaloth can innately cast the following spells, requiring no material components: \n\nAt will: alter self, darkness, heat metal, invisibility (self only), magic missile\n\n",
+        "Magic Resistance. The arcanaloth has advantage on saving throws against spells and other magical effects.",
+        "Magic Weapons. The arcanaloth's weapon attacks are magical.",
+        "Spellcasting. The arcanaloth is a 16th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). The arcanaloth has the following wizard spells prepared: \n\nCantrips (at will): fire bolt, mage hand, minor illusion, prestidigitation\n\n1st level (4 slots): detect magic, identify, shield, Tenser's floating disk\n\n2nd level (3 slots): detect thoughts, mirror image, phantasmal force, suggestion\n\n3rd level (3 slots): counterspell, fear, fireball\n\n4th level (3 slots): banishment, dimension door\n\n5th level (2 slots): contact other plane, hold monster\n\n6th level (1 slot): chain lightning\n\n7th level (1 slot): finger of death\n\n8th level (1 slot): mind blank\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Claws. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) slashing damage. The target must make a DC 14 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.",
+        "Teleport. The arcanaloth magically teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see.",
+        "Variant: Summon Yugoloth (1/Day). The yugoloth attempts a magical summoning."
+    ]
+}

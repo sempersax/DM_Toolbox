@@ -1,0 +1,30 @@
+{
+    "monsterName": "Abjurer",
+    "monsterType": "Medium humanoid (any race), any alignment",
+    "monsterArmor": "Armor Class 12 (15 with mage armor)",
+    "monsterHP": "Hit Points 84 (13d8+26)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "9 (-1)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "14 (+2)",
+    "monsterINT": "18 (+4)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "11 (0)",
+    "monsterSavings": "Saving Throws Int +8, Wis +5",
+    "monsterSkills": "Skills Arcana +8, History +8",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages any four languages",
+    "monsterChallenge": "Challenge  9 (5,000 XP)",
+    "monsterSpecials": [
+        "Spellcasting. The abjurer is a 13th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 16, +8 to hit with spell attacks). The abjurer has the following wizard spells prepared:\n\nCantrips (at will): blade ward. dancing lights, mending, message, ray of frost\n\n1st level (4 slots): alarm*, mage armor, magic missile, shield*\n\n2nd level (3 slots): arcane lock*, invisibility\n\n3rd level (3 slots): counterspell*, dispel magic*, fireball\n\n4th level (3 slots): banishment*, stoneskin*\n\n5th level (2 slots): cone of cold, wall of force\n\n6th level (1 slot): flesh to stone, globe of invulnerability*\n\n7th level (1 slot): symbol* teleport\n\n*Abjuration spell of 1st level or higher\n\n",
+        "Arcane Ward. The abjurer has a magical ward that has 30 hit points. Whenever the abjurer takes damage, the ward takes the damage instead. If the ward is reduced to 0 hit points, the abjurer takes any remaining damage. When the abjurer casts an . abjuration spell of 1st level or higher, the ward regains a number of hit points equal to twice the level of the spell."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Quarterstaff. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 2 (1d6-l) bludgeoning damage, or 3 (1d8-l) bludgeoning damage if used with two hands."
+    ]
+}

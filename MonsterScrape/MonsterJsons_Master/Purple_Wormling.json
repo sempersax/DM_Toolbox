@@ -1,0 +1,29 @@
+{
+    "monsterName": "Purple Wormling",
+    "monsterType": "Large monstrosity, unaligned",
+    "monsterArmor": "Armor Class 12 (natural armor)",
+    "monsterHP": "Hit Points 42 (5d10+15)",
+    "monsterSpeed": "Speed 20 ft.",
+    "monsterSTR": "16 (+3)",
+    "monsterDEX": "7 (-2)",
+    "monsterCON": "16 (+3)",
+    "monsterINT": "1 (-5)",
+    "monsterWIS": "6 (-2)",
+    "monsterCHA": "2 (-4)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses blindsight 30 ft., tremorsense 30 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  2 (450 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The wormling makes two attacks: one with its bite and one with its stinger.",
+        "Bite. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 5) piercing damage. If the target is a Small or smaller creature, it must succeed on a DC 13 Dexterity saving throw or be swallowed by the worm. A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside the wormling, and it takes 3 (1d6) acid damage at the start of each of the wormling's turns.",
+        "Tail Stinger. Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4 + 3) piercing damage, and the target must make a DC 13 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one."
+    ]
+}

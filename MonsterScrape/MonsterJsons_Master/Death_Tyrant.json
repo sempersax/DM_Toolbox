@@ -1,0 +1,32 @@
+{
+    "monsterName": "Death Tyrant",
+    "monsterType": "Large undead, lawful evil",
+    "monsterArmor": "Armor Class 19 (natural armor)",
+    "monsterHP": "Hit Points 187 (25d10+50)",
+    "monsterSpeed": "Speed 0 ft., fly 20 ft. (hover)",
+    "monsterSTR": "10 (0)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "14 (+2)",
+    "monsterINT": "19 (+4)",
+    "monsterWIS": "15 (+2)",
+    "monsterCHA": "19 (+4)",
+    "monsterSavings": "Saving Throws Str +5, Con +7, Int +9, Wis +7, Cha +9",
+    "monsterSkills": "Skills Perception +12",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "Damage Immunities poison",
+    "monsterCImmunities": "Condition Immunities charmed, exhaustion, paralyzed, petrified, poisoned, prone",
+    "monsterSenses": "Senses darkvision 120 ft.",
+    "monsterLanguages": "Languages Deep Speech, Undercommon",
+    "monsterChallenge": "Challenge  14 (11,500 XP)",
+    "monsterSpecials": [
+        "Negative Energy Cone. The death tyrant's central eye emits an invisible, magical 150-foot cone of negative energy. At the start of each of its turns, the tyrant decides which way the cone faces and whether the cone is active."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 14 (4d6) piercing damage.",
+        "Eye Rays. The death tyrant shoots three of the following magical eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 ft. of it:",
+        "Legendary Actions\n\nThe death tyrant can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time, and only at the end of another creature's turn. The death tyrant regains spent legendary actions at the start of its turn.\n\n",
+        "Eye Ray. The death tyrant uses one random eye ray."
+    ]
+}

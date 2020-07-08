@@ -1,0 +1,28 @@
+{
+    "monsterName": "Half-Ogre (Ogrillon)",
+    "monsterType": "Large giant, any chaotic alignment",
+    "monsterArmor": "Armor Class 12 (hide armor)",
+    "monsterHP": "Hit Points 30 (4d10+8)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "17 (+3)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "14 (+2)",
+    "monsterINT": "7 (-2)",
+    "monsterWIS": "9 (-1)",
+    "monsterCHA": "10 (0)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Common, Giant",
+    "monsterChallenge": "Challenge  1 (200 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Battleaxe. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) slashing damage, or 14 (2d10 + 3) slashing damage if used with two hands.",
+        "Javelin. Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 10 (2d6 + 3) piercing damage."
+    ]
+}

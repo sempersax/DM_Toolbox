@@ -1,0 +1,33 @@
+{
+    "monsterName": "Frost Giant Everlasting One",
+    "monsterType": "Huge giant (frost giant), chaotic evil",
+    "monsterArmor": "Armor Class 15 (patchwork armor)",
+    "monsterHP": "Hit Points 189 (14d12+98)",
+    "monsterSpeed": "Speed 40 ft.",
+    "monsterSTR": "25 (+7)",
+    "monsterDEX": "9 (-1)",
+    "monsterCON": "24 (+7)",
+    "monsterINT": "9 (-1)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "12 (+1)",
+    "monsterSavings": "Saving Throws Str +11, Con +11, Wis +4",
+    "monsterSkills": "Skills Athletics +11, Perception +4",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "Damage Immunities cold",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Giant",
+    "monsterChallenge": "Challenge  12 (8,400 XP)",
+    "monsterSpecials": [
+        "Extra Heads. The giant has a 25 percent chance of having more than one head. If it has more than one, it has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious.",
+        "Regeneration. The giant regains 10 hit points at the start of its turn. If the giant takes acid or fire damage, this trait doesn't function at the start of its next turn. The giant dies only if it starts its turn with 0 hit points and doesn't regenerate.",
+        "Vaprak's Rage (Recharges on a Short or Long Rest). As a bonus action, the giant can enter a rage at the start of its turn. The rage lasts for 1 minute or until the giant is incapacitated. While raging, the giant gains the following benefits:"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The giant makes two attacks with its greataxe.",
+        "Greataxe. Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 26 (3d12+7) slashing damage, or 30 (3d12+11) slashing damage while raging.",
+        "Rock. Ranged Weapon Attack: +11 to hit, range 60/240 ft., one target. Hit: 29 (4d10+7) bludgeoning damage."
+    ]
+}

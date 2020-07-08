@@ -1,0 +1,31 @@
+{
+    "monsterName": "Killer Whale",
+    "monsterType": "Huge beast, unaligned",
+    "monsterArmor": "Armor Class 12 (natural armor)",
+    "monsterHP": "Hit Points 90 (12d12+12)",
+    "monsterSpeed": "Speed swim 60 ft.",
+    "monsterSTR": "19 (+4)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "13 (+1)",
+    "monsterINT": "3 (-4)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "7 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +3",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses blindsight 120 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  3 (700 XP)",
+    "monsterSpecials": [
+        "Echolocation. The whale can't use its blindsight while deafened.",
+        "Hold Breath. The whale can hold its breath for 30 minutes",
+        "Keen Hearing. The whale has advantage on Wisdom (Perception) checks that rely on hearing."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 21 (5d6 + 4) piercing damage."
+    ]
+}

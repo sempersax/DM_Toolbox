@@ -1,0 +1,28 @@
+{
+    "monsterName": "Crushing Wave Reaver",
+    "monsterType": "Medium humanoid (human), neutral evil",
+    "monsterArmor": "Armor Class 14 (shield)",
+    "monsterHP": "Hit Points 22 (4d8+4)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "15 (+2)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "13 (+1)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "11 (0)",
+    "monsterCHA": "8 (-1)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Athletics +4, Stealth +4",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Common",
+    "monsterChallenge": "Challenge  1/2 (100 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Sharktoothed Longsword. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage, or 7 (1d10 + 2) slashing damage if used with two hands. Against a target is wearing no armor, the reaver deals an extra die of damage with this sword.",
+        "Javelin. Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+    ]
+}

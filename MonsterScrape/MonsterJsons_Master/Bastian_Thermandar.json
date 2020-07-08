@@ -1,0 +1,30 @@
+{
+    "monsterName": "Bastian Thermandar",
+    "monsterType": "Medium humanoid (fire genasi), neutral evil",
+    "monsterArmor": "Armor Class 12 (15 with mage armor)",
+    "monsterHP": "Hit Points 78 (12d8+24)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "12 (+1)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "15 (+2)",
+    "monsterINT": "11 (0)",
+    "monsterWIS": "9 (-1)",
+    "monsterCHA": "18 (+4)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Arcana +3, Deception +7",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances fire",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Common, Ignan",
+    "monsterChallenge": "Challenge  8 (3,900 XP)",
+    "monsterSpecials": [
+        "Innate Spellcasting. Bastian's innate spellcasting ability is Constitution (spell save DC 13, +5 to hit with spell attacks). He can innately cast the following spells: \n\nAt will: produce flame\n\n1/day: burning hands\n\n",
+        "Spellcasting. Bastian is a 9th-level spellcaster. His spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). Bastian knows the following sorcerer spells: \n\nCantrips (at will): fire bolt, mage hand, message, prestidigitation, shocking grasp\n\n1st level (4 slots): mage armor, magic missile, shield\n\n2nd level (3 slots): misty step, scorching ray\n\n3rd level (3 slots): counterspell, fireball\n\n4th level (3 slots): dimension door, wall of fire\n\n5th level (1 slot): hold monster\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Dagger. Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "monsterName": "Bandit",
+    "monsterType": "Medium humanoid (any race), any non-lawful alignment",
+    "monsterArmor": "Armor Class 12 (leather armor)",
+    "monsterHP": "Hit Points 11 (2d8+2)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "11 (0)",
+    "monsterDEX": "12 (+1)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "10 (0)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages any one language (usually Common)",
+    "monsterChallenge": "Challenge  1/8 (25 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Scimitar. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage.",
+        "Light Crossbow. Ranged Weapon Attack: +3 to hit, range 80 ft./320 ft., one target. Hit: 5 (1d8 + 1) piercing damage."
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "monsterName": "Zi Liang",
+    "monsterType": "Medium humanoid (shou human), chaotic good",
+    "monsterArmor": "Armor Class 15",
+    "monsterHP": "Hit Points 22 (5d8)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "12 (+1)",
+    "monsterDEX": "15 (+2)",
+    "monsterCON": "11 (0)",
+    "monsterINT": "14 (+2)",
+    "monsterWIS": "16 (+3)",
+    "monsterCHA": "11 (0)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Acrobatics +4, Athletics +3, Perception +5, Stealth +4",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Common, Elvish, Goblin",
+    "monsterChallenge": "Challenge  0 (10 XP)",
+    "monsterSpecials": [
+        "Unarmored Defense. While Zi is wearing no armor and wielding no shield, her AC includes her Wisdom modifier.",
+        "Roleplaying Information. Zi Liang is a devout worshiper of Chauntea, the Earth Mother. She has considerably less faith in Goldenfields' defenders, so she patrols the temple-farm during her off-duty hours."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. Zi makes two melee attacks.",
+        "Quarterstaff. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6+1) bludgeoning damage, or 5 (1d8+1) bludgeoning damage if used with both hands.",
+        "Sling. Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4+2) bludgeoning damage. Zi carries twenty sling stones."
+    ]
+}

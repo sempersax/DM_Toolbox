@@ -1,0 +1,30 @@
+{
+    "monsterName": "Wyvern",
+    "monsterType": "Large dragon, unaligned",
+    "monsterArmor": "Armor Class 13 (natural armor)",
+    "monsterHP": "Hit Points 110 (13d10+39)",
+    "monsterSpeed": "Speed 20 ft., fly 80 ft.",
+    "monsterSTR": "19 (+4)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "16 (+3)",
+    "monsterINT": "5 (-3)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "6 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +4",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  6 (2,300 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The wyvern makes two attacks: one with its bite and one with its stinger. While flying, it can use its claws in place of one other attack.",
+        "Bite. Melee Weapon Attack: +7 to hit, reach 10 ft., one creature. Hit: 11 (2d6 + 4) piercing damage.",
+        "Claws. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.",
+        "Stinger. Melee Weapon Attack: +7 to hit, reach 10 ft., one creature. Hit: 11 (2d6 + 4) piercing damage. The target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one."
+    ]
+}

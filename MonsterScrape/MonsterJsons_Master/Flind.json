@@ -1,0 +1,33 @@
+{
+    "monsterName": "Flind",
+    "monsterType": "Medium humanoid (gnoll), chaotic evil",
+    "monsterArmor": "Armor Class 16 (chain mail)",
+    "monsterHP": "Hit Points 127 (15d8+60)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "20 (+5)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "19 (+4)",
+    "monsterINT": "11 (0)",
+    "monsterWIS": "13 (+1)",
+    "monsterCHA": "12 (+1)",
+    "monsterSavings": "Saving Throws Con +8, Wis +5",
+    "monsterSkills": "Skills Intimidation +5, Perception +5",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Abyssal, Gnoll",
+    "monsterChallenge": "Challenge  9 (5,000 XP)",
+    "monsterSpecials": [
+        "Aura of Blood Thirst. If the flind isn't incapacitated, any creature with the Rampage trait can make a bite attack as a bonus action while within 10 feet of the flind."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The flind makes three attacks: one with each of its different flail attacks or three with its longbow.",
+        "Flail of Madness. Melee Weapon Attack: +9 to hit, reach 5 ft, one target. Hit: 10 (1d10+5) bludgeoning damage, and the target must make a DC 16 Wisdom saving throw. On a failed save, the target must make a melee attack against a random target within its reach on its next turn. If it has no targets within its reach even after moving, it loses its action on that turn.",
+        "Flail of Pain. Melee Weapon Attack: +9 to hit, reach 5 it, one target. Hit: 10 (1d10+5) bludgeoning damage plus 22 (4d10) psychic damage.",
+        "Flail of Paralysis. Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 10 (1d10+5) bludgeoning damage, and the target must succeed on a DC 16 Constitution saving throw or be paralyzed until the end of its next turn.",
+        "Longbow. Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 4 (1d8) piercing damage."
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "monsterName": "Necromancer",
+    "monsterType": "Medium humanoid (any race), any alignment",
+    "monsterArmor": "Armor Class 12 (15 with mage armor)",
+    "monsterHP": "Hit Points 66 (12d8+12)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "9 (-1)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "17 (+3)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "11 (0)",
+    "monsterSavings": "Saving Throws Int +7, Wis +5",
+    "monsterSkills": "Skills Arcana +7, History +7",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances necrotic",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages any four languages",
+    "monsterChallenge": "Challenge  9 (5,000 XP)",
+    "monsterSpecials": [
+        "Spellcasting. The necromancer is a 12th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). The necromancer has the following wizard spells prepared:\n\nCantrips (at will): chill touch, dancing lights, mage hand, mending\n\n1st level (4 slots):false life*, mage armor, ray of sickness*\n\n2nd level (3 slots): blindness/deafness*, ray of enfeeblement*, web\n\n3rd level (3 slots): animate dead*, bestow curse*, vampiric touch*\n\n4th level (3 slots): blight*, dimension door, stoneskin\n\n5th level (2 slots): Bigby's hand, cloudkill\n\n6th level (1 slot): circle of death*\n\n*Necromancy spell of 1st level or higher\n\n",
+        "Grim Harvest (1/Turn). When necromancer kills a creature that is neither a construct nor undead with a spell of 1st level or higher, the necromancer regains hit points equal to twice the spell's level, or three times if it is a necromancy spell."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Withering Touch. Melee Spell Attack: +7 to hit, reach 5 ft., one creature. Hit: 5 (2d4) necrotic damage."
+    ]
+}

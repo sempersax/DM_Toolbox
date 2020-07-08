@@ -1,0 +1,31 @@
+{
+    "monsterName": "Kraken Priest",
+    "monsterType": "Medium humanoid (any race), any evil alignment",
+    "monsterArmor": "Armor Class 10",
+    "monsterHP": "Hit Points 75 (10d8+30)",
+    "monsterSpeed": "Speed 30 ft., swim 30 ft.",
+    "monsterSTR": "12 (+1)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "16 (+3)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "15 (+2)",
+    "monsterCHA": "14 (+2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +5",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances bludgeoning, piercing, and slashing from nonmagical attacks",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages any two languages",
+    "monsterChallenge": "Challenge  5 (1,800 XP)",
+    "monsterSpecials": [
+        "Amphibious. The priest can breathe air and water.",
+        "Innate Spellcasting. The priest's spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). It can innately cast the following spells, requiring no material components:\n\nAt will: command, create or destroy water\n\n3/day each: control water, darkness, water breathing, water walk\n\n1/day each: call lightning, Evard's black tentacles\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Thunderous Touch. Melee Spell Attack: +5 to hit, reach 5 ft., one creature. Hit: 27 (5d10) thunder damage.",
+        "Voice of the Kraken (Recharges after a Short or Long Rest). A kraken speaks through the priest with a thunderous voice audible within 300 feet. Creatures of the priest's choice that can hear the kraken's words (which are spoken in Abyssal, Infernal, or Primordial) must succeed on a DC 14 Charisma saving throw or be frightened for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    ]
+}

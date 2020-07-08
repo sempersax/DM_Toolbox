@@ -1,0 +1,38 @@
+{
+    "monsterName": "Demogorgon",
+    "monsterType": "Huge fiend (demon), chaotic evil",
+    "monsterArmor": "Armor Class 22 (natural armor)",
+    "monsterHP": "Hit Points 496 (34d12+272)",
+    "monsterSpeed": "Speed 50 ft., swim 50 ft.",
+    "monsterSTR": "29 (+9)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "26 (+8)",
+    "monsterINT": "20 (+5)",
+    "monsterWIS": "17 (+3)",
+    "monsterCHA": "25 (+7)",
+    "monsterSavings": "Saving Throws Dex +10, Con +16, Wis +11, Cha +15",
+    "monsterSkills": "Skills Insight +11, Perception +19",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances cold, fire, lightning",
+    "monsterImmunities": "Damage Immunities poison; bludgeoning, piercing, and slashing that is nonmagical",
+    "monsterCImmunities": "Condition Immunities charmed, exhaustion, frightened, poisoned",
+    "monsterSenses": "Senses truesight 120 ft.",
+    "monsterLanguages": "Languages all, telepathy 120 ft.",
+    "monsterChallenge": "Challenge  26 (90,000 XP)",
+    "monsterSpecials": [
+        "Innate Spellcasting. Demogorgon's spellcasting ability is Charisma (spell save DC 23). Demogorgon can innately cast the following spells, requiring no material components:\n\nAt will: detect magic, major image\n\n3/day each: dispel magic, fear, telekinesis\n\n1/day each: feeblemind, project image\n\n",
+        "Legendary Resistance (3/Day). If Demogorgon fails a saving throw, he can choose to succeed instead.",
+        "Magic Resistance. Demogorgon has advantage on saving throws against spell and other magic effects.",
+        "Magic Weapon. Demogorgon's weapon attacks are magical",
+        "Two Heads. Demogorgon has advantage on saving throws against being blinded, defened, stunned, and knocked unconscious."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. Demogorgon makes two tentacle attacks.",
+        "Tentacle. Melee Weapon Attack: +17 to hit, reach 10 ft., one target. Hit: 35 (4d12 + 9) bludgeoning damage. If the target is a creature, it must succeed on a DC 23 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if its hit point maximum is reduced to 0.",
+        "Gaze. Demogorgon turns his magical gaze toward one creature that he can see within 120 feet of him. That target must make a DC 23 Wisdom saving throw. Unless the target is incapacitated, it can avert its eyes to avoid the gaze and to automatically succeed on the save. If the target does so, it can't see Demogorgon until the start of his next turn. If the target looks at him in the meantime, it must immediately make the save.",
+        "Legendary Actions\n\nDemogorgon can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creautre's turn. Demogorgon regains spent legendary actions at the start of his turn.\n\n",
+        "Tail. Melee Weapon Attack: +17 to hit, reach 15 ft., one target. Hit: 31 (4d10 + 9) bludgeoning damage plus 22 (4d10) necrotic damage.",
+        "Maddening Gaze. Demogorgon uses his Gaze action, and must choose either the Beguiling Gaze or the Insanity Gaze effect."
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "monsterName": "Acolyte",
+    "monsterType": "Medium humanoid (any race), any alignment",
+    "monsterArmor": "Armor Class 10",
+    "monsterHP": "Hit Points 9 (2d8)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "10 (0)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "10 (0)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "14 (+2)",
+    "monsterCHA": "11 (0)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Medicine +4, Religion +2",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages any one language (usually Common)",
+    "monsterChallenge": "Challenge  1/4 (50 XP)",
+    "monsterSpecials": [
+        "Spellcasting. The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has following cleric spells prepared: \n\nCantrips (at will): light, sacred flame, thaumaturgy\n\n1st level (3 slots): bless, cure wounds, sanctuary\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Club. Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage."
+    ]
+}

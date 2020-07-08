@@ -1,0 +1,32 @@
+{
+    "monsterName": "Fire Giant",
+    "monsterType": "Huge giant, lawful evil",
+    "monsterArmor": "Armor Class 18 (plate)",
+    "monsterHP": "Hit Points 162 (13d12+78)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "25 (+7)",
+    "monsterDEX": "9 (-1)",
+    "monsterCON": "23 (+6)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "14 (+2)",
+    "monsterCHA": "13 (+1)",
+    "monsterSavings": "Saving Throws Dex +3, Con +10, Cha +5",
+    "monsterSkills": "Skills Athletics +11, Perception +6",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "Damage Immunities fire",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Giant",
+    "monsterChallenge": "Challenge  9 (5,000 XP)",
+    "monsterSpecials": [
+        "Siege Monster. The giant deals double damage to objects and structures.",
+        "Tackle. When the giant enters any enemy's space for the first time on a turn, the enemy must succeed on a DC 19 Strength saving throw or be knocked prone."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The giant makes two greatsword attacks.",
+        "Greatsword. Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 28 (6d6 + 7) slashing damage.",
+        "Rock. Ranged Weapon Attack: +11 to hit, range 60/240 ft., one target. Hit: 29 (4d10 + 7) bludgeoning damage."
+    ]
+}

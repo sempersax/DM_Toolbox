@@ -1,0 +1,31 @@
+{
+    "monsterName": "Grimlock",
+    "monsterType": "Medium humanoid (grimlock), neutral evil",
+    "monsterArmor": "Armor Class 11",
+    "monsterHP": "Hit Points 11 (2d8+2)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "16 (+3)",
+    "monsterDEX": "12 (+1)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "9 (-1)",
+    "monsterWIS": "8 (-1)",
+    "monsterCHA": "6 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Athletics +5, Perception +3, Stealth +3",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "Damage Immunities blinded",
+    "monsterCImmunities": "",
+    "monsterSenses": "Blind Senses. The grimlock can't use its blindsight while deafened and unable to smell.",
+    "monsterLanguages": "Languages Undercommon",
+    "monsterChallenge": "Challenge  1/4 (50 XP)",
+    "monsterSpecials": [
+        "Blind Senses. The grimlock can't use its blindsight while deafened and unable to smell.",
+        "Keen Hearing and Smell. The grimlock has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
+        "Stone Camouflage. The grimlock has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Spiked Bone Club. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage plus 2 (1d4) piercing damage."
+    ]
+}

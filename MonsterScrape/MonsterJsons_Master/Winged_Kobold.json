@@ -1,0 +1,31 @@
+{
+    "monsterName": "Winged Kobold",
+    "monsterType": "Small humanoid (kobold), lawful evil",
+    "monsterArmor": "Armor Class 13",
+    "monsterHP": "Hit Points 7 (3d6-3)",
+    "monsterSpeed": "Speed 30 ft., fly 30 ft.",
+    "monsterSTR": "7 (-2)",
+    "monsterDEX": "16 (+3)",
+    "monsterCON": "9 (-1)",
+    "monsterINT": "8 (-1)",
+    "monsterWIS": "7 (-2)",
+    "monsterCHA": "8 (-1)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Common, Draconic",
+    "monsterChallenge": "Challenge  1/4 (50 XP)",
+    "monsterSpecials": [
+        "Sunlight Sensitivity. While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.",
+        "Pack Tactics. The kobold has advantage on an attack roll against a creature if at least one of the kobold's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Dagger. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage.",
+        "Dropped Rock. Ranged Weapon Attack: +5 to hit, one target directly below the kobold. Hit: 6 (1d6 + 3) bludgeoning damage."
+    ]
+}

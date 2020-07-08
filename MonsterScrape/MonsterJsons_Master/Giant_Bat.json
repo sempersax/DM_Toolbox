@@ -1,0 +1,30 @@
+{
+    "monsterName": "Giant Bat",
+    "monsterType": "Large beast, unaligned",
+    "monsterArmor": "Armor Class 13",
+    "monsterHP": "Hit Points 22 (4d10)",
+    "monsterSpeed": "Speed 10 ft., fly 60 ft.",
+    "monsterSTR": "15 (+2)",
+    "monsterDEX": "16 (+3)",
+    "monsterCON": "11 (0)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "6 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses blindsight 60 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/4 (50 XP)",
+    "monsterSpecials": [
+        "Echolocation. The bat can't use its blindsight while deafened.",
+        "Keen Hearing. The bat has advantage on Wisdom (Perception) checks that rely on hearing."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) piercing damage."
+    ]
+}

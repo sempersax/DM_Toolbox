@@ -1,0 +1,30 @@
+{
+    "monsterName": "Thorny",
+    "monsterType": "Medium plant, neutral",
+    "monsterArmor": "Armor Class 14 (natural armor)",
+    "monsterHP": "Hit Points 27 (5d8+5)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "13 (+1)",
+    "monsterDEX": "12 (+1)",
+    "monsterCON": "13 (+1)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "6 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +4, Stealth +3",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances lightning, piercing",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1 (200 XP)",
+    "monsterSpecials": [
+        "Plant Camouflage . The thorny has advantage on Dexterity (Stealth) checks it makes in any terrain with ample obscuring plant life.",
+        "Regeneration. The thorny regains 5 hit points at the start of its turn. If it takes cold, fire, or necrotic damage, this trait doesn't function at the start of the thorny's next turn. The thorny dies only if it starts its turn with 0 hit points and doesn't regenerate."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 8 (2d6+1) piercing damage."
+    ]
+}

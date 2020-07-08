@@ -1,0 +1,29 @@
+{
+    "monsterName": "Badger",
+    "monsterType": "Tiny beast, unaligned",
+    "monsterArmor": "Armor Class 10",
+    "monsterHP": "Hit Points 3 (1d4+1)",
+    "monsterSpeed": "Speed 20 ft., burrow 5 ft.",
+    "monsterSTR": "4 (-3)",
+    "monsterDEX": "11 (0)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "5 (-3)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 30 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  0 (10 XP)",
+    "monsterSpecials": [
+        "Keen Smell. The badger has advantage on Wisdom (Perception) checks that rely on smell."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 1 piercing damage."
+    ]
+}

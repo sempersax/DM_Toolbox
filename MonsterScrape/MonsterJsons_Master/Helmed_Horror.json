@@ -1,0 +1,31 @@
+{
+    "monsterName": "Helmed Horror",
+    "monsterType": "Medium construct, unaligned",
+    "monsterArmor": "Armor Class 20 (plate, shield)",
+    "monsterHP": "Hit Points 60 (8d8+24)",
+    "monsterSpeed": "Speed 30 ft., fly 30 ft.",
+    "monsterSTR": "18 (+4)",
+    "monsterDEX": "13 (+1)",
+    "monsterCON": "16 (+3)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "10 (0)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +4",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "Damage Resistances bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine",
+    "monsterImmunities": "Damage Immunities force, necrotic, poison",
+    "monsterCImmunities": "Condition Immunities blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned, stunned",
+    "monsterSenses": "Senses blindsight 60 ft. (blind beyond this radius)",
+    "monsterLanguages": "Languages understands the languages of its creator but can't speak",
+    "monsterChallenge": "Challenge  4 (1,100 XP)",
+    "monsterSpecials": [
+        "Magic Resistance. The helmed horror has advantage on saving throws against spells and other magical effects.",
+        "Spell Immunity. The helmed horror is immune to three spells chosen by its creator. Typical immunities include fireball, heat metal, and lightning bolt."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The helmed horror makes two longsword attacks.",
+        "Longsword. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage, or 9 (1d10 + 4) slashing damage if used with two hands."
+    ]
+}

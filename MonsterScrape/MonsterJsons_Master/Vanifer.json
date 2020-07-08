@@ -1,0 +1,32 @@
+{
+    "monsterName": "Vanifer",
+    "monsterType": "Medium humanoid (tiefling), neutral evil",
+    "monsterArmor": "Armor Class 15 (studded leather)",
+    "monsterHP": "Hit Points 112 (15d8+45)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "11 (0)",
+    "monsterDEX": "16 (+3)",
+    "monsterCON": "17 (+3)",
+    "monsterINT": "12 (+1)",
+    "monsterWIS": "13 (+1)",
+    "monsterCHA": "19 (+4)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Arcana +5, Deception +8, Performance +8",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "Damage Immunities fire",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Common, Ignan, Infernal",
+    "monsterChallenge": "Challenge  9 (5,000 XP)",
+    "monsterSpecials": [
+        "Funeral Pyre. When Vanifer drops to 0 hit points, her body is consumed in a flash of fire and smoke. Anything she was wearing or carrying is left behind among ashes.",
+        "Legendary Resistance (2/Day). If Vanifer fails a saving throw, she can choose to succeed instead.",
+        "Spellcasting. Vanifer is a 10th-level spellcaster. Her spellcasting ability is Charisma (spell save DC 16, +8 to hit with spell attacks). Vanifer knows the following sorcerer spells: \n\nCantrips (at will): chill touch, fire bolt, friends, mage hand, message, produce flame, thaumaturgy\n\n1st level (4 slots): burning hands, chromatic orb, hellish rebuke, shield\n\n2nd level (3 slots): darkness, detect thoughts, misty step, scorching ray\n\n3rd level (3 slots): counterspell, fireball, hypnotic pattern\n\n4th level (3 slots): wall of fire\n\n5th level (2 slots): dominate person\n\n"
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. Vanifer makes two attacks.",
+        "Tinderstrike. Melee or Ranged Weapon Attack: +9 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d4 + 5) piercing damage plus 7 (2d6) fire damage."
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "monsterName": "Ape",
+    "monsterType": "Medium beast, unaligned",
+    "monsterArmor": "Armor Class 12",
+    "monsterHP": "Hit Points 19 (3d8+6)",
+    "monsterSpeed": "Speed 30 ft., climb 30 ft.",
+    "monsterSTR": "16 (+3)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "14 (+2)",
+    "monsterINT": "6 (-2)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "7 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Athletics +5, Perception +3",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/2 (100 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The ape makes two fist attacks.",
+        "Fist. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.",
+        "Rock. Ranged Weapon Attack: +5 to hit, range 25/50 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage."
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "monsterName": "Riding Horse",
+    "monsterType": "Large beast, unaligned",
+    "monsterArmor": "Armor Class 10",
+    "monsterHP": "Hit Points 13 (2d10+2)",
+    "monsterSpeed": "Speed 60 ft.",
+    "monsterSTR": "16 (+3)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "11 (0)",
+    "monsterCHA": "7 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/4 (50 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Hooves. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) bludgeoning damage."
+    ]
+}

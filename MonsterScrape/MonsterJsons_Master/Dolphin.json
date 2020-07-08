@@ -1,0 +1,30 @@
+{
+    "monsterName": "Dolphin",
+    "monsterType": "Medium beast, unaligned",
+    "monsterArmor": "Armor Class 12 (natural armor)",
+    "monsterHP": "Hit Points 11 (2d8+2)",
+    "monsterSpeed": "Speed 0 ft., swim 60 ft.",
+    "monsterSTR": "14 (+2)",
+    "monsterDEX": "13 (+1)",
+    "monsterCON": "13 (+1)",
+    "monsterINT": "6 (-2)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "7 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +3",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses blindsight 60 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/8 (25 XP)",
+    "monsterSpecials": [
+        "Charge. If the dolphin moves at least 30 feet straight toward a target and then hits it with a slam attack on the same turn, the target takes an extra 3 (1d6) bludgeoning damage.",
+        "Hold Breath. The dolphin can hold its breath for 20 minutes."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Slam. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) bludgeoning damage."
+    ]
+}

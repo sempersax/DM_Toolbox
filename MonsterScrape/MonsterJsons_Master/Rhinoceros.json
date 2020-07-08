@@ -1,0 +1,29 @@
+{
+    "monsterName": "Rhinoceros",
+    "monsterType": "Large beast, unaligned",
+    "monsterArmor": "Armor Class 11 (natural armor)",
+    "monsterHP": "Hit Points 45 (6d10+12)",
+    "monsterSpeed": "Speed 40 ft.",
+    "monsterSTR": "21 (+5)",
+    "monsterDEX": "8 (-1)",
+    "monsterCON": "15 (+2)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "6 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  2 (450 XP)",
+    "monsterSpecials": [
+        "Charge. If the rhinoceros moves at least 20 ft. straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) bludgeoning damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Gore. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage."
+    ]
+}

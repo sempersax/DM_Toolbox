@@ -1,0 +1,29 @@
+{
+    "monsterName": "Eagle",
+    "monsterType": "Small beast, unaligned",
+    "monsterArmor": "Armor Class 12",
+    "monsterHP": "Hit Points 3 (1d6)",
+    "monsterSpeed": "Speed 10 ft., fly 60 ft.",
+    "monsterSTR": "6 (-2)",
+    "monsterDEX": "15 (+2)",
+    "monsterCON": "10 (0)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "14 (+2)",
+    "monsterCHA": "7 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +4",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  0 (10 XP)",
+    "monsterSpecials": [
+        "Keen Sight. The eagle has advantage on Wisdom (Perception) checks that rely on sight."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Talons. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage."
+    ]
+}

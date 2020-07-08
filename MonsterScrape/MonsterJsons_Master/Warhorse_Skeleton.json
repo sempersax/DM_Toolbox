@@ -1,0 +1,27 @@
+{
+    "monsterName": "Warhorse Skeleton",
+    "monsterType": "Large undead, lawful evil",
+    "monsterArmor": "Armor Class 13 (barding scraps)",
+    "monsterHP": "Hit Points 22 (3d10+6)",
+    "monsterSpeed": "Speed 60 ft.",
+    "monsterSTR": "18 (+4)",
+    "monsterDEX": "12 (+1)",
+    "monsterCON": "15 (+2)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "8 (-1)",
+    "monsterCHA": "5 (-3)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "Damage Vulnerabilities bludgeoning",
+    "mosnterResistances": "",
+    "monsterImmunities": "Damage Immunities poison",
+    "monsterCImmunities": "Condition Immunities exhaustion, poisoned",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/2 (100 XP)",
+    "monsterSpecials": [],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Hooves. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage."
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "monsterName": "Lifferlas",
+    "monsterType": "Huge plant, unaligned",
+    "monsterArmor": "Armor Class 13 (natural armor)",
+    "monsterHP": "Hit Points 59 (7d12+14)",
+    "monsterSpeed": "Speed 20 ft.",
+    "monsterSTR": "19 (+4)",
+    "monsterDEX": "6 (-2)",
+    "monsterCON": "15 (+2)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "7 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "Damage Vulnerabilities fire",
+    "mosnterResistances": "Damage Resistances blugdeoning, piercing",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Common",
+    "monsterChallenge": "Challenge  0 (10 XP)",
+    "monsterSpecials": [
+        "False Appearance. While Lifferlas remains motionless, it is indistinguishable from a normal tree.",
+        "Roleplaying Information. A druid of the Emerald Enclave awakened the tree Lifferlas with a spell. Goldenfields is his home, its people his friends. Children like to carve their name and initials into his body and hang from his boughs, and he's happy with that."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. Lifferlas makes two slam attacks.",
+        "Slam. Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (3d6+4) bludgeoning damage."
+    ]
+}

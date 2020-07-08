@@ -1,0 +1,29 @@
+{
+    "monsterName": "Hyena",
+    "monsterType": "Medium beast, unaligned",
+    "monsterArmor": "Armor Class 11",
+    "monsterHP": "Hit Points 5 (1d8+1)",
+    "monsterSpeed": "Speed 50 ft.",
+    "monsterSTR": "11 (0)",
+    "monsterDEX": "13 (+1)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "5 (-3)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +3",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  0 (10 XP)",
+    "monsterSpecials": [
+        "Pack Tactics. The hyena has advantage on an attack roll against a creature if at least one of the hyena's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) piercing damage."
+    ]
+}

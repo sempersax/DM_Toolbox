@@ -1,0 +1,32 @@
+{
+    "monsterName": "Medusa",
+    "monsterType": "Medium monstrosity, lawful evil",
+    "monsterArmor": "Armor Class 15 (natural armor)",
+    "monsterHP": "Hit Points 127 (17d8+51)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "10 (0)",
+    "monsterDEX": "15 (+2)",
+    "monsterCON": "16 (+3)",
+    "monsterINT": "12 (+1)",
+    "monsterWIS": "13 (+1)",
+    "monsterCHA": "15 (+2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Deception +5, Insight +4, Perception +4, Stealth +5",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Common",
+    "monsterChallenge": "Challenge  6 (2,300 XP)",
+    "monsterSpecials": [
+        "Petrifying Gaze. When a creature that can see the medusa's eyes starts its turn within 30 ft. of the medusa, the medusa can force it to make a DC 14 Constitution saving throw if the medusa isn't incapacitated and can see the creature. If the saving throw fails by 5 or more, the creature is instantly petrified. Otherwise, a creature that fails the save begins to turn to stone and is restrained. The restrained creature must repeat the saving throw at the end of its next turn, becoming petrified on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the greater restoration spell or other magic."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The medusa makes either three melee attacks -  one with its snake hair and two with its shortsword - or two ranged attacks with its longbow.",
+        "Snake Hair. Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage plus 14 (4d6) poison damage.",
+        "Shortsword. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+        "Longbow. Ranged Weapon Attack: +5 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage plus 7 (2d6) poison damage."
+    ]
+}

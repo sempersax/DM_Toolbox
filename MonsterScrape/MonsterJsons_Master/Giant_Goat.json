@@ -1,0 +1,30 @@
+{
+    "monsterName": "Giant Goat",
+    "monsterType": "Large beast, unaligned",
+    "monsterArmor": "Armor Class 11 (natural armor)",
+    "monsterHP": "Hit Points 19 (3d10+3)",
+    "monsterSpeed": "Speed 40 ft.",
+    "monsterSTR": "17 (+3)",
+    "monsterDEX": "11 (0)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "3 (-4)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "6 (-2)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  1/2 (100 XP)",
+    "monsterSpecials": [
+        "Charge. If the goat moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 5 (2d4) bludgeoning damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
+        "Sure-Footed. The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it prone."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Ram. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) bludgeoning damage."
+    ]
+}

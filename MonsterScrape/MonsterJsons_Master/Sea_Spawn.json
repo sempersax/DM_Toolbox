@@ -1,0 +1,31 @@
+{
+    "monsterName": "Sea Spawn",
+    "monsterType": "Medium humanoid, neutral evil",
+    "monsterArmor": "Armor Class 11 (natural armor)",
+    "monsterHP": "Hit Points 32 (5d8+10)",
+    "monsterSpeed": "Speed 20 ft., swim 30 ft.",
+    "monsterSTR": "15 (+2)",
+    "monsterDEX": "8 (-1)",
+    "monsterCON": "15 (+2)",
+    "monsterINT": "6 (-2)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "8 (-1)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 120 ft.",
+    "monsterLanguages": "Languages understands Aquan and Common but can't speak",
+    "monsterChallenge": "Challenge  1 (200 XP)",
+    "monsterSpecials": [
+        "Limited Amphibiousness. The sea spawn can breathe air and water, but needs to be submerged in the sea at least once a day for 1 minute to avoid suffocating."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The sea spawn makes three attacks: two unarmed strikes and one with its Piscine Anatomy.",
+        "Unarmed Strike. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4+2) bludgeoning damage.",
+        "Piscine Anatomy. The sea spawn has one or more of the following attack options, provided it has the appropriate anatomy:"
+    ]
+}

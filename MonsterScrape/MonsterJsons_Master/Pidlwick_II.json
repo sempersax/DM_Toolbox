@@ -1,0 +1,30 @@
+{
+    "monsterName": "Pidlwick II",
+    "monsterType": "Small construct, neutral evil",
+    "monsterArmor": "Armor Class 14 (natural armor)",
+    "monsterHP": "Hit Points 10 (3d6)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "10 (0)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "11 (0)",
+    "monsterINT": "8 (-1)",
+    "monsterWIS": "13 (+1)",
+    "monsterCHA": "10 (0)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Performance +3",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "Damage Immunities poison",
+    "monsterCImmunities": "Condition Immunities paralyzed, petrified, poisoned",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages understands Common but doesn't speak and can't read or write",
+    "monsterChallenge": "Challenge  1/4 (50 XP)",
+    "monsterSpecials": [
+        "Ambusher. During the first round of combat, Pidlwick II has advantage on attack rolls against any creature that hasn't had a turn yet."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Club. Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.",
+        "Dart. Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 4 (1d4+2) piercing damage."
+    ]
+}

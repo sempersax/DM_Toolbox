@@ -1,0 +1,32 @@
+{
+    "monsterName": "Bard",
+    "monsterType": "Medium humanoid (any race), any alignment",
+    "monsterArmor": "Armor Class 15 (chain shirt)",
+    "monsterHP": "Hit Points 44 (8d8+8)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "11 (0)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "12 (+1)",
+    "monsterINT": "10 (0)",
+    "monsterWIS": "13 (+1)",
+    "monsterCHA": "14 (+2)",
+    "monsterSavings": "Saving Throws Dex +4, Wis +3",
+    "monsterSkills": "Skills Acrobatics +4, Perception +5, Performance +6",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages any two languages",
+    "monsterChallenge": "Challenge  2 (450 XP)",
+    "monsterSpecials": [
+        "Spellcasting. The bard is a 4th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). It has the following bard spells prepared:\n\nCantrips (at will): friends, mage hand, vicious mockery\n\n1st level (4 slots): charm person, healing word, heroism, sleep, thunderwave\n\n2nd level (3 slots): invisibility, shatter\n\n",
+        "Song of Rest. The bard can perform a song while taking a short rest. Any ally who hears the song regains an extra ld6 hit points if it spends any Hit Dice to regain hit points at the end of that rest. The bard can confer this benefit on itself as well.",
+        "Taunt (2/day). The bard can use a bonus action on its turn to target one creature within 30 feet of it. If the target can hear the bard, the target must succeed on a DC 12 Charisma saving throw or have disadvantage on ability checks, attack rolls, and saving throws until the start of the bard's next turn."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Shortsword. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) piercing damage.",
+        "Shortbow. Ranged Weapon Attack: +4 to hit, range 80/320 ft., one: target. Hit: 5 (1d6+2) piercing damage."
+    ]
+}

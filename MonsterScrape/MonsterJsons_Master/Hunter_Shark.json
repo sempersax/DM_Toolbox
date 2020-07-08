@@ -1,0 +1,30 @@
+{
+    "monsterName": "Hunter Shark",
+    "monsterType": "Large beast, unaligned",
+    "monsterArmor": "Armor Class 12 (natural armor)",
+    "monsterHP": "Hit Points 45 (6d10+12)",
+    "monsterSpeed": "Speed swim 40 ft.",
+    "monsterSTR": "18 (+4)",
+    "monsterDEX": "13 (+1)",
+    "monsterCON": "15 (+2)",
+    "monsterINT": "1 (-5)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "4 (-3)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Perception +2",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 30 ft.",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  2 (450 XP)",
+    "monsterSpecials": [
+        "Blood Frenzy. The shark has advantage on melee attack rolls against any creature that doesn't have all its hit points.",
+        "Water Breathing. The shark can breathe only underwater."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Bite. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage."
+    ]
+}

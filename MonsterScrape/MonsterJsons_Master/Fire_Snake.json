@@ -1,0 +1,31 @@
+{
+    "monsterName": "Fire Snake",
+    "monsterType": "Medium elemental, neutral evil",
+    "monsterArmor": "Armor Class 14 (natural armor)",
+    "monsterHP": "Hit Points 22 (5d8)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "12 (+1)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "11 (0)",
+    "monsterINT": "7 (-2)",
+    "monsterWIS": "10 (0)",
+    "monsterCHA": "8 (-1)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "Damage Vulnerabilities cold",
+    "mosnterResistances": "Damage Resistances bludgeoning, piercing, and slashing from nonmagical weapons",
+    "monsterImmunities": "Damage Immunities fire",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages understands Ignan but can't speak",
+    "monsterChallenge": "Challenge  1 (200 XP)",
+    "monsterSpecials": [
+        "Heated Body. A creature that touches the snake or hits it with a melee attack while within 5 ft. of it takes 3 (1d6) fire damage."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The snake makes two attacks: one with its bite and one with its tail.",
+        "Bite. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage plus 3 (1d6) fire damage.",
+        "Tail. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage plus 3 (1d6) fire damage."
+    ]
+}

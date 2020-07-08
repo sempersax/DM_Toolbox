@@ -1,0 +1,33 @@
+{
+    "monsterName": "Gnoll Pack Lord",
+    "monsterType": "Medium humanoid (gnoll), chaotic evil",
+    "monsterArmor": "Armor Class 15 (chain shirt)",
+    "monsterHP": "Hit Points 49 (9d8+9)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "16 (+3)",
+    "monsterDEX": "14 (+2)",
+    "monsterCON": "13 (+1)",
+    "monsterINT": "8 (-1)",
+    "monsterWIS": "11 (0)",
+    "monsterCHA": "9 (-1)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "Senses darkvision 60 ft.",
+    "monsterLanguages": "Languages Gnoll",
+    "monsterChallenge": "Challenge  2 (450 XP)",
+    "monsterSpecials": [
+        "Rampage. When the gnoll reduces a creature to 0 hit points with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Multiattack. The gnoll makes two attacks, either with its glaive or its longbow, and uses its Incite Rampage if it can.",
+        "Bite. Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4 + 3) piercing damage.",
+        "Glaive. Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 8 (1d10 + 3) slashing damage.",
+        "Longbow. Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
+        "Incite Rampage (Recharge 5-6). One creature the gnoll can see within 30 feet of it can use its reaction to make a melee attack if it can hear the gnoll and has the Rampage trait."
+    ]
+}

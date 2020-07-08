@@ -1,0 +1,29 @@
+{
+    "monsterName": "Aurochs",
+    "monsterType": "Large beast, unaligned",
+    "monsterArmor": "Armor Class 11 (natural armor)",
+    "monsterHP": "Hit Points 38 (4d10+16)",
+    "monsterSpeed": "Speed 50 ft.",
+    "monsterSTR": "20 (+5)",
+    "monsterDEX": "10 (0)",
+    "monsterCON": "19 (+4)",
+    "monsterINT": "2 (-4)",
+    "monsterWIS": "12 (+1)",
+    "monsterCHA": "5 (-3)",
+    "monsterSavings": "",
+    "monsterSkills": "",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "",
+    "monsterChallenge": "Challenge  2 (450 XP)",
+    "monsterSpecials": [
+        "Charge. If the aurochs moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Gore. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d8+5) piercing damage."
+    ]
+}

@@ -1,0 +1,11 @@
+Failed to scrape data from https://jsigvard.com/dnd/monster.php?m=Duodrone
+Failed to scrape data from https://jsigvard.com/dnd/monster.php?m=Iymrith,%20Ancient%20Blue%20Dragon
+Failed to scrape data from https://jsigvard.com/dnd/monster.php?m=Lizard%20King/Queen
+Failed to scrape data from https://jsigvard.com/dnd/monster.php?m=Monodrone
+Failed to scrape data from https://jsigvard.com/dnd/monster.php?m=Pentadrone
+Failed to scrape data from https://jsigvard.com/dnd/monster.php?m=Quadrone
+Failed to scrape data from https://jsigvard.com/dnd/monster.php?m=Succubus/Incubus
+Failed to scrape data from https://jsigvard.com/dnd/monster.php?m=Tridrone
+Failed to scrape data from https://jsigvard.com/dnd/monster.php?m=Iymrith,%20Ancient%20Blue%20Dragon
+Failed to scrape data from https://jsigvard.com/dnd/monster.php?m=Lizard%20King/Queen
+Failed to scrape data from https://jsigvard.com/dnd/monster.php?m=Succubus/Incubus

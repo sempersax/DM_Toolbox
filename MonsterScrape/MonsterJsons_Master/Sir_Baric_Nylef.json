@@ -1,0 +1,31 @@
+{
+    "monsterName": "Sir Baric Nylef",
+    "monsterType": "Medium humanoid (illuskan human), lawful good",
+    "monsterArmor": "Armor Class 18 (plate)",
+    "monsterHP": "Hit Points 52 (8d8+16)",
+    "monsterSpeed": "Speed 30 ft.",
+    "monsterSTR": "18 (+4)",
+    "monsterDEX": "11 (0)",
+    "monsterCON": "14 (+2)",
+    "monsterINT": "11 (0)",
+    "monsterWIS": "15 (+2)",
+    "monsterCHA": "15 (+2)",
+    "monsterSavings": "",
+    "monsterSkills": "Skills Insight +4, Investigation +2, Medicine +4, Survival +4",
+    "monsterVulnerabilities": "",
+    "mosnterResistances": "",
+    "monsterImmunities": "",
+    "monsterCImmunities": "",
+    "monsterSenses": "",
+    "monsterLanguages": "Languages Common",
+    "monsterChallenge": "Challenge  0 (10 XP)",
+    "monsterSpecials": [
+        "Brave. Baric has advantage on saving throws against being frightened.",
+        "Roleplaying Information. As a knight of the Order of the Gauntlet, Sir Baric has sworn oaths to catch evildoers and bring them to justice. His current quarry is a dwarf brigand, Worvil \"the Weezil\" Forkbeard, who is rumored to be hiding in Iceland Dale. In addition to his gear, Sir Baric has an unarmored warhorse, Henry."
+    ],
+    "monsterActions": [
+        "_____________________ Actions _____________________",
+        "Maul. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage.",
+        "Heavy Crossbow. Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target. Hit: 5 (1d10) piercing damage. Baric carries twenty crossbow bolts."
+    ]
+}
