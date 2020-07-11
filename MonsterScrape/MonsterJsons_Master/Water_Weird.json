@@ -13,7 +13,7 @@
     "monsterSavings": "",
     "monsterSkills": "",
     "monsterVulnerabilities": "",
-    "mosnterResistances": "Damage Resistances fire; bludgeoning, piercing, and slashing from nonmagical weapons",
+    "monsterResistances": "Damage Resistances fire; bludgeoning, piercing, and slashing from nonmagical weapons",
     "monsterImmunities": "Damage Immunities poison",
     "monsterCImmunities": "Condition Immunities exhaustion, grappled, paralyzed, poisoned, restrained, prone, unconscious",
     "monsterSenses": "Senses blindsight 30 ft.",

@@ -13,7 +13,7 @@
     "monsterSavings": "Saving Throws Dex +7, Con +13, Wis +12",
     "monsterSkills": "Skills Perception +12",
     "monsterVulnerabilities": "",
-    "mosnterResistances": "Damage Resistances cold, fire, lightning",
+    "monsterResistances": "Damage Resistances cold, fire, lightning",
     "monsterImmunities": "Damage Immunities poison; bludgeoning, piercing, and slashing that is nonmagical",
     "monsterCImmunities": "Condition Immunities blinded, charmed, deafened, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained, stunned, unconscious",
     "monsterSenses": "Senses truesight 120 ft.",

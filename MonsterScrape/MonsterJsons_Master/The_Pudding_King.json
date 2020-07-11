@@ -13,7 +13,7 @@
     "monsterSavings": "Saving Throws Con +5, Cha +6",
     "monsterSkills": "Skills Arcana +4, Perception +2, Stealth +6, Survival +2",
     "monsterVulnerabilities": "",
-    "mosnterResistances": "Damage Resistances acid, poison",
+    "monsterResistances": "Damage Resistances acid, poison",
     "monsterImmunities": "",
     "monsterCImmunities": "Condition Immunities poisoned",
     "monsterSenses": "Senses darkvision 60 ft.",

@@ -13,7 +13,7 @@
     "monsterSavings": "Saving Throws Str +7, Con +7, Wis +6, Cha +7",
     "monsterSkills": "",
     "monsterVulnerabilities": "",
-    "mosnterResistances": "Damage Resistances necrotic, psychic",
+    "monsterResistances": "Damage Resistances necrotic, psychic",
     "monsterImmunities": "Damage Immunities poison",
     "monsterCImmunities": "Condition Immunities charmed, exhaustion, frightened, paralyzed, poisoned, stunned",
     "monsterSenses": "Senses darkvision 60 ft.",

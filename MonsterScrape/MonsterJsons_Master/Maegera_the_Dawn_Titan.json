@@ -13,7 +13,7 @@
     "monsterSavings": "Saving Throws Con +12, Wis +7, Cha +11",
     "monsterSkills": "",
     "monsterVulnerabilities": "",
-    "mosnterResistances": "Damage Resistances bludgeoning, piercing, and slashing from nonmagical weapons",
+    "monsterResistances": "Damage Resistances bludgeoning, piercing, and slashing from nonmagical weapons",
     "monsterImmunities": "Damage Immunities fire, poison",
     "monsterCImmunities": "Condition Immunities charmed, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
     "monsterSenses": "Senses blindsight 120 ft.",

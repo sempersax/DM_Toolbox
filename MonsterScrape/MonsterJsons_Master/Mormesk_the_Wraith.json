@@ -13,7 +13,7 @@
     "monsterSavings": "",
     "monsterSkills": "",
     "monsterVulnerabilities": "",
-    "mosnterResistances": "Damage Resistances acid, cold, fire, lightning, thunder, bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered",
+    "monsterResistances": "Damage Resistances acid, cold, fire, lightning, thunder, bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered",
     "monsterImmunities": "Damage Immunities necrotic, poison",
     "monsterCImmunities": "Condition Immunities charmed, grappled, paralyzed, petrified, poisoned, prone, restrained",
     "monsterSenses": "Senses darkvision 60 ft.",

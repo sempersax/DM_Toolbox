@@ -13,7 +13,7 @@
     "monsterSavings": "",
     "monsterSkills": "",
     "monsterVulnerabilities": "",
-    "mosnterResistances": "Damage Resistances acid",
+    "monsterResistances": "Damage Resistances acid",
     "monsterImmunities": "Damage Immunities lightning, slashing",
     "monsterCImmunities": "Condition Immunities blinded, charmed, deafened, exhaustion, frightened, prone",
     "monsterSenses": "Senses blindsight 60 ft. (blind beyond this radius)",

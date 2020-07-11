@@ -13,7 +13,7 @@
     "monsterSavings": "",
     "monsterSkills": "Skills Athletics +7, Perception +4, Stealth +4",
     "monsterVulnerabilities": "Damage Vulnerabilities fire",
-    "mosnterResistances": "Damage Resistances bludgeoning, piercing",
+    "monsterResistances": "Damage Resistances bludgeoning, piercing",
     "monsterImmunities": "",
     "monsterCImmunities": "Condition Immunities charmed, frightened",
     "monsterSenses": "Senses darkvision 60 ft.",
