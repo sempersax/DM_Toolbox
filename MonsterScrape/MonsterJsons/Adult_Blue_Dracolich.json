@@ -13,7 +13,7 @@
     "monsterSavings": "Saving Throws Dex +5, Con +11, Wis +7, Cha +9",
     "monsterSkills": "Skills Perception +12, Stealth +5",
     "monsterVulnerabilities": "",
-    "mosnterResistances": "Damage Resistances necrotic",
+    "monsterResistances": "Damage Resistances necrotic",
     "monsterImmunities": "Damage Immunities lightning, poison",
     "monsterCImmunities": "Condition Immunities charmed, exhaustion, frightened, paralyzed, poisoned",
     "monsterSenses": "Senses blindsight 60 ft., darkvision 120 ft.",

@@ -13,7 +13,7 @@
     "monsterSavings": "Saving Throws Wis +4",
     "monsterSkills": "Skills Arcana +3, Perception +4",
     "monsterVulnerabilities": "",
-    "mosnterResistances": "Damage Resistances necrotic; bludgeoning, piercing, and slashing from nonmagical attacks",
+    "monsterResistances": "Damage Resistances necrotic; bludgeoning, piercing, and slashing from nonmagical attacks",
     "monsterImmunities": "Damage Immunities poison",
     "monsterCImmunities": "Condition Immunities exhaustion, poisoned",
     "monsterSenses": "Senses darkvision 60 ft.",

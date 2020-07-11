@@ -13,7 +13,7 @@
     "monsterSavings": "",
     "monsterSkills": "Skills Deception +4, Insight +3, Persuasion +4, Stealth +5",
     "monsterVulnerabilities": "",
-    "mosnterResistances": "Damage Resistances cold; bludgeoning, piercing, and slashing from nonmagical/nonsilver weapons",
+    "monsterResistances": "Damage Resistances cold; bludgeoning, piercing, and slashing from nonmagical/nonsilver weapons",
     "monsterImmunities": "Damage Immunities fire, poison",
     "monsterCImmunities": "Condition Immunities poisoned",
     "monsterSenses": "Senses darkvision 120 ft.",

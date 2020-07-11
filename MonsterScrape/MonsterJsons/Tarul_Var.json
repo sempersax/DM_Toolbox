@@ -13,7 +13,7 @@
     "monsterSavings": "Saving Throws Con +8, Int +9, Wis +7",
     "monsterSkills": "Skills Arcana +9, History +9, Insight +7, Perception +7",
     "monsterVulnerabilities": "",
-    "mosnterResistances": "Damage Resistances cold, lightning, necrotic; bludgeoning, piercing, and slashing from nonmagical attacks",
+    "monsterResistances": "Damage Resistances cold, lightning, necrotic; bludgeoning, piercing, and slashing from nonmagical attacks",
     "monsterImmunities": "Damage Immunities poison",
     "monsterCImmunities": "Condition Immunities charmed, exhaustion, frightened, paralyzed, poisoned",
     "monsterSenses": "Senses darkvision 60 ft.",

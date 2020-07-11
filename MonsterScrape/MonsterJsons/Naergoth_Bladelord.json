@@ -13,7 +13,7 @@
     "monsterSavings": "Saving Throws Dex +5, Wis +4",
     "monsterSkills": "Skills Perception +6, Stealth +5",
     "monsterVulnerabilities": "",
-    "mosnterResistances": "Damage Resistances necrotic; bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered",
+    "monsterResistances": "Damage Resistances necrotic; bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered",
     "monsterImmunities": "Damage Immunities poison",
     "monsterCImmunities": "Condition Immunities exhaustion, poisoned",
     "monsterSenses": "Senses darkvision 60 ft.",

@@ -13,7 +13,7 @@
     "monsterSavings": "",
     "monsterSkills": "Skills Arcana +5, Perception +2",
     "monsterVulnerabilities": "",
-    "mosnterResistances": "Damage Resistances lightning, necrotic, piercing",
+    "monsterResistances": "Damage Resistances lightning, necrotic, piercing",
     "monsterImmunities": "Damage Immunities cold, fire, poison",
     "monsterCImmunities": "Condition Immunities charmed, frightened, paralyzed, poisoned, prone",
     "monsterSenses": "Senses darkvision 60 ft.",

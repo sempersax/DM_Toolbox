@@ -13,7 +13,7 @@
     "monsterSavings": "",
     "monsterSkills": "Skills Stealth +2",
     "monsterVulnerabilities": "",
-    "mosnterResistances": "Damage Resistances acid, cold, fire",
+    "monsterResistances": "Damage Resistances acid, cold, fire",
     "monsterImmunities": "",
     "monsterCImmunities": "Condition Immunities blinded, charmed, deafened, exhaustion, frightened, prone",
     "monsterSenses": "Senses blindsight 60 ft. (blind beyond this radius)",

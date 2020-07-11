@@ -13,7 +13,7 @@
     "monsterSavings": "Saving Throws Wis +5",
     "monsterSkills": "",
     "monsterVulnerabilities": "Damage Vulnerabilities fire",
-    "mosnterResistances": "Damage Resistances bludgeoning, piercing, and slashing from nonmagical attacks",
+    "monsterResistances": "Damage Resistances bludgeoning, piercing, and slashing from nonmagical attacks",
     "monsterImmunities": "Damage Immunities necrotic, poison",
     "monsterCImmunities": "Condition Immunities charmed, exhaustion, frightened, paralyzed, poisoned",
     "monsterSenses": "Senses darkvision 60 ft.",

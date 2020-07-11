@@ -13,7 +13,7 @@
     "monsterSavings": "Saving Throws Int +14, Wis +14, Cha +17",
     "monsterSkills": "Skills Perception +14",
     "monsterVulnerabilities": "",
-    "mosnterResistances": "Damage Resistances radiant, bludgeoning, piercing, and slashing from nonmagical weapons",
+    "monsterResistances": "Damage Resistances radiant, bludgeoning, piercing, and slashing from nonmagical weapons",
     "monsterImmunities": "Damage Immunities necrotic, poison",
     "monsterCImmunities": "Condition Immunities charmed, exhaustion, frightened, poisoned",
     "monsterSenses": "Senses truesight 120 ft.",

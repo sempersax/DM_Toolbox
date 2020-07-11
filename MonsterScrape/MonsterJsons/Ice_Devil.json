@@ -13,7 +13,7 @@
     "monsterSavings": "Saving Throws Dex +7, Con +9, Wis +7, Cha +9",
     "monsterSkills": "",
     "monsterVulnerabilities": "",
-    "mosnterResistances": "Damage Resistances bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered",
+    "monsterResistances": "Damage Resistances bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered",
     "monsterImmunities": "Damage Immunities fire, poison",
     "monsterCImmunities": "Condition Immunities poisoned",
     "monsterSenses": "Senses blindsight 60 ft., darkvision 120 ft.",
