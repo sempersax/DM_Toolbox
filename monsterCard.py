@@ -20,7 +20,7 @@ def monsterStatCard(monsterJson):
     cwd = os.getcwd()
     edge=120
 
-    with open(cwd+'/MonsterScrape/MonsterJsons/'+monsterJson+'.json') as jsonFile:
+    with open(cwd+'/MonsterScrape/MonsterJsons/'+monsterJson.replace(' ','_')+'.json') as jsonFile:
         data = json.load(jsonFile)
         data['monsterArmor'] = data['monsterArmor'].replace('Armor Class','')
         data['monsterHP'] = data['monsterHP'].replace('Hit Points', '')
@@ -142,12 +142,10 @@ def monsterStatCard(monsterJson):
         monsterActionsLabel = FONT1.render('Actions:', True, [146,4,4], None)
         monsterActions = []
         i=1
-        print(data['monsterActions'])
         while i < len(data['monsterActions']):
             if '\n\n' in data['monsterActions'][i]:
                 data['monsterActions'][i] = data['monsterActions'][i].split('\n\n')
                 tempData = []
-                print(data['monsterActions'][i])
                 for k in range(0, len(data['monsterActions'][i])):
                     tempData.append(data['monsterActions'][i][k])
                 del data['monsterActions'][i]
@@ -219,32 +217,44 @@ def monsterStatCard(monsterJson):
 
     try:
         DISPLAYSURF.blit(monsterVulnerabilitiesLabel, (edge, int(screen.get_height()/10*2+monsterArmorLabel.get_height()*shift)))
-        shift +=1
-        DISPLAYSURF.blit(monsterVulnerabilities, (edge, int(screen.get_height()/10*2 + monsterArmorLabel.get_height()*shift+3)))
+        wide = int(monsterVulnerabilitiesLabel.get_width())
+        if monsterVulnerabilities.get_width()+wide > screen.get_width()//2:
+            shift +=1
+            wide = 0
+        DISPLAYSURF.blit(monsterVulnerabilities, (edge+wide, int(screen.get_height()/10*2 + monsterArmorLabel.get_height()*shift+3)))
         shift +=1
     except:
         pass
 
     try:
         DISPLAYSURF.blit(monsterResistancesLabel, (edge, int(screen.get_height()/10*2+monsterArmorLabel.get_height()*shift)))
-        shift +=1
-        DISPLAYSURF.blit(monsterResistances, (edge, int(screen.get_height()/10*2 + monsterArmorLabel.get_height()*shift+3)))
+        wide = int(monsterResistancesLabel.get_width())
+        if monsterResistances.get_width()+wide > screen.get_width()//2:
+            shift +=1
+            wide = 0
+        DISPLAYSURF.blit(monsterResistances, (edge+wide, int(screen.get_height()/10*2 + monsterArmorLabel.get_height()*shift+3)))
         shift +=1
     except:
         pass
     
     try:
         DISPLAYSURF.blit(monsterImmunitiesLabel, (edge, int(screen.get_height()/10*2+monsterArmorLabel.get_height()*shift)))
-        shift +=1
-        DISPLAYSURF.blit(monsterImmunities, (edge, int(screen.get_height()/10*2 + monsterArmorLabel.get_height()*shift+3)))
+        wide = int(monsterImmunitiesLabel.get_width())
+        if monsterImmunities.get_width()+wide > screen.get_width()//2:
+            shift +=1
+            wide = 0
+        DISPLAYSURF.blit(monsterImmunities, (edge+wide, int(screen.get_height()/10*2 + monsterArmorLabel.get_height()*shift+3)))
         shift +=1
     except:
         pass
 
     try:
         DISPLAYSURF.blit(monsterCImmunitiesLabel, (edge, int(screen.get_height()/10*2+monsterArmorLabel.get_height()*shift)))
-        shift +=1
-        DISPLAYSURF.blit(monsterCImmunities, (edge, int(screen.get_height()/10*2 + monsterArmorLabel.get_height()*shift+3)))
+        wide = int(monsterCImmunitiesLabel.get_width())
+        if monsterCImmunities.get_width()+wide > screen.get_width()//2:
+            shift +=1
+            wide = 0
+        DISPLAYSURF.blit(monsterCImmunities, (edge+wide, int(screen.get_height()/10*2 + monsterArmorLabel.get_height()*shift+3)))
         shift +=1
     except:
         pass
