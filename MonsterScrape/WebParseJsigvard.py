@@ -145,7 +145,7 @@ def monsterParse(webString,monsterString):
                 "monsterSavings" : monsterSavings,
                 "monsterSkills" : monsterSkills,
                 "monsterVulnerabilities" : monsterVulnerabilities,
-                "mosnterResistances" : monsterResistances,
+                "monsterResistances" : monsterResistances,
                 "monsterImmunities" : monsterImmunities,
                 "monsterCImmunities" : monsterCImmunities,
                 "monsterSenses" : monsterSenses,
@@ -155,7 +155,8 @@ def monsterParse(webString,monsterString):
                 "monsterActions" : monsterActions
             }
             print('Success: Dumping monster statistics to {}.json'.format(monsterName.replace(' ','_').replace('/','_')))
-            
+
+
             #Dumping the dictionary to a json file in the cwd\monsterJsons_Master\ directory
             with open("{}\monsterJsons_Master\{}.json".format(cwd,monsterName.replace(' ','_').replace('/','_')),'w') as monsterJson:
                 monsterJson.write(json.dumps(monsterD, indent=4))
