@@ -15,6 +15,7 @@ import Music_Navigator as musNav
 import pygame.surfarray as surfarray
 import Char_Navigator as charNav
 import NPC_Generator as npcGen
+import PC_Generator as pcGen
 import Spell_Navigator as spNav
 import Monster_Navigator as monNav
 import Image_Loader as imgLoad
@@ -35,6 +36,8 @@ FPS = 30
 ## choice = 4 -> Spell Screen
 ## choice = 5 -> Monster Screen
 ## choice = 6 -> NPC Screen (FROM CHARACTER SCREEN)
+## choice = 7 -> PC Screen (FROM CHARACTER SCREEN)
+
 def main():
     global WINDOWHEIGHT, WINDOWWIDTH,FPSCLOCK
     pg.init()
@@ -57,6 +60,7 @@ def main():
     raceButt, toolButt, circButt,screens,genButt = imgLoad.imageLoader(DISPLAYSURF,WINDOWWIDTH,WINDOWHEIGHT)
     charScroll = pg.image.load('images/character_scroll.png')  
     startTime = time.time()
+    
     while True:
         runTime = runTime + time.time() - startTime
         if runTime >= 600. and choice == 0 :
@@ -72,7 +76,7 @@ def main():
         DISPLAYSURF, soundSurf, soundRect, playing = musCon.soundControl(DISPLAYSURF, musicChoice, pg.mixer.music.get_busy())
         if choice != 0:
             DISPLAYSURF, menButton, menRect = menGen.reachMenu(DISPLAYSURF)
-        if choice >1 and choice < 5:
+        if choice >1 and choice < 6:
                             
             DISPLAYSURF, backButton, backRect = toolNav.createBack(DISPLAYSURF,WINDOWWIDTH,WINDOWHEIGHT)
         
@@ -110,9 +114,7 @@ def main():
                         choice = 3
                         break
                     if charRect.collidepoint(event.pos):
-                        #DISPLAYSURF, races,raceRects, RACERECTS = npcGen.race(DISPLAYSURF,raceButt)
-                        DISPLAYSURF, playSurf, playRect, npcSurf,npcRect=charNav.createChar(DISPLAYSURF)
-                        print(npcRect)
+                        DISPLAYSURF, pcSurf, pcRect, npcSurf,npcRect=charNav.createChar(DISPLAYSURF)
                         choice = 2
                         #subchoice = 6
                         break
@@ -121,7 +123,7 @@ def main():
                         choice = 4
                         break
                     if monstRect.collidepoint(event.pos):
-                        DISPLAYSURF, surf1, rect1,screen = monNav.createMonster(DISPLAYSURF)
+                        DISPLAYSURF, surf1, rect1, surf2, rect2, screen = monNav.createMonster(DISPLAYSURF)
                         choice = 5
                         break                        
 
@@ -135,7 +137,7 @@ def main():
                         choice = 4
                         break
                     if miniRects[2].collidepoint(event.pos):
-                        DISPLAYSURF, surf1, rect1,screen = monNav.createMonster(DISPLAYSURF)
+                        DISPLAYSURF, surf1, rect1, surf2, rect2, screen = monNav.createMonster(DISPLAYSURF)
                         choice = 5
                         break
 ##                    if raceRect.collidepoint(event.pos):
@@ -144,11 +146,27 @@ def main():
 ##                        break
                     if npcRect.collidepoint(event.pos):
                         DISPLAYSURF, races,raceRects, RACERECTS = npcGen.race(DISPLAYSURF,raceButt)
-                        choice = 7
+                        choice = 6
                         subchoice = 6
                         break
-                if choice == 7: #on NPC Hub
-
+                    if pcRect.collidepoint(event.pos):
+                        DISPLAYSURF, races,raceRects, RACERECTS = npcGen.race(DISPLAYSURF,raceButt)
+                        choice = 7
+                        subchoice = 6
+                        break 
+                if choice == 6: #on NPC Hub
+                    if miniRects[0].collidepoint(event.pos):
+                        DISPLAYSURF,tavrnSurf, tavrnRect, bttleSurf, bttleRect, rgionSurf, rgionRect,screen = musNav.createMusic(DISPLAYSURF)
+                        choice = 3
+                        break                       
+                    if miniRects[1].collidepoint(event.pos):
+                        DISPLAYSURF, surf1, rect1,screen = spNav.createSpell(DISPLAYSURF)
+                        choice = 4
+                        break
+                    if miniRects[2].collidepoint(event.pos):
+                        DISPLAYSURF, surf1, rect1, surf2, rect2, screen = monNav.createMonster(DISPLAYSURF)
+                        choice = 5
+                        break
                     if subchoice == 6:
                         if RACERECTS.collidepoint(event.pos):
                             mousePos = pg.mouse.get_pos()
@@ -165,7 +183,38 @@ def main():
                             choice = 7
                             subchoice = 6
                             DISPLAYSURF, races,raceRects, RACERECTS = npcGen.race(DISPLAYSURF,raceButt)
-                            break                        
+                            break
+
+                if choice == 7: #on PC Hub
+                    if miniRects[0].collidepoint(event.pos):
+                        DISPLAYSURF,tavrnSurf, tavrnRect, bttleSurf, bttleRect, rgionSurf, rgionRect,screen = musNav.createMusic(DISPLAYSURF)
+                        choice = 3
+                        break                       
+                    if miniRects[1].collidepoint(event.pos):
+                        DISPLAYSURF, surf1, rect1,screen = spNav.createSpell(DISPLAYSURF)
+                        choice = 4
+                        break
+                    if miniRects[2].collidepoint(event.pos):
+                        DISPLAYSURF, surf1, rect1, surf2, rect2, screen = monNav.createMonster(DISPLAYSURF)
+                        choice = 5
+                        break
+                    if subchoice == 6:
+                        if RACERECTS.collidepoint(event.pos):
+                            mousePos = pg.mouse.get_pos()
+                            DISPLAYSURF, raceSel, genRects,GENRECTS = npcGen.gender(DISPLAYSURF,WINDOWWIDTH,WINDOWHEIGHT,raceRects,mousePos,genButt)
+                            if raceSel != 'None':
+                                subchoice = 7
+                            break
+                    if subchoice == 7:
+                        if GENRECTS.collidepoint(event.pos):
+                            mousePos = pg.mouse.get_pos()
+                            DISPLAYSURF, contRect = npcGen.name(DISPLAYSURF,WINDOWWIDTH,WINDOWHEIGHT,genRects,mousePos,raceSel,charScroll)
+                            break
+                        if contRect.collidepoint(event.pos):
+                            choice = 7
+                            subchoice = 6
+                            DISPLAYSURF, races,raceRects, RACERECTS = npcGen.race(DISPLAYSURF,raceButt)
+                            break
                     
                 if choice == 3: # on music hub
                     if bttleRect.collidepoint(event.pos):
@@ -173,7 +222,7 @@ def main():
                     if tavrnRect.collidepoint(event.pos):
                         musGen.tavernMusic()
                     if miniRects[0].collidepoint(event.pos):
-                        DISPLAYSURF, races,raceRects, RACERECTS = npcGen.race(DISPLAYSURF,raceButt)
+                        DISPLAYSURF, playSurf, playRect, npcSurf,npcRect=charNav.createChar(DISPLAYSURF)
                         choice = 2
                         break
                     if miniRects[1].collidepoint(event.pos):
@@ -181,13 +230,13 @@ def main():
                         choice = 4
                         break
                     if miniRects[2].collidepoint(event.pos):
-                        DISPLAYSURF, surf1, rect1,screen = monNav.createMonster(DISPLAYSURF)
+                        DISPLAYSURF, surf1, rect1, surf2, rect2, screen = monNav.createMonster(DISPLAYSURF)
                         choice = 5
                         break
                     
                 if choice == 4: #on Spell hub        
                     if miniRects[0].collidepoint(event.pos):
-                        DISPLAYSURF, races,raceRects, RACERECTS = npcGen.race(DISPLAYSURF,raceButt)
+                        DISPLAYSURF, playSurf, playRect, npcSurf,npcRect=charNav.createChar(DISPLAYSURF)
                         choice = 2
                         break                       
                     if miniRects[1].collidepoint(event.pos):
@@ -195,13 +244,13 @@ def main():
                         choice = 3
                         break        
                     if miniRects[2].collidepoint(event.pos):
-                        DISPLAYSURF, surf1, rect1,screen = monNav.createMonster(DISPLAYSURF)
+                        DISPLAYSURF, surf1, rect1, surf2, rect2, screen = monNav.createMonster(DISPLAYSURF)
                         choice = 5
                         break
 
                 if choice == 5: #on Monster Hub
                     if miniRects[0].collidepoint(event.pos):
-                        DISPLAYSURF, races,raceRects, RACERECTS = npcGen.race(DISPLAYSURF,raceButt)
+                        DISPLAYSURF, playSurf, playRect, npcSurf,npcRect=charNav.createChar(DISPLAYSURF)
                         choice = 2
                         break                       
                     if miniRects[1].collidepoint(event.pos):
