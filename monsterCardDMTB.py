@@ -46,7 +46,7 @@ def monsterStatCard(monsterJson,surf):
 ##    pg.display.set_caption('Card Tester')
 ##    pg.display.update()
     screen = pg.image.load('images/character_scroll.png')
-    screen = pg.transform.scale(screen,(int(screen.get_width()*1.6),int(screen.get_height()*1.15)))
+    screen = pg.transform.scale(screen,(WINDOWWIDTH, WINDOWHEIGHT))#(int(screen.get_width()*1.6),int(screen.get_height()*1.15)))
     DISPLAYSURF.blit(screen, (0,0))
     monsterName = TITLE.render(data['monsterName'],True,[146,4,4],None)
     monsterType = SUBTITLE.render(data['monsterType'],True,[0,0,0], None)
