@@ -11,9 +11,35 @@ from pygame.locals import *
 import time
 import json
 from fractions import Fraction
+import monsterCardDMTB as mc
 
 WINDOWHEIGHT = 629
 WINDOWWIDTH = 1000
+
+def AZSelector(surf):
+    monstSurf = pg.image.load('images/DMTB_MONSTERS_screen.jpg')
+    monstSurf = pg.transform.scale(monstSurf, (WINDOWWIDTH,WINDOWHEIGHT))
+    surf.fill((0,0,0))
+    surf.blit(monstSurf,(0,0))
+
+    images = []
+    cwd = os.getcwd()
+    mypath = "{}/images/filters/letters/".format(cwd)
+    myLetters = [f for f in os.listdir(mypath) if os.path.isfile(os.path.join(mypath,f))]
+    rects = []
+    surfs = []
+    height = surf.get_height()
+    shift = 0
+    yedge = 60
+    xedge = surf.get_width()//5
+    j=0
+    for i in range(0,len(myLetters)):
+        surfs.append(pg.image.load(mypath+myLetters[i]))
+        if int(2* yedge+surfs[i].get_height()*(1/8 +i-j )) > surf.get_height():
+            shift +=1
+            j = i
+        rects.append(surfs[i].get_rect(topleft = (int(xedge+surfs[i].get_width()*(1/8 +shift )), int(yedge+surfs[i].get_height()*(1/8+i-j)))))
+        surf.blit(surfs[i],(int(xedge+surfs[i].get_width()*(1/8 +shift )), int(yedge+surfs[i].get_height()*(1/8+i-j))))
 
 def createMonster(surf):
     pg.init()
@@ -42,7 +68,7 @@ def createMonster(surf):
 
     AZSurf = pg.image.load('images/filters/A-Z_Button.png')
     AZSurf = pg.transform.scale(AZSurf, (int(AZSurf.get_width()/8),int(AZSurf.get_height()/8)))
-    AZRect = searchSurf.get_rect(topleft = (int(AZSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(AZSurf.get_height()/2)))
+    AZRect = searchSurf.get_rect(topleft = (surf.get_width()/2-int(AZSurf.get_width()/2), int(WINDOWHEIGHT/3*2) - int(AZSurf.get_height()/2)))
 
     CRSurf = pg.image.load('images/filters/CR_Button.png')
     CRSurf = pg.transform.scale(CRSurf, (int(CRSurf.get_width()/8),int(CRSurf.get_height()/8)))
@@ -56,4 +82,4 @@ def createMonster(surf):
     surf.blit(AZSurf, (surf.get_width()/2-int(AZSurf.get_width()/2), int(WINDOWHEIGHT/3*2) - int(AZSurf.get_height()/2)))
     surf.blit(CRSurf, (surf.get_width()-int(CRSurf.get_width()*6/5), int(WINDOWHEIGHT/4) - int(searchSurf.get_height()/2)))
     
-    return(surf, searchSurf, searchRect, AZSurf, AZRect, monstSurf)
+    return(surf, searchSurf, searchRect, AZSurf, AZRect, alphaCR, monstSurf)
