@@ -123,7 +123,7 @@ def main():
                         choice = 4
                         break
                     if monstRect.collidepoint(event.pos):
-                        DISPLAYSURF, surf1, rect1, surf2, rect2, screen = monNav.createMonster(DISPLAYSURF)
+                        DISPLAYSURF, surf1, rect1, surf2, rect2, alphaCR, screen = monNav.createMonster(DISPLAYSURF)
                         choice = 5
                         break                        
 
@@ -153,7 +153,8 @@ def main():
                         DISPLAYSURF, races,raceRects, RACERECTS = npcGen.race(DISPLAYSURF,raceButt)
                         choice = 7
                         subchoice = 6
-                        break 
+                        break
+                    
                 if choice == 6: #on NPC Hub
                     if miniRects[0].collidepoint(event.pos):
                         DISPLAYSURF,tavrnSurf, tavrnRect, bttleSurf, bttleRect, rgionSurf, rgionRect,screen = musNav.createMusic(DISPLAYSURF)
@@ -164,7 +165,7 @@ def main():
                         choice = 4
                         break
                     if miniRects[2].collidepoint(event.pos):
-                        DISPLAYSURF, surf1, rect1, surf2, rect2, screen = monNav.createMonster(DISPLAYSURF)
+                        DISPLAYSURF, surf1, rect1, surf2, rect2, alphaCR, screen = monNav.createMonster(DISPLAYSURF)
                         choice = 5
                         break
                     if subchoice == 6:
@@ -195,7 +196,7 @@ def main():
                         choice = 4
                         break
                     if miniRects[2].collidepoint(event.pos):
-                        DISPLAYSURF, surf1, rect1, surf2, rect2, screen = monNav.createMonster(DISPLAYSURF)
+                        DISPLAYSURF, surf1, rect1, surf2, rect2, alphaCR, screen = monNav.createMonster(DISPLAYSURF)
                         choice = 5
                         break
                     if subchoice == 6:
@@ -230,7 +231,7 @@ def main():
                         choice = 4
                         break
                     if miniRects[2].collidepoint(event.pos):
-                        DISPLAYSURF, surf1, rect1, surf2, rect2, screen = monNav.createMonster(DISPLAYSURF)
+                        DISPLAYSURF, surf1, rect1, surf2, rect2, alphaCR, screen = monNav.createMonster(DISPLAYSURF)
                         choice = 5
                         break
                     
@@ -244,7 +245,7 @@ def main():
                         choice = 3
                         break        
                     if miniRects[2].collidepoint(event.pos):
-                        DISPLAYSURF, surf1, rect1, surf2, rect2, screen = monNav.createMonster(DISPLAYSURF)
+                        DISPLAYSURF, surf1, rect1, surf2, rect2, alphaCR, screen = monNav.createMonster(DISPLAYSURF)
                         choice = 5
                         break
 
@@ -260,7 +261,9 @@ def main():
                     if miniRects[2].collidepoint(event.pos):
                         DISPLAYSURF, surf1, rect1,screen = spNav.createSpell(DISPLAYSURF)
                         choice = 4
-                        break                   
+                        break
+                    if rect2.collidepoint(event.pos):
+                        monNav.AZSelector(DISPLAYSURF)
 
             elif event.type == KEYDOWN:
                 if event.key == K_ESCAPE:
