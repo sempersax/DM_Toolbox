@@ -8,12 +8,15 @@ import pygame.surfarray as surfarray
 from pygame.locals import *
 
 
-WINDOWWIDTH = 1000
-WINDOWHEIGHT = 650
-FPS = 30
+##WINDOWWIDTH = 1000
+##WINDOWHEIGHT = 650
+##FPS = 30
 
-def monsterStatCard(monsterJson):
+def monsterStatCard(monsterJson,surf):
     pg.init()
+    WINDOWWIDTH = surf.get_width()
+    WINDOWHEIGHT = surf.get_height()
+
     TITLE = pg.font.Font('freesansbold.ttf',24)
     SUBTITLE = pg.font.Font('freesansbold.ttf',20)
     FONT1 = pg.font.Font('freesansbold.ttf', 18)
@@ -36,12 +39,12 @@ def monsterStatCard(monsterJson):
         data['monsterChallenge'] = data['monsterChallenge'].replace('Challenge','')
         data['monsterSenses'] = data['monsterSenses'].replace('Senses','')
     #print(data)
-    global WINDOWHEIGHT, WINDOWWIDTH,FPSCLOCK
+##    global WINDOWHEIGHT, WINDOWWIDTH,FPSCLOCK
     FPSCLOCK = pg.time.Clock()
 ##    DISPLAYSURF = pg.display.set_mode((WINDOWWIDTH,WINDOWHEIGHT),HWSURFACE | DOUBLEBUF|RESIZABLE)
     DISPLAYSURF = pg.display.set_mode((0,0), pg.FULLSCREEN)
-    pg.display.set_caption('Card Tester')
-    pg.display.update()
+##    pg.display.set_caption('Card Tester')
+##    pg.display.update()
     screen = pg.image.load('images/character_scroll.png')
     screen = pg.transform.scale(screen,(int(screen.get_width()*1.6),int(screen.get_height()*1.15)))
     DISPLAYSURF.blit(screen, (0,0))
@@ -222,7 +225,7 @@ def monsterStatCard(monsterJson):
     try:
         DISPLAYSURF.blit(monsterVulnerabilitiesLabel, (edge, int(screen.get_height()/10*2+monsterArmorLabel.get_height()*shift)))
         wide = int(monsterVulnerabilitiesLabel.get_width())
-        if monsterVulnerabilities.get_width()+wide > screen.get_width()//2:
+        if edge+monsterVulnerabilities.get_width()+wide > int((surf.get_width()//2+screen.get_width()//2)/2):
             shift +=1
             wide = 0
         DISPLAYSURF.blit(monsterVulnerabilities, (edge+wide, int(screen.get_height()/10*2 + monsterArmorLabel.get_height()*shift+3)))
@@ -233,7 +236,7 @@ def monsterStatCard(monsterJson):
     try:
         DISPLAYSURF.blit(monsterResistancesLabel, (edge, int(screen.get_height()/10*2+monsterArmorLabel.get_height()*shift)))
         wide = int(monsterResistancesLabel.get_width())
-        if monsterResistances.get_width()+wide > screen.get_width()//2:
+        if edge+monsterResistances.get_width()+wide > int((surf.get_width()//2+screen.get_width()//2)/2):
             shift +=1
             wide = 0
         DISPLAYSURF.blit(monsterResistances, (edge+wide, int(screen.get_height()/10*2 + monsterArmorLabel.get_height()*shift+3)))
@@ -244,7 +247,7 @@ def monsterStatCard(monsterJson):
     try:
         DISPLAYSURF.blit(monsterImmunitiesLabel, (edge, int(screen.get_height()/10*2+monsterArmorLabel.get_height()*shift)))
         wide = int(monsterImmunitiesLabel.get_width())
-        if monsterImmunities.get_width()+wide > screen.get_width()//2:
+        if edge+monsterImmunities.get_width()+wide > int((surf.get_width()//2+screen.get_width()//2)/2):
             shift +=1
             wide = 0
         DISPLAYSURF.blit(monsterImmunities, (edge+wide, int(screen.get_height()/10*2 + monsterArmorLabel.get_height()*shift+3)))
@@ -255,7 +258,7 @@ def monsterStatCard(monsterJson):
     try:
         DISPLAYSURF.blit(monsterCImmunitiesLabel, (edge, int(screen.get_height()/10*2+monsterArmorLabel.get_height()*shift)))
         wide = int(monsterCImmunitiesLabel.get_width())
-        if monsterCImmunities.get_width()+wide > screen.get_width()//2:
+        if edge+monsterCImmunities.get_width()+wide > int((surf.get_width()//2+screen.get_width()//2)/2):
             shift +=1
             wide = 0
         DISPLAYSURF.blit(monsterCImmunities, (edge+wide, int(screen.get_height()/10*2 + monsterArmorLabel.get_height()*shift+3)))
@@ -300,12 +303,12 @@ def monsterStatCard(monsterJson):
     except:
         pass
     
-    while True:
-        for event in pg.event.get():
-            if event.type == KEYDOWN:
-                if event.key == K_ESCAPE:
-                    pg.quit()
-                    sys.exit()
-                    break
+##    while True:
+##        for event in pg.event.get():
+##            if event.type == KEYDOWN:
+##                if event.key == K_ESCAPE:
+##                    pg.quit()
+##                    sys.exit()
+##                    break
 
         pg.display.update()

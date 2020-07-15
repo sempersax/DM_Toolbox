@@ -15,31 +15,6 @@ ANNOT_RECT_KEY = '/Rect'
 SUBTYPE_KEY = '/Subtype'
 WIDGET_SUBTYPE_KEY = '/Widget'
 
-stat_dict =dict([
-    ('STR' , '20'),
-    ('STRmod','+5'),
-    ('DEX' , '20'),
-    ('DEXMod','+5'),
-    ('CON' , '20'),
-    ('CONmod','+5'),
-    ('INT' , '20'),
-    ('INTmod','+5'),
-    ('WIS' , '20'),
-    ('WISmod','+5'),
-    ('CHA' , '20'),
-    ('CHamod','+5'),
-    ('characterName' , 'Leroy Jenkins'),
-    ('CLASS LEVEL' , ['Druid',3]),
-    ('PLAYER NAME' , 'Bofa'),
-    ('RACE' , 'Human'),
-    ('BACKGROUND1','underdog'),
-    ('ProfBonus','+2'),
-    ('AGE','66'),
-    ('spellCastingClass','Druid')
-    ])
-
-##def generate_stat_dict():
-##    
 
 def json_import(json_file):
     with open(json_file) as file:
@@ -47,10 +22,21 @@ def json_import(json_file):
 
     return(data)
 
+def inventory_dict(CLASS):
+    mypath = "../Dungeon_Master_Tools/characters/class/"
+    with open(mypath+CLASS+'_level_1_equip.json') as json_file:
+        data = json.load(json_file)
+    return(data)
+
+def pack_dict(pack):
+    mypath = "../Dungeon_Master_Tools/characters/pack/"
+    with open(mypath+pack+'_pack.json') as json_file:
+        data = json.load(json_file)
+    return(data)
+
 def spell_dict(CLASS,LEVEL):
-    mypath="../SpellScrape/SpellJsons/"
+    mypath="../Dungeon_Master_Tools/SpellScrape/SpellJsons/"
     onlyfiles = [f for f in os.listdir(mypath) if os.path.isfile(os.path.join(mypath, f))]
-    #print(onlyfiles)
     spellList=[None]*len(onlyfiles)
     for i in range(0,len(onlyfiles)):
         with open(mypath+onlyfiles[i]) as json_file:
@@ -76,7 +62,10 @@ def write_fillable_pdf(input_pdf_path, char_name):
     CLASS = data_dict['class1']
     LEVEL = data_dict['level1']
     spellDict= spell_dict(CLASS,LEVEL)
-    #print(spellDict)
+    if LEVEL == 1:
+        inventory = inventory_dict(CLASS)
+        pack = pack_dict(inventory['pack'].replace(' Pack',''))
+
     data_dict['spellName1']='=== CANTRIPS ==='
     data_dict['spellSource1']='(At Will)'
     mod=1
@@ -85,7 +74,6 @@ def write_fillable_pdf(input_pdf_path, char_name):
     count3 = 0
     for i in range(1,len(spellDict)):
         data_dict['spellName'+str(i+mod)]=spellDict[i][0]
-        #print(data_dict['spellName'+str(i+mod)],' ',i+mod)
         data_dict['spellSource'+str(i+mod)]=spellDict[i][2]
         data_dict['spellSaveAtk'+str(i+mod)]=spellDict[i][3]
         data_dict['spellTime'+str(i+mod)]=spellDict[i][4]
@@ -117,22 +105,29 @@ def write_fillable_pdf(input_pdf_path, char_name):
                 mod = mod+1
                 data_dict['spellName'+str(i+mod)] = '=== '+str(spellDict[i+2][1]) +' ==='
 
-            
+    if LEVEL == 1:
+        for i in range(1, (len(inventory)-1)//3+1):
+            data_dict['inventory'+str(i)] = inventory['inventory'+str(i)]
+            data_dict['weight'+str(i)] = inventory['weight'+str(i)]
+            data_dict['quantity'+str(i)] = inventory['quantity'+str(i)]
+
+        for i in range((len(inventory)-1)//3+1,(len(inventory)-1)//3+1+len(pack)//3):
+            data_dict['inventory'+str(i)] = pack['inventory'+str(i-(len(inventory)-1)//3)]
+            data_dict['weight'+str(i)] = pack['weight'+str(i-(len(inventory)-1)//3)]
+            data_dict['quantity'+str(i)] = pack['quantity'+str(i-(len(inventory)-1)//3)]
         
-        
-    #print(data_dict)
+
+
     for i in range(0,4):#len(template_pdf.pages)):
         annotations = template_pdf.pages[i][ANNOT_KEY]
         for annotation in annotations:
-            #print(annotation[SUBTYPE_KEY])
             if annotation[ANNOT_FIELD_KEY]:
                 key = annotation[ANNOT_FIELD_KEY][1:-1]
-                #print('    \"'+str(key)+'\": \"\",')
                 if key in data_dict.keys():
                     annotation.update(
                         pdfrw.PdfDict(V='{}'.format(data_dict[key]))
                         )
-
+    
     output_pdf_path='characters/'+char_name+'.pdf'
     pdfrw.PdfWriter().write(output_pdf_path, template_pdf)
 

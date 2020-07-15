@@ -7,11 +7,13 @@ import numpy as np
 import pygame.surfarray as surfarray
 from pygame.locals import *
 
-WINDOWHEIGHT = 629
-WINDOWWIDTH = 1000
+##WINDOWHEIGHT = 629
+##WINDOWWIDTH = 1000
 
 def createMenu(surf,screen):
     pg.init()
+    WINDOWWIDTH = surf.get_width()
+    WINDOWHEIGHT = surf.get_height()
     qsurf = pg.image.load('images/DMTB_QUEST.png')
     qheight = qsurf.get_height()
     qwidth = qsurf.get_width()
@@ -24,6 +26,8 @@ def createMenu(surf,screen):
 
 def reachMenu(surf):
     pg.init()
+    WINDOWWIDTH = surf.get_width()
+    WINDOWHEIGHT = surf.get_height()
     menButton = pg.image.load('images/menu_button.png')
     menButton = pg.transform.scale(menButton, (int(menButton.get_width()/2),int(menButton.get_height()/2)))
     menRect = menButton.get_rect(topleft = (int(WINDOWWIDTH-menButton.get_width()*1.5),0))

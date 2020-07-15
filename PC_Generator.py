@@ -332,11 +332,17 @@ def statAssignment(vocation,race,stats,**kwargs):
     with open(mypath+"blank_character_dict.json") as json_file:
         data = json.load(json_file)
     data['STR']=int(stren)
+    data['STRmod']=int(np.floor((stren-10)/2))
     data['DEX']=int(dex)
+    data['DEXmod']=int(np.floor((dex-10)/2))
     data['CON']=int(const)
+    data['CONmod']=int(np.floor((const-10)/2))
     data['INT']=int(intel)
+    data['INTmod']=int(np.floor((intel-10)/2))
     data['WIS']=int(wis)
+    data['WISmod']=int(np.floor((wis-10)/2))
     data['CHA']=int(char)
+    data['CHAmod']=int(np.floor((char-10)/2))
     data['characterName1']=pcName
     data['characterName2']=pcName
     data['class1'] = vocation

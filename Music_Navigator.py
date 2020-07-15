@@ -9,11 +9,13 @@ import numpy as np
 import pygame.surfarray as surfarray
 from pygame.locals import *
 
-WINDOWHEIGHT = 629
-WINDOWWIDTH = 1000
+##WINDOWHEIGHT = 629
+##WINDOWWIDTH = 1000
 
 def createMusic(surf):
     pg.init()
+    WINDOWWIDTH = surf.get_width()
+    WINDOWHEIGHT = surf.get_height()
 
 # Tavern Button
     tavrnSurf = pg.image.load('images/DMTB_TAVERN_Button.png')

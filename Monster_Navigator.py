@@ -12,11 +12,63 @@ import time
 import json
 from fractions import Fraction
 import monsterCardDMTB as mc
+from itertools import groupby
+from operator import itemgetter
 
-WINDOWHEIGHT = 629
-WINDOWWIDTH = 1000
+##WINDOWHEIGHT = 629
+##WINDOWWIDTH = 1000
+
+def monsterLetterFilter(surf,monsterNames,shift):
+    pg.init()
+    WINDOWWIDTH = surf.get_width()
+    WINDOWHEIGHT = surf.get_height()
+
+    FONT = pg.font.Font('fonts/GimletSSK.ttf', 16)
+
+    monstSurf = pg.image.load('images/DMTB_MONSTERS_screen.jpg')
+    monstSurf = pg.transform.scale(monstSurf, (WINDOWWIDTH,WINDOWHEIGHT))
+    surf.fill((0,0,0))
+    surf.blit(monstSurf,(0,0))
+    template = pg.image.load('images/blank_button.png')
+    template = pg.transform.scale(template, (int(template.get_width()/8),int(template.get_height()/8)))
+
+    rightButton = pg.image.load('images/forward-circle_button.png')
+    rightButton = pg.transform.scale(rightButton,(int(rightButton.get_width()/2),int(rightButton.get_height()/2)))
+    rightRect = rightButton.get_rect(topleft = (int(surf.get_width()-1.5*rightButton.get_width()),int(surf.get_height()//2-rightButton.get_height()/2-20)))
+    
+    leftButton = pg.image.load('images/back-circle_button.png')
+    leftButton = pg.transform.scale(leftButton,(int(leftButton.get_width()/2),int(leftButton.get_height()/2)))
+    leftRect = leftButton.get_rect(topleft = (int(.25*leftButton.get_width()),int(surf.get_height()//2-leftButton.get_height()/2-20)))
+
+    rects = []
+    surfs = []
+    names = []
+    columns =int((WINDOWWIDTH-200)//200)
+    rows = int((WINDOWHEIGHT-100)//100)
+    grid = columns * rows
+    for i in range(0,columns):
+        for j in range(0,rows):
+            if i*rows+j+grid*shift > len(monsterNames)-1:
+                break
+            names.append(FONT.render(monsterNames[i*rows+j+grid*shift],True,[237,190,141],None))
+            surfs.append(template)
+            rects.append(surfs[i*rows+j].get_rect(topleft = (int(70+surfs[i*rows+j].get_width()*(1/8+i)),int(70+surfs[i*rows+j].get_height()*(1/8+j)))))
+            surf.blit(surfs[i*rows+j],(int(70+surfs[i*rows+j].get_width()*(1/8+i)),int(70+surfs[i*rows+j].get_height()*(1/8+j))))
+            surf.blit(names[i*rows+j], (int(-names[i*rows+j].get_width()//2+95+surfs[i*rows+j].get_width()*(1/2+i)),int(70+surfs[i*rows+j].get_height()*(1/2+j))))
+
+    if grid *(1+shift) < len(monsterNames):
+        surf.blit(rightButton,(int(surf.get_width()-1.5*rightButton.get_width()),int(surf.get_height()//2-rightButton.get_height()/2-20)))
+                            
+    if shift > 0:
+        surf.blit(leftButton,(int(0.25*leftButton.get_width()),int(surf.get_height()//2-leftButton.get_height()/2-20)))
+        
+    return(surfs,rects,leftRect,rightRect,monsterNames,grid,surf)
 
 def AZSelector(surf):
+    pg.init()
+    WINDOWWIDTH = surf.get_width()
+    WINDOWHEIGHT = surf.get_height()
+
     monstSurf = pg.image.load('images/DMTB_MONSTERS_screen.jpg')
     monstSurf = pg.transform.scale(monstSurf, (WINDOWWIDTH,WINDOWHEIGHT))
     surf.fill((0,0,0))
@@ -30,37 +82,50 @@ def AZSelector(surf):
     surfs = []
     height = surf.get_height()
     shift = 0
-    yedge = 60
-    xedge = surf.get_width()//5
+    yedge = surf.get_height()//6
+    xedge = surf.get_width()//3
     j=0
     for i in range(0,len(myLetters)):
         surfs.append(pg.image.load(mypath+myLetters[i]))
-        if int(2* yedge+surfs[i].get_height()*(1/8 +i-j )) > surf.get_height():
+        if int(3* yedge+surfs[i].get_height()*(1/8 +i-j )) > surf.get_height():
             shift +=1
             j = i
         rects.append(surfs[i].get_rect(topleft = (int(xedge+surfs[i].get_width()*(1/8 +shift )), int(yedge+surfs[i].get_height()*(1/8+i-j)))))
         surf.blit(surfs[i],(int(xedge+surfs[i].get_width()*(1/8 +shift )), int(yedge+surfs[i].get_height()*(1/8+i-j))))
 
+    return(surfs,rects)
+
 def createMonster(surf):
     pg.init()
+    WINDOWWIDTH = surf.get_width()
+    WINDOWHEIGHT = surf.get_height()
 
     start = time.time()
     rosterPath = "{}/MonsterScrape/monsterRoster.txt".format(os.getcwd())
 
     alphaCR = []
+    tempAlphaCR = []
+    temp = []
     with open(rosterPath, 'r') as roster:
         for line in roster:
             currentPlace = line[:-1].split(',')
-            currentPlace[0] = currentPlace[0].replace('[','').replace(']','').replace("'","").replace(' ','')
-            currentPlace[1] = currentPlace[1].replace('[','').replace(']','').replace("'","").replace(' ','').replace('l','1')
-            #print(currentPlace[0])
+            currentPlace[0] = currentPlace[0].replace('[','').replace(']','').replace("'","").replace('"','')
+            currentPlace[1] = currentPlace[1].replace('[','').replace(']','').replace("'","").replace(' ','').replace('l','1').replace('"','')
             try:
                 currentPlace[1] = int(currentPlace[1])
             except:
                 currentPlace[1] = float(Fraction(currentPlace[1]))
             alphaCR.append(currentPlace)
+    tempAlphaCR = [i[0] for i in alphaCR]
+    temp1 = []
+    temp2 = []
+    for letter, words in groupby(tempAlphaCR, key = itemgetter(0)):
+        for word in words:
+            temp1.append(word)
+        temp2.append(temp1)
+        temp1 = []
 
-    #print(alphaCR)
+    alphaCR = temp2
 # Tavern Button
     searchSurf = pg.image.load('images/music_Button.png')
     searchSurf = pg.transform.scale(searchSurf, (int(searchSurf.get_width()/8),int(searchSurf.get_height()/8)))

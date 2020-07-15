@@ -19,14 +19,23 @@ import PC_Generator as pcGen
 import Spell_Navigator as spNav
 import Monster_Navigator as monNav
 import Image_Loader as imgLoad
+import monsterCardDMTB as mc
 
 from pygame.locals import *
 
 import time
 
-WINDOWWIDTH = 1000
-WINDOWHEIGHT = 629
+global WINDOWHEIGHT, WINDOWWIDTH
+
+
+##WINDOWWIDTH = 1000
+##WINDOWHEIGHT = 629
+infoObject = pg.display.Info()
+
+WINDOWWIDTH = infoObject.current_w
+WINDOWHEIGHT = infoObject.current_h
 FPS = 30
+
 
 ## Legend:
 ## choice = 0 -> Main Menu
@@ -50,7 +59,8 @@ def main():
     menuScreen = 1
     playing = True
     FPSCLOCK = pg.time.Clock()
-    DISPLAYSURF = pg.display.set_mode((WINDOWWIDTH,WINDOWHEIGHT),HWSURFACE | DOUBLEBUF|RESIZABLE)
+    DISPLAYSURF = pg.display.set_mode((WINDOWWIDTH,WINDOWHEIGHT),HWSURFACE | DOUBLEBUF|FULLSCREEN)
+    print(WINDOWWIDTH, WINDOWHEIGHT)
     pg.display.set_caption('Dungeon Master Toolbox')
     runTime = 0.
     loadingScreen = pg.image.load('images/Loading_screen.jpg')
@@ -62,6 +72,7 @@ def main():
     startTime = time.time()
     
     while True:
+
         runTime = runTime + time.time() - startTime
         if runTime >= 600. and choice == 0 :
             menuScreen = np.random.randint(len(screens))
@@ -88,6 +99,12 @@ def main():
 
         
         for event in pg.event.get():
+##            if event.type == pg.VIDEORESIZE:
+##                WINDOWWIDTH, WINDOWHEIGHT = event.size
+##                fake_screen = DISPLAYSURF.copy()
+##                DISPLAYSURF = pg.display.set_mode((WINDOWWIDTH,WINDOWHEIGHT),HWSURFACE | DOUBLEBUF|RESIZABLE)
+##                DISPLAYSURF.blit(pg.transform.scale(fake_screen, event.dict['size']),(0,0))
+##                pg.display.flip()
             if event.type == MOUSEBUTTONUP:
                 if soundRect.collidepoint(event.pos):
                     musicChoice = np.remainder(musicChoice+1,2)
@@ -125,6 +142,7 @@ def main():
                     if monstRect.collidepoint(event.pos):
                         DISPLAYSURF, surf1, rect1, surf2, rect2, alphaCR, screen = monNav.createMonster(DISPLAYSURF)
                         choice = 5
+                        subchoice = 0
                         break                        
 
                 if choice == 2: #on char hub
@@ -137,8 +155,9 @@ def main():
                         choice = 4
                         break
                     if miniRects[2].collidepoint(event.pos):
-                        DISPLAYSURF, surf1, rect1, surf2, rect2, screen = monNav.createMonster(DISPLAYSURF)
+                        DISPLAYSURF, surf1, rect1, surf2, rect2, alphaCR, screen = monNav.createMonster(DISPLAYSURF)
                         choice = 5
+                        subchoice = 0
                         break
 ##                    if raceRect.collidepoint(event.pos):
 ##                        DISPLAYSURF, races,raceRects, RACERECTS = npcGen.race(DISPLAYSURF,raceButt)
@@ -167,6 +186,7 @@ def main():
                     if miniRects[2].collidepoint(event.pos):
                         DISPLAYSURF, surf1, rect1, surf2, rect2, alphaCR, screen = monNav.createMonster(DISPLAYSURF)
                         choice = 5
+                        subchoice = 0
                         break
                     if subchoice == 6:
                         if RACERECTS.collidepoint(event.pos):
@@ -198,6 +218,7 @@ def main():
                     if miniRects[2].collidepoint(event.pos):
                         DISPLAYSURF, surf1, rect1, surf2, rect2, alphaCR, screen = monNav.createMonster(DISPLAYSURF)
                         choice = 5
+                        subchoice = 0
                         break
                     if subchoice == 6:
                         if RACERECTS.collidepoint(event.pos):
@@ -233,6 +254,7 @@ def main():
                     if miniRects[2].collidepoint(event.pos):
                         DISPLAYSURF, surf1, rect1, surf2, rect2, alphaCR, screen = monNav.createMonster(DISPLAYSURF)
                         choice = 5
+                        subchoice = 0
                         break
                     
                 if choice == 4: #on Spell hub        
@@ -247,6 +269,7 @@ def main():
                     if miniRects[2].collidepoint(event.pos):
                         DISPLAYSURF, surf1, rect1, surf2, rect2, alphaCR, screen = monNav.createMonster(DISPLAYSURF)
                         choice = 5
+                        subchoice = 0
                         break
 
                 if choice == 5: #on Monster Hub
@@ -262,8 +285,36 @@ def main():
                         DISPLAYSURF, surf1, rect1,screen = spNav.createSpell(DISPLAYSURF)
                         choice = 4
                         break
-                    if rect2.collidepoint(event.pos):
-                        monNav.AZSelector(DISPLAYSURF)
+                    if rect2.collidepoint(event.pos) and subchoice == 0:
+                        letters, letterRects = monNav.AZSelector(DISPLAYSURF)
+                        subchoice = 1
+                        shift = 0
+                        break
+
+                    if subchoice == 1:
+                        for i in range(0,len(letterRects)):
+                            if letterRects[i].collidepoint(event.pos):
+                                namesSurfs, nameRects, leftRect, rightRect, nameChoices, grid, DISPLAYSURF = monNav.monsterLetterFilter(DISPLAYSURF,alphaCR[i],shift)
+                                subchoice = 2
+
+                        break
+
+                    if subchoice == 2:
+                        if rightRect.collidepoint(event.pos) and grid*(shift+1) < len(nameChoices):
+                            shift +=1
+                            namesSurfs, nameRects, leftRect, rightRect, nameChoices, grid, DISPLAYSURF = monNav.monsterLetterFilter(DISPLAYSURF,nameChoices,shift)
+                            print(nameChoices)
+                            
+                        if leftRect.collidepoint(event.pos) and shift>0:
+                            shift -=1
+                            namesSurfs, nameRects, leftRect, rightRect, nameChoices, grid, DISPLAYSURF = monNav.monsterLetterFilter(DISPLAYSURF,nameChoices,shift)
+                            print(nameChoices)
+                            
+                        for i in range(0, len(nameRects)):
+                            if nameRects[i].collidepoint(event.pos):
+                                mc.monsterStatCard(nameChoices[i+grid*shift],DISPLAYSURF)
+                                subchoice = 3
+                                break
 
             elif event.type == KEYDOWN:
                 if event.key == K_ESCAPE:

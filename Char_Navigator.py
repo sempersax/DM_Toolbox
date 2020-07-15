@@ -9,11 +9,13 @@ import numpy as np
 import pygame.surfarray as surfarray
 from pygame.locals import *
 
-WINDOWHEIGHT = 629
-WINDOWWIDTH = 1000
+##WINDOWHEIGHT = 629
+##WINDOWWIDTH = 1000
 
 def createChar(surf):
     pg.init()
+    WINDOWWIDTH = surf.get_width()
+    WINDOWHEIGHT = surf.get_height()
 
 # Player Button
     playSurf = pg.image.load('images/music_Button.png')
