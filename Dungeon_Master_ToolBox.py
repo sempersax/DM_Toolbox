@@ -82,20 +82,26 @@ def main():
         checkForQuit()
         if choice == 0:
             DISPLAYSURF, questSurf, questRect = menGen.createMenu(DISPLAYSURF,screens[menuScreen])
-            if choice != choiceold:
-                musGen.menuMusic()
-        DISPLAYSURF, soundSurf, soundRect, playing = musCon.soundControl(DISPLAYSURF, musicChoice, pg.mixer.music.get_busy())
+            try:
+                if choice != choiceold:
+                    musGen.menuMusic()
+            except:
+                pass
+        try:
+            DISPLAYSURF, soundSurf, soundRect, playing = musCon.soundControl(DISPLAYSURF, musicChoice, pg.mixer.music.get_busy())
+        except:
+            pass
         if choice != 0:
             DISPLAYSURF, menButton, menRect = menGen.reachMenu(DISPLAYSURF)
-        if choice >1 and choice < 6:
+        if choice >1 and choice < 8:
                             
             DISPLAYSURF, backButton, backRect = toolNav.createBack(DISPLAYSURF,WINDOWWIDTH,WINDOWHEIGHT)
         
             DISPLAYSURF, miniButtons, miniRects = toolNav.createMiniTools(DISPLAYSURF,choice,circButt)
-        if choice == 7:
-            DISPLAYSURF, backButton, backRect = toolNav.createBack(DISPLAYSURF,WINDOWWIDTH,WINDOWHEIGHT)
-        
-            DISPLAYSURF, miniButtons, miniRects = toolNav.createMiniTools(DISPLAYSURF,2,circButt)        
+##        if choice == 7:
+##            DISPLAYSURF, backButton, backRect = toolNav.createBack(DISPLAYSURF,WINDOWWIDTH,WINDOWHEIGHT)
+##        
+##            DISPLAYSURF, miniButtons, miniRects = toolNav.createMiniTools(DISPLAYSURF,2,circButt)        
 
         
         for event in pg.event.get():
@@ -108,11 +114,14 @@ def main():
             if event.type == MOUSEBUTTONUP:
                 if soundRect.collidepoint(event.pos):
                     musicChoice = np.remainder(musicChoice+1,2)
-                    DISPLAYSURF, soundSurf, soundRect, playing = musCon.soundControl(DISPLAYSURF, musicChoice, pg.mixer.music.get_busy())
-                    if playing == False:
-                        pg.mixer.music.pause()
-                    elif playing == True:
-                        pg.mixer.music.unpause()
+                    try:
+                        DISPLAYSURF, soundSurf, soundRect, playing = musCon.soundControl(DISPLAYSURF, musicChoice, pg.mixer.music.get_busy())
+                        if playing == False:
+                            pg.mixer.music.pause()
+                        elif playing == True:
+                            pg.mixer.music.unpause()
+                    except:
+                        pass
                 if choice == 0:
                     if questRect.collidepoint(event.pos):
                         DISPLAYSURF, charSurf,charRect,musicSurf,musicRect,spellSurf,spellRect,monstSurf,monstRect,screen = toolNav.createTools(DISPLAYSURF,WINDOWWIDTH,WINDOWHEIGHT,toolButt)
@@ -295,6 +304,7 @@ def main():
                         for i in range(0,len(letterRects)):
                             if letterRects[i].collidepoint(event.pos):
                                 namesSurfs, nameRects, leftRect, rightRect, nameChoices, grid, DISPLAYSURF = monNav.monsterLetterFilter(DISPLAYSURF,alphaCR[i],shift)
+                                letterChoice = i
                                 subchoice = 2
 
                         break
@@ -315,6 +325,16 @@ def main():
                                 mc.monsterStatCard(nameChoices[i+grid*shift],DISPLAYSURF)
                                 subchoice = 3
                                 break
+                        if backRect.collidepoint(event.pos):
+                            choice = 5
+                            subchoice = 1
+                            letters, letterRects = monNav.AZSelector(DISPLAYSURF)
+                            
+                    if subchoice == 3:
+                        if backRect.collidepoint(event.pos):
+                            choice = 5
+                            subchoice = 2
+                            namesSurfs, nameRects, leftRect, rightRect, nameChoices, grid, DISPLAYSURF = monNav.monsterLetterFilter(DISPLAYSURF,alphaCR[letterChoice],shift)
 
             elif event.type == KEYDOWN:
                 if event.key == K_ESCAPE:
