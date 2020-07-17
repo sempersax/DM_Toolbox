@@ -17,10 +17,10 @@ def monsterStatCard(monsterJson,surf):
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
 
-    TITLE = pg.font.Font('freesansbold.ttf',24)
-    SUBTITLE = pg.font.Font('freesansbold.ttf',20)
-    FONT1 = pg.font.Font('freesansbold.ttf', 18)
-    FONT2 = pg.font.Font('freesansbold.ttf', 14)    
+    TITLE = pg.font.Font('fonts/GimletSSK.ttf',24)
+    SUBTITLE = pg.font.Font('fonts/GimletSSK.ttf',20)
+    FONT1 = pg.font.Font('fonts/GimletSSK.ttf', 18)
+    FONT2 = pg.font.Font('fonts/GimletSSK.ttf', 14)    
     cwd = os.getcwd()
     edge=120
 
@@ -185,25 +185,27 @@ def monsterStatCard(monsterJson,surf):
     # Putting Speed on Card
     DISPLAYSURF.blit(monsterSpeedLabel, (edge, int(screen.get_height()/10*2 + 2*monsterArmorLabel.get_height()+3)))
     DISPLAYSURF.blit(monsterSpeed, (edge+monsterArmorLabel.get_width(), int(screen.get_height()/10*2 + 2*monsterArmorLabel.get_height()+3)))
+
+
     # Putting Abilities on Card
-    DISPLAYSURF.blit(monsterSTRLabel, (int(screen.get_width() - monsterSTRLabel.get_width()*8), int(screen.get_height()/10*2)))
-    DISPLAYSURF.blit(monsterSTR, (int(screen.get_width() - monsterSTRLabel.get_width()*7), int(screen.get_height()/10*2+3)))
+    DISPLAYSURF.blit(monsterSTRLabel, (int(screen.get_width() - monsterSTRLabel.get_width()*8.2), int(screen.get_height()/10*2)))
+    DISPLAYSURF.blit(monsterSTR, (int(screen.get_width() - monsterSTRLabel.get_width()*7.2), int(screen.get_height()/10*2+3)))
     
-    DISPLAYSURF.blit(monsterDEXLabel, (int(screen.get_width() - monsterSTRLabel.get_width()*8), int(screen.get_height()/10*2+monsterSTRLabel.get_height())))
-    DISPLAYSURF.blit(monsterDEX, (int(screen.get_width() - monsterSTRLabel.get_width()*7), int(screen.get_height()/10*2+(monsterSTRLabel.get_height()+3))))
+    DISPLAYSURF.blit(monsterDEXLabel, (int(screen.get_width() - monsterSTRLabel.get_width()*8.2-(monsterDEXLabel.get_width()-monsterSTRLabel.get_width())), int(screen.get_height()/10*2+monsterSTRLabel.get_height())))
+    DISPLAYSURF.blit(monsterDEX, (int(screen.get_width() - monsterSTRLabel.get_width()*7.2), int(screen.get_height()/10*2+(monsterSTRLabel.get_height()+3))))
     
-    DISPLAYSURF.blit(monsterCONLabel, (int(screen.get_width() - monsterSTRLabel.get_width()*8), int(screen.get_height()/10*2+monsterSTRLabel.get_height()*2)))
-    DISPLAYSURF.blit(monsterCON, (int(screen.get_width() - monsterSTRLabel.get_width()*7), int(screen.get_height()/10*2+2*monsterSTRLabel.get_height()+3)))
+    DISPLAYSURF.blit(monsterCONLabel, (int(screen.get_width() - monsterSTRLabel.get_width()*8.2-(monsterCONLabel.get_width()-monsterSTRLabel.get_width())), int(screen.get_height()/10*2+monsterSTRLabel.get_height()*2)))
+    DISPLAYSURF.blit(monsterCON, (int(screen.get_width() - monsterSTRLabel.get_width()*7.2), int(screen.get_height()/10*2+2*monsterSTRLabel.get_height()+3)))
 
     # Second Column
-    DISPLAYSURF.blit(monsterINTLabel, (int(screen.get_width() - monsterSTRLabel.get_width()*4), int(screen.get_height()/10*2)))
-    DISPLAYSURF.blit(monsterINT, (int(screen.get_width() - monsterSTRLabel.get_width()*3), int(screen.get_height()/10*2+3)))
+    DISPLAYSURF.blit(monsterINTLabel, (int(screen.get_width() - monsterINTLabel.get_width()*4.2), int(screen.get_height()/10*2)))
+    DISPLAYSURF.blit(monsterINT, (int(screen.get_width() - monsterINTLabel.get_width()*3.2), int(screen.get_height()/10*2+3)))
     
-    DISPLAYSURF.blit(monsterWISLabel, (int(screen.get_width() - monsterSTRLabel.get_width()*4), int(screen.get_height()/10*2+monsterSTRLabel.get_height())))
-    DISPLAYSURF.blit(monsterWIS, (int(screen.get_width() - monsterSTRLabel.get_width()*3), int(screen.get_height()/10*2+3+monsterSTRLabel.get_height())))
+    DISPLAYSURF.blit(monsterWISLabel, (int(screen.get_width() - monsterINTLabel.get_width()*4.2-(monsterWISLabel.get_width()-monsterINTLabel.get_width())), int(screen.get_height()/10*2+monsterINTLabel.get_height())))
+    DISPLAYSURF.blit(monsterWIS, (int(screen.get_width() - monsterINTLabel.get_width()*3.2), int(screen.get_height()/10*2+3+monsterINTLabel.get_height())))
     
-    DISPLAYSURF.blit(monsterCHALabel, (int(screen.get_width() - monsterSTRLabel.get_width()*4), int(screen.get_height()/10*2+2*monsterSTRLabel.get_height())))
-    DISPLAYSURF.blit(monsterCHA, (int(screen.get_width() - monsterSTRLabel.get_width()*3), int(screen.get_height()/10*2+3+2*monsterSTRLabel.get_height())))
+    DISPLAYSURF.blit(monsterCHALabel, (int(screen.get_width() - monsterINTLabel.get_width()*4.2-(monsterCHALabel.get_width()-monsterINTLabel.get_width())), int(screen.get_height()/10*2+2*monsterINTLabel.get_height())))
+    DISPLAYSURF.blit(monsterCHA, (int(screen.get_width() - monsterINTLabel.get_width()*3.2), int(screen.get_height()/10*2+3+2*monsterINTLabel.get_height())))
 
     shift = 4
     tempShift = shift-1
@@ -239,8 +241,32 @@ def monsterStatCard(monsterJson,surf):
         if edge+monsterResistances.get_width()+wide > int((surf.get_width()//2+screen.get_width()//2)/2):
             shift +=1
             wide = 0
-        DISPLAYSURF.blit(monsterResistances, (edge+wide, int(screen.get_height()/10*2 + monsterArmorLabel.get_height()*shift+3)))
-        shift +=1
+            if edge+monsterResistances.get_width()+wide > int((surf.get_width()//2+screen.get_width()//2)/2):
+                monsterResistances = []
+                
+                tempResist = data['monsterResistances'].split(' ')
+                tempResist1 = ''
+                tempData = []
+                for j in range(0,len(tempResist)):
+                    if FONT2.render(tempResist1, True, [0,0,0], None).get_width()+edge < int((surf.get_width()//2+screen.get_width()//2)/2):
+                        print('hello')
+                        tempResist1+=str(tempResist[j])+' '
+                    elif FONT2.render(tempResist1, True, [0,0,0], None).get_width()+edge > int((surf.get_width()//2+screen.get_width()//2)/2):
+                        tempData.append(tempResist1)
+                        tempResist1 = ' '.join(tempResist[j:])
+                        tempData.append(tempResist1)
+                    
+                for j in range(0,len(tempData)):
+                    monsterResistances.append(FONT2.render(tempData[j], True, [0,0,0], None))
+        print(monsterResistances,'\n','hello','\n')
+        print(type(monsterResistances))
+        if type(monsterResistances) == list:
+            for i in range(0,len(monsterResistances)):
+                DISPLAYSURF.blit(monsterResistances[i], (edge+wide, int(screen.get_height()/10*2 + monsterArmorLabel.get_height()*shift+3)))
+                shift +=1
+        elif type(monsterResistances) != list:
+            DISPLAYSURF.blit(monsterResistances, (edge+wide, int(screen.get_height()/10*2 + monsterArmorLabel.get_height()*shift+3)))
+            shift +=1
     except:
         pass
     
