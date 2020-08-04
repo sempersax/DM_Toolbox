@@ -107,17 +107,19 @@ def main():
                     if rects[i].collidepoint(event.pos):
                         KEY = KEYS[i]
             if event.type == pg.VIDEORESIZE:
-                DISPLAYSURF.fill((0,0,0))
-                pg.display.update()
                 WINDOWWIDTH, WINDOWHEIGHT = event.size
                 fake_screen = DISPLAYSURF.copy()
                 DISPLAYSURF = pg.display.set_mode((WINDOWWIDTH,WINDOWHEIGHT),HWSURFACE | DOUBLEBUF|RESIZABLE)
+                DISPLAYSURF.fill((0,0,0))
+                pg.display.update()
                 KEYOLD = ''
+                print(DISPLAYSURF)
 
         if KEY != KEYOLD:
             surfs.append(pos)
             surfs, rects, KEYS = dispatcher[KEY](surfs)
             DISPLAYSURF = surfs[0]
+            print(DISPLAYSURF)
             if KEY != 'menu':
                 DISPLAYSURF, menRect = menGen.reachMenu(DISPLAYSURF)
                 surfs[0], backRect = toolNav.createBack(surfs)
