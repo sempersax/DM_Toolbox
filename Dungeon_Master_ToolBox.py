@@ -106,6 +106,13 @@ def main():
                 for i in range(0, len(rects)):
                     if rects[i].collidepoint(event.pos):
                         KEY = KEYS[i]
+            if event.type == pg.VIDEORESIZE:
+                DISPLAYSURF.fill((0,0,0))
+                pg.display.update()
+                WINDOWWIDTH, WINDOWHEIGHT = event.size
+                fake_screen = DISPLAYSURF.copy()
+                DISPLAYSURF = pg.display.set_mode((WINDOWWIDTH,WINDOWHEIGHT),HWSURFACE | DOUBLEBUF|RESIZABLE)
+                KEYOLD = ''
 
         if KEY != KEYOLD:
             surfs.append(pos)
