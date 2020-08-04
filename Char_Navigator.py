@@ -12,10 +12,12 @@ from pygame.locals import *
 ##WINDOWHEIGHT = 629
 ##WINDOWWIDTH = 1000
 
-def createChar(surf):
+def createChar(SURFS):
     pg.init()
+    surf = SURFS[0]
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
+    #print(WINDOWWIDTH, WINDOWHEIGHT)
 
 # Player Button
     playSurf = pg.image.load('images/music_Button.png')
@@ -38,4 +40,8 @@ def createChar(surf):
     surf.blit(toolSurf,(0,0))
     surf.blit(playSurf, (int(playSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(playSurf.get_height()/2)))
     surf.blit(nopcSurf, (int(WINDOWWIDTH-nopcSurf.get_width()*6/5), int(WINDOWHEIGHT/4) - int(nopcSurf.get_height()/2)))
-    return(surf,playSurf, playRect,nopcSurf,nopcRect)
+
+    rects = [playRect,nopcRect]
+    keys = ['player', 'NPC','quest']
+    surfs = [surf]
+    return(surfs,rects, keys)

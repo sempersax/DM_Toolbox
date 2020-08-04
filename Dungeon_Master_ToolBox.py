@@ -23,17 +23,17 @@ import monsterCardDMTB as mc
 
 from pygame.locals import *
 
-import time
+import datetime
 
 global WINDOWHEIGHT, WINDOWWIDTH
 
 
-##WINDOWWIDTH = 1000
-##WINDOWHEIGHT = 629
-infoObject = pg.display.Info()
-
-WINDOWWIDTH = infoObject.current_w
-WINDOWHEIGHT = infoObject.current_h
+WINDOWWIDTH = 1000
+WINDOWHEIGHT = 629
+##infoObject = pg.display.Info()
+##
+##WINDOWWIDTH = infoObject.current_w
+##WINDOWHEIGHT = infoObject.current_h
 FPS = 30
 
 
@@ -49,302 +49,79 @@ FPS = 30
 
 def main():
     global WINDOWHEIGHT, WINDOWWIDTH,FPSCLOCK
+
     pg.init()
     pg.mixer.init()
-    choice = 0
-    subchoice = -1
-    choiceold = -10
-    musicChoice = 1
-    musicChoiceold = -10
-    menuScreen = 1
-    playing = True
     FPSCLOCK = pg.time.Clock()
-    DISPLAYSURF = pg.display.set_mode((WINDOWWIDTH,WINDOWHEIGHT),HWSURFACE | DOUBLEBUF|FULLSCREEN)
-    print(WINDOWWIDTH, WINDOWHEIGHT)
+    DISPLAYSURF = pg.display.set_mode((WINDOWWIDTH,WINDOWHEIGHT),HWSURFACE | DOUBLEBUF|RESIZABLE)
+    surfs = [DISPLAYSURF]
     pg.display.set_caption('Dungeon Master Toolbox')
-    runTime = 0.
     loadingScreen = pg.image.load('images/Loading_screen.jpg')
     loadingScreen = pg.transform.scale(loadingScreen, (WINDOWWIDTH,WINDOWHEIGHT))
     DISPLAYSURF.blit(loadingScreen,(0,0))
     pg.display.update()
-    raceButt, toolButt, circButt,screens,genButt = imgLoad.imageLoader(DISPLAYSURF,WINDOWWIDTH,WINDOWHEIGHT)
-    charScroll = pg.image.load('images/character_scroll.png')  
-    startTime = time.time()
-    
-    while True:
+    pos = (0,0)
 
-        runTime = runTime + time.time() - startTime
-        if runTime >= 600. and choice == 0 :
-            menuScreen = np.random.randint(len(screens))
-            startTime = time.time()
-            runTime = 0.
-            
+    # This is the heart of the program - all of these key value pairs tell the program which function to call and when
+    dispatcher = {
+        "menu" : menGen.createMenu,
+        "quest" : toolNav.createTools,
+        "characters" : charNav.createChar,
+        "NPC" : npcGen.race,
+        "gender" : npcGen.gender,
+        "name" : npcGen.name,
+        "music" : musNav.createMusic,
+        "tavern" : musGen.tavernMusic,
+        "battle" : musGen.battleMusic,
+        "region" : None,
+        "spells" : spNav.createSpell,
+        "monsters" : monNav.createMonster,
+        "alphabet" : monNav.AZSelector
+        }
+    KEYOLD = ''
+    BACKKEY = ''
+    KEY = 'menu'
+    KEYS = []
+    startTime = datetime.datetime.now()
+
+    while True:           
         checkForQuit()
-        if choice == 0:
-            DISPLAYSURF, questSurf, questRect = menGen.createMenu(DISPLAYSURF,screens[menuScreen])
-            try:
-                if choice != choiceold:
-                    musGen.menuMusic()
-            except:
-                pass
-        try:
-            DISPLAYSURF, soundSurf, soundRect, playing = musCon.soundControl(DISPLAYSURF, musicChoice, pg.mixer.music.get_busy())
-        except:
-            pass
-        if choice != 0:
-            DISPLAYSURF, menButton, menRect = menGen.reachMenu(DISPLAYSURF)
-        if choice >1 and choice < 8:
-                            
-            DISPLAYSURF, backButton, backRect = toolNav.createBack(DISPLAYSURF,WINDOWWIDTH,WINDOWHEIGHT)
-        
-            DISPLAYSURF, miniButtons, miniRects = toolNav.createMiniTools(DISPLAYSURF,choice,circButt)
-##        if choice == 7:
-##            DISPLAYSURF, backButton, backRect = toolNav.createBack(DISPLAYSURF,WINDOWWIDTH,WINDOWHEIGHT)
-##        
-##            DISPLAYSURF, miniButtons, miniRects = toolNav.createMiniTools(DISPLAYSURF,2,circButt)        
+        runTime = datetime.datetime.now() - startTime
+        elapsed = runTime.total_seconds()
+        if  KEY == 'menu' and elapsed >= 3. :
+            surfs, rects, KEYS = dispatcher[KEY](surfs)
+            DISPLAYSURF = surfs[0]
+            pg.display.update()
 
-        
+            startTime = datetime.datetime.now()
+
         for event in pg.event.get():
-##            if event.type == pg.VIDEORESIZE:
-##                WINDOWWIDTH, WINDOWHEIGHT = event.size
-##                fake_screen = DISPLAYSURF.copy()
-##                DISPLAYSURF = pg.display.set_mode((WINDOWWIDTH,WINDOWHEIGHT),HWSURFACE | DOUBLEBUF|RESIZABLE)
-##                DISPLAYSURF.blit(pg.transform.scale(fake_screen, event.dict['size']),(0,0))
-##                pg.display.flip()
-            if event.type == MOUSEBUTTONUP:
-                if soundRect.collidepoint(event.pos):
-                    musicChoice = np.remainder(musicChoice+1,2)
-                    try:
-                        DISPLAYSURF, soundSurf, soundRect, playing = musCon.soundControl(DISPLAYSURF, musicChoice, pg.mixer.music.get_busy())
-                        if playing == False:
-                            pg.mixer.music.pause()
-                        elif playing == True:
-                            pg.mixer.music.unpause()
-                    except:
-                        pass
-                if choice == 0:
-                    if questRect.collidepoint(event.pos):
-                        DISPLAYSURF, charSurf,charRect,musicSurf,musicRect,spellSurf,spellRect,monstSurf,monstRect,screen = toolNav.createTools(DISPLAYSURF,WINDOWWIDTH,WINDOWHEIGHT,toolButt)
-                        choice = 1
-                        break
-                if choice != 0:
-                    DISPLAYSURF, menButton, menRect = menGen.reachMenu(DISPLAYSURF)           
-                    if menRect.collidepoint(event.pos):
-                        DISPLAYSURF, questSurf, questRect = menGen.createMenu(DISPLAYSURF,screens[menuScreen])
-                        musGen.menuMusic()
-                        choice = 0
-                        break
-                if choice == 1: #on main hub
-                    if musicRect.collidepoint(event.pos):
-                        DISPLAYSURF,tavrnSurf, tavrnRect, bttleSurf, bttleRect, rgionSurf, rgionRect,screen = musNav.createMusic(DISPLAYSURF)
-                        choice = 3
-                        break
-                    if charRect.collidepoint(event.pos):
-                        DISPLAYSURF, pcSurf, pcRect, npcSurf,npcRect=charNav.createChar(DISPLAYSURF)
-                        choice = 2
-                        #subchoice = 6
-                        break
-                    if spellRect.collidepoint(event.pos):
-                        DISPLAYSURF, surf1, rect1,screen = spNav.createSpell(DISPLAYSURF)
-                        choice = 4
-                        break
-                    if monstRect.collidepoint(event.pos):
-                        DISPLAYSURF, surf1, rect1, surf2, rect2, alphaCR, screen = monNav.createMonster(DISPLAYSURF)
-                        choice = 5
-                        subchoice = 0
-                        break                        
-
-                if choice == 2: #on char hub
-                    if miniRects[0].collidepoint(event.pos):
-                        DISPLAYSURF,tavrnSurf, tavrnRect, bttleSurf, bttleRect, rgionSurf, rgionRect,screen = musNav.createMusic(DISPLAYSURF)
-                        choice = 3
-                        break                       
-                    if miniRects[1].collidepoint(event.pos):
-                        DISPLAYSURF, surf1, rect1,screen = spNav.createSpell(DISPLAYSURF)
-                        choice = 4
-                        break
-                    if miniRects[2].collidepoint(event.pos):
-                        DISPLAYSURF, surf1, rect1, surf2, rect2, alphaCR, screen = monNav.createMonster(DISPLAYSURF)
-                        choice = 5
-                        subchoice = 0
-                        break
-##                    if raceRect.collidepoint(event.pos):
-##                        DISPLAYSURF, races,raceRects, RACERECTS = npcGen.race(DISPLAYSURF,raceButt)
-##                        subchoice = 6
-##                        break
-                    if npcRect.collidepoint(event.pos):
-                        DISPLAYSURF, races,raceRects, RACERECTS = npcGen.race(DISPLAYSURF,raceButt)
-                        choice = 6
-                        subchoice = 6
-                        break
-                    if pcRect.collidepoint(event.pos):
-                        DISPLAYSURF, races,raceRects, RACERECTS = npcGen.race(DISPLAYSURF,raceButt)
-                        choice = 7
-                        subchoice = 6
-                        break
-                    
-                if choice == 6: #on NPC Hub
-                    if miniRects[0].collidepoint(event.pos):
-                        DISPLAYSURF,tavrnSurf, tavrnRect, bttleSurf, bttleRect, rgionSurf, rgionRect,screen = musNav.createMusic(DISPLAYSURF)
-                        choice = 3
-                        break                       
-                    if miniRects[1].collidepoint(event.pos):
-                        DISPLAYSURF, surf1, rect1,screen = spNav.createSpell(DISPLAYSURF)
-                        choice = 4
-                        break
-                    if miniRects[2].collidepoint(event.pos):
-                        DISPLAYSURF, surf1, rect1, surf2, rect2, alphaCR, screen = monNav.createMonster(DISPLAYSURF)
-                        choice = 5
-                        subchoice = 0
-                        break
-                    if subchoice == 6:
-                        if RACERECTS.collidepoint(event.pos):
-                            mousePos = pg.mouse.get_pos()
-                            DISPLAYSURF, raceSel, genRects,GENRECTS = npcGen.gender(DISPLAYSURF,WINDOWWIDTH,WINDOWHEIGHT,raceRects,mousePos,genButt)
-                            if raceSel != 'None':
-                                subchoice = 7
-                            break
-                    if subchoice == 7:
-                        if GENRECTS.collidepoint(event.pos):
-                            mousePos = pg.mouse.get_pos()
-                            DISPLAYSURF, contRect = npcGen.name(DISPLAYSURF,WINDOWWIDTH,WINDOWHEIGHT,genRects,mousePos,raceSel,charScroll)
-                            break
-                        if contRect.collidepoint(event.pos):
-                            choice = 7
-                            subchoice = 6
-                            DISPLAYSURF, races,raceRects, RACERECTS = npcGen.race(DISPLAYSURF,raceButt)
-                            break
-
-                if choice == 7: #on PC Hub
-                    if miniRects[0].collidepoint(event.pos):
-                        DISPLAYSURF,tavrnSurf, tavrnRect, bttleSurf, bttleRect, rgionSurf, rgionRect,screen = musNav.createMusic(DISPLAYSURF)
-                        choice = 3
-                        break                       
-                    if miniRects[1].collidepoint(event.pos):
-                        DISPLAYSURF, surf1, rect1,screen = spNav.createSpell(DISPLAYSURF)
-                        choice = 4
-                        break
-                    if miniRects[2].collidepoint(event.pos):
-                        DISPLAYSURF, surf1, rect1, surf2, rect2, alphaCR, screen = monNav.createMonster(DISPLAYSURF)
-                        choice = 5
-                        subchoice = 0
-                        break
-                    if subchoice == 6:
-                        if RACERECTS.collidepoint(event.pos):
-                            mousePos = pg.mouse.get_pos()
-                            DISPLAYSURF, raceSel, genRects,GENRECTS = npcGen.gender(DISPLAYSURF,WINDOWWIDTH,WINDOWHEIGHT,raceRects,mousePos,genButt)
-                            if raceSel != 'None':
-                                subchoice = 7
-                            break
-                    if subchoice == 7:
-                        if GENRECTS.collidepoint(event.pos):
-                            mousePos = pg.mouse.get_pos()
-                            DISPLAYSURF, contRect = npcGen.name(DISPLAYSURF,WINDOWWIDTH,WINDOWHEIGHT,genRects,mousePos,raceSel,charScroll)
-                            break
-                        if contRect.collidepoint(event.pos):
-                            choice = 7
-                            subchoice = 6
-                            DISPLAYSURF, races,raceRects, RACERECTS = npcGen.race(DISPLAYSURF,raceButt)
-                            break
-                    
-                if choice == 3: # on music hub
-                    if bttleRect.collidepoint(event.pos):
-                        musGen.battleMusic()
-                    if tavrnRect.collidepoint(event.pos):
-                        musGen.tavernMusic()
-                    if miniRects[0].collidepoint(event.pos):
-                        DISPLAYSURF, playSurf, playRect, npcSurf,npcRect=charNav.createChar(DISPLAYSURF)
-                        choice = 2
-                        break
-                    if miniRects[1].collidepoint(event.pos):
-                        DISPLAYSURF, surf1, rect1,screen = spNav.createSpell(DISPLAYSURF)
-                        choice = 4
-                        break
-                    if miniRects[2].collidepoint(event.pos):
-                        DISPLAYSURF, surf1, rect1, surf2, rect2, alphaCR, screen = monNav.createMonster(DISPLAYSURF)
-                        choice = 5
-                        subchoice = 0
-                        break
-                    
-                if choice == 4: #on Spell hub        
-                    if miniRects[0].collidepoint(event.pos):
-                        DISPLAYSURF, playSurf, playRect, npcSurf,npcRect=charNav.createChar(DISPLAYSURF)
-                        choice = 2
-                        break                       
-                    if miniRects[1].collidepoint(event.pos):
-                        DISPLAYSURF,tavrnSurf, tavrnRect, bttleSurf, bttleRect, rgionSurf, rgionRect,screen = musNav.createMusic(DISPLAYSURF)
-                        choice = 3
-                        break        
-                    if miniRects[2].collidepoint(event.pos):
-                        DISPLAYSURF, surf1, rect1, surf2, rect2, alphaCR, screen = monNav.createMonster(DISPLAYSURF)
-                        choice = 5
-                        subchoice = 0
-                        break
-
-                if choice == 5: #on Monster Hub
-                    if miniRects[0].collidepoint(event.pos):
-                        DISPLAYSURF, playSurf, playRect, npcSurf,npcRect=charNav.createChar(DISPLAYSURF)
-                        choice = 2
-                        break                       
-                    if miniRects[1].collidepoint(event.pos):
-                        DISPLAYSURF,tavrnSurf, tavrnRect, bttleSurf, bttleRect, rgionSurf, rgionRect,screen = musNav.createMusic(DISPLAYSURF)
-                        choice = 3
-                        break        
-                    if miniRects[2].collidepoint(event.pos):
-                        DISPLAYSURF, surf1, rect1,screen = spNav.createSpell(DISPLAYSURF)
-                        choice = 4
-                        break
-                    if rect2.collidepoint(event.pos) and subchoice == 0:
-                        letters, letterRects = monNav.AZSelector(DISPLAYSURF)
-                        subchoice = 1
-                        shift = 0
-                        break
-
-                    if subchoice == 1:
-                        for i in range(0,len(letterRects)):
-                            if letterRects[i].collidepoint(event.pos):
-                                namesSurfs, nameRects, leftRect, rightRect, nameChoices, grid, DISPLAYSURF = monNav.monsterLetterFilter(DISPLAYSURF,alphaCR[i],shift)
-                                letterChoice = i
-                                subchoice = 2
-
-                        break
-
-                    if subchoice == 2:
-                        if rightRect.collidepoint(event.pos) and grid*(shift+1) < len(nameChoices):
-                            shift +=1
-                            namesSurfs, nameRects, leftRect, rightRect, nameChoices, grid, DISPLAYSURF = monNav.monsterLetterFilter(DISPLAYSURF,nameChoices,shift)
-                            print(nameChoices)
-                            
-                        if leftRect.collidepoint(event.pos) and shift>0:
-                            shift -=1
-                            namesSurfs, nameRects, leftRect, rightRect, nameChoices, grid, DISPLAYSURF = monNav.monsterLetterFilter(DISPLAYSURF,nameChoices,shift)
-                            print(nameChoices)
-                            
-                        for i in range(0, len(nameRects)):
-                            if nameRects[i].collidepoint(event.pos):
-                                mc.monsterStatCard(nameChoices[i+grid*shift],DISPLAYSURF)
-                                subchoice = 3
-                                break
-                        if backRect.collidepoint(event.pos):
-                            choice = 5
-                            subchoice = 1
-                            letters, letterRects = monNav.AZSelector(DISPLAYSURF)
-                            
-                    if subchoice == 3:
-                        if backRect.collidepoint(event.pos):
-                            choice = 5
-                            subchoice = 2
-                            namesSurfs, nameRects, leftRect, rightRect, nameChoices, grid, DISPLAYSURF = monNav.monsterLetterFilter(DISPLAYSURF,alphaCR[letterChoice],shift)
-
-            elif event.type == KEYDOWN:
+            if event.type == QUIT:
+                terminate()
+            if event.type == KEYUP:
                 if event.key == K_ESCAPE:
                     terminate()
-        checkForQuit()
-        
+            if event.type == MOUSEBUTTONUP:
+                pos = pg.mouse.get_pos()
+                for i in range(0, len(rects)):
+                    if rects[i].collidepoint(event.pos):
+                        KEY = KEYS[i]
 
-        choiceold = choice
-        musicChoiceold = musicChoice
-        pg.display.update()
+        if KEY != KEYOLD:
+            surfs.append(pos)
+            surfs, rects, KEYS = dispatcher[KEY](surfs)
+            DISPLAYSURF = surfs[0]
+            if KEY != 'menu':
+                DISPLAYSURF, menRect = menGen.reachMenu(DISPLAYSURF)
+                surfs[0], backRect = toolNav.createBack(surfs)
+                surfs[0], miniKeys, miniRects = toolNav.createMiniTools(surfs,KEY)
+                KEYS.append('menu')
+                KEYS = KEYS+miniKeys
+                rects = rects + backRect+menRect+miniRects
+
+            pg.display.update()
+        KEYOLD = KEY
+        #print(keyold,key)
 
 def terminate():
     pg.quit()

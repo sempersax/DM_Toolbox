@@ -12,19 +12,25 @@ from pygame.locals import *
 ##WINDOWHEIGHT = 629
 ##WINDOWWIDTH = 1000
 
-def createSpell(surf):
+def createSpell(SURFS):
     pg.init()
+    surf = SURFS[0]
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
 
 # Tavern Button
-    raceSurf = pg.image.load('images/blank_button.png')
-    raceSurf = pg.transform.scale(raceSurf, (int(raceSurf.get_width()/8),int(raceSurf.get_height()/8)))
-    raceRect = raceSurf.get_rect(topleft = (int(raceSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(raceSurf.get_height()/2)))
+    spellListSurf = pg.image.load('images/blank_button.png')
+    spellListSurf = pg.transform.scale(spellListSurf, (int(spellListSurf.get_width()/8),int(spellListSurf.get_height()/8)))
+    spellListRect = spellListSurf.get_rect(topleft = (int(spellListSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(spellListSurf.get_height()/2)))
 
     spellSurf = pg.image.load('images/DMTB_SPELL_screen.jpg')
     spellSurf = pg.transform.scale(spellSurf, (WINDOWWIDTH,WINDOWHEIGHT))
+    
     surf.fill((0,0,0))
     surf.blit(spellSurf,(0,0))
-    surf.blit(raceSurf, (int(raceSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(raceSurf.get_height()/2)))
-    return(surf,raceSurf, raceRect, spellSurf)
+    surf.blit(spellListSurf, (int(spellListSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(spellListSurf.get_height()/2)))
+    
+    surfs = [surf]
+    rects = [spellListRect]
+    keys = ['spellList','quest']
+    return(surfs, rects, keys)

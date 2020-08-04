@@ -16,6 +16,7 @@ def monsterStatCard(monsterJson,surf):
     pg.init()
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
+    DISPLAYSURF = surf
 
     TITLE = pg.font.Font('fonts/GimletSSK.ttf',24)
     SUBTITLE = pg.font.Font('fonts/GimletSSK.ttf',20)
@@ -42,7 +43,7 @@ def monsterStatCard(monsterJson,surf):
 ##    global WINDOWHEIGHT, WINDOWWIDTH,FPSCLOCK
     FPSCLOCK = pg.time.Clock()
 ##    DISPLAYSURF = pg.display.set_mode((WINDOWWIDTH,WINDOWHEIGHT),HWSURFACE | DOUBLEBUF|RESIZABLE)
-    DISPLAYSURF = pg.display.set_mode((0,0), pg.FULLSCREEN)
+##    DISPLAYSURF = pg.display.set_mode((0,0), pg.FULLSCREEN)
 ##    pg.display.set_caption('Card Tester')
 ##    pg.display.update()
     screen = pg.image.load('images/character_scroll.png')

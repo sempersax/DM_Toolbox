@@ -4,47 +4,94 @@ import pygame as pg
 import time
 import NPC_Roster as roster
 #import NPC_Navigator as npcNav
-def race(surf,races):
+def race(SURFS):
     pg.init()
+    surf = SURFS[0]
+    WINDOWWIDTH = surf.get_width()
+    WINDOWHEIGHT = surf.get_height()
+
+    raceFiles = os.listdir('images/races')
     start = time.time()
+    races=[None]*len(raceFiles)
+    prefix = ['images/races/']*len(raceFiles)
+    for i in range(len(raceFiles)): #this loads all of the race images at once.
+        raceFiles[i] = prefix[i]+raceFiles[i]
+        races[i] = pg.image.load(raceFiles[i])
+        races[i] = pg.transform.scale(races[i], (int(races[i].get_width()/8),int(races[i].get_height()/8)))
+
     raceRects = []
     surf.fill((0,0,0))
-    surf.blit(pg.image.load('images/navigation_screen.png'),(0,0))
+    image = pg.image.load('images/navigation_screen.png')
+    image = pg.transform.scale(image, (WINDOWWIDTH,WINDOWHEIGHT))
+    surf.blit(image,(0,0))
     start2=time.time()
     for i in range(int(np.ceil(len(races)/4))):
         for j in range(4):
             if(j+i*4)>= len(races):
                 break
-            position = (int(races[i].get_width()*(1+i)),int(races[i].get_height()*(1.3+j)))
+            position = (int(surf.get_width()/5+races[i].get_width()*(1+i)),int(surf.get_height()/5+races[i].get_height()*(1.3+j)))
             surf.blit(races[j+i*4], position)
             raceRects.append(races[i].get_rect(topleft = position))
     RACERECTS = raceRects[0].unionall(raceRects[1:])
-    return(surf,races,raceRects,RACERECTS)
+    rects = raceRects
+    keys = ['gender']*len(raceRects)
+    keys.append('characters')
+    surfs = [surf,raceRects]
+    return(surfs,raceRects,keys)
 
-def gender(surf,WINDOWWIDTH,WINDOWHEIGHT,rects,pos,genders):
+def gender(SURFS):
     pg.init()
+    surf = SURFS[0]
+    WINDOWWIDTH = surf.get_width()
+    WINDOWHEIGHT = surf.get_height()
+    genders = [None]*2
+    genders[0] = pg.image.load('images/genders/DMTB_FEMALE_Button.png')
+    genders[1] = pg.image.load('images/genders/DMTB_MALE_Button.png')
+    for i in range(0,len(genders)):
+        genders[i] = pg.transform.scale(genders[i], (int(genders[i].get_width()/8),int(genders[i].get_height()/8)))
+
     races = ['DRAGONBORN','DWARF','ELF','GNOME','GOBLIN','HALF-ELF','HALF-ORC','HALFLING','HUMAN','ORC']
     raceSel = 'None'
+    pos = SURFS[2]
+    rects = SURFS[1]
+    
     for i in range(len(rects)):
         if rects[i].collidepoint(pos):
             raceSel = races[i]
+        
+    if raceSel != 'None':
+        image = pg.image.load('images/navigation_screen.png')
+        image = pg.transform.scale(image, (WINDOWWIDTH,WINDOWHEIGHT))
+        surf.fill((0,0,0))
+        surf.blit(image,(0,0))
+    genRects = []
 
     if raceSel != 'None':
-        surf.blit(pg.image.load('images/navigation_screen.png'),(0,0))
-    genRects = []
-    for i in range(len(genders)):
-        position=(int(WINDOWWIDTH*i/4+genders[i].get_width()*(i+1)),int(WINDOWHEIGHT/2-genders[i].get_height()/2))
-        if raceSel != 'None':
-            surf.blit(genders[i], position)
-        genRects.append(genders[i].get_rect(topleft = position))
-    GENRECTS = genRects[0].unionall(genRects[1:])                
-    return(surf,raceSel,genRects,GENRECTS)
+        surf.blit(genders[0], (int(genders[0].get_width()),int(WINDOWHEIGHT/2-genders[0].get_height()/2)))
+        surf.blit(genders[1], (int(WINDOWWIDTH-2*genders[1].get_width()),int(WINDOWHEIGHT/2-genders[1].get_height()/2)))
+        genRects.append(genders[0].get_rect(topleft =(int(genders[0].get_width()),int(WINDOWHEIGHT/2-genders[0].get_height()/2))))
+        genRects.append(genders[1].get_rect(topleft =(int(WINDOWWIDTH-2*genders[1].get_width()),int(WINDOWHEIGHT/2-genders[1].get_height()/2))))
+
+    surfs = [surf,raceSel,[genRects,rects],pos]
+    rects = genRects
+    keys = ['name']*len(genRects)
+    keys.append('NPC')
+    return(surfs,genRects,keys)
         
-def name(surf,WINDOWWIDTH,WINDOWHEIGHT,rects,pos,raceSel,Scroll):
+def name(SURFS):
     pg.init()
-    FONT = pg.font.Font('freesansbold.ttf', 24)
+    surf = SURFS[0]
+    WINDOWWIDTH = surf.get_width()
+    WINDOWHEIGHT = surf.get_height()
+
+    genderSel = ''
+    FONT = pg.font.Font('fonts/GimletSSK.ttf', 24)
     genders = ['FEMALE', 'MALE']
-    scroll = Scroll
+    scroll = pg.image.load('images/character_scroll.png')
+    raceSel = SURFS[1]
+    rects = SURFS[2][0]
+    pos = SURFS[-1]
+
     for i in range(len(rects)):
         if rects[i].collidepoint(pos):
             genderSel = genders[i]
@@ -142,4 +189,8 @@ def name(surf,WINDOWWIDTH,WINDOWHEIGHT,rects,pos,raceSel,Scroll):
     cont = pg.transform.scale(cont,(int(cont.get_width()/8),int(cont.get_height()/8)))
     surf.blit(cont,(int(WINDOWWIDTH-cont.get_width()),int(WINDOWHEIGHT-cont.get_height())))
     contRect = cont.get_rect(topleft = (int(WINDOWWIDTH-cont.get_width()),int(WINDOWHEIGHT-cont.get_height())))
-    return(DISPLAYSURF,contRect)
+
+    surfs = [surf,SURFS[2][1],SURFS[-2]]
+    rects = [contRect]
+    keys = ['characters','gender']
+    return(surfs, rects, keys)

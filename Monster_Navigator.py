@@ -64,8 +64,9 @@ def monsterLetterFilter(surf,monsterNames,shift):
         
     return(surfs,rects,leftRect,rightRect,monsterNames,grid,surf)
 
-def AZSelector(surf):
+def AZSelector(SURFS):
     pg.init()
+    surf = SURFS[0]
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
 
@@ -83,7 +84,7 @@ def AZSelector(surf):
     height = surf.get_height()
     shift = 0
     yedge = surf.get_height()//6
-    xedge = surf.get_width()//3
+    xedge = surf.get_width()//5
     j=0
     for i in range(0,len(myLetters)):
         surfs.append(pg.image.load(mypath+myLetters[i]))
@@ -95,8 +96,9 @@ def AZSelector(surf):
 
     return(surfs,rects)
 
-def createMonster(surf):
+def createMonster(SURFS):
     pg.init()
+    surf = SURFS[0]
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
 
@@ -146,5 +148,8 @@ def createMonster(surf):
     surf.blit(searchSurf, (int(searchSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(searchSurf.get_height()/2)))
     surf.blit(AZSurf, (surf.get_width()/2-int(AZSurf.get_width()/2), int(WINDOWHEIGHT/3*2) - int(AZSurf.get_height()/2)))
     surf.blit(CRSurf, (surf.get_width()-int(CRSurf.get_width()*6/5), int(WINDOWHEIGHT/4) - int(searchSurf.get_height()/2)))
-    
-    return(surf, searchSurf, searchRect, AZSurf, AZRect, alphaCR, monstSurf)
+
+    surfs = [surf, alphaCR]
+    rects = [searchRect, AZRect, CRRect]
+    keys = ['search', 'alphabet', 'cr', 'quest']
+    return(surfs, rects, keys)
