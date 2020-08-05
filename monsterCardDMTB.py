@@ -12,8 +12,16 @@ from pygame.locals import *
 ##WINDOWHEIGHT = 650
 ##FPS = 30
 
-def monsterStatCard(monsterJson,surf):
+def monsterStatCard(SURFS):
     pg.init()
+    surf = SURFS[0]
+    monsterNames = SURFS[1]
+    rects = SURFS[2]
+    pos = SURFS[4]
+
+    for i in range(0,len(rects)):
+        if rects[i].collidepoint(pos):
+            monsterJson = monsterNames[i]
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
     DISPLAYSURF = surf
@@ -114,6 +122,8 @@ def monsterStatCard(monsterJson,surf):
 
     monsterChallengeLabel = FONT1.render('Challenge: ', True, [146,4,4], None)
     monsterChallenge = FONT2.render(data['monsterChallenge'], True, [0,0,0], None)
+
+
 
     if data['monsterSpecials'] != '':
         monsterSpecialsLabel = FONT1.render('Special Abilities:', True, [146,4,4], None)
@@ -259,8 +269,6 @@ def monsterStatCard(monsterJson,surf):
                     
                 for j in range(0,len(tempData)):
                     monsterResistances.append(FONT2.render(tempData[j], True, [0,0,0], None))
-        print(monsterResistances,'\n','hello','\n')
-        print(type(monsterResistances))
         if type(monsterResistances) == list:
             for i in range(0,len(monsterResistances)):
                 DISPLAYSURF.blit(monsterResistances[i], (edge+wide, int(screen.get_height()/10*2 + monsterArmorLabel.get_height()*shift+3)))
@@ -329,13 +337,10 @@ def monsterStatCard(monsterJson,surf):
                 shift +=1
     except:
         pass
-    
-##    while True:
-##        for event in pg.event.get():
-##            if event.type == KEYDOWN:
-##                if event.key == K_ESCAPE:
-##                    pg.quit()
-##                    sys.exit()
-##                    break
 
-        pg.display.update()
+
+    pg.display.update()
+    surfs = [DISPLAYSURF,SURFS[1],SURFS[2],'']
+    rects = []
+    keys = ['monsters']
+    return(surfs,rects,keys)

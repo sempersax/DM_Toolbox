@@ -76,7 +76,11 @@ def main():
         "region" : None,
         "spells" : spNav.createSpell,
         "monsters" : monNav.createMonster,
-        "alphabet" : monNav.AZSelector
+        "alphabet" : monNav.AZSelector,
+        "letter" : monNav.monsterLetterFilter,
+        "right" : monNav.monsterLetterFilter,
+        "left" : monNav.monsterLetterFilter,
+        "monsterStats" : mc.monsterStatCard
         }
     KEYOLD = ''
     BACKKEY = ''
@@ -106,6 +110,8 @@ def main():
                 for i in range(0, len(rects)):
                     if rects[i].collidepoint(event.pos):
                         KEY = KEYS[i]
+                        if KEY == 'right' or KEY == 'left':
+                            KEYOLD = ''
             if event.type == pg.VIDEORESIZE:
                 WINDOWWIDTH, WINDOWHEIGHT = event.size
                 fake_screen = DISPLAYSURF.copy()
@@ -113,13 +119,12 @@ def main():
                 DISPLAYSURF.fill((0,0,0))
                 pg.display.update()
                 KEYOLD = ''
-                print(DISPLAYSURF)
 
         if KEY != KEYOLD:
             surfs.append(pos)
+
             surfs, rects, KEYS = dispatcher[KEY](surfs)
             DISPLAYSURF = surfs[0]
-            print(DISPLAYSURF)
             if KEY != 'menu':
                 DISPLAYSURF, menRect = menGen.reachMenu(DISPLAYSURF)
                 surfs[0], backRect = toolNav.createBack(surfs)
@@ -127,6 +132,8 @@ def main():
                 KEYS.append('menu')
                 KEYS = KEYS+miniKeys
                 rects = rects + backRect+menRect+miniRects
+                print(len(KEYS))
+                print(len(rects))
 
             pg.display.update()
         KEYOLD = KEY

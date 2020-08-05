@@ -18,10 +18,20 @@ from operator import itemgetter
 ##WINDOWHEIGHT = 629
 ##WINDOWWIDTH = 1000
 
-def monsterLetterFilter(surf,monsterNames,shift):
+def monsterLetterFilter(SURFS):
     pg.init()
+    surf = SURFS[0]
+    monsterNames = SURFS[1]
+    letters = SURFS[2]
+    pos = SURFS[4]
+    shift = SURFS[3]
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
+
+    if len(letters) == 26:
+        for i in range(0, len(letters)):
+            if letters[i].collidepoint(pos):
+                monsterNames = monsterNames[i]
 
     FONT = pg.font.Font('fonts/GimletSSK.ttf', 16)
 
@@ -34,11 +44,9 @@ def monsterLetterFilter(surf,monsterNames,shift):
 
     rightButton = pg.image.load('images/forward-circle_button.png')
     rightButton = pg.transform.scale(rightButton,(int(rightButton.get_width()/2),int(rightButton.get_height()/2)))
-    rightRect = rightButton.get_rect(topleft = (int(surf.get_width()-1.5*rightButton.get_width()),int(surf.get_height()//2-rightButton.get_height()/2-20)))
     
     leftButton = pg.image.load('images/back-circle_button.png')
     leftButton = pg.transform.scale(leftButton,(int(leftButton.get_width()/2),int(leftButton.get_height()/2)))
-    leftRect = leftButton.get_rect(topleft = (int(.25*leftButton.get_width()),int(surf.get_height()//2-leftButton.get_height()/2-20)))
 
     rects = []
     surfs = []
@@ -46,9 +54,43 @@ def monsterLetterFilter(surf,monsterNames,shift):
     columns =int((WINDOWWIDTH-200)//200)
     rows = int((WINDOWHEIGHT-100)//100)
     grid = columns * rows
+
+
+    if grid *(1+shift) < len(monsterNames):
+        rightRect = rightButton.get_rect(topleft = (int(surf.get_width()-1.5*rightButton.get_width()),int(surf.get_height()//2-rightButton.get_height()/2-20)))
+        surf.fill((0,0,0))
+        surf.blit(monstSurf,(0,0))
+
+        surf.blit(rightButton,(int(surf.get_width()-1.5*rightButton.get_width()),int(surf.get_height()//2-rightButton.get_height()/2-20)))
+        if rightRect.collidepoint(pos):
+            shift += 1                    
+
+    if shift > 0:
+        leftRect = leftButton.get_rect(topleft = (int(.25*leftButton.get_width()),int(surf.get_height()//2-leftButton.get_height()/2-20)))
+        surf.fill((0,0,0))
+        surf.blit(monstSurf,(0,0))
+
+
+        surf.blit(leftButton,(int(0.25*leftButton.get_width()),int(surf.get_height()//2-leftButton.get_height()/2-20)))
+        if leftRect.collidepoint(pos):
+            rightRect = rightButton.get_rect(topleft = (int(surf.get_width()-1.5*rightButton.get_width()),int(surf.get_height()//2-rightButton.get_height()/2-20)))
+            surf.blit(rightButton,(int(surf.get_width()-1.5*rightButton.get_width()),int(surf.get_height()//2-rightButton.get_height()/2-20)))
+
+            shift -=1
+        if shift == 0:
+            surf.fill((0,0,0))
+            surf.blit(monstSurf,(0,0))
+        if grid *(1+shift) < len(monsterNames):
+            surf.blit(rightButton,(int(surf.get_width()-1.5*rightButton.get_width()),int(surf.get_height()//2-rightButton.get_height()/2-20)))
+        
+
+
+    amount = 0    
     for i in range(0,columns):
         for j in range(0,rows):
+            amount+=1
             if i*rows+j+grid*shift > len(monsterNames)-1:
+                amount -= 1
                 break
             names.append(FONT.render(monsterNames[i*rows+j+grid*shift],True,[237,190,141],None))
             surfs.append(template)
@@ -56,13 +98,22 @@ def monsterLetterFilter(surf,monsterNames,shift):
             surf.blit(surfs[i*rows+j],(int(70+surfs[i*rows+j].get_width()*(1/8+i)),int(70+surfs[i*rows+j].get_height()*(1/8+j))))
             surf.blit(names[i*rows+j], (int(-names[i*rows+j].get_width()//2+95+surfs[i*rows+j].get_width()*(1/2+i)),int(70+surfs[i*rows+j].get_height()*(1/2+j))))
 
+
+
+    keys = ["monsterStats"]*(amount)
+
     if grid *(1+shift) < len(monsterNames):
-        surf.blit(rightButton,(int(surf.get_width()-1.5*rightButton.get_width()),int(surf.get_height()//2-rightButton.get_height()/2-20)))
-                            
+        rects.append(rightRect)
+        keys.append('right')
+
     if shift > 0:
-        surf.blit(leftButton,(int(0.25*leftButton.get_width()),int(surf.get_height()//2-leftButton.get_height()/2-20)))
-        
-    return(surfs,rects,leftRect,rightRect,monsterNames,grid,surf)
+        rects.append(leftRect)
+        keys.append('left')
+    
+    keys.append("alphabet")
+    surfs = [surf,monsterNames,rects,shift]
+    print(type(surfs),type(rects),type(keys),'monNav')
+    return(surfs,rects, keys)
 
 def AZSelector(SURFS):
     pg.init()
@@ -93,8 +144,10 @@ def AZSelector(SURFS):
             j = i
         rects.append(surfs[i].get_rect(topleft = (int(xedge+surfs[i].get_width()*(1/8 +shift )), int(yedge+surfs[i].get_height()*(1/8+i-j)))))
         surf.blit(surfs[i],(int(xedge+surfs[i].get_width()*(1/8 +shift )), int(yedge+surfs[i].get_height()*(1/8+i-j))))
-
-    return(surfs,rects)
+    surfs = [surf,SURFS[1],rects,0]
+    keys = ['letter']*len(rects)
+    keys.append('monsters')
+    return(surfs,rects,keys)
 
 def createMonster(SURFS):
     pg.init()
