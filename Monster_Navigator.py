@@ -112,7 +112,6 @@ def monsterLetterFilter(SURFS):
     
     keys.append("alphabet")
     surfs = [surf,monsterNames,rects,shift]
-    print(type(surfs),type(rects),type(keys),'monNav')
     return(surfs,rects, keys)
 
 def AZSelector(SURFS):

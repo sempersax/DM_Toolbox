@@ -132,8 +132,6 @@ def main():
                 KEYS.append('menu')
                 KEYS = KEYS+miniKeys
                 rects = rects + backRect+menRect+miniRects
-                print(len(KEYS))
-                print(len(rects))
 
             pg.display.update()
         KEYOLD = KEY

@@ -57,10 +57,10 @@ def createBack(SURFS):
     surf = SURFS[0]
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
-    backButton = pg.image.load('images/circle_button.PNG')
+    backButton = pg.image.load('images/back-circle_button.png')
     backButton = pg.transform.scale(backButton, (int(backButton.get_width()/2),int(backButton.get_height()/2)))
-    backRect = backButton.get_rect(topleft =  (int(WINDOWWIDTH-backButton.get_width()*2.5),0))
-    surf.blit(backButton, (int(WINDOWWIDTH-backButton.get_width()*2.5),0))
+    backRect = backButton.get_rect(topleft =  (int(WINDOWWIDTH-backButton.get_width()*2.7),5))
+    surf.blit(backButton, (int(WINDOWWIDTH-backButton.get_width()*2.7),5))
     backRect = [backRect]
     return(surf,backRect)
 
@@ -94,7 +94,7 @@ def createMiniTools(SURFS,choice):
     if choice == 'music':
         buttons.remove(buttons[1])
         miniKeys.remove(miniKeys[1])
-    if choice == 'monsters':
+    if choice == 'monsters' or choice == 'alphabet' or choice == 'letter' or choice == 'right' or choice == 'left' or choice == 'monsterStats':
         buttons.remove(buttons[3])
         miniKeys.remove(miniKeys[3])
     rects = []
