@@ -24,19 +24,25 @@ def monsterLetterFilter(SURFS):
     fullMonsterNames = SURFS[1]
     monsterNames = SURFS[2]
     letters = SURFS[3]
-    shift = SURFS[4]
     prevKey = SURFS[5]
     pos = SURFS[-1]
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
+    print(prevKey)
 
+
+    if prevKey == 'alphabet' or prevKey == 'letters':
+        shift = SURFS[4]
+        print('shift = ', shift)
 
     if prevKey == 'alphabet':
         for i in range(0, len(letters)):
             if letters[i].collidepoint(pos):
                 monsterNames = monsterNames[i]
     if prevKey == 'monsterStats':
+        shift = SURFS[4][0]
         print(monsterNames)
+        print('shift = ', shift)
 
     FONT = pg.font.Font('fonts/GimletSSK.ttf', 16)
 
@@ -60,7 +66,7 @@ def monsterLetterFilter(SURFS):
     rows = int((WINDOWHEIGHT-100)//100)
     grid = columns * rows
 
-
+    
     if grid *(1+shift) < len(monsterNames):
         rightRect = rightButton.get_rect(topleft = (int(surf.get_width()-1.5*rightButton.get_width()),int(surf.get_height()//2-rightButton.get_height()/2-20)))
         surf.fill((0,0,0))
@@ -116,7 +122,7 @@ def monsterLetterFilter(SURFS):
         keys.append('left')
     
     keys.append("alphabet")
-    surfs = [surf,fullMonsterNames,monsterNames,rects,shift,grid*shift]
+    surfs = [surf,fullMonsterNames,monsterNames,rects,shift,'letters',grid*shift]
     return(surfs,rects, keys)
 
 def AZSelector(SURFS):

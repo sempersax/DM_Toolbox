@@ -17,7 +17,7 @@ def race(SURFS):
     for i in range(len(raceFiles)): #this loads all of the race images at once.
         raceFiles[i] = prefix[i]+raceFiles[i]
         races[i] = pg.image.load(raceFiles[i])
-        races[i] = pg.transform.scale(races[i], (int(races[i].get_width()/8),int(races[i].get_height()/8)))
+        races[i] = pg.transform.smoothscale(races[i], (int(races[i].get_width()/8*WINDOWWIDTH/1000),int(races[i].get_height()/8*WINDOWHEIGHT/629)))
 
     raceRects = []
     surf.fill((0,0,0))
@@ -29,7 +29,7 @@ def race(SURFS):
         for j in range(4):
             if(j+i*4)>= len(races):
                 break
-            position = (int(surf.get_width()/5+races[i].get_width()*(1+i)),int(surf.get_height()/5+races[i].get_height()*(1.3+j)))
+            position = (int(surf.get_width()/5+races[i].get_width()*(i)),int(surf.get_height()/5+races[i].get_height()*(j)))
             surf.blit(races[j+i*4], position)
             raceRects.append(races[i].get_rect(topleft = position))
     RACERECTS = raceRects[0].unionall(raceRects[1:])
@@ -50,7 +50,7 @@ def gender(SURFS):
     genders[0] = pg.image.load('images/genders/DMTB_FEMALE_Button.png')
     genders[1] = pg.image.load('images/genders/DMTB_MALE_Button.png')
     for i in range(0,len(genders)):
-        genders[i] = pg.transform.scale(genders[i], (int(genders[i].get_width()/8),int(genders[i].get_height()/8)))
+        genders[i] = pg.transform.scale(genders[i], (int(genders[i].get_width()/8*WINDOWWIDTH/1000),int(genders[i].get_height()/8*WINDOWHEIGHT/629)))
 
     races = ['DRAGONBORN','DWARF','ELF','GNOME','GOBLIN','HALF-ELF','HALF-ORC','HALFLING','HUMAN','ORC']
     raceSel = 'None'

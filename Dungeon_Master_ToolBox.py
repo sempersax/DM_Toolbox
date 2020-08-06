@@ -110,6 +110,7 @@ def main():
                 for i in range(0, len(rects)):
                     if rects[i].collidepoint(event.pos):
                         KEY = KEYS[i]
+                        print(KEY)
                         if KEY == 'right' or KEY == 'left':
                             KEYOLD = ''
             if event.type == pg.VIDEORESIZE:
@@ -122,11 +123,11 @@ def main():
 
         if KEY != KEYOLD:
             surfs.append(pos)
-            try:
-                surfs, rects, KEYS = dispatcher[KEY](surfs)
-                DISPLAYSURF = surfs[0]
-            except:
-                print(surfs,rects,KEYS)
+##            try:
+            surfs, rects, KEYS = dispatcher[KEY](surfs)
+            DISPLAYSURF = surfs[0]
+##            except:
+##                print(surfs,rects,KEYS)
                 
             if KEY != 'menu':
                 DISPLAYSURF, menRect = menGen.reachMenu(DISPLAYSURF)

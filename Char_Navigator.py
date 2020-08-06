@@ -21,13 +21,16 @@ def createChar(SURFS):
 
 # Player Button
     playSurf = pg.image.load('images/music_Button.png')
-    playSurf = pg.transform.scale(playSurf, (int(playSurf.get_width()/8),int(playSurf.get_height()/8)))
-    playRect = playSurf.get_rect(topleft = (int(playSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(playSurf.get_height()/2)))
+    playSurf = pg.transform.smoothscale(playSurf, (int(playSurf.get_width()/8*WINDOWWIDTH/1000),int(playSurf.get_height()/8*WINDOWHEIGHT/629)))
+
+    playPosition = ((int(playSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(playSurf.get_height()/2)))
+    playRect = playSurf.get_rect(topleft = playPosition)
 
 # NPC Button
     nopcSurf = pg.image.load('images/tools/DMTB_NPC_Button.png')
-    nopcSurf = pg.transform.scale(nopcSurf, (int(nopcSurf.get_width()/8),int(nopcSurf.get_height()/8)))
-    nopcRect = nopcSurf.get_rect(topleft = (int(WINDOWWIDTH-nopcSurf.get_width()*6/5), int(WINDOWHEIGHT/4) - int(nopcSurf.get_height()/2)))
+    nopcSurf = pg.transform.smoothscale(nopcSurf, (int(nopcSurf.get_width()/8*WINDOWWIDTH/1000),int(nopcSurf.get_height()/8*WINDOWHEIGHT/629)))
+    nopcPosition = (int(WINDOWWIDTH-nopcSurf.get_width()*6/5), int(WINDOWHEIGHT/4) - int(nopcSurf.get_height()/2))
+    nopcRect = nopcSurf.get_rect(topleft = nopcPosition)
 
 
 
@@ -38,8 +41,8 @@ def createChar(SURFS):
 # Adding the elements to the display
     surf.fill((0,0,0))
     surf.blit(toolSurf,(0,0))
-    surf.blit(playSurf, (int(playSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(playSurf.get_height()/2)))
-    surf.blit(nopcSurf, (int(WINDOWWIDTH-nopcSurf.get_width()*6/5), int(WINDOWHEIGHT/4) - int(nopcSurf.get_height()/2)))
+    surf.blit(playSurf, playPosition)
+    surf.blit(nopcSurf, nopcPosition)
 
     rects = [playRect,nopcRect]
     keys = ['player', 'NPC','quest']
