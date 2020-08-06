@@ -15,13 +15,16 @@ from pygame.locals import *
 def monsterStatCard(SURFS):
     pg.init()
     surf = SURFS[0]
-    monsterNames = SURFS[1]
-    rects = SURFS[2]
-    pos = SURFS[4]
+    fullMonsterNames = SURFS[1]
+    monsterNames = SURFS[2]
+    print(monsterNames)
+    backRects = SURFS[3]
+    pos = SURFS[-1]
+    gridShift = SURFS[5]
 
-    for i in range(0,len(rects)):
-        if rects[i].collidepoint(pos):
-            monsterJson = monsterNames[i]
+    for i in range(0,len(backRects)):
+        if backRects[i].collidepoint(pos):
+            monsterJson = monsterNames[i+gridShift]
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
     DISPLAYSURF = surf
@@ -260,7 +263,6 @@ def monsterStatCard(SURFS):
                 tempData = []
                 for j in range(0,len(tempResist)):
                     if FONT2.render(tempResist1, True, [0,0,0], None).get_width()+edge < int((surf.get_width()//2+screen.get_width()//2)/2):
-                        print('hello')
                         tempResist1+=str(tempResist[j])+' '
                     elif FONT2.render(tempResist1, True, [0,0,0], None).get_width()+edge > int((surf.get_width()//2+screen.get_width()//2)/2):
                         tempData.append(tempResist1)
@@ -339,8 +341,14 @@ def monsterStatCard(SURFS):
         pass
 
 
+    cont = pg.image.load('images/music_Button.png')
+    cont = pg.transform.scale(cont,(int(cont.get_width()/8),int(cont.get_height()/8)))
+    surf.blit(cont,(int(WINDOWWIDTH-cont.get_width()),int(WINDOWHEIGHT-cont.get_height())))
+    contRect = cont.get_rect(topleft = (int(WINDOWWIDTH-cont.get_width()),int(WINDOWHEIGHT-cont.get_height())))
+
+
     pg.display.update()
-    surfs = [DISPLAYSURF,SURFS[1],SURFS[2],'']
-    rects = []
-    keys = ['monsters']
+    surfs = [DISPLAYSURF,fullMonsterNames,monsterNames,backRects,0,'monsterStats',SURFS[4]]
+    rects = [contRect]
+    keys = ['letter','monsters']
     return(surfs,rects,keys)

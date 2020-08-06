@@ -21,17 +21,22 @@ from operator import itemgetter
 def monsterLetterFilter(SURFS):
     pg.init()
     surf = SURFS[0]
-    monsterNames = SURFS[1]
-    letters = SURFS[2]
-    pos = SURFS[4]
-    shift = SURFS[3]
+    fullMonsterNames = SURFS[1]
+    monsterNames = SURFS[2]
+    letters = SURFS[3]
+    shift = SURFS[4]
+    prevKey = SURFS[5]
+    pos = SURFS[-1]
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
 
-    if len(letters) == 26:
+
+    if prevKey == 'alphabet':
         for i in range(0, len(letters)):
             if letters[i].collidepoint(pos):
                 monsterNames = monsterNames[i]
+    if prevKey == 'monsterStats':
+        print(monsterNames)
 
     FONT = pg.font.Font('fonts/GimletSSK.ttf', 16)
 
@@ -63,7 +68,7 @@ def monsterLetterFilter(SURFS):
 
         surf.blit(rightButton,(int(surf.get_width()-1.5*rightButton.get_width()),int(surf.get_height()//2-rightButton.get_height()/2-20)))
         if rightRect.collidepoint(pos):
-            shift += 1                    
+            shift += 1
 
     if shift > 0:
         leftRect = leftButton.get_rect(topleft = (int(.25*leftButton.get_width()),int(surf.get_height()//2-leftButton.get_height()/2-20)))
@@ -111,12 +116,13 @@ def monsterLetterFilter(SURFS):
         keys.append('left')
     
     keys.append("alphabet")
-    surfs = [surf,monsterNames,rects,shift]
+    surfs = [surf,fullMonsterNames,monsterNames,rects,shift,grid*shift]
     return(surfs,rects, keys)
 
 def AZSelector(SURFS):
     pg.init()
     surf = SURFS[0]
+    monsterNames = SURFS[1]
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
 
@@ -143,7 +149,8 @@ def AZSelector(SURFS):
             j = i
         rects.append(surfs[i].get_rect(topleft = (int(xedge+surfs[i].get_width()*(1/8 +shift )), int(yedge+surfs[i].get_height()*(1/8+i-j)))))
         surf.blit(surfs[i],(int(xedge+surfs[i].get_width()*(1/8 +shift )), int(yedge+surfs[i].get_height()*(1/8+i-j))))
-    surfs = [surf,SURFS[1],rects,0]
+
+    surfs = [surf,monsterNames, monsterNames,rects,0,'alphabet']
     keys = ['letter']*len(rects)
     keys.append('monsters')
     return(surfs,rects,keys)
@@ -180,7 +187,8 @@ def createMonster(SURFS):
         temp1 = []
 
     alphaCR = temp2
-# Tavern Button
+
+
     searchSurf = pg.image.load('images/music_Button.png')
     searchSurf = pg.transform.scale(searchSurf, (int(searchSurf.get_width()/8),int(searchSurf.get_height()/8)))
     searchRect = searchSurf.get_rect(topleft = (int(searchSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(searchSurf.get_height()/2)))

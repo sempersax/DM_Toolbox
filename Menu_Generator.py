@@ -39,7 +39,7 @@ def reachMenu(surf):
     WINDOWHEIGHT = surf.get_height()
     menButton = pg.image.load('images/menu_button.png')
     menButton = pg.transform.scale(menButton, (int(menButton.get_width()/2),int(menButton.get_height()/2)))
-    menRect = menButton.get_rect(topleft = (int(WINDOWWIDTH-menButton.get_width()*1.5),0))
-    surf.blit(menButton, (int(WINDOWWIDTH-menButton.get_width()*1.5),0))
+    menRect = menButton.get_rect(topleft = (int(WINDOWWIDTH-menButton.get_width()*1.5),5))
+    surf.blit(menButton, (int(WINDOWWIDTH-menButton.get_width()*1.5),5))
     menRect = [menRect]
     return(surf, menRect)
