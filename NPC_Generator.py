@@ -42,6 +42,8 @@ def race(SURFS):
 def gender(SURFS):
     pg.init()
     surf = SURFS[0]
+    rects = SURFS[1]
+    pos = SURFS[2]
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
     genders = [None]*2
@@ -52,8 +54,6 @@ def gender(SURFS):
 
     races = ['DRAGONBORN','DWARF','ELF','GNOME','GOBLIN','HALF-ELF','HALF-ORC','HALFLING','HUMAN','ORC']
     raceSel = 'None'
-    pos = SURFS[2]
-    rects = SURFS[1]
     
     for i in range(len(rects)):
         if rects[i].collidepoint(pos):
@@ -72,7 +72,8 @@ def gender(SURFS):
         genRects.append(genders[0].get_rect(topleft =(int(genders[0].get_width()),int(WINDOWHEIGHT/2-genders[0].get_height()/2))))
         genRects.append(genders[1].get_rect(topleft =(int(WINDOWWIDTH-2*genders[1].get_width()),int(WINDOWHEIGHT/2-genders[1].get_height()/2))))
 
-    surfs = [surf,raceSel,[genRects,rects],pos]
+    rectsOld = rects
+    surfs = [surf,rectsOld,pos,raceSel,[genRects,rects],'gender']
     rects = genRects
     keys = ['name']*len(genRects)
     keys.append('NPC')
@@ -81,16 +82,19 @@ def gender(SURFS):
 def name(SURFS):
     pg.init()
     surf = SURFS[0]
+    rectsOld = SURFS[1]
+    posOld = SURFS[2]
+    raceSel = SURFS[3]
+    rects = SURFS[4][0]
+    prevKey = SURFS[5]
+    pos = SURFS[6]
+
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
 
     genderSel = ''
-    FONT = pg.font.Font('fonts/GimletSSK.ttf', 24)
+    FONT = pg.font.Font('fonts/GimletSSK.ttf', int(48 *surf.get_height()/629))
     genders = ['FEMALE', 'MALE']
-    scroll = pg.image.load('images/character_scroll.png')
-    raceSel = SURFS[1]
-    rects = SURFS[2][0]
-    pos = SURFS[-1]
 
     for i in range(len(rects)):
         if rects[i].collidepoint(pos):
@@ -176,21 +180,31 @@ def name(SURFS):
             first = roster.orcMaleNames()
             last = roster.orcLastNames()
 
-    raceText = FONT.render('    RACE: '+raceSel,True,[255,255,255],None)
-    genText = FONT.render('GENDER: ' + genderSel, True,[255,255,255],None)
-    nameText = FONT.render('    NAME: ' + first + ' ' + last, True,[255,255,255],None)
+    if prevKey == 'name':
+        first = SURFS[7][0]
+        last = SURFS[7][1]
+
+    raceText = FONT.render('    RACE: '+raceSel,True,[0,0,0],None)
+    genText = FONT.render('GENDER: ' + genderSel, True,[0,0,0],None)
+    nameText = FONT.render('    NAME: ' + first + ' ' + last, True,[0,0,0],None)
     DISPLAYSURF = surf
-    scroll = pg.transform.scale(scroll, (int(scroll.get_width()*2/3),int(scroll.get_height()*2/3)))
-    surf.blit(scroll,(int(scroll.get_width()/4),int(scroll.get_height()/8)))
-    surf.blit(raceText,(int(scroll.get_width()/4+50),int(scroll.get_height()/8+4.5*raceText.get_height())))
-    surf.blit(genText,(int(scroll.get_width()/4+50),int(scroll.get_height()/8+5.5*genText.get_height())))
-    surf.blit(nameText,(int(scroll.get_width()/4+50),int(scroll.get_height()/8+6.5*nameText.get_height())))
+    scroll = pg.image.load('images/character_scroll.png')
+    scroll = pg.transform.scale(scroll,(WINDOWWIDTH, WINDOWHEIGHT))
+    image = pg.image.load('images/navigation_screen.png')
+    image = pg.transform.smoothscale(image, (WINDOWWIDTH,WINDOWHEIGHT))
+
+    surf.fill((0,0,0))
+    surf.blit(image,(0,0))
+    surf.blit(scroll,(0,0))
+    surf.blit(raceText,(int(scroll.get_width()//2-raceText.get_width()//2),int(scroll.get_height()/8+2*raceText.get_height())))
+    surf.blit(genText,(int(scroll.get_width()//2-genText.get_width()//2),int(scroll.get_height()/8+3*raceText.get_height())))
+    surf.blit(nameText,(int(scroll.get_width()//2-nameText.get_width()//2),int(scroll.get_height()/8+3*raceText.get_height()+genText.get_height())))
     cont = pg.image.load('images/music_Button.png')
     cont = pg.transform.scale(cont,(int(cont.get_width()/8),int(cont.get_height()/8)))
     surf.blit(cont,(int(WINDOWWIDTH-cont.get_width()),int(WINDOWHEIGHT-cont.get_height())))
     contRect = cont.get_rect(topleft = (int(WINDOWWIDTH-cont.get_width()),int(WINDOWHEIGHT-cont.get_height())))
 
-    surfs = [surf,SURFS[2][1],SURFS[-2]]
+    surfs = [surf,rectsOld,posOld,raceSel,[rects],'name',pos,[first,last]]
     rects = [contRect]
     keys = ['characters','gender']
     return(surfs, rects, keys)
