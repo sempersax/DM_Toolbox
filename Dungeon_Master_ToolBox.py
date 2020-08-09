@@ -66,15 +66,24 @@ def main():
     dispatcher = {
         "menu" : menGen.createMenu,
         "quest" : toolNav.createTools,
+        #Character Keys
         "characters" : charNav.createChar,
         "NPC" : npcGen.race,
         "gender" : npcGen.gender,
         "name" : npcGen.name,
+        #Music Keys
         "music" : musNav.createMusic,
         "tavern" : musGen.tavernMusic,
         "battle" : musGen.battleMusic,
         "region" : None,
+        #Spell Keys
         "spells" : spNav.createSpell,
+        "class" : spNav.createClasses,
+        "levels" : spNav.createLevels,
+        "levelNumbers" : spNav.spellLevelFilter,
+        "spellLeft" : spNav.spellLevelFilter,
+        "spellRight" : spNav.spellLevelFilter,
+        #Monster Keys
         "monsters" : monNav.createMonster,
         "alphabet" : monNav.AZSelector,
         "letter" : monNav.monsterLetterFilter,
@@ -110,8 +119,7 @@ def main():
                 for i in range(0, len(rects)):
                     if rects[i].collidepoint(event.pos):
                         KEY = KEYS[i]
-                        print(KEY)
-                        if KEY == 'right' or KEY == 'left':
+                        if KEY == 'right' or KEY == 'left' or KEY == 'spellRight' or KEY == 'spellLeft':
                             KEYOLD = ''
             if event.type == pg.VIDEORESIZE:
                 WINDOWWIDTH, WINDOWHEIGHT = event.size
