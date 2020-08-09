@@ -28,7 +28,6 @@ def monsterLetterFilter(SURFS):
     pos = SURFS[-1]
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
-    print(prevKey)
 
 
     if prevKey == 'alphabet' or prevKey == 'letters':
