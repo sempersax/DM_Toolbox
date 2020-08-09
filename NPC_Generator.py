@@ -32,7 +32,6 @@ def race(SURFS):
             position = (int(surf.get_width()/5+races[i].get_width()*(i)),int(surf.get_height()/5+races[i].get_height()*(j)))
             surf.blit(races[j+i*4], position)
             raceRects.append(races[i].get_rect(topleft = position))
-    RACERECTS = raceRects[0].unionall(raceRects[1:])
     rects = raceRects
     keys = ['gender']*len(raceRects)
     keys.append('characters')
