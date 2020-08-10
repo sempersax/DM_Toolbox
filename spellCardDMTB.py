@@ -18,15 +18,17 @@ def spellCard(SURFS):
     backRects = SURFS[1]
     prevKey = SURFS[2]
     shift = SURFS[3]
-    spellNames = SURFS[4]
-    spellSelected = SURFS[5]
     pos = SURFS[-1]
     if prevKey == 'spellDesc':
+        spellNames = SURFS[4]
+        spellSelected = SURFS[5]
         gridShift = SURFS[6]
         oldShift = SURFS[3]
     if prevKey == 'spellStats':
-        gridShift = SURFS[4][1]
-        oldShift = SURFS[4][0]
+        spellNames = SURFS[3]
+        spellSelected = SURFS[4]
+        gridShift = SURFS[5][1]
+        oldShift = SURFS[5][0]
     pos = SURFS[-1]
 
     for i in range(0,len(backRects)):
@@ -45,7 +47,6 @@ def spellCard(SURFS):
 
     with open(cwd+'/spellScrape/spellJsons/'+spellJson.replace(' ','_')+'.json') as jsonFile:
         data = json.load(jsonFile)
-        print(data)
 
 
     
@@ -128,7 +129,8 @@ def spellCard(SURFS):
 
 
     pg.display.update()
-    surfs = [DISPLAYSURF,spellNames,spellSelected,backRects,[0,gridShift],'spellStats']
+    print(spellNames)
+    surfs = [DISPLAYSURF,backRects,'spellStats',spellNames,spellSelected,[0,gridShift]]
     rects = [contRect]
-    keys = ['letter','spells']
+    keys = ['levelNumbers','spells']
     return(surfs,rects,keys)
