@@ -213,6 +213,8 @@ def spellLevelFilter(SURFS):
 
 
 
+    spellNamesShort = spellNames[:amount]
+    print(spellNamesShort)
     keys = ["spellDesc"]*(amount)
 
     if grid *(1+shift) < len(spellNames):
@@ -224,7 +226,7 @@ def spellLevelFilter(SURFS):
         keys.append('spellLeft')
     
     keys.append("levels")
-    surfs = [surf,rects,"spellDesc",shift,spellNames]
+    surfs = [surf,rects,"spellDesc",shift,spellNames,spellNamesShort,grid*shift]
     return(surfs,rects, keys)
 
 
