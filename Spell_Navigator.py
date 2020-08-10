@@ -144,6 +144,10 @@ def spellLevelFilter(SURFS):
     if keyPrev == 'spellDesc':
         spellNames = SURFS[4]
 
+    if keyPrev == 'spellStats':
+        shift = SURFS[5][0]
+        spellNames = SURFS[3]
+
 
     FONT = pg.font.Font('fonts/GimletSSK.ttf', 16)
 
@@ -168,6 +172,7 @@ def spellLevelFilter(SURFS):
     rows = int((WINDOWHEIGHT-100)//100)
     grid = columns * rows
 
+    print(shift)
     
     if grid *(1+shift) < len(spellNames):
         rightRect = rightButton.get_rect(topleft = (int(surf.get_width()-1.5*rightButton.get_width()),int(surf.get_height()//2-rightButton.get_height()/2-20)))
@@ -214,7 +219,6 @@ def spellLevelFilter(SURFS):
 
 
     spellNamesShort = spellNames[:amount]
-    print(spellNamesShort)
     keys = ["spellDesc"]*(amount)
 
     if grid *(1+shift) < len(spellNames):
