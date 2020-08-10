@@ -134,11 +134,11 @@ def main():
 
         if KEY != KEYOLD:
             surfs.append(pos)
-##            try:
-            surfs, rects, KEYS = dispatcher[KEY](surfs)
-            DISPLAYSURF = surfs[0]
-##            except:
-##                print(surfs,rects,KEYS)
+            try:
+                surfs, rects, KEYS = dispatcher[KEY](surfs)
+                DISPLAYSURF = surfs[0]
+            except:
+                pass
                 
             if KEY != 'menu':
                 DISPLAYSURF, menRect = menGen.reachMenu(DISPLAYSURF)
