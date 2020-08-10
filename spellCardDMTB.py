@@ -46,18 +46,6 @@ def spellCard(SURFS):
     with open(cwd+'/spellScrape/spellJsons/'+spellJson.replace(' ','_')+'.json') as jsonFile:
         data = json.load(jsonFile)
         print(data)
-##        data['spellSchool'] = data['spellSchool'].replace('Armor Class','')
-##        data['spellHP'] = data['spellHP'].replace('Hit Points', '')
-##        data['spellSpeed'] = data['spellSpeed'].replace('Speed', '')
-##        data['spellSavings'] = data['spellSavings'].replace('Saving Throws','')
-##        data['spellSkills'] = data['spellSkills'].replace('Skills','')
-##        data['spellResistances'] = data['spellResistances'].replace('Damage Resistances', '')
-##        data['spellVulnerabilities']=data['spellVulnerabilities'].replace('Damage Vulnerabilities','')
-##        data['spellImmunities'] = data['spellImmunities'].replace('Damage Immunities','')
-##        data['spellCImmunities'] = data['spellCImmunities'].replace('Condition Immunities','')
-##        data['spellLanguages'] = data['spellLanguages'].replace('Languages','')
-##        data['spellChallenge'] = data['spellChallenge'].replace('Challenge','')
-##        data['spellSenses'] = data['spellSenses'].replace('Senses','')
 
 
     
@@ -92,15 +80,18 @@ def spellCard(SURFS):
             data['spellEffect'] = data['spellEffect'].split(' ')
             tempSpecial = data['spellEffect']
             tempSpecial1 = ''
-            print(tempSpecial,'hello')
-            
-            for j in range(0,len(tempSpecial)):
+            j = 0
+            while j < len(tempSpecial):
                 if FONT2.render(tempSpecial1, True, [0,0,0], None).get_width() < screen.get_width()-220:
                     tempSpecial1+=str(tempSpecial[j])+' '
-                    print(tempSpecial1)
+                    j+=1
                 else:
                     spellEffects.append(FONT2.render(tempSpecial1, True, [0,0,0], None))
                     tempSpecial1 = ' '
+                    j -= 1
+            spellEffects.append(FONT2.render(tempSpecial1, True, [0,0,0], None))
+        else:
+            spellEffects.append(FONT2.render(data['spellEffect'], True, [0,0,0], None))
 
         
     #print(data['spellEffect'])
