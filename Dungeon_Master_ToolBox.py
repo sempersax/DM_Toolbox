@@ -19,7 +19,9 @@ import PC_Generator as pcGen
 import Spell_Navigator as spNav
 import Monster_Navigator as monNav
 import Image_Loader as imgLoad
+
 import monsterCardDMTB as mc
+import spellCardDMTB as sc
 
 from pygame.locals import *
 
@@ -83,6 +85,7 @@ def main():
         "levelNumbers" : spNav.spellLevelFilter,
         "spellLeft" : spNav.spellLevelFilter,
         "spellRight" : spNav.spellLevelFilter,
+        "spellDesc" : sc.spellCard,
         #Monster Keys
         "monsters" : monNav.createMonster,
         "alphabet" : monNav.AZSelector,
