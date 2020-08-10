@@ -1,0 +1,19 @@
+{
+    "spellName": "Greater Invisibility",
+    "spellSchool": "illusion",
+    "spellClasses": [
+        "Bard",
+        "Sorcerer",
+        "Wizard"
+    ],
+    "spellLevel": 4,
+    "castingTime": "1 action",
+    "spellDuration": "Concentration, up to 1 minute",
+    "spellRange": "Touch",
+    "spellEffect": "You or a creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target\u2019s person.",
+    "verbalBool": "True",
+    "somaticBool": "True",
+    "materialBool": "False",
+    "materials": "N/A",
+    "spellSave": "--"
+}

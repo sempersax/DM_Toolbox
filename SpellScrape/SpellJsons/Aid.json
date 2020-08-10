@@ -1,0 +1,19 @@
+{
+    "spellName": "Aid",
+    "spellSchool": "abjuration",
+    "spellClasses": [
+        "Artificer",
+        "Cleric",
+        "Paladin"
+    ],
+    "spellLevel": 2,
+    "castingTime": "1 action",
+    "spellDuration": "8 hours",
+    "spellRange": "30 feet",
+    "spellEffect": "Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target\u2019s hit point maximum and current hit points increase by 5 for the duration.  When you cast this spell using a spell slot of 3rd level or higher, a target\u2019s hit points increase by an additional 5 for each slot level above 2nd.",
+    "verbalBool": "True",
+    "somaticBool": "True",
+    "materialBool": "True",
+    "materials": "(a tiny strip of white cloth)",
+    "spellSave": "--"
+}

@@ -1,0 +1,19 @@
+{
+    "spellName": "Sending",
+    "spellSchool": "evocation",
+    "spellClasses": [
+        "Bard",
+        "Cleric",
+        "Wizard"
+    ],
+    "spellLevel": 3,
+    "castingTime": "1 action",
+    "spellDuration": "1 round",
+    "spellRange": "Unlimited",
+    "spellEffect": "You send a short message of twenty-five words or less to a creature with which you are familiar. The creature hears the message in its mind, recognizes you as the sender if it knows you, and can answer in a like manner immediately. The spell enables creatures with Intelligence scores of at least 1 to understand the meaning of your message. You can send the message across any distance and even to other planes of existence, but if the target is on a different plane than you, there is a 5 percent chance that the message doesn\u2019t arrive.",
+    "verbalBool": "True",
+    "somaticBool": "True",
+    "materialBool": "True",
+    "materials": "(a short piece of fine copper wire)",
+    "spellSave": "--"
+}

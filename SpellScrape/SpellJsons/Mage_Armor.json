@@ -1,0 +1,18 @@
+{
+    "spellName": "Mage Armor",
+    "spellSchool": "abjuration",
+    "spellClasses": [
+        "Sorcerer",
+        "Wizard"
+    ],
+    "spellLevel": 1,
+    "castingTime": "1 action",
+    "spellDuration": "8 hours",
+    "spellRange": "Touch",
+    "spellEffect": "You touch a willing creature who isn\u2019t wearing armor, and a protective magical force surrounds it until the spell ends. The target\u2019s base AC becomes 13 + its Dexterity modifier. The spell ends it if the target dons armor or if you dismiss the spell as an action.",
+    "verbalBool": "True",
+    "somaticBool": "True",
+    "materialBool": "True",
+    "materials": "(a piece of cured leather)",
+    "spellSave": "--"
+}

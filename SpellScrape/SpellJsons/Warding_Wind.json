@@ -1,0 +1,19 @@
+{
+    "spellName": "Warding Wind",
+    "spellSchool": "evocation",
+    "spellClasses": [
+        "bard Bard",
+        "Druid",
+        "Sorcerer"
+    ],
+    "spellLevel": 2,
+    "castingTime": "1 action",
+    "spellDuration": "Concentration, up to 10 minutes",
+    "spellRange": "Self",
+    "spellEffect": "A strong wind (20 miles per hour) blows around you in a 10-foot radius and moves with you, remaining centered on you. The wind lasts for the spell\u2019s duration. The wind has the following effects: \u2022 It deafens you and other creatures in its area. \u2022 It extinguishes unprotected flames in its area that are torch-sized or smaller. \u2022 The area is difficult terrain for creatures other than you. \u2022 The attack rolls of ranged weapon attacks have disadvantage if they pass in or out of the wind. \u2022 It hedges out vapor, gas, and fog that can be dispersed by strong wind.",
+    "verbalBool": "True",
+    "somaticBool": "False",
+    "materialBool": "False",
+    "materials": "N/A",
+    "spellSave": "--"
+}

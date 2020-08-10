@@ -1,0 +1,20 @@
+{
+    "spellName": "Friends",
+    "spellSchool": "Enchantment",
+    "spellClasses": [
+        "Bard",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+    ],
+    "spellLevel": 0,
+    "castingTime": "1 action",
+    "spellDuration": "Concentration, up to 1 minute",
+    "spellRange": "Self",
+    "spellEffect": "For the duration, you have advantage on all Charisma checks directed at one creature of your choice that isn\u2019t hostile toward you. When the spell ends, the creature realizes that you used magic to influence its mood and becomes hostile toward you. A creature prone to violence might attack you. Another creature might seek retribution in other ways (at the DM\u2019s discretion), depending on the nature of your interaction with it.",
+    "verbalBool": "False",
+    "somaticBool": "True",
+    "materialBool": "True",
+    "materials": "(a small amount of makeup applied to the face as this spell is cast)",
+    "spellSave": "--"
+}

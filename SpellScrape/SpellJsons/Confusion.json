@@ -1,0 +1,20 @@
+{
+    "spellName": "Confusion",
+    "spellSchool": "enchantment",
+    "spellClasses": [
+        "Bard",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+    ],
+    "spellLevel": 4,
+    "castingTime": "1 action",
+    "spellDuration": "Concentration, up to 1 minute",
+    "spellRange": "90 feet",
+    "spellEffect": "This spell assaults and twists creatures\u2019 minds, spawning delusions and provoking uncontrolled actions. Each creature in a 10-foot-radius sphere centered on a point you choose within range must succeed on a Wisdom saving throw when you cast this spell or be affected by it. An affected target can\u2019t take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn. At the end of its turns, an affected target can make a Wisdom saving throw. It it succeeds, this effect ends for that target.  When you cast this spell using a spell slot of 5th level or higher, the radius of the sphere increases by 5 feet for each slot level above 4th.",
+    "verbalBool": "True",
+    "somaticBool": "True",
+    "materialBool": "True",
+    "materials": "(three nut shells)",
+    "spellSave": "WIS"
+}

@@ -1,0 +1,20 @@
+{
+    "spellName": "Bestow Curse",
+    "spellSchool": "necromancy",
+    "spellClasses": [
+        "Remove Curse",
+        "Bard",
+        "Cleric",
+        "Wizard"
+    ],
+    "spellLevel": 3,
+    "castingTime": "1 action",
+    "spellDuration": "Concentration, up to 1 minute",
+    "spellRange": "Touch",
+    "spellEffect": "You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options: \u2022 Choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score. \n\u2022 While cursed, the target has disadvantage on attack rolls against you. \n\u2022 While cursed, the target must make a Wisdom saving throw at the start of each of its turns. If it fails, it wastes its action that turn doing nothing. \n\u2022 While the target is cursed, your attacks and spells deal an extra 1d8 necrotic damage to the target.",
+    "verbalBool": "True",
+    "somaticBool": "True",
+    "materialBool": "False",
+    "materials": "N/A",
+    "spellSave": "WIS"
+}
