@@ -88,7 +88,7 @@ def createMiniTools(SURFS,choice):
     if choice == 'characters' or choice == 'NPC' or choice == 'gender' or choice == 'name' or choice == 'continue':
         buttons.remove(buttons[0])
         miniKeys.remove(miniKeys[0])
-    if choice == 'spells':
+    if choice == 'spells' or choice == 'class' or choice == 'levels' or choice == 'levelNumbers' or choice == 'spellLeft' or choice == 'spellRight' or choice == 'spellDesc':
         buttons.remove(buttons[2])
         miniKeys.remove(miniKeys[2])
     if choice == 'music':
