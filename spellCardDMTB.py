@@ -94,7 +94,29 @@ def spellCard(SURFS):
         else:
             spellEffects.append(FONT2.render(data['spellEffect'], True, [0,0,0], None))
 
-        
+    spellRangeLabel = FONT1.render('Range: ', True, [146,4,4], None)
+    spellRange = FONT2.render(data['spellRange'], True, [0,0,0], None)
+
+    components = ''
+    materials = ''
+    if data['verbalBool'] == 'True':
+        components += 'V'
+
+    if data['somaticBool'] == 'True':
+        components += 'S'
+
+    if data['materialBool'] == 'True':
+        components += 'M'
+        materials = data['materials']
+
+    spellComponentsLabel = FONT1.render('Components: ', True, [146,4,4], None)
+    spellComponents = FONT2.render(components, True, [0,0,0], None)
+
+    spellMaterialsLabel = FONT1.render('Materials: ', True, [146,4,4], None)
+    spellMaterials = FONT2.render(materials, True, [0,0,0], None)
+
+    
+    
     #print(data['spellEffect'])
     DISPLAYSURF.blit(spellName, (int(screen.get_width()/2-spellName.get_width()/2), int(screen.get_height()/10-40) ))
     DISPLAYSURF.blit(spellName, (int(screen.get_width()/2-spellName.get_width()/2), int(screen.get_height()*9/10-25) ))
@@ -103,15 +125,26 @@ def spellCard(SURFS):
     # Putting Level on Card
     DISPLAYSURF.blit(spellLevelLabel, (edge,int(screen.get_height()/10*2)))
     DISPLAYSURF.blit(spellLevel, (edge+spellLevelLabel.get_width(), int(screen.get_height()/10*2+3)))
-    # Putting HP on Card
+    # Putting Casting Time on Card
     DISPLAYSURF.blit(spellTimeLabel, (edge, int(screen.get_height()/10*2 + spellLevelLabel.get_height()+3)))
     DISPLAYSURF.blit(spellTime, (edge+spellTimeLabel.get_width(), int(screen.get_height()/10*2 + spellLevelLabel.get_height()+3)))
-    # Putting Speed on Card
+    # Putting Duration on Card
     DISPLAYSURF.blit(spellDurationLabel, (edge, int(screen.get_height()/10*2 + 2*spellLevelLabel.get_height()+3)))
     DISPLAYSURF.blit(spellDuration, (edge+spellLevelLabel.get_width(), int(screen.get_height()/10*2 + 2*spellLevelLabel.get_height()+3)))
+    #Putting Range on Card
+    DISPLAYSURF.blit(spellRangeLabel, (int(screen.get_width() - spellRangeLabel.get_width()*8.2), int(screen.get_height()/10*2)))
+    DISPLAYSURF.blit(spellRange, (int(screen.get_width() - spellRangeLabel.get_width()*7.2), int(screen.get_height()/10*2)))
+    #Putting components on Card
+    DISPLAYSURF.blit(spellComponentsLabel, (int(screen.get_width() - spellRangeLabel.get_width()*8.2), int(screen.get_height()/10*2+spellRangeLabel.get_height())))
+    DISPLAYSURF.blit(spellComponents, (int(screen.get_width() - spellRangeLabel.get_width()*8.2+spellComponentsLabel.get_width()), int(screen.get_height()/10*2+spellRangeLabel.get_height())))
 
-    shift = 4
-
+    if materials != '':
+        #Putting materials on Card
+        DISPLAYSURF.blit(spellMaterialsLabel, (edge, int(screen.get_height()/10*2+4*spellLevelLabel.get_height())))
+        DISPLAYSURF.blit(spellMaterials, (edge+spellMaterialsLabel.get_width(), int(screen.get_height()/10*2+4*spellLevelLabel.get_height())))    
+        shift = 6
+    else:
+        shift = 4
     try:
         DISPLAYSURF.blit(spellEffectLabel, (edge, int(screen.get_height()/10*2+spellLevelLabel.get_height()*shift)))
         shift +=1
