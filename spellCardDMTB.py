@@ -129,7 +129,6 @@ def spellCard(SURFS):
 
 
     pg.display.update()
-    print(spellNames)
     surfs = [DISPLAYSURF,backRects,'spellStats',spellNames,spellSelected,[0,gridShift]]
     rects = [contRect]
     keys = ['levelNumbers','spells']
