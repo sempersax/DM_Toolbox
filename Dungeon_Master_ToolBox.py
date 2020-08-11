@@ -153,6 +153,7 @@ def main():
         #print(keyold,key)
 
 def terminate():
+    print('bye bye')
     pg.quit()
     sys.exit()
 
