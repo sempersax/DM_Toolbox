@@ -137,17 +137,19 @@ def main():
             try:
                 surfs, rects, KEYS = dispatcher[KEY](surfs)
                 DISPLAYSURF = surfs[0]
-            except:
-                pass
-                
-            if KEY != 'menu':
-                DISPLAYSURF, menRect = menGen.reachMenu(DISPLAYSURF)
-                surfs[0], backRect = toolNav.createBack(surfs)
-                surfs[0], miniKeys, miniRects = toolNav.createMiniTools(surfs,KEY)
-                KEYS.append('menu')
-                KEYS = KEYS+miniKeys
-                rects = rects + backRect+menRect+miniRects
 
+                
+                if KEY != 'menu':
+                    DISPLAYSURF, menRect = menGen.reachMenu(DISPLAYSURF)
+                    surfs[0], backRect = toolNav.createBack(surfs)
+                    surfs[0], miniKeys, miniRects = toolNav.createMiniTools(surfs,KEY)
+                    KEYS.append('menu')
+                    KEYS = KEYS+miniKeys
+                    rects = rects + backRect+menRect+miniRects
+            except:
+                print(KEY)
+                pass
+            print(KEYS)
             pg.display.update()
         KEYOLD = KEY
         #print(keyold,key)

@@ -85,22 +85,24 @@ def createMiniTools(SURFS,choice):
     monstButton = buttons[0]
     buttons = [npcButton,musicButton,spellButton,monstButton]
     miniKeys = ['characters','music','spells','monsters']
-    if choice == 'characters' or choice == 'NPC' or choice == 'gender' or choice == 'name' or choice == 'continue':
+    if choice == 'characters' or choice == 'NPC' or choice == 'gender' or choice == 'name' or choice == 'continue' or choice == 'player':
         buttons.remove(buttons[0])
         miniKeys.remove(miniKeys[0])
-    if choice == 'spells' or choice == 'class' or choice == 'levels' or choice == 'levelNumbers' or choice == 'spellLeft' or choice == 'spellRight' or choice == 'spellDesc':
+    if choice == 'spells' or choice == 'class' or choice == 'levels' or choice == 'levelNumbers' or choice == 'spellLeft' or choice == 'spellRight' or choice == 'spellDesc' or choice == 'classChose':
         buttons.remove(buttons[2])
         miniKeys.remove(miniKeys[2])
-    if choice == 'music':
+    if choice == 'music' or choice == 'tavern' or choice == 'battle' or choice == 'region':
         buttons.remove(buttons[1])
         miniKeys.remove(miniKeys[1])
-    if choice == 'monsters' or choice == 'alphabet' or choice == 'letter' or choice == 'right' or choice == 'left' or choice == 'monsterStats':
+    if choice == 'monsters' or choice == 'alphabet' or choice == 'letter' or choice == 'right' or choice == 'left' or choice == 'monsterStats' or choice == 'cr':
         buttons.remove(buttons[3])
         miniKeys.remove(miniKeys[3])
     rects = []
     for i in range(len(buttons)):
         surf.blit(buttons[i], (int(buttons[i].get_width()*(1.5+i)),0))
         rects.append(buttons[i].get_rect(topleft = (int(buttons[i].get_width()*(1.5+i)),0)))
+
+    print(miniKeys)
 
     return(surf,miniKeys,rects)
     
