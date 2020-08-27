@@ -15,6 +15,7 @@ for i in range(0, len(onlyFiles)):
 
 print(alphaCR)
 print(alphaCR[0][0])
+
 with open('{}/monsterRoster.txt'.format(cwd),'w') as roster:
     for listitem in alphaCR:
         roster.write('%s\n' % listitem)
