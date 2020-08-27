@@ -364,8 +364,8 @@ def monsterStatCard(args):
         pass
 
 
-    cont = pg.image.load('images/music_Button.png')
-    cont = pg.transform.scale(cont,(int(cont.get_width()/8),int(cont.get_height()/8)))
+    cont = pg.image.load('images/tools/DMTB_MONSTER_CIRCLE_button.png')
+    cont = pg.transform.scale(cont,(int(cont.get_width()/2),int(cont.get_height()/2)))
     surf.blit(cont,(int(WINDOWWIDTH-cont.get_width()),int(WINDOWHEIGHT-cont.get_height())))
     contRect = cont.get_rect(topleft = (int(WINDOWWIDTH-cont.get_width()),int(WINDOWHEIGHT-cont.get_height())))
 
@@ -373,8 +373,10 @@ def monsterStatCard(args):
     pg.display.update()
     if contKey == 'crNumbers':
         surfs = [DISPLAYSURF,backRects,'monsterCRStats',[0,gridShift,contKey],fullMonsterNames,monsterNames]
+        #keys = [contKey,contKey]
     else:
         surfs = [DISPLAYSURF,fullMonsterNames,monsterNames,backRects,[0,gridShift,contKey],'monsterStats']
     rects = [contRect]
-    keys = [contKey,'monsters']
+    #keys = [contKey,'monsters']
+    keys = ['monsters',contKey]
     return(surfs,rects,keys)

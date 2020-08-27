@@ -155,8 +155,8 @@ def spellCard(SURFS):
         pass
 
 
-    cont = pg.image.load('images/music_Button.png')
-    cont = pg.transform.scale(cont,(int(cont.get_width()/8),int(cont.get_height()/8)))
+    cont = pg.image.load('images/tools/DMTB_SPELLS_CIRCLE_button.png')
+    cont = pg.transform.scale(cont,(int(cont.get_width()/2),int(cont.get_height()/2)))
     surf.blit(cont,(int(WINDOWWIDTH-cont.get_width()),int(WINDOWHEIGHT-cont.get_height())))
     contRect = cont.get_rect(topleft = (int(WINDOWWIDTH-cont.get_width()),int(WINDOWHEIGHT-cont.get_height())))
 
@@ -164,5 +164,5 @@ def spellCard(SURFS):
     pg.display.update()
     surfs = [DISPLAYSURF,backRects,'spellStats',spellNames,spellSelected,[0,gridShift]]
     rects = [contRect]
-    keys = ['levelNumbers','spells']
+    keys = ['spells','levelNumbers']
     return(surfs,rects,keys)

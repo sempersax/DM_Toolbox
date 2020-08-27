@@ -80,7 +80,7 @@ def main():
         "region" : None,
         #Spell Keys
         "spells" : spNav.createSpell,
-        "class" : spNav.createClasses,
+        #"class" : spNav.createClasses,
         "levels" : spNav.createLevels,
         "levelNumbers" : spNav.spellLevelFilter,
         "spellLeft" : spNav.spellLevelFilter,
@@ -139,22 +139,22 @@ def main():
 
         if KEY != KEYOLD:
             surfs.append(pos)
-##            try:
-            surfs, rects, KEYS = dispatcher[KEY](surfs)
-            DISPLAYSURF = surfs[0]
+            try:
+                surfs, rects, KEYS = dispatcher[KEY](surfs)
+                DISPLAYSURF = surfs[0]
 
                 
-            if KEY != 'menu':
-                DISPLAYSURF, menRect = menGen.reachMenu(DISPLAYSURF)
-                surfs[0], backRect = toolNav.createBack(surfs)
-                surfs[0], miniKeys, miniRects = toolNav.createMiniTools(surfs,KEY)
-                KEYS.append('menu')
-                KEYS = KEYS+miniKeys
-                rects = rects + backRect+menRect+miniRects
-##            except:
-##                print(KEY)
-##                print("Unexpected error:", sys.exc_info()[0])
-##                pass
+                if KEY != 'menu':
+                    DISPLAYSURF, menRect = menGen.reachMenu(DISPLAYSURF)
+                    surfs[0], backRect = toolNav.createBack(surfs)
+                    surfs[0], miniKeys, miniRects = toolNav.createMiniTools(surfs,KEY)
+                    KEYS.append('menu')
+                    KEYS = KEYS+miniKeys
+                    rects = rects + backRect+menRect+miniRects
+            except:
+                print(KEY)
+                print("Unexpected error:", sys.exc_info()[0])
+                pass
             pg.display.update()
         KEYOLD = KEY
         #print(keyold,key)
