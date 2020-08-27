@@ -198,8 +198,8 @@ def name(SURFS):
     surf.blit(raceText,(int(scroll.get_width()//2-raceText.get_width()//2),int(scroll.get_height()/8+2*raceText.get_height())))
     surf.blit(genText,(int(scroll.get_width()//2-genText.get_width()//2),int(scroll.get_height()/8+3*raceText.get_height())))
     surf.blit(nameText,(int(scroll.get_width()//2-nameText.get_width()//2),int(scroll.get_height()/8+3*raceText.get_height()+genText.get_height())))
-    cont = pg.image.load('images/music_Button.png')
-    cont = pg.transform.scale(cont,(int(cont.get_width()/8),int(cont.get_height()/8)))
+    cont = pg.image.load('images/tools/DMTB_NPC_CIRCLE_button.png')
+    cont = pg.transform.scale(cont,(int(cont.get_width()/2),int(cont.get_height()/2)))
     surf.blit(cont,(int(WINDOWWIDTH-cont.get_width()),int(WINDOWHEIGHT-cont.get_height())))
     contRect = cont.get_rect(topleft = (int(WINDOWWIDTH-cont.get_width()),int(WINDOWHEIGHT-cont.get_height())))
 
