@@ -92,7 +92,12 @@ def main():
         "letter" : monNav.monsterLetterFilter,
         "right" : monNav.monsterLetterFilter,
         "left" : monNav.monsterLetterFilter,
-        "monsterStats" : mc.monsterStatCard
+        "monsterStats" : mc.monsterStatCard,
+        "cr" : monNav.CRSelector,
+        "crNumbers" : monNav.monsterCRFilter,
+        "monstCRRight" : monNav.monsterCRFilter,
+        "monstCRLeft" : monNav.monsterCRFilter,
+        "monstDesc" : mc.monsterStatCard
         }
     KEYOLD = ''
     BACKKEY = ''
@@ -122,7 +127,7 @@ def main():
                 for i in range(0, len(rects)):
                     if rects[i].collidepoint(event.pos):
                         KEY = KEYS[i]
-                        if KEY == 'right' or KEY == 'left' or KEY == 'spellRight' or KEY == 'spellLeft':
+                        if 'ight' in KEY or 'eft' in KEY:
                             KEYOLD = ''
             if event.type == pg.VIDEORESIZE:
                 WINDOWWIDTH, WINDOWHEIGHT = event.size
@@ -134,22 +139,22 @@ def main():
 
         if KEY != KEYOLD:
             surfs.append(pos)
-            try:
-                surfs, rects, KEYS = dispatcher[KEY](surfs)
-                DISPLAYSURF = surfs[0]
+##            try:
+            surfs, rects, KEYS = dispatcher[KEY](surfs)
+            DISPLAYSURF = surfs[0]
 
                 
-                if KEY != 'menu':
-                    DISPLAYSURF, menRect = menGen.reachMenu(DISPLAYSURF)
-                    surfs[0], backRect = toolNav.createBack(surfs)
-                    surfs[0], miniKeys, miniRects = toolNav.createMiniTools(surfs,KEY)
-                    KEYS.append('menu')
-                    KEYS = KEYS+miniKeys
-                    rects = rects + backRect+menRect+miniRects
-            except:
-                print(KEY)
-                pass
-            print(KEYS)
+            if KEY != 'menu':
+                DISPLAYSURF, menRect = menGen.reachMenu(DISPLAYSURF)
+                surfs[0], backRect = toolNav.createBack(surfs)
+                surfs[0], miniKeys, miniRects = toolNav.createMiniTools(surfs,KEY)
+                KEYS.append('menu')
+                KEYS = KEYS+miniKeys
+                rects = rects + backRect+menRect+miniRects
+##            except:
+##                print(KEY)
+##                print("Unexpected error:", sys.exc_info()[0])
+##                pass
             pg.display.update()
         KEYOLD = KEY
         #print(keyold,key)

@@ -30,9 +30,8 @@ def monsterLetterFilter(SURFS):
     WINDOWHEIGHT = surf.get_height()
 
 
-    if prevKey == 'alphabet' or prevKey == 'letters':
+    if prevKey == 'alphabet' or prevKey == 'letter':
         shift = SURFS[4]
-        print('shift = ', shift)
 
     if prevKey == 'alphabet':
         for i in range(0, len(letters)):
@@ -40,8 +39,7 @@ def monsterLetterFilter(SURFS):
                 monsterNames = monsterNames[i]
     if prevKey == 'monsterStats':
         shift = SURFS[4][0]
-        print(monsterNames)
-        print('shift = ', shift)
+
 
     FONT = pg.font.Font('fonts/GimletSSK.ttf', 16)
 
@@ -121,7 +119,7 @@ def monsterLetterFilter(SURFS):
         keys.append('left')
     
     keys.append("alphabet")
-    surfs = [surf,fullMonsterNames,monsterNames,rects,shift,'letters',grid*shift]
+    surfs = [surf,fullMonsterNames,monsterNames,rects,shift,'letter',grid*shift]
     return(surfs,rects, keys)
 
 def AZSelector(SURFS):
@@ -160,6 +158,170 @@ def AZSelector(SURFS):
     keys.append('monsters')
     return(surfs,rects,keys)
 
+def CRSelector(SURFS):
+    pg.init()
+    surf = SURFS[0]
+    WINDOWWIDTH = surf.get_width()
+    WINDOWHEIGHT = surf.get_height()
+    monstSurf = pg.image.load('images/DMTB_MONSTERS_screen.jpg')
+    monstSurf = pg.transform.scale(monstSurf, (WINDOWWIDTH,WINDOWHEIGHT))
+    
+    surf.fill((0,0,0))
+    surf.blit(monstSurf,(0,0))
+
+    cwd = os.getcwd()
+    mypath = "{}/images/filters/NUMBERS/".format(cwd)
+    myNumbers = [f for f in os.listdir(mypath) if os.path.isfile(os.path.join(mypath,f))]
+    rects = []
+    surfs = []
+    height = surf.get_height()
+    shift = 0
+    yedge = surf.get_height()//6
+    xedge = surf.get_width()//6-70
+    j=0
+    for i in range(0,len(myNumbers)):
+        surfs.append(pg.image.load(mypath+myNumbers[i]))
+        if int(3* yedge+surfs[i].get_height()*(1/8 +i-j )) > surf.get_height():
+            shift +=1
+            j = i
+        rects.append(surfs[i].get_rect(topleft = (int(xedge+surfs[i].get_width()*(1/8 +shift )), int(yedge+surfs[i].get_height()*(1/8+i-j)))))
+        surf.blit(surfs[i],(int(xedge+surfs[i].get_width()*(1/8 +shift )), int(yedge+surfs[i].get_height()*(1/8+i-j))))
+
+    surfs = [surf, rects, 'cr',0]
+    keys = ['crNumbers']*len(rects)
+    keys.append('monsters')
+    return(surfs,rects,keys)
+
+#Displays monsters based on CR
+def monsterCRFilter(SURFS):
+    pg.init()
+    surf = SURFS[0]
+    levels = SURFS[1]
+    keyPrev = SURFS[2]
+    pos = SURFS[-1]
+    shift = SURFS[3]
+    WINDOWWIDTH = surf.get_width()
+    WINDOWHEIGHT = surf.get_height()
+
+
+    if keyPrev == 'cr':
+        for i in range(0, len(levels)):
+            if levels[i].collidepoint(pos):
+                monstLevel = int(i)
+        monstNames = []
+        rosterPath = "{}/MonsterScrape/monsterRoster.txt".format(os.getcwd())
+        with open(rosterPath, 'r') as roster:
+            for line in roster:
+                currentPlace = line[:-1].split(',')
+                currentPlace[0] = currentPlace[0].replace('[','').replace(']','').replace("'","").replace('"','')
+                currentPlace[1] = currentPlace[1].replace('[','').replace(']','').replace("'","").replace(' ','').replace('l','1').replace('"','')
+                currentPlace[-1] = currentPlace[-1].replace('[','').replace(']','').replace("'","").replace(' ','').replace('l','1').replace('"','')
+                if '/' in currentPlace[-1]:
+                    currentPlace[-1] = currentPlace[-1].split('/')
+                    currentPlace[-1] = int(currentPlace[-1][0]) / int(currentPlace[-1][1])
+
+                currentPlace[-1] = int(currentPlace[-1])
+                if currentPlace[-1] == monstLevel:
+                    monstNames.append(currentPlace[0])
+
+    if keyPrev == 'crNumbers':
+        monstNames = SURFS[4]
+
+    if keyPrev == 'monstStats':
+        shift = SURFS[3][0]
+        monstNames = SURFS[4]
+
+    if keyPrev == 'monsterCRStats':
+        shift = SURFS[3][0]
+        monstNames = SURFS[4]
+        
+
+    FONT = pg.font.Font('fonts/GimletSSK.ttf', 16)
+
+    monstSurf = pg.image.load('images/DMTB_MONSTERS_screen.jpg')
+    monstSurf = pg.transform.scale(monstSurf, (WINDOWWIDTH,WINDOWHEIGHT))
+    surf.fill((0,0,0))
+    surf.blit(monstSurf,(0,0))
+    
+    template = pg.image.load('images/blank_button.png')
+    template = pg.transform.scale(template, (int(template.get_width()/8),int(template.get_height()/8)))
+
+    rightButton = pg.image.load('images/forward-circle_button.png')
+    rightButton = pg.transform.scale(rightButton,(int(rightButton.get_width()/2),int(rightButton.get_height()/2)))
+    
+    leftButton = pg.image.load('images/back-circle_button.png')
+    leftButton = pg.transform.scale(leftButton,(int(leftButton.get_width()/2),int(leftButton.get_height()/2)))
+
+    rects = []
+    surfs = []
+    names = []
+    columns =int((WINDOWWIDTH-200)//200)
+    rows = int((WINDOWHEIGHT-100)//100)
+    grid = columns * rows
+
+    if grid *(1+shift) < len(monstNames):
+        rightRect = rightButton.get_rect(topleft = (int(surf.get_width()-1.5*rightButton.get_width()),int(surf.get_height()//2-rightButton.get_height()/2-20)))
+        surf.fill((0,0,0))
+        surf.blit(monstSurf,(0,0))
+
+        surf.blit(rightButton,(int(surf.get_width()-1.5*rightButton.get_width()),int(surf.get_height()//2-rightButton.get_height()/2-20)))
+        if rightRect.collidepoint(pos):
+            shift += 1
+
+    if shift > 0:
+        leftRect = leftButton.get_rect(topleft = (int(.25*leftButton.get_width()),int(surf.get_height()//2-leftButton.get_height()/2-20)))
+        surf.fill((0,0,0))
+        surf.blit(monstSurf,(0,0))
+
+
+        surf.blit(leftButton,(int(0.25*leftButton.get_width()),int(surf.get_height()//2-leftButton.get_height()/2-20)))
+        if leftRect.collidepoint(pos):
+            rightRect = rightButton.get_rect(topleft = (int(surf.get_width()-1.5*rightButton.get_width()),int(surf.get_height()//2-rightButton.get_height()/2-20)))
+            surf.blit(rightButton,(int(surf.get_width()-1.5*rightButton.get_width()),int(surf.get_height()//2-rightButton.get_height()/2-20)))
+
+            shift -=1
+        if shift == 0:
+            surf.fill((0,0,0))
+            surf.blit(monstSurf,(0,0))
+        if grid *(1+shift) < len(monstNames):
+            surf.blit(rightButton,(int(surf.get_width()-1.5*rightButton.get_width()),int(surf.get_height()//2-rightButton.get_height()/2-20)))
+        
+
+
+    amount = 0
+    for i in range(0,columns):
+        for j in range(0,rows):
+            amount+=1
+            if i*rows+j+grid*shift > len(monstNames)-1:
+                amount -= 1
+                break
+            names.append(FONT.render(monstNames[i*rows+j+grid*shift],True,[237,190,141],None))
+            surfs.append(template)
+            rects.append(surfs[i*rows+j].get_rect(topleft = (int(70+surfs[i*rows+j].get_width()*(1/8+i)),int(70+surfs[i*rows+j].get_height()*(1/8+j)))))
+            surf.blit(surfs[i*rows+j],(int(70+surfs[i*rows+j].get_width()*(1/8+i)),int(70+surfs[i*rows+j].get_height()*(1/8+j))))
+            surf.blit(names[i*rows+j], (int(-names[i*rows+j].get_width()//2+95+surfs[i*rows+j].get_width()*(1/2+i)),int(70+surfs[i*rows+j].get_height()*(1/2+j))))
+
+
+
+    monstNamesShort = monstNames[grid*shift:amount*(grid*shift+1)]
+    keys = ["monstDesc"]*(amount)
+
+    if grid *(1+shift) < len(monstNames):
+        rects.append(rightRect)
+        keys.append('monstCRRight')
+
+    if shift > 0:
+        rects.append(leftRect)
+        keys.append('monstCRLeft')
+    
+    keys.append("cr")
+    surfs = [surf,rects,"crNumbers",shift,monstNames,monstNamesShort,0]
+    #surfs = [surf,monstNames,monstNamesShort,rects,shift,'letters',grid*shift]
+    return(surfs,rects, keys)
+
+
+
+# Creates the main hub for navigating monster stuff
 def createMonster(SURFS):
     pg.init()
     surf = SURFS[0]
@@ -204,7 +366,7 @@ def createMonster(SURFS):
 
     CRSurf = pg.image.load('images/filters/CR_Button.png')
     CRSurf = pg.transform.scale(CRSurf, (int(CRSurf.get_width()/8),int(CRSurf.get_height()/8)))
-    CRRect = searchSurf.get_rect(topleft = (int(CRSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(CRSurf.get_height()/2)))
+    CRRect = searchSurf.get_rect(topleft = (surf.get_width()-int(CRSurf.get_width()*6/5), int(WINDOWHEIGHT/4) - int(searchSurf.get_height()/2)))
 
     monstSurf = pg.image.load('images/DMTB_MONSTERS_screen.jpg')
     monstSurf = pg.transform.scale(monstSurf, (WINDOWWIDTH,WINDOWHEIGHT))

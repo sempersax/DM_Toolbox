@@ -12,20 +12,38 @@ from pygame.locals import *
 ##WINDOWHEIGHT = 650
 ##FPS = 30
 
-def monsterStatCard(SURFS):
+def monsterStatCard(args):
+    if 'crNumbers' in args[2] or 'monsterCRStats' in args[2]:
+        SURFS = [None]*7
+        SURFS[0] = args[0]
+        SURFS[1] = args[4]
+        SURFS[2] = args[5]
+        SURFS[3] = args[1]
+        SURFS[4] = args[3]
+        SURFS[5] = args[2]
+        SURFS[6] = args[6]
+        SURFS.append(args[-1])
+    else:
+        SURFS = args
+
+
     pg.init()
     surf = SURFS[0]
     fullMonsterNames = SURFS[1]
     monsterNames = SURFS[2]
     backRects = SURFS[3]
     prevKey = SURFS[5]
-    if prevKey == 'letters':
+    if prevKey == 'letter' or prevKey == 'crNumbers':
         gridShift = SURFS[6]
         oldShift = SURFS[4]
-    if prevKey == 'monsterStats':
+        contKey = prevKey
+    if prevKey == 'monsterStats' or prevKey == 'monsterCRStats':
         gridShift = SURFS[4][1]
         oldShift = SURFS[4][0]
+        contKey = SURFS[4][2]
     pos = SURFS[-1]
+
+
 
     for i in range(0,len(backRects)):
         if backRects[i].collidepoint(pos):
@@ -55,15 +73,10 @@ def monsterStatCard(SURFS):
         data['monsterLanguages'] = data['monsterLanguages'].replace('Languages','')
         data['monsterChallenge'] = data['monsterChallenge'].replace('Challenge','')
         data['monsterSenses'] = data['monsterSenses'].replace('Senses','')
-    #print(data)
-##    global WINDOWHEIGHT, WINDOWWIDTH,FPSCLOCK
+        
     FPSCLOCK = pg.time.Clock()
-##    DISPLAYSURF = pg.display.set_mode((WINDOWWIDTH,WINDOWHEIGHT),HWSURFACE | DOUBLEBUF|RESIZABLE)
-##    DISPLAYSURF = pg.display.set_mode((0,0), pg.FULLSCREEN)
-##    pg.display.set_caption('Card Tester')
-##    pg.display.update()
     screen = pg.image.load('images/character_scroll.png')
-    screen = pg.transform.scale(screen,(WINDOWWIDTH, WINDOWHEIGHT))#(int(screen.get_width()*1.6),int(screen.get_height()*1.15)))
+    screen = pg.transform.scale(screen,(WINDOWWIDTH, WINDOWHEIGHT))
     image = pg.image.load('images/DMTB_MONSTERS_screen.jpg')
     image = pg.transform.smoothscale(image,(WINDOWWIDTH, WINDOWHEIGHT))
 
@@ -358,8 +371,10 @@ def monsterStatCard(SURFS):
 
 
     pg.display.update()
-    print(SURFS[4])
-    surfs = [DISPLAYSURF,fullMonsterNames,monsterNames,backRects,[0,gridShift],'monsterStats']
+    if contKey == 'crNumbers':
+        surfs = [DISPLAYSURF,backRects,'monsterCRStats',[0,gridShift,contKey],fullMonsterNames,monsterNames]
+    else:
+        surfs = [DISPLAYSURF,fullMonsterNames,monsterNames,backRects,[0,gridShift,contKey],'monsterStats']
     rects = [contRect]
-    keys = ['letter','monsters']
+    keys = [contKey,'monsters']
     return(surfs,rects,keys)

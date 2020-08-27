@@ -94,7 +94,7 @@ def createMiniTools(SURFS,choice):
     if choice == 'music' or choice == 'tavern' or choice == 'battle' or choice == 'region':
         buttons.remove(buttons[1])
         miniKeys.remove(miniKeys[1])
-    if choice == 'monsters' or choice == 'alphabet' or choice == 'letter' or choice == 'right' or choice == 'left' or choice == 'monsterStats' or choice == 'cr':
+    if choice == 'monsters' or choice == 'alphabet' or choice == 'letter' or choice == 'right' or choice == 'left' or choice == 'monsterStats' or choice == 'cr' or choice == 'search' or choice == 'crNumbers' or choice == 'monstCRRight' or choice == 'monstCRLeft' or choice == 'monstDesc':
         buttons.remove(buttons[3])
         miniKeys.remove(miniKeys[3])
     rects = []
@@ -102,7 +102,6 @@ def createMiniTools(SURFS,choice):
         surf.blit(buttons[i], (int(buttons[i].get_width()*(1.5+i)),0))
         rects.append(buttons[i].get_rect(topleft = (int(buttons[i].get_width()*(1.5+i)),0)))
 
-    print(miniKeys)
 
     return(surf,miniKeys,rects)
     
