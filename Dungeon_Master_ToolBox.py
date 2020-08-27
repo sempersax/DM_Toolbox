@@ -149,7 +149,7 @@ def main():
             except:
                 print(KEY)
                 pass
-            print(KEYS)
+            #print(KEYS)
             pg.display.update()
         KEYOLD = KEY
         #print(keyold,key)

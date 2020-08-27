@@ -102,7 +102,6 @@ def createMiniTools(SURFS,choice):
         surf.blit(buttons[i], (int(buttons[i].get_width()*(1.5+i)),0))
         rects.append(buttons[i].get_rect(topleft = (int(buttons[i].get_width()*(1.5+i)),0)))
 
-    print(miniKeys)
 
     return(surf,miniKeys,rects)
     
