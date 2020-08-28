@@ -172,7 +172,6 @@ def spellLevelFilter(SURFS):
     rows = int((WINDOWHEIGHT-100)//100)
     grid = columns * rows
 
-    print(shift)
     
     if grid *(1+shift) < len(spellNames):
         rightRect = rightButton.get_rect(topleft = (int(surf.get_width()-1.5*rightButton.get_width()),int(surf.get_height()//2-rightButton.get_height()/2-20)))

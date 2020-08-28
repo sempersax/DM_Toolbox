@@ -80,7 +80,7 @@ def main():
         "region" : None,
         #Spell Keys
         "spells" : spNav.createSpell,
-        "class" : spNav.createClasses,
+        #"class" : spNav.createClasses,
         "levels" : spNav.createLevels,
         "levelNumbers" : spNav.spellLevelFilter,
         "spellLeft" : spNav.spellLevelFilter,
@@ -92,7 +92,12 @@ def main():
         "letter" : monNav.monsterLetterFilter,
         "right" : monNav.monsterLetterFilter,
         "left" : monNav.monsterLetterFilter,
-        "monsterStats" : mc.monsterStatCard
+        "monsterStats" : mc.monsterStatCard,
+        "cr" : monNav.CRSelector,
+        "crNumbers" : monNav.monsterCRFilter,
+        "monstCRRight" : monNav.monsterCRFilter,
+        "monstCRLeft" : monNav.monsterCRFilter,
+        "monstDesc" : mc.monsterStatCard
         }
     KEYOLD = ''
     BACKKEY = ''
@@ -122,7 +127,7 @@ def main():
                 for i in range(0, len(rects)):
                     if rects[i].collidepoint(event.pos):
                         KEY = KEYS[i]
-                        if KEY == 'right' or KEY == 'left' or KEY == 'spellRight' or KEY == 'spellLeft':
+                        if 'ight' in KEY or 'eft' in KEY:
                             KEYOLD = ''
             if event.type == pg.VIDEORESIZE:
                 WINDOWWIDTH, WINDOWHEIGHT = event.size
@@ -148,8 +153,9 @@ def main():
                     rects = rects + backRect+menRect+miniRects
             except:
                 print(KEY)
+                print("Unexpected error:", sys.exc_info()[0])
                 pass
-            #print(KEYS)
+
             pg.display.update()
         KEYOLD = KEY
         #print(keyold,key)
