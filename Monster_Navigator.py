@@ -18,27 +18,27 @@ from operator import itemgetter
 ##WINDOWHEIGHT = 629
 ##WINDOWWIDTH = 1000
 
-def monsterLetterFilter(SURFS):
+def monsterLetterFilter(arguments):
     pg.init()
-    surf = SURFS[0]
-    fullMonsterNames = SURFS[1]
-    monsterNames = SURFS[2]
-    letters = SURFS[3]
-    prevKey = SURFS[5]
-    pos = SURFS[-1]
+    surf = arguments['surf']
+    fullMonsterNames = arguments['fullMonsters']
+    monsterNames = arguments['monsters']
+    letters = arguments['letters']
+    prevKey = arguments['prevKey']
+    pos = arguments['pos']
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
 
 
     if prevKey == 'alphabet' or prevKey == 'letter':
-        shift = SURFS[4]
+        shift = arguments['shift']
 
     if prevKey == 'alphabet':
         for i in range(0, len(letters)):
             if letters[i].collidepoint(pos):
                 monsterNames = monsterNames[i]
     if prevKey == 'monsterStats':
-        shift = SURFS[4][0]
+        shift = arguments['shift']
 
 
     FONT = pg.font.Font('fonts/GimletSSK.ttf', 16)
@@ -119,13 +119,19 @@ def monsterLetterFilter(SURFS):
         keys.append('left')
     
     keys.append("alphabet")
-    surfs = [surf,fullMonsterNames,monsterNames,rects,shift,'letter',grid*shift]
-    return(surfs,rects, keys)
+    arguments['surf'] = surf
+    arguments['monsters'] = monsterNames
+    arguments['shift'] = shift
+    arguments['prevKey'] = 'letter'
+    arguments['monstRects'] = rects
+    arguments['gridShift'] = grid*shift  
+    return(rects,keys)
 
-def AZSelector(SURFS):
+
+def AZSelector(arguments):
     pg.init()
-    surf = SURFS[0]
-    monsterNames = SURFS[1]
+    surf = arguments['surf']
+    monsterNames = arguments['fullMonsters']
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
 
@@ -153,14 +159,20 @@ def AZSelector(SURFS):
         rects.append(surfs[i].get_rect(topleft = (int(xedge+surfs[i].get_width()*(1/8 +shift )), int(yedge+surfs[i].get_height()*(1/8+i-j)))))
         surf.blit(surfs[i],(int(xedge+surfs[i].get_width()*(1/8 +shift )), int(yedge+surfs[i].get_height()*(1/8+i-j))))
 
-    surfs = [surf,monsterNames, monsterNames,rects,0,'alphabet']
+    arguments['surf'] = surf
+    arguments['monsters'] = monsterNames
+    arguments['fullMonsters'] = monsterNames
+    arguments['letters'] = rects
+    arguments['prevKey'] = 'alphabet'
+    arguments['shift'] = 0
     keys = ['letter']*len(rects)
     keys.append('monsters')
-    return(surfs,rects,keys)
+    return(rects,keys)
 
-def CRSelector(SURFS):
+
+def CRSelector(arguments):
     pg.init()
-    surf = SURFS[0]
+    surf = arguments['surf']
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
     monstSurf = pg.image.load('images/DMTB_MONSTERS_screen.jpg')
@@ -187,19 +199,23 @@ def CRSelector(SURFS):
         rects.append(surfs[i].get_rect(topleft = (int(xedge+surfs[i].get_width()*(1/8 +shift )), int(yedge+surfs[i].get_height()*(1/8+i-j)))))
         surf.blit(surfs[i],(int(xedge+surfs[i].get_width()*(1/8 +shift )), int(yedge+surfs[i].get_height()*(1/8+i-j))))
 
-    surfs = [surf, rects, 'cr',0]
+    arguments['surf'] = surf
+    arguments['numbers'] = rects
+    arguments['shift'] = 0
+    arguments['prevKey'] = 'cr'
     keys = ['crNumbers']*len(rects)
     keys.append('monsters')
-    return(surfs,rects,keys)
+    return(rects,keys)
+
 
 #Displays monsters based on CR
-def monsterCRFilter(SURFS):
+def monsterCRFilter(arguments):
     pg.init()
-    surf = SURFS[0]
-    levels = SURFS[1]
-    keyPrev = SURFS[2]
-    pos = SURFS[-1]
-    shift = SURFS[3]
+    surf = arguments['surf']
+    levels = arguments['numbers']
+    keyPrev = arguments['prevKey']
+    pos = arguments['pos']
+    shift = arguments['shift']
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
 
@@ -225,16 +241,12 @@ def monsterCRFilter(SURFS):
                     monstNames.append(currentPlace[0])
 
     if keyPrev == 'crNumbers':
-        monstNames = SURFS[4]
+        monstNames = arguments['monsters']
 
-    if keyPrev == 'monstStats':
-        shift = SURFS[3][0]
-        monstNames = SURFS[4]
+    if keyPrev == 'monsterStats':
+        shift = arguments['shift']
+        monstNames = arguments['monsters']
 
-    if keyPrev == 'monsterCRStats':
-        shift = SURFS[3][0]
-        monstNames = SURFS[4]
-        
 
     FONT = pg.font.Font('fonts/GimletSSK.ttf', 16)
 
@@ -286,8 +298,6 @@ def monsterCRFilter(SURFS):
         if grid *(1+shift) < len(monstNames):
             surf.blit(rightButton,(int(surf.get_width()-1.5*rightButton.get_width()),int(surf.get_height()//2-rightButton.get_height()/2-20)))
         
-
-
     amount = 0
     for i in range(0,columns):
         for j in range(0,rows):
@@ -315,16 +325,19 @@ def monsterCRFilter(SURFS):
         keys.append('monstCRLeft')
     
     keys.append("cr")
-    surfs = [surf,rects,"crNumbers",shift,monstNames,monstNamesShort,0]
-    #surfs = [surf,monstNames,monstNamesShort,rects,shift,'letters',grid*shift]
-    return(surfs,rects, keys)
-
+    arguments['surf'] = surf
+    arguments['monstRects'] = rects
+    arguments['prevKey'] = 'crNumbers'
+    arguments['shift'] = shift
+    arguments['monsters'] = monstNames
+    arguments['gridShift'] = grid*shift
+    return(rects, keys)
 
 
 # Creates the main hub for navigating monster stuff
-def createMonster(SURFS):
+def createMonster(arguments):
     pg.init()
-    surf = SURFS[0]
+    surf = arguments['surf']
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
 
@@ -376,7 +389,9 @@ def createMonster(SURFS):
     surf.blit(AZSurf, (surf.get_width()/2-int(AZSurf.get_width()/2), int(WINDOWHEIGHT/3*2) - int(AZSurf.get_height()/2)))
     surf.blit(CRSurf, (surf.get_width()-int(CRSurf.get_width()*6/5), int(WINDOWHEIGHT/4) - int(searchSurf.get_height()/2)))
 
-    surfs = [surf, alphaCR]
     rects = [searchRect, AZRect, CRRect]
     keys = ['search', 'alphabet', 'cr', 'quest']
-    return(surfs, rects, keys)
+    arguments['surf'] = surf
+    arguments['fullMonsters'] = alphaCR
+    arguments['monsters'] = alphaCR
+    return(rects, keys)

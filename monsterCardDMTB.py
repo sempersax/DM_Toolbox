@@ -8,40 +8,16 @@ import pygame.surfarray as surfarray
 from pygame.locals import *
 
 
-##WINDOWWIDTH = 1000
-##WINDOWHEIGHT = 650
-##FPS = 30
-
-def monsterStatCard(args):
-    if 'crNumbers' in args[2] or 'monsterCRStats' in args[2]:
-        SURFS = [None]*7
-        SURFS[0] = args[0]
-        SURFS[1] = args[4]
-        SURFS[2] = args[5]
-        SURFS[3] = args[1]
-        SURFS[4] = args[3]
-        SURFS[5] = args[2]
-        SURFS[6] = args[6]
-        SURFS.append(args[-1])
-    else:
-        SURFS = args
-
-
+def monsterStatCard(arguments):
     pg.init()
-    surf = SURFS[0]
-    fullMonsterNames = SURFS[1]
-    monsterNames = SURFS[2]
-    backRects = SURFS[3]
-    prevKey = SURFS[5]
-    if prevKey == 'letter' or prevKey == 'crNumbers':
-        gridShift = SURFS[6]
-        oldShift = SURFS[4]
-        contKey = prevKey
-    if prevKey == 'monsterStats' or prevKey == 'monsterCRStats':
-        gridShift = SURFS[4][1]
-        oldShift = SURFS[4][0]
-        contKey = SURFS[4][2]
-    pos = SURFS[-1]
+    surf = arguments['surf']
+    monsterNames = arguments['monsters']
+    backRects = arguments['monstRects']
+    prevKey = arguments['prevKey']
+    oldShift = arguments['shift']
+    gridShift = arguments['gridShift']
+    contKey = arguments['prevKey']
+    pos = arguments['pos']
 
 
 
@@ -51,7 +27,6 @@ def monsterStatCard(args):
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
     DISPLAYSURF = surf
-
     TITLE = pg.font.Font('fonts/GimletSSK.ttf',24)
     SUBTITLE = pg.font.Font('fonts/GimletSSK.ttf',20)
     FONT1 = pg.font.Font('fonts/GimletSSK.ttf', 18)
@@ -371,12 +346,8 @@ def monsterStatCard(args):
 
 
     pg.display.update()
-    if contKey == 'crNumbers':
-        surfs = [DISPLAYSURF,backRects,'monsterCRStats',[0,gridShift,contKey],fullMonsterNames,monsterNames]
-        #keys = [contKey,contKey]
-    else:
-        surfs = [DISPLAYSURF,fullMonsterNames,monsterNames,backRects,[0,gridShift,contKey],'monsterStats']
     rects = [contRect]
-    #keys = [contKey,'monsters']
     keys = ['monsters',contKey]
-    return(surfs,rects,keys)
+    arguments['surf'] = surf
+    arguments['prevKey'] = 'monsterStats'
+    return(rects,keys)

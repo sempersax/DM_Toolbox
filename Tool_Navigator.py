@@ -9,9 +9,9 @@ import numpy as np
 import pygame.surfarray as surfarray
 from pygame.locals import *
 
-def createTools(SURFS):
+def createTools(arguments):
     pg.init()
-    surf = SURFS[0]
+    surf = arguments['surf']
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
     buttonFiles = os.listdir('images/tools')
@@ -48,13 +48,16 @@ def createTools(SURFS):
 
     rects = [charRect,musicRect,spellRect,monstRect]
     keys = ['characters', 'music', 'spells', 'monsters','menu']
-    surfs = [surf]
-    return(surfs,rects,keys)
+    surfs = {'surf': surf}
+    arguments['surf'] = surf
+    #return(surfs,rects,keys)
+    return(rects,keys)
+
 
 #This is to create a back button, to go back a single screen
-def createBack(SURFS):
+def createBack(arguments):
     pg.init()
-    surf = SURFS[0]
+    surf = arguments['surf']
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
     backButton = pg.image.load('images/back-circle_button.png')
@@ -62,13 +65,17 @@ def createBack(SURFS):
     backRect = backButton.get_rect(topleft =  (int(WINDOWWIDTH-backButton.get_width()*2.7),5))
     surf.blit(backButton, (int(WINDOWWIDTH-backButton.get_width()*2.7),5))
     backRect = [backRect]
-    return(surf,backRect)
+    surfs = {'surf': surf}
+    arguments['surf'] = surf
+    #return(surf,backRect)
+    return(backRect)
 
 # This is to create the other 3 buttons so one can switch categories quickly
 # All 4 are create, but based on choice, one is not blit to the screen
-def createMiniTools(SURFS,choice):
+def createMiniTools(arguments):
     pg.init()
-    surf = SURFS[0]
+    surf = arguments['surf']
+    choice = arguments['choice']
     toolFiles = os.listdir('images/tools')
     circTools = [k for k in toolFiles if 'CIRCLE' in k]
     prefix = ['images/tools/']*len(toolFiles)
@@ -88,7 +95,7 @@ def createMiniTools(SURFS,choice):
     if choice == 'characters' or choice == 'NPC' or choice == 'gender' or choice == 'name' or choice == 'continue' or choice == 'player':
         buttons.remove(buttons[0])
         miniKeys.remove(miniKeys[0])
-    if choice == 'spells' or choice == 'class' or choice == 'levels' or choice == 'levelNumbers' or choice == 'spellLeft' or choice == 'spellRight' or choice == 'spellDesc' or choice == 'classChose':
+    if choice == 'spells' or choice == 'class' or choice == 'levels' or choice == 'levelNumbers' or choice == 'spellLeft' or choice == 'spellRight' or choice == 'spellDesc' or choice == 'classChose' or choice == 'spellClassRight' or choice == 'spellClassLeft':
         buttons.remove(buttons[2])
         miniKeys.remove(miniKeys[2])
     if choice == 'music' or choice == 'tavern' or choice == 'battle' or choice == 'region':
@@ -102,8 +109,10 @@ def createMiniTools(SURFS,choice):
         surf.blit(buttons[i], (int(buttons[i].get_width()*(1.5+i)),0))
         rects.append(buttons[i].get_rect(topleft = (int(buttons[i].get_width()*(1.5+i)),0)))
 
-
-    return(surf,miniKeys,rects)
+    surfs = {'surf': surf}
+    arguments['surf'] = surf
+    #return(surf,miniKeys,rects)
+    return(miniKeys,rects)
     
     
     

@@ -32,22 +32,10 @@ global WINDOWHEIGHT, WINDOWWIDTH
 
 WINDOWWIDTH = 1000
 WINDOWHEIGHT = 629
-##infoObject = pg.display.Info()
-##
-##WINDOWWIDTH = infoObject.current_w
-##WINDOWHEIGHT = infoObject.current_h
+
 FPS = 30
 
 
-## Legend:
-## choice = 0 -> Main Menu
-## choice = 1 -> Tool Screen
-## choice = 2 -> Character Screen
-## choice = 3 -> Music Screen
-## choice = 4 -> Spell Screen
-## choice = 5 -> Monster Screen
-## choice = 6 -> NPC Screen (FROM CHARACTER SCREEN)
-## choice = 7 -> PC Screen (FROM CHARACTER SCREEN)
 
 def main():
     global WINDOWHEIGHT, WINDOWWIDTH,FPSCLOCK
@@ -74,13 +62,16 @@ def main():
         "gender" : npcGen.gender,
         "name" : npcGen.name,
         #Music Keys
-        "music" : musNav.createMusic,
-        "tavern" : musGen.tavernMusic,
-        "battle" : musGen.battleMusic,
+        "music" : None#musNav.createMusic,
+        "tavern" : None#musGen.tavernMusic,
+        "battle" : None#musGen.battleMusic,
         "region" : None,
         #Spell Keys
         "spells" : spNav.createSpell,
-        #"class" : spNav.createClasses,
+        "class" : spNav.createClasses,
+        "classChose": spNav.spellClassFilter,
+        "spellClassLeft": spNav.spellClassFilter,
+        "spellClassRight": spNav.spellClassFilter,
         "levels" : spNav.createLevels,
         "levelNumbers" : spNav.spellLevelFilter,
         "spellLeft" : spNav.spellLevelFilter,
@@ -99,7 +90,10 @@ def main():
         "monstCRLeft" : monNav.monsterCRFilter,
         "monstDesc" : mc.monsterStatCard
         }
-    KEYOLD = ''
+    arguments = {
+        'surf': DISPLAYSURF
+        }
+    KEYOLD = 'menu'
     BACKKEY = ''
     KEY = 'menu'
     KEYS = []
@@ -110,8 +104,10 @@ def main():
         runTime = datetime.datetime.now() - startTime
         elapsed = runTime.total_seconds()
         if  KEY == 'menu' and elapsed >= 3. :
-            surfs, rects, KEYS = dispatcher[KEY](surfs)
-            DISPLAYSURF = surfs[0]
+            arguments['pos'] = pos
+            #arguments, rects, KEYS = dispatcher[KEY](**arguments)
+            rects, KEYS = dispatcher[KEY](arguments)
+            DISPLAYSURF = arguments['surf']
             pg.display.update()
 
             startTime = datetime.datetime.now()
@@ -138,30 +134,32 @@ def main():
                 KEYOLD = ''
 
         if KEY != KEYOLD:
-            surfs.append(pos)
+            arguments['pos']=pos
             try:
-                surfs, rects, KEYS = dispatcher[KEY](surfs)
-                DISPLAYSURF = surfs[0]
+                #arguments, rects, KEYS = dispatcher[KEY](**arguments)
+                rects, KEYS = dispatcher[KEY](arguments)
+
+                DISPLAYSURF = arguments['surf']
 
                 
                 if KEY != 'menu':
-                    DISPLAYSURF, menRect = menGen.reachMenu(DISPLAYSURF)
-                    surfs[0], backRect = toolNav.createBack(surfs)
-                    surfs[0], miniKeys, miniRects = toolNav.createMiniTools(surfs,KEY)
+                    menRect = menGen.reachMenu(arguments)
+                    backRect = toolNav.createBack(arguments)
+                    arguments['choice'] = KEY
+                    miniKeys, miniRects = toolNav.createMiniTools(arguments)
                     KEYS.append('menu')
                     KEYS = KEYS+miniKeys
                     rects = rects + backRect+menRect+miniRects
             except:
                 print(KEY)
                 print("Unexpected error:", sys.exc_info()[0])
-                pass
+                raise
+                #pass
 
             pg.display.update()
         KEYOLD = KEY
-        #print(keyold,key)
 
 def terminate():
-    print('bye bye')
     pg.quit()
     sys.exit()
 

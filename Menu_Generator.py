@@ -10,10 +10,11 @@ from pygame.locals import *
 ##WINDOWHEIGHT = 629
 ##WINDOWWIDTH = 1000
 
-def createMenu(SURFS):
+def createMenu(arguments):
     pg.init()
+    #print(arguments)
     rects = []
-    surf = SURFS[0]
+    surf = arguments['surf']
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
     screenChoice = np.random.randint(1,high = 5)
@@ -29,12 +30,15 @@ def createMenu(SURFS):
     surf.blit(tSurf, (WINDOWWIDTH/2 - int(tSurf.get_width()/2), 10))
     rects = [qRect]
     keys = ['quest']
-    surfs = [surf]
-    
-    return(surfs,rects,keys)
+    surfs = {'surf':surf}
+    arguments['surf'] = surf
+    #return(surfs,rects,keys)
+    return(rects,keys)
 
-def reachMenu(surf):
+
+def reachMenu(arguments):
     pg.init()
+    surf = arguments['surf']
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
     menButton = pg.image.load('images/menu_button.png')
@@ -42,4 +46,6 @@ def reachMenu(surf):
     menRect = menButton.get_rect(topleft = (int(WINDOWWIDTH-menButton.get_width()*1.5),5))
     surf.blit(menButton, (int(WINDOWWIDTH-menButton.get_width()*1.5),5))
     menRect = [menRect]
-    return(surf, menRect)
+    #return(surf, menRect)
+    arguments['surf'] = surf
+    return(menRect)

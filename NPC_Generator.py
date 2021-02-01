@@ -4,9 +4,9 @@ import pygame as pg
 import time
 import NPC_Roster as roster
 #import NPC_Navigator as npcNav
-def race(SURFS):
+def race(arguments):
+    surf = arguments['surf']
     pg.init()
-    surf = SURFS[0]
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
 
@@ -35,14 +35,18 @@ def race(SURFS):
     rects = raceRects
     keys = ['gender']*len(raceRects)
     keys.append('characters')
-    surfs = [surf,raceRects]
-    return(surfs,raceRects,keys)
+    surfs = {'surf':surf,
+             'rects':raceRects}
+    arguments['surf'] = surf
+    arguments['raceRects'] = raceRects
+    #return(surfs,raceRects,keys)
+    return(raceRects,keys)
 
-def gender(SURFS):
+def gender(arguments):
     pg.init()
-    surf = SURFS[0]
-    rects = SURFS[1]
-    pos = SURFS[2]
+    surf = arguments['surf']
+    rects = arguments['raceRects']
+    pos = arguments['pos']
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
     genders = [None]*2
@@ -52,12 +56,15 @@ def gender(SURFS):
         genders[i] = pg.transform.scale(genders[i], (int(genders[i].get_width()/8*WINDOWWIDTH/1000),int(genders[i].get_height()/8*WINDOWHEIGHT/629)))
 
     races = ['DRAGONBORN','DWARF','ELF','GNOME','GOBLIN','HALF-ELF','HALF-ORC','HALFLING','HUMAN','ORC']
-    raceSel = 'None'
-    
-    for i in range(len(rects)):
-        if rects[i].collidepoint(pos):
-            raceSel = races[i]
-        
+
+    try:
+        raceSel = arguments['raceSel']
+    except KeyError:
+        raceSel = 'None'
+        for i in range(len(rects)):
+            if rects[i].collidepoint(pos):
+                raceSel = races[i]
+
     if raceSel != 'None':
         image = pg.image.load('images/navigation_screen.png')
         image = pg.transform.scale(image, (WINDOWWIDTH,WINDOWHEIGHT))
@@ -72,21 +79,37 @@ def gender(SURFS):
         genRects.append(genders[1].get_rect(topleft =(int(WINDOWWIDTH-2*genders[1].get_width()),int(WINDOWHEIGHT/2-genders[1].get_height()/2))))
 
     rectsOld = rects
-    surfs = [surf,rectsOld,pos,raceSel,[genRects,rects],'gender']
+    surfs = {'surf':surf,
+             'rectsOld': rectsOld,
+             'posOld': pos,
+             'pos':pos,
+             'raceSel':raceSel,
+             'rects': genRects,#[genRects,rects],
+             'prevKey':'gender',
+             'pos': pos,
+             'name': []}
     rects = genRects
     keys = ['name']*len(genRects)
     keys.append('NPC')
-    return(surfs,genRects,keys)
+    arguments['surf'] = surf
+    arguments['rectsOld'] = rectsOld
+    arguments['posOld'] = pos
+    arguments['raceSel'] = raceSel
+    arguments['genRects'] = genRects
+    arguments['prevKey'] = 'gender'
+    arguments['name'] = []
+    #return(surfs,genRects,keys)
+    return(genRects,keys)
         
-def name(SURFS):
+def name(arguments):
     pg.init()
-    surf = SURFS[0]
-    rectsOld = SURFS[1]
-    posOld = SURFS[2]
-    raceSel = SURFS[3]
-    rects = SURFS[4][0]
-    prevKey = SURFS[5]
-    pos = SURFS[6]
+    surf = arguments['surf']
+    rectsOld = arguments['rectsOld']
+    posOld = arguments['posOld']
+    raceSel = arguments['raceSel']
+    rects = arguments['genRects']
+    prevKey = arguments['prevKey']
+    pos = arguments['pos']
 
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
@@ -180,8 +203,7 @@ def name(SURFS):
             last = roster.orcLastNames()
 
     if prevKey == 'name':
-        first = SURFS[7][0]
-        last = SURFS[7][1]
+        first, last = arguments['name']
 
     raceText = FONT.render('    RACE: '+raceSel,True,[0,0,0],None)
     genText = FONT.render('GENDER: ' + genderSel, True,[0,0,0],None)
@@ -203,7 +225,22 @@ def name(SURFS):
     surf.blit(cont,(int(WINDOWWIDTH-cont.get_width()),int(WINDOWHEIGHT-cont.get_height())))
     contRect = cont.get_rect(topleft = (int(WINDOWWIDTH-cont.get_width()),int(WINDOWHEIGHT-cont.get_height())))
 
-    surfs = [surf,rectsOld,posOld,raceSel,[rects],'name',pos,[first,last]]
+    surfs = {'surf':surf,
+             'rectsOld':rectsOld,
+             'posOld':posOld,
+             'raceSel':raceSel,
+             'rects':rects,
+             'prevKey':'name',
+             'pos':pos,
+             'name':[first,last]}
     rects = [contRect]
     keys = ['characters','gender']
-    return(surfs, rects, keys)
+    arguments['surf'] = surf
+    arguments['rectsOld'] = rectsOld
+    arguments['posOld'] = posOld
+    arguments['prevKey'] = 'name'
+    arguments['name'] = (first,last)
+    arguments['pos'] = posOld
+                        
+    #return(surfs, rects, keys)
+    return(rects, keys)

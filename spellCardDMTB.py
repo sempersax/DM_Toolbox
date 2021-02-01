@@ -8,28 +8,16 @@ import pygame.surfarray as surfarray
 from pygame.locals import *
 
 
-##WINDOWWIDTH = 1000
-##WINDOWHEIGHT = 650
-##FPS = 30
-
-def spellCard(SURFS):
+def spellCard(arguments):
     pg.init()
-    surf = SURFS[0]
-    backRects = SURFS[1]
-    prevKey = SURFS[2]
-    shift = SURFS[3]
-    pos = SURFS[-1]
-    if prevKey == 'spellDesc':
-        spellNames = SURFS[4]
-        spellSelected = SURFS[5]
-        gridShift = SURFS[6]
-        oldShift = SURFS[3]
-    if prevKey == 'spellStats':
-        spellNames = SURFS[3]
-        spellSelected = SURFS[4]
-        gridShift = SURFS[5][1]
-        oldShift = SURFS[5][0]
-    pos = SURFS[-1]
+    surf = arguments['surf']
+    backRects = arguments['spellRects']
+    prevKey = arguments['prevKey']
+    shift = arguments['shift']
+    pos = arguments['pos']
+    spellNames = arguments['spellNames']
+    gridShift = arguments['gridShift']
+    oldShift = arguments['shift']
 
     for i in range(0,len(backRects)):
         if backRects[i].collidepoint(pos):
@@ -117,7 +105,6 @@ def spellCard(SURFS):
 
     
     
-    #print(data['spellEffect'])
     DISPLAYSURF.blit(spellName, (int(screen.get_width()/2-spellName.get_width()/2), int(screen.get_height()/10-40) ))
     DISPLAYSURF.blit(spellName, (int(screen.get_width()/2-spellName.get_width()/2), int(screen.get_height()*9/10-25) ))
     DISPLAYSURF.blit(spellSchool, (int(screen.get_width()/2-spellSchool.get_width()/2), int(screen.get_height()/10-40+spellName.get_height()) ))
@@ -162,7 +149,8 @@ def spellCard(SURFS):
 
 
     pg.display.update()
-    surfs = [DISPLAYSURF,backRects,'spellStats',spellNames,spellSelected,[0,gridShift]]
     rects = [contRect]
-    keys = ['spells','levelNumbers']
-    return(surfs,rects,keys)
+    keys = ['spells',arguments['prevKey']]
+    arguments['surf'] = DISPLAYSURF
+    arguments['prevKey'] = 'spellDesc'
+    return(rects,keys)
