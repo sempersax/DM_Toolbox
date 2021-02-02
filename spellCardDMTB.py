@@ -48,7 +48,7 @@ def spellCard(arguments):
     DISPLAYSURF.fill((0,0,0))
     DISPLAYSURF.blit(image,(0,0))
     DISPLAYSURF.blit(screen, (0,0))
-    spellName = TITLE.render(data['spellName'],True,[146,4,4],None)
+    spellName = TITLE.render(data['spellName'].replace('_',' '),True,[146,4,4],None)
     spellSchool = SUBTITLE.render(data['spellSchool'],True,[0,0,0], None)
 
     spellLevelLabel = FONT1.render('Spell Level: ', True, [146,4,4], None)

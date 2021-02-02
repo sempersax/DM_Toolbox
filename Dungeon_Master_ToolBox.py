@@ -3,22 +3,17 @@
 # This is the main program.  Currently handles all events.
 
 import pygame as pg
-import random
-import os
 import sys
-import numpy as np
 import Menu_Generator as menGen
 import Music_Generator as musGen
 import Music_Controls as musCon
 import Tool_Navigator as toolNav
 import Music_Navigator as musNav
-import pygame.surfarray as surfarray
 import Char_Navigator as charNav
 import NPC_Generator as npcGen
 import PC_Generator as pcGen
 import Spell_Navigator as spNav
 import Monster_Navigator as monNav
-import Image_Loader as imgLoad
 
 import monsterCardDMTB as mc
 import spellCardDMTB as sc
@@ -29,85 +24,81 @@ import datetime
 
 global WINDOWHEIGHT, WINDOWWIDTH
 
-
 WINDOWWIDTH = 1000
 WINDOWHEIGHT = 629
 
 FPS = 30
 
 
-
 def main():
-    global WINDOWHEIGHT, WINDOWWIDTH,FPSCLOCK
+    global WINDOWHEIGHT, WINDOWWIDTH, FPSCLOCK
 
     pg.init()
     pg.mixer.init()
     FPSCLOCK = pg.time.Clock()
-    DISPLAYSURF = pg.display.set_mode((WINDOWWIDTH,WINDOWHEIGHT),HWSURFACE | DOUBLEBUF|RESIZABLE)
-    surfs = [DISPLAYSURF]
+    DISPLAYSURF = pg.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT), HWSURFACE | DOUBLEBUF | RESIZABLE)
+    #  surfs = [DISPLAYSURF]
     pg.display.set_caption('Dungeon Master Toolbox')
     loadingScreen = pg.image.load('images/Loading_screen.jpg')
-    loadingScreen = pg.transform.scale(loadingScreen, (WINDOWWIDTH,WINDOWHEIGHT))
-    DISPLAYSURF.blit(loadingScreen,(0,0))
+    loadingScreen = pg.transform.scale(loadingScreen, (WINDOWWIDTH, WINDOWHEIGHT))
+    DISPLAYSURF.blit(loadingScreen, (0, 0))
     pg.display.update()
-    pos = (0,0)
+    pos = (0, 0)
 
     # This is the heart of the program - all of these key value pairs tell the program which function to call and when
     dispatcher = {
-        "menu" : menGen.createMenu,
-        "quest" : toolNav.createTools,
-        #Character Keys
-        "characters" : charNav.createChar,
-        "NPC" : npcGen.race,
-        "gender" : npcGen.gender,
-        "name" : npcGen.name,
-        #Music Keys
-        "music" : None#musNav.createMusic,
-        "tavern" : None#musGen.tavernMusic,
-        "battle" : None#musGen.battleMusic,
-        "region" : None,
-        #Spell Keys
-        "spells" : spNav.createSpell,
-        "class" : spNav.createClasses,
+        "menu": menGen.createMenu,
+        "quest": toolNav.createTools,
+        # Character Keys
+        "characters": charNav.createChar,
+        "NPC": npcGen.race,
+        "gender": npcGen.gender,
+        "name": npcGen.name,
+        # Music Keys
+        "music":  musNav.createMusic,
+        "tavern": musGen.tavernMusic,
+        "battle": musGen.battleMusic,
+        "region": None,
+        # Spell Keys
+        "spells": spNav.createSpell,
+        "class": spNav.createClasses,
         "classChose": spNav.spellClassFilter,
         "spellClassLeft": spNav.spellClassFilter,
         "spellClassRight": spNav.spellClassFilter,
-        "levels" : spNav.createLevels,
-        "levelNumbers" : spNav.spellLevelFilter,
-        "spellLeft" : spNav.spellLevelFilter,
-        "spellRight" : spNav.spellLevelFilter,
-        "spellDesc" : sc.spellCard,
-        #Monster Keys
-        "monsters" : monNav.createMonster,
-        "alphabet" : monNav.AZSelector,
-        "letter" : monNav.monsterLetterFilter,
-        "right" : monNav.monsterLetterFilter,
-        "left" : monNav.monsterLetterFilter,
-        "monsterStats" : mc.monsterStatCard,
-        "cr" : monNav.CRSelector,
-        "crNumbers" : monNav.monsterCRFilter,
-        "monstCRRight" : monNav.monsterCRFilter,
-        "monstCRLeft" : monNav.monsterCRFilter,
-        "monstDesc" : mc.monsterStatCard
-        }
+        "levels": spNav.createLevels,
+        "levelNumbers": spNav.spellLevelFilter,
+        "spellLeft": spNav.spellLevelFilter,
+        "spellRight": spNav.spellLevelFilter,
+        "spellDesc": sc.spellCard,
+        # Monster Keys
+        "monsters": monNav.createMonster,
+        "alphabet": monNav.AZSelector,
+        "letter": monNav.monsterLetterFilter,
+        "right": monNav.monsterLetterFilter,
+        "left": monNav.monsterLetterFilter,
+        "monsterStats": mc.monsterStatCard,
+        "cr": monNav.CRSelector,
+        "crNumbers": monNav.monsterCRFilter,
+        "monstCRRight": monNav.monsterCRFilter,
+        "monstCRLeft": monNav.monsterCRFilter,
+        "monstDesc": mc.monsterStatCard
+    }
     arguments = {
         'surf': DISPLAYSURF
-        }
+    }
     KEYOLD = 'menu'
-    BACKKEY = ''
     KEY = 'menu'
     KEYS = []
     startTime = datetime.datetime.now()
 
-    while True:           
+    while True:
         checkForQuit()
         runTime = datetime.datetime.now() - startTime
         elapsed = runTime.total_seconds()
-        if  KEY == 'menu' and elapsed >= 3. :
+        if KEY == 'menu' and elapsed >= 3.:
             arguments['pos'] = pos
-            #arguments, rects, KEYS = dispatcher[KEY](**arguments)
             rects, KEYS = dispatcher[KEY](arguments)
-            DISPLAYSURF = arguments['surf']
+            #  DISPLAYSURF = arguments['surf']
             pg.display.update()
 
             startTime = datetime.datetime.now()
@@ -127,41 +118,41 @@ def main():
                             KEYOLD = ''
             if event.type == pg.VIDEORESIZE:
                 WINDOWWIDTH, WINDOWHEIGHT = event.size
-                fake_screen = DISPLAYSURF.copy()
-                DISPLAYSURF = pg.display.set_mode((WINDOWWIDTH,WINDOWHEIGHT),HWSURFACE | DOUBLEBUF|RESIZABLE)
-                DISPLAYSURF.fill((0,0,0))
+                DISPLAYSURF = pg.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT), HWSURFACE | DOUBLEBUF | RESIZABLE)
+                DISPLAYSURF.fill((0, 0, 0))
                 pg.display.update()
                 KEYOLD = ''
 
         if KEY != KEYOLD:
-            arguments['pos']=pos
+            arguments['pos'] = pos
             try:
-                #arguments, rects, KEYS = dispatcher[KEY](**arguments)
+                # arguments, rects, KEYS = dispatcher[KEY](**arguments)
                 rects, KEYS = dispatcher[KEY](arguments)
 
-                DISPLAYSURF = arguments['surf']
+                #  DISPLAYSURF = arguments['surf']
 
-                
                 if KEY != 'menu':
                     menRect = menGen.reachMenu(arguments)
                     backRect = toolNav.createBack(arguments)
                     arguments['choice'] = KEY
                     miniKeys, miniRects = toolNav.createMiniTools(arguments)
                     KEYS.append('menu')
-                    KEYS = KEYS+miniKeys
-                    rects = rects + backRect+menRect+miniRects
+                    KEYS = KEYS + miniKeys
+                    rects = rects + backRect + menRect + miniRects
             except:
                 print(KEY)
                 print("Unexpected error:", sys.exc_info()[0])
                 raise
-                #pass
+                # pass
 
             pg.display.update()
         KEYOLD = KEY
 
+
 def terminate():
     pg.quit()
     sys.exit()
+
 
 def checkForQuit():
     for event in pg.event.get(QUIT):
@@ -170,6 +161,7 @@ def checkForQuit():
         if event.key == K_ESCAPE:
             terminate()
         pg.event.post(event)
+
 
 if __name__ == '__main__':
     main()
