@@ -14,6 +14,7 @@ import NPC_Generator as npcGen
 import PC_Generator as pcGen
 import Spell_Navigator as spNav
 import Monster_Navigator as monNav
+import Dice_Roller as dice
 
 import monsterCardDMTB as mc
 import spellCardDMTB as sc
@@ -54,6 +55,7 @@ def main():
         "NPC": npcGen.race,
         "gender": npcGen.gender,
         "name": npcGen.name,
+        "diceRoller": dice.diceRoller,
         # Music Keys
         "music":  musNav.createMusic,
         "tavern": musGen.tavernMusic,

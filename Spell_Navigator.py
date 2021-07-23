@@ -56,8 +56,6 @@ def createClasses(arguments):
     surf.fill((0, 0, 0))
     surf.blit(spellSurf, (0, 0))
 
-    classFiles = os.listdir('images/classes')
-
     template = pg.image.load('images/blank_button.png')
     template = pg.transform.smoothscale(template, (
     int(template.get_width() / 8 * WINDOWWIDTH / 1000), int(template.get_height() / 8 * WINDOWHEIGHT / 629)))

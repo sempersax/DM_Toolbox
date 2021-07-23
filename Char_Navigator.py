@@ -44,7 +44,7 @@ def createChar(arguments):
     surf.blit(nopcSurf, nopcPosition)
 
     rects = [playRect,nopcRect]
-    keys = ['player', 'NPC','quest']
+    keys = ['diceRoller', 'NPC','quest']
     surfs = {'surf': surf}
 #    return(surfs,rects, keys)
     return(rects, keys)
