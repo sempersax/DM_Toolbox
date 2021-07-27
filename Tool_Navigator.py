@@ -101,7 +101,7 @@ def createMiniTools(arguments):
     if choice == 'music' or choice == 'tavern' or choice == 'battle' or choice == 'region':
         buttons.remove(buttons[1])
         miniKeys.remove(miniKeys[1])
-    if choice == 'monsters' or choice == 'alphabet' or choice == 'letter' or choice == 'right' or choice == 'left' or choice == 'monsterStats' or choice == 'cr' or choice == 'search' or choice == 'crNumbers' or choice == 'monstCRRight' or choice == 'monstCRLeft' or choice == 'monstDesc':
+    if choice == 'monsters' or choice == 'alphabet' or choice == 'letter' or choice == 'right' or choice == 'left' or choice == 'monsterStats' or choice == 'cr' or choice == 'search' or choice == 'crNumbers' or choice == 'monstCRRight' or choice == 'monstCRLeft' or choice == 'monstDesc' or choice == 'searchMonst':
         buttons.remove(buttons[3])
         miniKeys.remove(miniKeys[3])
     rects = []

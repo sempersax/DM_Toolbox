@@ -334,6 +334,51 @@ def monsterCRFilter(arguments):
     return(rects, keys)
 
 
+def searchMonster(arguments):
+    pg.init()
+    surf = arguments['surf']
+    WINDOWWIDTH = surf.get_width()
+    WINDOWHEIGHT = surf.get_height()
+    monsterNames = arguments['fullMonsters']
+
+
+
+    FONT = pg.font.Font('fonts/GimletSSK.ttf', 48)
+    text = str(arguments['text'])
+    if len(text) == 1:
+        arguments['keyPress'] = ord(text[0])
+        searching = monsterNames[arguments['keyPress']-97]
+        print(searching)
+        arguments['filterNames'] = monsterNames[arguments['keyPress']-97]
+    elif len(text) == 0:
+        searching = []
+    elif len(text) > 1:
+        print(text, ' this is what should be going in filter')
+        print(arguments['filterNames'])
+        searching = list(filter(lambda x: text in x[:len(text)].lower(), arguments['filterNames']))
+        print(searching)
+
+
+    searchText = FONT.render(text, True, [237, 190, 141], None)
+
+    monstSurf = pg.image.load('images/DMTB_MONSTERS_screen.jpg')
+    monstSurf = pg.transform.scale(monstSurf, (WINDOWWIDTH, WINDOWHEIGHT))
+    surf.fill((0, 0, 0))
+    surf.blit(monstSurf, (0, 0))
+
+    template = pg.image.load('images/blank_button.png')
+    template = pg.transform.scale(template, (int(template.get_width() / 8), int(template.get_height() / 8)))
+
+
+    searchSurf = template
+    surf.blit(searchSurf, (monstSurf.get_width()/2 - searchSurf.get_width() / 2, searchSurf.get_height()))
+    surf.blit(searchText, (monstSurf.get_width()/2 - searchSurf.get_width() / 4 + searchText.get_width()/4, searchSurf.get_height() + searchText.get_height()/4))
+
+    rects = []
+    keys = ['monsters']
+
+    return(rects, keys)
+
 # Creates the main hub for navigating monster stuff
 def createMonster(arguments):
     pg.init()
@@ -390,8 +435,9 @@ def createMonster(arguments):
     surf.blit(CRSurf, (surf.get_width()-int(CRSurf.get_width()*6/5), int(WINDOWHEIGHT/4) - int(searchSurf.get_height()/2)))
 
     rects = [searchRect, AZRect, CRRect]
-    keys = ['search', 'alphabet', 'cr', 'quest']
+    keys = ['searchMonst', 'alphabet', 'cr', 'quest']
     arguments['surf'] = surf
     arguments['fullMonsters'] = alphaCR
     arguments['monsters'] = alphaCR
+    arguments['text'] = ''
     return(rects, keys)

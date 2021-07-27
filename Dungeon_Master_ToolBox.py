@@ -83,7 +83,8 @@ def main():
         "crNumbers": monNav.monsterCRFilter,
         "monstCRRight": monNav.monsterCRFilter,
         "monstCRLeft": monNav.monsterCRFilter,
-        "monstDesc": mc.monsterStatCard
+        "monstDesc": mc.monsterStatCard,
+        "searchMonst": monNav.searchMonster,
     }
     arguments = {
         'surf': DISPLAYSURF
@@ -109,13 +110,28 @@ def main():
             if event.type == QUIT:
                 terminate()
             if event.type == KEYUP:
-                if event.key == K_ESCAPE:
-                    terminate()
+                if KEY == 'searchMonst':
+                    if event.key != K_BACKSPACE and event.key < 124:
+                        arguments['text'] += str(pg.key.name(event.key))
+                        arguments['keyPress'] = event.key
+                    elif event.key == K_BACKSPACE:
+                        arguments['text'] = arguments['text'][:-1]
+                    else:
+                        pass
+                    #print(KEY)
+                    #rects, KEYS = dispatcher[KEY](arguments)
+                    KEYOLD = ''
+                else:
+                    if event.key == K_ESCAPE:
+                        terminate()
+
             if event.type == MOUSEBUTTONUP:
                 pos = pg.mouse.get_pos()
                 for i in range(0, len(rects)):
                     if rects[i].collidepoint(event.pos):
+                        print(i)
                         KEY = KEYS[i]
+
                         if 'ight' in KEY or 'eft' in KEY:
                             KEYOLD = ''
             if event.type == pg.VIDEORESIZE:
