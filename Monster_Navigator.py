@@ -343,20 +343,18 @@ def searchMonster(arguments):
 
 
 
-    FONT = pg.font.Font('fonts/GimletSSK.ttf', 48)
+    FONT = pg.font.Font('fonts/GimletSSK.ttf', 16)
     text = str(arguments['text'])
     if len(text) == 1:
         arguments['keyPress'] = ord(text[0])
         searching = monsterNames[arguments['keyPress']-97]
-        print(searching)
         arguments['filterNames'] = monsterNames[arguments['keyPress']-97]
     elif len(text) == 0:
         searching = []
     elif len(text) > 1:
-        print(text, ' this is what should be going in filter')
-        print(arguments['filterNames'])
         searching = list(filter(lambda x: text in x[:len(text)].lower(), arguments['filterNames']))
-        print(searching)
+
+    monsterNames = searching
 
 
     searchText = FONT.render(text, True, [237, 190, 141], None)
@@ -371,13 +369,100 @@ def searchMonster(arguments):
 
 
     searchSurf = template
-    surf.blit(searchSurf, (monstSurf.get_width()/2 - searchSurf.get_width() / 2, searchSurf.get_height()))
-    surf.blit(searchText, (monstSurf.get_width()/2 - searchSurf.get_width() / 4 + searchText.get_width()/4, searchSurf.get_height() + searchText.get_height()/4))
+    surf.blit(searchSurf, (monstSurf.get_width()/2 - searchSurf.get_width() / 2, searchSurf.get_height()-20))
+    surf.blit(searchText, (monstSurf.get_width()/2 - searchSurf.get_width() / 4 + searchText.get_width()/4,
+                           searchSurf.get_height() + searchText.get_height()))
 
-    rects = []
-    keys = ['monsters']
+    if len(searching) != 0:
+        pos = arguments['pos']
+        rightButton = pg.image.load('images/forward-circle_button.png')
+        rightButton = pg.transform.scale(rightButton,
+                                         (int(rightButton.get_width() / 2), int(rightButton.get_height() / 2)))
 
-    return(rects, keys)
+        leftButton = pg.image.load('images/back-circle_button.png')
+        leftButton = pg.transform.scale(leftButton, (int(leftButton.get_width() / 2), int(leftButton.get_height() / 2)))
+
+        shift = arguments['shift']
+        rects = []
+        surfs = []
+        names = []
+        columns = int((WINDOWWIDTH - 200) // 200)
+        rows = int((WINDOWHEIGHT - 100) // 100)-1
+        grid = columns * rows
+
+        if grid * (1 + shift) < len(monsterNames):
+            rightRect = rightButton.get_rect(topleft=(int(surf.get_width() - 1.5 * rightButton.get_width()),
+                                                      int(surf.get_height() // 2 - rightButton.get_height() / 2 - 20)))
+
+
+            surf.blit(rightButton, (int(surf.get_width() - 1.5 * rightButton.get_width()),
+                                    int(surf.get_height() // 2 - rightButton.get_height() / 2 - 20)))
+            if rightRect.collidepoint(pos):
+                shift += 1
+
+        if shift > 0:
+            leftRect = leftButton.get_rect(
+                topleft=(int(.25 * leftButton.get_width()), int(surf.get_height() // 2 - leftButton.get_height() / 2 - 20)))
+            surf.fill((0, 0, 0))
+            surf.blit(monstSurf, (0, 0))
+
+            surf.blit(leftButton,
+                      (int(0.25 * leftButton.get_width()), int(surf.get_height() // 2 - leftButton.get_height() / 2 - 20)))
+            if leftRect.collidepoint(pos):
+                rightRect = rightButton.get_rect(topleft=(int(surf.get_width() - 1.5 * rightButton.get_width()),
+                                                          int(surf.get_height() // 2 - rightButton.get_height() / 2 - 20)))
+                surf.blit(rightButton, (int(surf.get_width() - 1.5 * rightButton.get_width()),
+                                        int(surf.get_height() // 2 - rightButton.get_height() / 2 - 20)))
+
+                shift -= 1
+            if shift == 0:
+                surf.fill((0, 0, 0))
+                surf.blit(monstSurf, (0, 0))
+            if grid * (1 + shift) < len(monsterNames):
+                surf.blit(rightButton, (int(surf.get_width() - 1.5 * rightButton.get_width()),
+                                        int(surf.get_height() // 2 - rightButton.get_height() / 2 - 20)))
+
+        amount = 0
+        for i in range(0, columns):
+            for j in range(0, rows):
+                amount += 1
+                if i * rows + j + grid * shift > len(monsterNames) - 1:
+                    amount -= 1
+                    break
+                names.append(FONT.render(monsterNames[i * rows + j + grid * shift], True, [237, 190, 141], None))
+                surfs.append(template)
+                rects.append(surfs[i * rows + j].get_rect(topleft=(int(70 + surfs[i * rows + j].get_width() * (1 / 8 + i)),
+                                                                   int(70 + surfs[i * rows + j].get_height() * (
+                                                                               1 / 8 + j+1)))))
+                surf.blit(surfs[i * rows + j], (int(70 + surfs[i * rows + j].get_width() * (1 / 8 + i)),
+                                                int(70 + surfs[i * rows + j].get_height() * (1 / 8 + j+1))))
+                surf.blit(names[i * rows + j], (
+                int(-names[i * rows + j].get_width() // 2 + 95 + surfs[i * rows + j].get_width() * (1 / 2 + i)),
+                int(70 + surfs[i * rows + j].get_height() * (1 / 2 + j+1))))
+
+        keys = ["monsterStats"] * (amount)
+
+        if grid * (1 + shift) < len(monsterNames):
+            rects.append(rightRect)
+            keys.append('rightSearch')
+
+        if shift > 0:
+            rects.append(leftRect)
+            keys.append('leftSearch')
+
+        keys.append("monsters")
+        arguments['surf'] = surf
+        arguments['monsters'] = monsterNames
+        arguments['shift'] = shift
+        arguments['prevKey'] = 'searchMonst'
+        arguments['monstRects'] = rects
+        arguments['gridShift'] = grid * shift
+        return(rects, keys)
+
+    else:
+        rects = []
+        keys = ['monsters']
+        return(rects, keys)
 
 # Creates the main hub for navigating monster stuff
 def createMonster(arguments):
@@ -413,7 +498,9 @@ def createMonster(arguments):
 
     alphaCR = temp2
 
+    FONT = pg.font.Font('fonts/GimletSSK.ttf', 36)
 
+    searchText = FONT.render("SEARCH", True, [237, 190, 141], None)
     searchSurf = pg.image.load('images/music_Button.png')
     searchSurf = pg.transform.scale(searchSurf, (int(searchSurf.get_width()/8),int(searchSurf.get_height()/8)))
     searchRect = searchSurf.get_rect(topleft = (int(searchSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(searchSurf.get_height()/2)))
@@ -431,6 +518,8 @@ def createMonster(arguments):
     surf.fill((0,0,0))
     surf.blit(monstSurf,(0,0))
     surf.blit(searchSurf, (int(searchSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(searchSurf.get_height()/2)))
+    surf.blit(searchText, (int(searchSurf.get_width()*1/5 + searchText.get_width()//4),
+                           int(WINDOWHEIGHT/4) - int(searchSurf.get_height()/2 - searchText.get_height()//2)))
     surf.blit(AZSurf, (surf.get_width()/2-int(AZSurf.get_width()/2), int(WINDOWHEIGHT/3*2) - int(AZSurf.get_height()/2)))
     surf.blit(CRSurf, (surf.get_width()-int(CRSurf.get_width()*6/5), int(WINDOWHEIGHT/4) - int(searchSurf.get_height()/2)))
 
@@ -440,4 +529,5 @@ def createMonster(arguments):
     arguments['fullMonsters'] = alphaCR
     arguments['monsters'] = alphaCR
     arguments['text'] = ''
+    arguments['shift'] = 0
     return(rects, keys)

@@ -23,7 +23,7 @@ def monsterStatCard(arguments):
 
     for i in range(0,len(backRects)):
         if backRects[i].collidepoint(pos):
-            monsterJson = monsterNames[i+gridShift]
+            arguments['monsterJson'] = monsterNames[i+gridShift]
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
     DISPLAYSURF = surf
@@ -34,7 +34,7 @@ def monsterStatCard(arguments):
     cwd = os.getcwd()
     edge=120
 
-    with open(cwd+'/MonsterScrape/MonsterJsons/'+monsterJson.replace(' ','_')+'.json') as jsonFile:
+    with open(cwd+'/MonsterScrape/MonsterJsons/'+arguments['monsterJson'].replace(' ','_')+'.json') as jsonFile:
         data = json.load(jsonFile)
         data['monsterArmor'] = data['monsterArmor'].replace('Armor Class','')
         data['monsterHP'] = data['monsterHP'].replace('Hit Points', '')
@@ -349,5 +349,4 @@ def monsterStatCard(arguments):
     rects = [contRect]
     keys = ['monsters',contKey]
     arguments['surf'] = surf
-    arguments['prevKey'] = 'monsterStats'
     return(rects,keys)

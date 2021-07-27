@@ -85,6 +85,8 @@ def main():
         "monstCRLeft": monNav.monsterCRFilter,
         "monstDesc": mc.monsterStatCard,
         "searchMonst": monNav.searchMonster,
+        "rightSearch": monNav.searchMonster,
+        "leftSearch": monNav.searchMonster
     }
     arguments = {
         'surf': DISPLAYSURF
@@ -121,15 +123,14 @@ def main():
                     #print(KEY)
                     #rects, KEYS = dispatcher[KEY](arguments)
                     KEYOLD = ''
-                else:
-                    if event.key == K_ESCAPE:
-                        terminate()
+
+                if event.key == K_ESCAPE:
+                    terminate()
 
             if event.type == MOUSEBUTTONUP:
                 pos = pg.mouse.get_pos()
                 for i in range(0, len(rects)):
                     if rects[i].collidepoint(event.pos):
-                        print(i)
                         KEY = KEYS[i]
 
                         if 'ight' in KEY or 'eft' in KEY:
