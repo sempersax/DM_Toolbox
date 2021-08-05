@@ -89,7 +89,8 @@ def main():
         "leftSearch": monNav.searchMonster
     }
     arguments = {
-        'surf': DISPLAYSURF
+        'surf': DISPLAYSURF,
+        'text': ''
     }
     KEYOLD = 'menu'
     KEY = 'menu'
@@ -112,16 +113,27 @@ def main():
             if event.type == QUIT:
                 terminate()
             if event.type == KEYUP:
+                if event.key == K_RETURN:
+                    print(KEY)
                 if KEY == 'searchMonst':
-                    if event.key != K_BACKSPACE and event.key < 124:
+                    if event.key != K_BACKSPACE and 96 < event.key < 124:
                         arguments['text'] += str(pg.key.name(event.key))
                         arguments['keyPress'] = event.key
                     elif event.key == K_BACKSPACE:
                         arguments['text'] = arguments['text'][:-1]
                     else:
                         pass
-                    #print(KEY)
-                    #rects, KEYS = dispatcher[KEY](arguments)
+                if KEY == 'diceRoller':
+                    print(str(pg.key.name(event.key)))
+                    print(event.key)
+                    if 47 < event.key < 58 or event.key == 100:
+                        arguments['text'] += str(pg.key.name(event.key))
+                        arguments['keyPress'] = event.key
+                    elif event.key == K_BACKSPACE:
+                        arguments['text'] = arguments['text'][:-1]
+                    elif event.key == K_RETURN:
+                        arguments['text'] = "ROLL ME BABY"
+                        print(arguments['text'])
                     KEYOLD = ''
 
                 if event.key == K_ESCAPE:
@@ -132,7 +144,6 @@ def main():
                 for i in range(0, len(rects)):
                     if rects[i].collidepoint(event.pos):
                         KEY = KEYS[i]
-
                         if 'ight' in KEY or 'eft' in KEY:
                             KEYOLD = ''
             if event.type == pg.VIDEORESIZE:
