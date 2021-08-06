@@ -44,6 +44,8 @@ def diceRoller(arguments):
         #arguments['rolling'] = [num for num in arguments['rolling'] != '']
         #print(arguments['rolling'])
         arguments['rolling'] = list(filter(None, arguments['rolling']))
+        if len(arguments['rolling']) == 1:
+            arguments['rolling'] = [1, arguments['rolling'][0]]
         rolls = np.random.randint(1, int(arguments['rolling'][1])+1, size=int(arguments['rolling'][0]))
         arguments['text'] = ''
         total = np.sum(rolls)
