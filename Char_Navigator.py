@@ -18,16 +18,20 @@ def createChar(arguments):
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
 
-# Player Button
-    playSurf = pg.image.load('images/music_Button.png')
-    playSurf = pg.transform.smoothscale(playSurf, (int(playSurf.get_width()/8*WINDOWWIDTH/1000),int(playSurf.get_height()/8*WINDOWHEIGHT/629)))
+    FONT = pg.font.Font('fonts/GimletSSK.ttf', 28)
 
-    playPosition = ((int(playSurf.get_width()*1/5), int(WINDOWHEIGHT/4) - int(playSurf.get_height()/2)))
-    playRect = playSurf.get_rect(topleft = playPosition)
+
+# Dice Roller Button
+    rollText = FONT.render("DICE ROLLER", True, [237, 190, 141], None)
+    rollSurf = pg.image.load('images/music_Button.png')
+    rollSurf = pg.transform.scale(rollSurf, (int(rollSurf.get_width() / 8), int(rollSurf.get_height() / 8)))
+    rollRect = rollSurf.get_rect(
+        topleft=(int(rollSurf.get_width() * 1 / 5), int(WINDOWHEIGHT / 4) - int(rollSurf.get_height() / 2)))
 
 # NPC Button
     nopcSurf = pg.image.load('images/tools/DMTB_NPC_Button.png')
-    nopcSurf = pg.transform.smoothscale(nopcSurf, (int(nopcSurf.get_width()/8*WINDOWWIDTH/1000),int(nopcSurf.get_height()/8*WINDOWHEIGHT/629)))
+    nopcSurf = pg.transform.smoothscale(nopcSurf, (int(nopcSurf.get_width()/8*WINDOWWIDTH/1000),
+                                                   int(nopcSurf.get_height()/8*WINDOWHEIGHT/629)))
     nopcPosition = (int(WINDOWWIDTH-nopcSurf.get_width()*6/5), int(WINDOWHEIGHT/4) - int(nopcSurf.get_height()/2))
     nopcRect = nopcSurf.get_rect(topleft = nopcPosition)
 
@@ -40,11 +44,12 @@ def createChar(arguments):
 # Adding the elements to the display
     surf.fill((0,0,0))
     surf.blit(toolSurf,(0,0))
-    surf.blit(playSurf, playPosition)
+    surf.blit(rollSurf,
+              (int(rollSurf.get_width() * 1 / 5), int(WINDOWHEIGHT / 4) - int(rollSurf.get_height() / 2)))
+    surf.blit(rollText, (int(rollSurf.get_width() * 1 / 5 + rollText.get_width() // 4 - 15),
+                         int(WINDOWHEIGHT / 4) - int(rollSurf.get_height() / 2 - rollText.get_height() // 2 - 10)))
     surf.blit(nopcSurf, nopcPosition)
 
-    rects = [playRect,nopcRect]
-    keys = ['diceRoller', 'NPC','quest']
-    surfs = {'surf': surf}
-#    return(surfs,rects, keys)
+    rects = [rollRect,nopcRect]
+    keys = ['diceRoller', 'NPC', 'quest']
     return(rects, keys)
