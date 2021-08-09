@@ -18,8 +18,6 @@ def diceRoller(arguments):
     surf.blit(toolSurf, (0, 0))
 
     template = pg.image.load('images/blank_button.png')
-    template = pg.transform.smoothscale(template, (
-        int(template.get_width() / 8 * WINDOWWIDTH / 1000), int(template.get_height() / 8 * WINDOWHEIGHT / 629)))
 
     rollerPrompt = FONT.render("Type your roll as \"XdY\"", True, [237, 190, 141], None)
     rollerButton = pg.image.load('images/blank_button.png')
@@ -49,12 +47,24 @@ def diceRoller(arguments):
         rolls = np.random.randint(1, int(arguments['rolling'][1])+1, size=int(arguments['rolling'][0]))
         arguments['text'] = ''
         total = np.sum(rolls)
-        totalText = FONT.render(str(total), True, [237, 190, 141], None)
+        totalText = FONT.render("Total: "+str(total), True, [237, 190, 141], None)
         surf.fill((0, 0, 0))
         surf.blit(toolSurf, (0, 0))
         rollerButton = pg.transform.smoothscale(rollerButton, (int(rollerPrompt.get_width()*1.5), int(rollerPrompt.get_height()*1.5)))
-        surf.blit(rollerButton,(WINDOWWIDTH//2 - rollerButton.get_width()//2, 1.75 * rollerButton.get_height()))
+        resultsSurf = pg.transform.smoothscale(template, (2*WINDOWWIDTH//3, WINDOWHEIGHT//4))
+
+        surf.blit(rollerButton, (WINDOWWIDTH//2 - rollerButton.get_width()//2, 1.75 * rollerButton.get_height()))
+        surf.blit(resultsSurf, (WINDOWWIDTH//2 - resultsSurf.get_width()//2, WINDOWHEIGHT - 50 - resultsSurf.get_height()))
         surf.blit(totalText, (WINDOWWIDTH//2 - totalText.get_width()//2, int(1.9 * rollerButton.get_height())))
+        num = []
+        for i in range(0, len(rolls)):
+            print(rolls[i])
+            num.append(FONT.render(str(rolls[i]), True, [237, 190, 141], None))
+
+            print('hi')
+            surf.blit(num[i], (WINDOWWIDTH // 2 - resultsSurf.get_width()//3 - 20 + resultsSurf.get_width() / (len(rolls)+1) * i,
+                                WINDOWHEIGHT - 50 - resultsSurf.get_height() // 2 - num[i].get_height()//2))
+
 
 
 

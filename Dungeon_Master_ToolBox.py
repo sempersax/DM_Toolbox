@@ -121,14 +121,14 @@ def main():
                         arguments['text'] = arguments['text'][:-1]
                     else:
                         pass
-                if KEY == 'diceRoller':
-                    if 47 < event.key < 58 or event.key == 100:
-                        arguments['text'] += str(pg.key.name(event.key))
-                        arguments['keyPress'] = event.key
-                    elif event.key == K_BACKSPACE:
-                        arguments['text'] = arguments['text'][:-1]
-                    elif event.key == K_RETURN:
-                        arguments['text'] = "ROLL ME BABY"
+                #elif KEY == 'diceRoller':
+                #    if 47 < event.key < 58 or event.key == 100:
+                #        arguments['text'] += str(pg.key.name(event.key))
+                #        arguments['keyPress'] = event.key
+                #    elif event.key == K_BACKSPACE:
+                #        arguments['text'] = arguments['text'][:-1]
+                #    elif event.key == K_RETURN:
+                #        arguments['text'] = "ROLL ME BABY"
                     KEYOLD = ''
 
                 if event.key == K_ESCAPE:
