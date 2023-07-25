@@ -58,16 +58,9 @@ def diceRoller(arguments):
         surf.blit(totalText, (WINDOWWIDTH//2 - totalText.get_width()//2, int(1.9 * rollerButton.get_height())))
         num = []
         for i in range(0, len(rolls)):
-            print(rolls[i])
             num.append(FONT.render(str(rolls[i]), True, [237, 190, 141], None))
-
-            print('hi')
             surf.blit(num[i], (WINDOWWIDTH // 2 - resultsSurf.get_width()//3 - 20 + resultsSurf.get_width() / (len(rolls)+1) * i,
                                 WINDOWHEIGHT - 50 - resultsSurf.get_height() // 2 - num[i].get_height()//2))
-
-
-
-
 
     arguments['prevKey'] = 'diceRoller'
     arguments['surf'] = surf

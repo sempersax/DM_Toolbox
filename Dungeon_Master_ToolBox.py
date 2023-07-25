@@ -11,7 +11,7 @@ import Tool_Navigator as toolNav
 import Music_Navigator as musNav
 import Char_Navigator as charNav
 import NPC_Generator as npcGen
-import PC_Generator as pcGen
+# import PC_Generator as pcGen
 import Spell_Navigator as spNav
 import Monster_Navigator as monNav
 import Dice_Roller as dice
@@ -57,7 +57,7 @@ def main():
         "name": npcGen.name,
         "diceRoller": dice.diceRoller,
         # Music Keys
-        "music":  musNav.createMusic,
+        "music": musNav.createMusic,
         "tavern": musGen.tavernMusic,
         "battle": musGen.battleMusic,
         "region": None,
@@ -121,15 +121,15 @@ def main():
                         arguments['text'] = arguments['text'][:-1]
                     else:
                         pass
-                #elif KEY == 'diceRoller':
-                #    if 47 < event.key < 58 or event.key == 100:
-                #        arguments['text'] += str(pg.key.name(event.key))
-                #        arguments['keyPress'] = event.key
-                #    elif event.key == K_BACKSPACE:
-                #        arguments['text'] = arguments['text'][:-1]
-                #    elif event.key == K_RETURN:
-                #        arguments['text'] = "ROLL ME BABY"
-                    KEYOLD = ''
+                elif KEY == 'diceRoller':
+                    if 47 < event.key < 58 or event.key == 100:
+                        arguments['text'] += str(pg.key.name(event.key))
+                        arguments['keyPress'] = event.key
+                    elif event.key == K_BACKSPACE:
+                        arguments['text'] = arguments['text'][:-1]
+                    elif event.key == K_RETURN:
+                        arguments['text'] = "ROLL ME BABY"
+                KEYOLD = ''
 
                 if event.key == K_ESCAPE:
                     terminate()
