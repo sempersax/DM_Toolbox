@@ -1,7 +1,7 @@
 # NPC Roster 
 # by Torrey Saxton
 import numpy as np
-import xlrd as pyxl
+#import xlrd as pyxl
 import pandas
 
 wb = pandas.read_excel('NPC_Roster.xlsx')
