@@ -8,6 +8,11 @@ import pygame.surfarray as surfarray
 from pygame.locals import *
 
 
+def put(on, what, where):
+    on.blit(what, where)
+
+
+
 def spellCard(arguments):
     pg.init()
     surf = arguments['surf']
@@ -110,23 +115,30 @@ def spellCard(arguments):
                                    int(screen.get_height() / 10 - 40 + spellName.get_height())))
     DISPLAYSURF.blit(spellSchool, (int(screen.get_width() / 2 - spellSchool.get_width() / 2),
                                    int(screen.get_height() * 9 / 10 - 25 + spellName.get_height())))
+
     # Putting Level on Card
-    DISPLAYSURF.blit(spellLevelLabel, (edge, int(screen.get_height() / 10 * 2)))
-    DISPLAYSURF.blit(spellLevel, (edge + spellLevelLabel.get_width(), int(screen.get_height() / 10 * 2 + 3)))
+    # DISPLAYSURF.blit(spellLevelLabel, (edge, int(screen.get_height() / 10 * 2)))
+    # DISPLAYSURF.blit(spellLevel, (edge + spellLevelLabel.get_width(), int(screen.get_height() / 10 * 2 + 3)))
+    put(DISPLAYSURF, spellLevelLabel, (edge, int(screen.get_height() / 10 * 2)))
+    put(DISPLAYSURF, spellLevel, (edge + spellLevelLabel.get_width(), int(screen.get_height() / 10 * 2 + 3)))
+
     # Putting Casting Time on Card
     DISPLAYSURF.blit(spellTimeLabel, (edge, int(screen.get_height() / 10 * 2 + spellLevelLabel.get_height() + 3)))
     DISPLAYSURF.blit(spellTime, (
     edge + spellTimeLabel.get_width(), int(screen.get_height() / 10 * 2 + spellLevelLabel.get_height() + 3)))
+
     # Putting Duration on Card
     DISPLAYSURF.blit(spellDurationLabel,
                      (edge, int(screen.get_height() / 10 * 2 + 2 * spellLevelLabel.get_height() + 3)))
     DISPLAYSURF.blit(spellDuration, (
     edge + spellLevelLabel.get_width(), int(screen.get_height() / 10 * 2 + 2 * spellLevelLabel.get_height() + 3)))
+
     # Putting Range on Card
     DISPLAYSURF.blit(spellRangeLabel,
                      (int(screen.get_width() - spellRangeLabel.get_width() * 8.2), int(screen.get_height() / 10 * 2)))
     DISPLAYSURF.blit(spellRange,
                      (int(screen.get_width() - spellRangeLabel.get_width() * 7.2), int(screen.get_height() / 10 * 2)))
+
     # Putting components on Card
     DISPLAYSURF.blit(spellComponentsLabel, (int(screen.get_width() - spellRangeLabel.get_width() * 8.2),
                                             int(screen.get_height() / 10 * 2 + spellRangeLabel.get_height())))
@@ -164,4 +176,4 @@ def spellCard(arguments):
     keys = ['spells', arguments['prevKey']]
     arguments['surf'] = DISPLAYSURF
     arguments['prevKey'] = 'spellDesc'
-    return (rects, keys)
+    return rects, keys

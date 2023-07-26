@@ -131,10 +131,13 @@ def spellLevelFilter(arguments):
     WINDOWWIDTH = surf.get_width()
     WINDOWHEIGHT = surf.get_height()
 
+    print(f"HI IM FILTERING BY LEVEL, HERE'S KEYPREV: {keyPrev}")
+
     if keyPrev == 'levels':
         for i in range(0, len(levels)):
             if levels[i].collidepoint(pos):
                 spellLevel = int(i)
+                print(f"MY SPELL LEVEL IS: {spellLevel}")
         spellNames = []
         rosterPath = "{}/SpellScrape/spellRoster.txt".format(os.getcwd())
         with open(rosterPath, 'r') as roster:
@@ -148,13 +151,13 @@ def spellLevelFilter(arguments):
                                                                                                                '').replace(
                     'l', '1').replace('"', '')
                 currentPlace[-1] = int(currentPlace[-1])
-                if currentPlace[-1] == spellLevel:
+                if currentPlace[-1] == int(spellLevel):
                     spellNames.append(currentPlace[0])
 
     if keyPrev == 'spellDesc':
         spellNames = arguments['spellNames']
 
-    if keyPrev == 'spellStats':
+    if keyPrev == 'levelNumbers':
         shift = arguments['shift']
         spellNames = arguments['spellNames']
 

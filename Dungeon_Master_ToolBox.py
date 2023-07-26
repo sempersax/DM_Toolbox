@@ -108,7 +108,8 @@ def main():
             pg.display.update()
 
             startTime = datetime.datetime.now()
-
+        # if KEY != 'searchMonst' or KEY != 'diceRoller':
+        #     arguments['text'] = ''
         for event in pg.event.get():
             if event.type == QUIT:
                 terminate()
