@@ -159,3 +159,33 @@ def orcFemaleNames():
 def orcLastNames():
     orcLast = open_json('orc_last.json')
     return(str(orcLast[np.random.randint(len(orcLast))]))
+
+
+def tiefMaleNames():
+    tiefMale = open_json('tief_male.json')
+    return(str(tiefMale[np.random.randint(len(tiefMale))]))
+
+
+def tiefFemaleNames():
+    tiefFemale = open_json('tief_female.json')
+    return(str(tiefFemale[np.random.randint(len(tiefFemale))]))
+
+
+def tiefLastNames():
+    tiefLast = open_json('tief_last.json')
+    return(str(tiefLast[np.random.randint(len(tiefLast))]))
+
+
+def aasMaleNames():
+    aasMale = open_json('aas_male.json')
+    return(str(aasMale[np.random.randint(len(aasMale))]))
+
+
+def aasFemaleNames():
+    aasFemale = open_json('aas_female.json')
+    return(str(aasFemale[np.random.randint(len(aasFemale))]))
+
+
+def aasLastNames():
+    aasLast = open_json('aas_last.json')
+    return str(aasLast[np.random.randint(len(aasLast))])

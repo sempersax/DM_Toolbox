@@ -57,7 +57,8 @@ def gender(arguments):
     genders[1] = pg.image.load('images/genders/DMTB_MALE_Button.png')
     for i in range(0, len(genders)):
         genders[i] = pg.transform.scale(genders[i], (
-        int(genders[i].get_width() / 8 * WINDOWWIDTH / 1000), int(genders[i].get_height() / 8 * WINDOWHEIGHT / 629)))
+            int(genders[i].get_width() / 8 * WINDOWWIDTH / 1000),
+            int(genders[i].get_height() / 8 * WINDOWHEIGHT / 629)))
 
     races = ['AASIMAR', 'DRAGONBORN', 'DWARF', 'ELF', 'GNOME', 'GOBLIN', 'HALF-ELF', 'HALF-ORC', 'HALFLING', 'HUMAN',
              'ORC', 'TIEFLING']
@@ -80,7 +81,7 @@ def gender(arguments):
         genRects.append(genders[0].get_rect(
             topleft=(int(genders[0].get_width()), int(WINDOWHEIGHT / 2 - genders[0].get_height() / 2))))
         genRects.append(genders[1].get_rect(topleft=(
-        int(WINDOWWIDTH - 2 * genders[1].get_width()), int(WINDOWHEIGHT / 2 - genders[1].get_height() / 2))))
+            int(WINDOWWIDTH - 2 * genders[1].get_width()), int(WINDOWHEIGHT / 2 - genders[1].get_height() / 2))))
 
     keys = ['name'] * len(genRects)
     keys.append('NPC')
@@ -91,6 +92,113 @@ def gender(arguments):
     arguments['prevKey'] = 'gender'
     arguments['name'] = []
     return (genRects, keys)
+
+
+class Npc:
+    def __init__(self, r, g):
+        self.r = r
+        self.g = g
+        self.first_name, self.last_name = first_last(r, g)
+
+
+def first_last(r, g):
+    race_gen_dict = {
+        'DRAGONBORN':
+            {'FEMALE':
+                 [roster.dragonBornFemaleNames(),
+                  roster.dragonBornLastNames()],
+             'MALE':
+                 [roster.dragonBornMaleNames(),
+                  roster.dragonBornLastNames()]
+             },
+        'DWARF':
+            {'FEMALE':
+                 [roster.dwarfFemaleNames(),
+                  roster.dwarfLastNames()],
+             'MALE':
+                 [roster.dwarfMaleNames(),
+                  roster.dwarfLastNames()]},
+
+        'ELF':
+            {'FEMALE':
+                 [roster.elfFemaleNames(),
+                  roster.elfLastNames()],
+             'MALE':
+                 [roster.elfMaleNames(), roster.elfLastNames()]},
+
+        'GNOME':
+            {'FEMALE':
+                 [roster.gnomeFemaleNames(),
+                  roster.gnomeLastNames()],
+             'MALE':
+                 [roster.gnomeMaleNames(),
+                  roster.gnomeLastNames()]},
+        'GOBLIN':
+            {'FEMALE':
+                 [roster.goblinFemaleNames(),
+                  roster.goblinLastNames()],
+             'MALE':
+                 [roster.goblinMaleNames(),
+                  roster.goblinLastNames()]},
+        'HALF-ELF':
+            {'FEMALE':
+                 [roster.hElfFemaleNames(),
+                  roster.hElfLastNames()
+                  ],
+             'MALE':
+                 [roster.hElfMaleNames(),
+                  roster.hElfLastNames()]},
+        'HALFLING':
+            {'FEMALE':
+                 [roster.halflingFemaleNames(),
+                  roster.halflingLastNames()],
+             'MALE':
+                 [roster.halflingMaleNames(),
+                  roster.halflingLastNames()]},
+        'HALF-ORC':
+            {'FEMALE':
+                 [roster.hOrcFemaleNames(),
+                  roster.hOrcLastNames()],
+             'MALE':
+                 [roster.hOrcMaleNames(),
+                  roster.hOrcLastNames()]},
+        'HUMAN':
+            {'FEMALE':
+                 [roster.humanFemaleNames(),
+                  roster.humanLastNames()],
+             'MALE':
+                 [roster.humanMaleNames(),
+                  roster.humanLastNames()]
+             },
+        'ORC':
+            {'FEMALE':
+                 [roster.orcFemaleNames(),
+                  roster.orcLastNames()
+                  ],
+             'MALE':
+                 [roster.orcMaleNames(),
+                  roster.orcLastNames()]
+             },
+        'TIEFLING':
+            {
+                'FEMALE':
+                    [roster.tiefFemaleNames(),
+                     roster.tiefLastNames()],
+                'MALE':
+                    [roster.tiefMaleNames(),
+                     roster.tiefLastNames()]
+            },
+        'AASIMAR':
+            {
+                'FEMALE':
+                    [roster.aasFemaleNames(),
+                     roster.aasLastNames()],
+                'MALE':
+                    [roster.aasMaleNames(),
+                     roster.aasLastNames()]
+            },
+    }
+    return race_gen_dict[r][g]
 
 
 def name(arguments):
@@ -114,85 +222,7 @@ def name(arguments):
         if rects[i].collidepoint(pos):
             genderSel = genders[i]
 
-    if raceSel == 'DRAGONBORN':
-        if genderSel == 'FEMALE':
-            first = roster.dragonBornFemaleNames()
-            last = roster.dragonBornLastNames()
-        if genderSel == 'MALE':
-            first = roster.dragonBornMaleNames()
-            last = roster.dragonBornLastNames()
-
-    if raceSel == 'DWARF':
-        if genderSel == 'FEMALE':
-            first = roster.dwarfFemaleNames()
-            last = roster.dwarfLastNames()
-        if genderSel == 'MALE':
-            first = roster.dwarfMaleNames()
-            last = roster.dwarfLastNames()
-
-    if raceSel == 'ELF':
-        if genderSel == 'FEMALE':
-            first = roster.elfFemaleNames()
-            last = roster.elfLastNames()
-        if genderSel == 'MALE':
-            first = roster.elfMaleNames()
-            last = roster.elfLastNames()
-
-    if raceSel == 'GNOME':
-        if genderSel == 'FEMALE':
-            first = roster.gnomeFemaleNames()
-            last = roster.gnomeLastNames()
-        if genderSel == 'MALE':
-            first = roster.gnomeMaleNames()
-            last = roster.gnomeLastNames()
-
-    if raceSel == 'GOBLIN':
-        if genderSel == 'FEMALE':
-            first = roster.goblinFemaleNames()
-            last = roster.goblinLastNames()
-        if genderSel == 'MALE':
-            first = roster.goblinMaleNames()
-            last = roster.goblinLastNames()
-
-    if raceSel == 'HALF-ELF':
-        if genderSel == 'FEMALE':
-            first = roster.hElfFemaleNames()
-            last = roster.hElfLastNames()
-        if genderSel == 'MALE':
-            first = roster.hElfMaleNames()
-            last = roster.hElfLastNames()
-
-    if raceSel == 'HALFLING':
-        if genderSel == 'FEMALE':
-            first = roster.halflingFemaleNames()
-            last = roster.halflingLastNames()
-        if genderSel == 'MALE':
-            first = roster.halflingMaleNames()
-            last = roster.halflingLastNames()
-
-    if raceSel == 'HALF-ORC':
-        if genderSel == 'FEMALE':
-            first = roster.hOrcFemaleNames()
-            last = roster.hOrcLastNames()
-        if genderSel == 'MALE':
-            first = roster.hOrcMaleNames()
-            last = roster.hOrcLastNames()
-
-    if raceSel == 'HUMAN':
-        if genderSel == 'FEMALE':
-            first = roster.humanFemaleNames()
-            last = roster.humanLastNames()
-        if genderSel == 'MALE':
-            first = roster.humanMaleNames()
-            last = roster.humanLastNames()
-
-    if raceSel == 'ORC':
-        if genderSel == 'FEMALE':
-            first = roster.orcFemaleNames()
-            last = roster.orcLastNames()
-        if genderSel == 'MALE':
-            first = roster.orcMaleNames()
-            last = roster.orcLastNames()
+    first, last = first_last(raceSel, genderSel)
 
     if prevKey == 'name':
         first, last = arguments['name']
@@ -210,9 +240,11 @@ def name(arguments):
     surf.blit(image, (0, 0))
     surf.blit(scroll, (0, 0))
     surf.blit(raceText, (
-    int(scroll.get_width() // 2 - raceText.get_width() // 2), int(scroll.get_height() / 8 + 2 * raceText.get_height())))
+        int(scroll.get_width() // 2 - raceText.get_width() // 2),
+        int(scroll.get_height() / 8 + 2 * raceText.get_height())))
     surf.blit(genText, (
-    int(scroll.get_width() // 2 - genText.get_width() // 2), int(scroll.get_height() / 8 + 3 * raceText.get_height())))
+        int(scroll.get_width() // 2 - genText.get_width() // 2),
+        int(scroll.get_height() / 8 + 3 * raceText.get_height())))
     surf.blit(nameText, (int(scroll.get_width() // 2 - nameText.get_width() // 2),
                          int(scroll.get_height() / 8 + 3 * raceText.get_height() + genText.get_height())))
     cont = pg.image.load('images/tools/DMTB_NPC_CIRCLE_button.png')
